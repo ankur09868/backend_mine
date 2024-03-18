@@ -10,7 +10,6 @@ INDCHOICES = (
     ('PUBLISHING', 'PUBLISHING'),
     ('REAL ESTATE', 'REAL ESTATE'),
     ('SOFTWARE', 'SOFTWARE'),
-    ('Entertainment','Enterntainment'),
 )
 
 class Account(models.Model):
