@@ -4,6 +4,7 @@ from .models import Account
 from .serializers import AccountSerializer
 from rest_framework.permissions import IsAdminUser
 from rest_framework.permissions import AllowAny
+from rest_framework.generics import get_object_or_404
 from django.contrib.auth.models import User
 # Create your views here.
 
@@ -49,6 +50,22 @@ class AccountListAPIView(generics.ListCreateAPIView):
     def perform_create(self, serializer):
         # Assign the default user to createdBy field of the account
         serializer.save(createdBy=self.default_user)
+    def put(self, request, *args, **kwargs):
+        # Handle PUT requests to update existing accounts
+        try:
+            account_id = kwargs.get('pk')
+            account = get_object_or_404(Account, pk=account_id)
+            serializer = self.get_serializer(account, data=request.data, partial=True)
+            serializer.is_valid(raise_exception=True)
+            self.perform_update(serializer)
+            return Response(serializer.data)
+        except Exception as e:
+            print(f"Error occurred while handling PUT request: {str(e)}")
+            return Response({"error": "Failed to update account."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+    def perform_update(self, serializer):
+        # Update the account
+        serializer.save()
 
     def post(self, request, *args, **kwargs):
         try:
