@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts',
     'leads',
+    'meetings',
     'opportunities',
     'contacts',
     'rest_framework',
