@@ -1,4 +1,3 @@
 django
-python
 djangorestframework
 django-cors-headers
