@@ -21,12 +21,15 @@ from leads import views as lviews
 from opportunities import views as oviews
 from contacts import views as cviews
 from meetings import views as mviews
+from calls import views as caviews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path(r'accounts/', aviews.AccountListAPIView.as_view(), name='account-list'),
+    path('accounts/<int:pk>/', aviews.AccountListAPIView.as_view(), name='account-detail'),
     path(r'leads/', lviews.LeadListAPIView.as_view(), name='lead-list'),
     path(r'opportunities/', oviews.OpportunityListAPIView.as_view(), name='opportunity-list'),
     path(r'contacts/', cviews.ContactListAPIView.as_view(), name='contact-list'),
     path('meetings/', mviews.MeetingListAPIView.as_view(), name='meeting-list'),
+    path('calls/', caviews.callsListAPIView.as_view(), name='calls'),   
 ]
