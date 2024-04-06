@@ -22,6 +22,7 @@ from opportunities import views as oviews
 from contacts import views as cviews
 from meetings import views as mviews
 from calls import views as caviews
+from interaction import views as inviews
 
 
 urlpatterns = [
@@ -32,7 +33,8 @@ urlpatterns = [
     path(r'opportunities/', oviews.OpportunityListAPIView.as_view(), name='opportunity-list'),
     path(r'contacts/', cviews.ContactListAPIView.as_view(), name='contact-list'),
     path('meetings/', mviews.MeetingListAPIView.as_view(), name='meeting-list'),
-    path('calls/', caviews.callsListAPIView.as_view(), name='calls'),   
+    path('calls/', caviews.callsListAPIView.as_view(), name='calls'), 
+    path('interaction/', inviews.InteractionListAPIView.as_view(), name='interaction'),   
 
 
 ]

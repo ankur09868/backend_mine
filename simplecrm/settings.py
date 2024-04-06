@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'meetings',
     'opportunities',
     'contacts',
+    'interaction',
     'rest_framework',
     'corsheaders',
 ]
