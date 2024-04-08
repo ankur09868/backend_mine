@@ -5,7 +5,14 @@ from .serializers import ContactSerializer
 from rest_framework.permissions import IsAdminUser
 # Create your views here.
 
-class ContactListAPIView(generics.ListCreateAPIView):
+from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
+
+class ContactListCreateAPIView(ListCreateAPIView):
     queryset = Contact.objects.all()
     serializer_class = ContactSerializer
-    #permission_classes = (IsAdminUser,)
+    # permission_classes = (IsAdminUser,)  # Optionally, add permission classes
+
+class ContactDetailAPIView(RetrieveUpdateDestroyAPIView):
+    queryset = Contact.objects.all()
+    serializer_class = ContactSerializer
+    # permission_classes = (IsAdminUser,)  # Optionally, add permission classes

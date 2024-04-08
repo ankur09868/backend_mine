@@ -27,11 +27,12 @@ from interaction import views as inviews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(r'accounts/', aviews.AccountListAPIView.as_view(), name='account-list'),
-    path('accounts/<int:pk>/', aviews.AccountListAPIView.as_view(), name='account-detail'),
+    path(r'accounts/', aviews.AccountListCreateAPIView.as_view(), name='account-list'),
+    path('accounts/<int:pk>/', aviews.AccountDetailAPIView.as_view(), name='account-detail'),
     path(r'leads/', lviews.LeadListAPIView.as_view(), name='lead-list'),
     path(r'opportunities/', oviews.OpportunityListAPIView.as_view(), name='opportunity-list'),
-    path(r'contacts/', cviews.ContactListAPIView.as_view(), name='contact-list'),
+    path('contacts/', cviews.ContactListCreateAPIView.as_view(), name='contact-list-create'),
+    path('contacts/<int:pk>/', cviews.ContactDetailAPIView.as_view(), name='contact-detail'),
     path('meetings/', mviews.MeetingListAPIView.as_view(), name='meeting-list'),
     path('calls/', caviews.callsListAPIView.as_view(), name='calls'), 
     path('interaction/', inviews.InteractionListAPIView.as_view(), name='interaction'),   

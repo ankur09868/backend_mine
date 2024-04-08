@@ -8,7 +8,7 @@ class Interaction(models.Model):
         ('Email', 'Email'),
         ('Meeting', 'Meeting'),
         ('Note', 'Note'),
-        # Add more interaction types as needed
+       
     )
 
     entity_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)

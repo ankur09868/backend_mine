@@ -16,62 +16,14 @@ from rest_framework.response import Response
 from rest_framework import status
 from .models import Account
 
-def delete_all_accounts():
-    try:
-        # Delete all entries of the Account model
-        Account.objects.all().delete()
-        print("All accounts deleted successfully.")
-    except Exception as e:
-        print(f"Error occurred while deleting accounts: {str(e)}")
+from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
 
-# Call the function to delete all accounts
-
-class AccountListAPIView(generics.ListCreateAPIView):
+class AccountListCreateAPIView(ListCreateAPIView):
     queryset = Account.objects.all()
     serializer_class = AccountSerializer
     permission_classes = (AllowAny,)  # Allowing any user to access this view
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        # Create a default user if it doesn't exist
-        self.default_user = self.create_default_user()
-
-    def create_default_user(self):
-        # Check if the default user already exists
-        default_user, created = User.objects.get_or_create(
-            username='dmfnv ndkfj v',
-            email='john@example.com'
-        )
-        if created:
-            default_user.set_password('password123')
-            default_user.save()
-        return default_user
-
-    def perform_create(self, serializer):
-        # Assign the default user to createdBy field of the account
-        serializer.save(createdBy=self.default_user)
-    def put(self, request, *args, **kwargs):
-        # Handle PUT requests to update existing accounts
-        try:
-            account_id = kwargs.get('pk')
-            account = get_object_or_404(Account, pk=account_id)
-            serializer = self.get_serializer(account, data=request.data, partial=True)
-            serializer.is_valid(raise_exception=True)
-            self.perform_update(serializer)
-            return Response(serializer.data)
-        except Exception as e:
-            print(f"Error occurred while handling PUT request: {str(e)}")
-            return Response({"error": "Failed to update account."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
-    def perform_update(self, serializer):
-        # Update the account
-        serializer.save()
-
-    def post(self, request, *args, **kwargs):
-        try:
-            # Call the base class post() method to handle the POST request
-            return super().post(request, *args, **kwargs)
-        except Exception as e:
-            # Log the error and return an error response
-            print(f"Error occurred while handling POST request: {str(e)}")
-            return Response({"error": "Failed to create account."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+class AccountDetailAPIView(RetrieveUpdateDestroyAPIView):
+    queryset = Account.objects.all()
+    serializer_class = AccountSerializer
+    permission_classes = (AllowAny,)  # Allowing any user to access this view
