@@ -16,13 +16,16 @@ from rest_framework.response import Response
 from rest_framework import status
 from .models import Account
 
+
+
+
 from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
 
 class AccountListCreateAPIView(ListCreateAPIView):
     queryset = Account.objects.all()
     serializer_class = AccountSerializer
     permission_classes = (AllowAny,)  # Allowing any user to access this view
-
+    
 class AccountDetailAPIView(RetrieveUpdateDestroyAPIView):
     queryset = Account.objects.all()
     serializer_class = AccountSerializer

@@ -1,0 +1,32 @@
+from django.db import models
+from django.contrib.auth.models import User
+from contacts.models import Contact
+from accounts.models import Account
+
+class Tasks(models.Model):
+    STATUS_CHOICES = (
+        ('not_started', 'Not Started'),
+        ('deferred', 'Deferred'),
+        ('in_progress', 'In Progress'),
+        ('completed', 'Completed'),
+        ('waiting_for_input', 'Waiting for Input'),
+    )
+
+    PRIORITY_CHOICES = (
+        ('high', 'High'),
+        ('normal', 'Normal'),
+        ('low', 'Low'),
+    )
+
+    subject = models.CharField(max_length=255)
+    due_date = models.DateField()
+    contact = models.ForeignKey(Contact, related_name='contact_tasks', on_delete=models.CASCADE, blank=True, null=True)
+    account = models.ForeignKey(Account, related_name='account_tasks', on_delete=models.CASCADE, blank=True, null=True)
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='not_started')
+    priority = models.CharField(max_length=10, choices=PRIORITY_CHOICES, default='normal')
+    reminder = models.BooleanField(default=False)
+    description = models.TextField()
+    createdBy = models.ForeignKey(User, related_name='task_created_by', on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.subject

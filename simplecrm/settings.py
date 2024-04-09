@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'interaction',
     'rest_framework',
     'corsheaders',
+    'tasks',
 ]
 
 MIDDLEWARE = [

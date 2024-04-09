@@ -23,19 +23,23 @@ from contacts import views as cviews
 from meetings import views as mviews
 from calls import views as caviews
 from interaction import views as inviews
+from tasks import views as tviews
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path(r'accounts/', aviews.AccountListCreateAPIView.as_view(), name='account-list'),
     path('accounts/<int:pk>/', aviews.AccountDetailAPIView.as_view(), name='account-detail'),
-    path(r'leads/', lviews.LeadListAPIView.as_view(), name='lead-list'),
+    path(r'leads/', lviews.LeadListCreateAPIView.as_view(), name='lead-list'),
+    path('leads/<int:pk>/',lviews.LeadDetailAPIView.as_view(), name='lead-detail'),
     path(r'opportunities/', oviews.OpportunityListAPIView.as_view(), name='opportunity-list'),
     path('contacts/', cviews.ContactListCreateAPIView.as_view(), name='contact-list-create'),
     path('contacts/<int:pk>/', cviews.ContactDetailAPIView.as_view(), name='contact-detail'),
     path('meetings/', mviews.MeetingListAPIView.as_view(), name='meeting-list'),
     path('calls/', caviews.callsListAPIView.as_view(), name='calls'), 
-    path('interaction/', inviews.InteractionListAPIView.as_view(), name='interaction'),   
+    path('interaction/', inviews.InteractionListAPIView.as_view(), name='interaction'),  
+    path('tasks/', tviews.TaskListCreateAPIView.as_view(), name='task-list'),
+    path('tasks/<int:pk>/', tviews.TaskRetrieveUpdateDestroyAPIView.as_view(), name='task-detail'), 
 
 
 ]

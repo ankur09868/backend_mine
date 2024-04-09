@@ -2,10 +2,18 @@ from django.shortcuts import render
 from rest_framework import generics
 from .models import Lead
 from .serializers import LeadSerializer
-from rest_framework.permissions import IsAdminUser
+from rest_framework.permissions import AllowAny  # Import AllowAny
+
 # Create your views here.
 
-class LeadListAPIView(generics.ListCreateAPIView):
+from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
+
+class LeadListCreateAPIView(ListCreateAPIView):
     queryset = Lead.objects.all()
     serializer_class = LeadSerializer
-    #permission_classes = (IsAdminUser,)
+    permission_classes = (AllowAny,)  # Use AllowAny permission
+
+class LeadDetailAPIView(RetrieveUpdateDestroyAPIView):
+    queryset = Lead.objects.all()
+    serializer_class = LeadSerializer
+    permission_classes = (AllowAny,)  # Use AllowAny permission
