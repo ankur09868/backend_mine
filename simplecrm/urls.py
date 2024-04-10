@@ -24,10 +24,13 @@ from meetings import views as mviews
 from calls import views as caviews
 from interaction import views as inviews
 from tasks import views as tviews
+from simplecrm import Register_login as Reg
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('register/', Reg.register, name='register'),  # Endpoint for user registration
+    path('login/', Reg.LoginView.as_view(), name='login'), 
     path(r'accounts/', aviews.AccountListCreateAPIView.as_view(), name='account-list'),
     path('accounts/<int:pk>/', aviews.AccountDetailAPIView.as_view(), name='account-detail'),
     path(r'leads/', lviews.LeadListCreateAPIView.as_view(), name='lead-list'),
