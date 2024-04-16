@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.urls.conf import include
 
 from accounts import views as aviews 
 from leads import views as lviews
@@ -24,6 +25,7 @@ from meetings import views as mviews
 from calls import views as caviews
 from interaction import views as inviews
 from tasks import views as tviews
+from reminder import views as rviews
 from simplecrm import Register_login as Reg
 
 
@@ -43,6 +45,7 @@ urlpatterns = [
     path('interaction/', inviews.InteractionListAPIView.as_view(), name='interaction'),  
     path('tasks/', tviews.TaskListCreateAPIView.as_view(), name='task-list'),
     path('tasks/<int:pk>/', tviews.TaskRetrieveUpdateDestroyAPIView.as_view(), name='task-detail'), 
+    path('reminders/', rviews.ReminderListAPIView.as_view(), name='reminder-list'),
 
 
 ]

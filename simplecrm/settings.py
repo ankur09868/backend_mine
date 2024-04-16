@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'tasks',
+    'channels',
+    'reminder',
 ]
 
 MIDDLEWARE = [
@@ -143,5 +145,10 @@ CORS_ALLOWED_ORIGINS = [
     # Add other allowed origins if needed
 ]
 
-
+ASGI_APPLICATION = 'simplecrm.asgi.application'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels.layers.InMemoryChannelLayer',
+    },
+}
