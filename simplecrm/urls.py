@@ -27,7 +27,8 @@ from interaction import views as inviews
 from tasks import views as tviews
 from reminder import views as rviews
 from simplecrm import Register_login as Reg
-
+from simplecrm import ingestexcel as ingex
+from simplecrm import get_column_name as getxcol
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -46,6 +47,8 @@ urlpatterns = [
     path('tasks/', tviews.TaskListCreateAPIView.as_view(), name='task-list'),
     path('tasks/<int:pk>/', tviews.TaskRetrieveUpdateDestroyAPIView.as_view(), name='task-detail'), 
     path('reminders/', rviews.ReminderListAPIView.as_view(), name='reminder-list'),
+    path('uploadexcel/', ingex.ImportLeadData, name='excel'),
+    path('excel-column/', getxcol.get_excel_columns, name='column_excel'),
 
 
 ]
