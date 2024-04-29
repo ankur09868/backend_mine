@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from accounts.models import Account
 from contacts.models import Contact
+from django.conf import settings
 
 STAGES = (
     ('QUALIFICATION', 'QUALIFICATION'),
@@ -77,10 +78,10 @@ class Opportunity(models.Model):
     lead_source = models.CharField("Source of Lead", max_length=255, choices=SOURCES, blank=True, null=True)
     probability = models.IntegerField(default=0, blank=True, null=True)
     contacts = models.ManyToManyField(Contact)
-    closedBy = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+    closedBy = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True)
     closedOn = models.DateTimeField(blank=True, null=True)
     description = models.TextField(blank=True, null=True)
-    createdBy = models.ForeignKey(User, related_name='opportunity_created_by', on_delete=models.CASCADE)
+    createdBy = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='opportunity_created_by', on_delete=models.CASCADE)
     createdOn = models.DateTimeField("Created on", auto_now_add=True)
     isActive = models.BooleanField(default=False)
 

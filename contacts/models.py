@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from accounts.models import Account
+from django.conf import settings
 
 class Contact(models.Model):
     first_name = models.CharField("First name", max_length=255)
@@ -10,7 +11,7 @@ class Contact(models.Model):
     phone = models.CharField(max_length=20)
     address = models.TextField(blank=True, null=True)
     description = models.TextField(blank=True, null=True)
-    createdBy = models.ForeignKey(User, related_name='contact_created_by', on_delete=models.CASCADE)
+    createdBy = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='contact_created_by', on_delete=models.CASCADE)
     createdOn = models.DateTimeField("Created on", auto_now_add=True)
     isActive = models.BooleanField(default=False)
 

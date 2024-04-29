@@ -31,7 +31,7 @@ ALLOWED_HOSTS = ['*','http://127.0.0.1:9000/']
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
+    #'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'tasks',
     'channels',
     'reminder',
+    'simplecrm',
 ]
 
 MIDDLEWARE = [
@@ -61,6 +62,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+AUTH_USER_MODEL = 'simplecrm.CustomUser'
 
 ROOT_URLCONF = 'simplecrm.urls'
 

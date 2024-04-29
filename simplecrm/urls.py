@@ -31,7 +31,7 @@ from simplecrm import ingestexcel as ingex
 from simplecrm import get_column_name as getxcol
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    #path('admin/', admin.site.urls),
     path('register/', Reg.register, name='register'),  # Endpoint for user registration
     path('login/', Reg.LoginView.as_view(), name='login'), 
     path(r'accounts/', aviews.AccountListCreateAPIView.as_view(), name='account-list'),

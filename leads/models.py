@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from accounts.models import Account
+from django.conf import settings
 
 LEAD_SOURCE = (
     ('call', 'Call'),
@@ -36,11 +37,11 @@ class Lead(models.Model):
 
     website = models.CharField("Website", max_length=255, blank=True, null=True)
     description = models.TextField(blank=True, null=True)
-    assigned_to = models.ManyToManyField(User, related_name='lead_assigned_users')    
+    assigned_to = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='lead_assigned_users')    
     account_name = models.CharField(max_length=255, null=True, blank=True)
     opportunity_amount = models.DecimalField("Opportunity Amount", decimal_places=2, max_digits=12,
         blank=True, null=True)
-    createdBy = models.ForeignKey(User, related_name='lead_created_by', on_delete=models.CASCADE)
+    createdBy = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='lead_created_by', on_delete=models.CASCADE)
     createdOn = models.DateTimeField("Created on", auto_now_add=True)
     isActive = models.BooleanField(default=False)
     enquery_type = models.CharField(max_length=255, blank=True, null=True)
