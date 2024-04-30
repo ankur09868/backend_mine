@@ -45,6 +45,7 @@ class Lead(models.Model):
     createdOn = models.DateTimeField("Created on", auto_now_add=True)
     isActive = models.BooleanField(default=False)
     enquery_type = models.CharField(max_length=255, blank=True, null=True)
+    money = models.DecimalField("Money", decimal_places=2, max_digits=12, blank=True, null=True)
 
     def __str__(self):
         return self.first_name + self.last_name
