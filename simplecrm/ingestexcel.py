@@ -42,11 +42,11 @@ def ImportLeadData(request):
             print("Encoding:", encoding)
 
             if file_extension == '.xlsx':
-                df = pd.read_excel(excel_file, engine='openpyxl', encoding=encoding, header=3)
+                df = pd.read_excel(excel_file, engine='openpyxl', header=3)
             elif file_extension == '.xls':
-                df = pd.read_excel(excel_file, encoding=encoding, header=3)
+                df = pd.read_excel(excel_file, header=3)
             elif file_extension == '.csv':
-                df = pd.read_csv(excel_file, encoding=encoding, header=3)
+                df = pd.read_csv(excel_file, header=3)
             else:
                 return JsonResponse({'error': 'Unsupported file format'}, status=400)
 
