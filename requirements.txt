@@ -5,3 +5,4 @@ pandas
 tablib
 channels
 openpyxl
+psycopg2
