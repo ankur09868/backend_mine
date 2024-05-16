@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - backendcrmnurenai
+name: Build and deploy Python app to Azure Web App - myappwebdjango
 
 on:
   push:
@@ -65,14 +65,14 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_7F03BC45028A40EB8EA0168801B94BB0 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_9A41B2DE9AD84B8F8842CBE20EDF9C06 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_F57A72006F0D417AB5C1F7FA9C64CC3D }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_8DD85A0E45AD41A688C6BCD74B201774 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_9ECE67D10B1E4CFE8994D6836852CA1C }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_22DBCC07ECC948269DD349FC499E409A }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'backendcrmnurenai'
+          app-name: 'myappwebdjango'
           slot-name: 'Production'
           
