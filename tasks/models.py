@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from contacts.models import Contact
 from accounts.models import Account
 from django.conf import settings
+from tenant.models import Tenant 
 class Tasks(models.Model):
     STATUS_CHOICES = (
         ('not_started', 'Not Started'),
@@ -27,6 +28,7 @@ class Tasks(models.Model):
     priority = models.CharField(max_length=10, choices=PRIORITY_CHOICES, default='normal')
     reminder = models.BooleanField(default=False)
     description = models.TextField()
+    tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)
     
 
     def __str__(self):

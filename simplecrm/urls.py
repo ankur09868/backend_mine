@@ -29,6 +29,8 @@ from reminder import views as rviews
 from simplecrm import Register_login as Reg
 from simplecrm import ingestexcel as ingex
 from simplecrm import get_column_name as getxcol
+from simplecrm import get_user as getuser
+from tenant import views as tenview
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
@@ -49,6 +51,8 @@ urlpatterns = [
     path('reminders/', rviews.ReminderListAPIView.as_view(), name='reminder-list'),
     path('uploadexcel/', ingex.ImportLeadData, name='excel'),
     path('excel-column/', getxcol.get_excel_columns, name='column_excel'),
+    path('get-user/<str:username>/', getuser.get_user_by_username, name='get_user'),
+    path('createTenant/', tenview.tenant_list, name='tenant'),
 
 
 ]

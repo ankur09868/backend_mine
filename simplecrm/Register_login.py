@@ -7,7 +7,7 @@ from rest_framework import status
 import json
 from django.contrib.auth import authenticate
 from .models import CustomUser
-
+from tenant.models import Tenant 
 
 
 @csrf_exempt
@@ -18,20 +18,29 @@ def register(request):
         email = data.get('email')
         password = data.get('password')
         role = data.get('role', CustomUser.EMPLOYEE)  # Default role to employee if not provided
-        print("the role is:", role) 
-        if not (username and email and password):
+        organization = data.get('organization')  # Get organization from request data
+        tenant_name = data.get('tenant')  # Get tenant name from request data
+        
+        if not (username and email and password and organization and tenant_name):
             return JsonResponse({'msg': 'Missing required fields'}, status=400)
         
         # Check if the username or email already exists
         if CustomUser.objects.filter(username=username).exists() or CustomUser.objects.filter(email=email).exists():
             return JsonResponse({'msg': 'Username or email already exists'}, status=400)
         
-        # Create a new user with the specified role
-        user = CustomUser.objects.create_user(username=username, email=email, password=password, role=role)
+        # Check if the provided tenant exists
+        try:
+            tenant = Tenant.objects.get(id=tenant_name)
+        except Tenant.DoesNotExist:
+            return JsonResponse({'msg': 'Specified tenant does not exist'}, status=400)
+        
+        # Create a new user with the specified role, organization, and tenant
+        user = CustomUser.objects.create_user(username=username, email=email, password=password, role=role, organization=organization, tenant=tenant)
         
         return JsonResponse({'msg': 'User registered successfully'})
     else:
         return JsonResponse({'msg': 'Method not allowed'}, status=405)
+
 
 
 class LoginView(APIView):

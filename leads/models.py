@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from accounts.models import Account
 from django.conf import settings
-
+from tenant.models import Tenant 
 LEAD_SOURCE = (
     ('call', 'Call'),
     ('email', 'Email'),
@@ -46,6 +46,6 @@ class Lead(models.Model):
     isActive = models.BooleanField(default=False)
     enquery_type = models.CharField(max_length=255, blank=True, null=True)
     money = models.DecimalField("Money", decimal_places=2, max_digits=12, blank=True, null=True)
-
+    tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)
     def __str__(self):
         return self.first_name + self.last_name

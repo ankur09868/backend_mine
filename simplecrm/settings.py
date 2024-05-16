@@ -50,6 +50,8 @@ INSTALLED_APPS = [
     'channels',
     'reminder',
     'simplecrm',
+     'tenant',
+     'campaign',
 ]
 
 MIDDLEWARE = [
@@ -61,7 +63,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'simplecrm.middleware.TenantMiddleware',
+
 ]
+
 
 AUTH_USER_MODEL = 'simplecrm.CustomUser'
 
@@ -91,8 +96,15 @@ WSGI_APPLICATION = 'simplecrm.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres', 
+        'USER': 'nurenai',
+        'PASSWORD': 'Biz1nurenWar*',
+        'HOST': 'nurenaistore.postgres.database.azure.com', 
+        'PORT': '5432',
+        'OPTIONS': {
+            'sslmode': 'require',  # Enforce SSL
+        },
     }
 }
 

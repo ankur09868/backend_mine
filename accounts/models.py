@@ -1,6 +1,6 @@
 from django.db import models
 from django.conf import settings
-
+from tenant.models import Tenant 
 from django.contrib.auth.models import User
 
 INDCHOICES = (
@@ -26,6 +26,7 @@ class Account(models.Model):
     createdOn = models.DateTimeField("Created on", auto_now_add=True)
     isActive = models.BooleanField(default=False)
     company = models.CharField(max_length=100, default='Unknown')
+    tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
