@@ -21,7 +21,7 @@ class Account(models.Model):
     industry = models.CharField("Industry Type", max_length=255, choices=INDCHOICES, blank=True, null=True)
     website = models.URLField("Website", blank=True, null=True)
     description = models.TextField(blank=True, null=True)
-    assigned_to = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='account_assigned_to',blank=True, null=True)
+    assigned_to = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='account_assigned_to',blank=True, null=True,on_delete=models.CASCADE,)
     createdBy = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='account_created_by', on_delete=models.CASCADE,blank=True, null=True)
     createdOn = models.DateTimeField("Created on", auto_now_add=True)
     isActive = models.BooleanField(default=False)

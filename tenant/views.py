@@ -7,6 +7,7 @@ from django.db import connection
 from django.contrib.auth import password_validation
 from django.contrib.auth.models import User
 from django.conf import settings
+from django.db import IntegrityError
 from simplecrm import database_settings
 @csrf_exempt
 def create_tenant_role(tenant_id, password):

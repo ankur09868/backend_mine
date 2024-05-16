@@ -15,8 +15,14 @@ class InteractionListAPIView(APIView):
         entity_type = self.request.query_params.get('entity_type')
         entity_id = self.request.query_params.get('entity_id')
         queryset = Interaction.objects.all()
-        if entity_type is not None and entity_id is not None:
-            queryset = queryset.filter(entity_type=entity_type, entity_id=entity_id)
+
+        if entity_type and entity_id:
+            try:
+                content_type = ContentType.objects.get(model__iexact=entity_type)
+                queryset = queryset.filter(entity_type=content_type, entity_id=entity_id)
+            except ContentType.DoesNotExist:
+                return Interaction.objects.none()  # No results if the content type does not exist
+
         return queryset
 
     def get(self, request, *args, **kwargs):
