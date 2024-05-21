@@ -43,7 +43,8 @@ urlpatterns = [
     path(r'opportunities/', oviews.OpportunityListAPIView.as_view(), name='opportunity-list'),
     path('contacts/', cviews.ContactListCreateAPIView.as_view(), name='contact-list-create'),
     path('contacts/<int:pk>/', cviews.ContactDetailAPIView.as_view(), name='contact-detail'),
-    path('meetings/', mviews.MeetingListAPIView.as_view(), name='meeting-list'),
+    path('meetings/', mviews.MeetingListCreateAPIView.as_view(), name='meeting-list-create'),
+    path('meetings/<int:pk>/', mviews.MeetingDetailAPIView.as_view(), name='meeting-detail'),
     path('calls/', caviews.callsListAPIView.as_view(), name='calls'), 
     path('interaction/', inviews.InteractionListAPIView.as_view(), name='interaction'),  
     path('tasks/', tviews.TaskListCreateAPIView.as_view(), name='task-list'),
@@ -53,6 +54,6 @@ urlpatterns = [
     path('excel-column/', getxcol.get_excel_columns, name='column_excel'),
     path('get-user/<str:username>/', getuser.get_user_by_username, name='get_user'),
     path('createTenant/', tenview.tenant_list, name='tenant'),
-
+    path('logout/', Reg.LogoutView.as_view(), name='logout'),
 
 ]

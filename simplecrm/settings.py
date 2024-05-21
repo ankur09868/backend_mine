@@ -61,13 +61,34 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+     'simplecrm.middleware.TenantMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'simplecrm.middleware.TenantMiddleware',
-
+   
 ]
 
-
+""""LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',  # Set the desired log level
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'simplecrm': {  # Replace 'yourapp' with the actual app name
+            'handlers': ['console'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}"""
 AUTH_USER_MODEL = 'simplecrm.CustomUser'
 
 ROOT_URLCONF = 'simplecrm.urls'
@@ -153,6 +174,10 @@ CORS_ORIGIN_WHITELIST = (
 )
 
 CORS_ALLOW_ALL_ORIGINS=True
+CORS_ALLOW_HEADERS = [
+    'X-Tenant-Id',  # Add the headers you need to allow
+    'Content-Type',
+]
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://localhost:5173",

@@ -37,7 +37,8 @@ def tenant_list(request):
     elif request.method == 'POST':
         data = json.loads(request.body)
         tenant_id = data.get('tenant_id')
-        db_user_password = data.get('password')
+        organization=data.get('organization')
+        db_user_password = data.    get('password')
         
         try:
             # Start a database transaction
@@ -45,7 +46,7 @@ def tenant_list(request):
                 cursor.execute("BEGIN")
                 
                 # Create the tenant in the database
-                tenant = Tenant.objects.create(id=tenant_id, db_user=f"crm_tenant_{tenant_id}", db_user_password=db_user_password)
+                tenant = Tenant.objects.create(id=tenant_id,organization=organization, db_user=f"crm_tenant_{tenant_id}", db_user_password=db_user_password)
                 
                 # Create role for the tenant
                 cursor.execute(f"CREATE ROLE crm_tenant_{tenant_id} INHERIT LOGIN PASSWORD '{db_user_password}' IN ROLE crm_tenant")

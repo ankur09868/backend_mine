@@ -8,7 +8,10 @@ import json
 from django.contrib.auth import authenticate
 from .models import CustomUser
 from tenant.models import Tenant 
-
+from django.contrib.auth import logout
+from django.db import connections
+import logging
+logger = logging.getLogger(__name__)
 
 @csrf_exempt
 def register(request):
@@ -55,18 +58,38 @@ class LoginView(APIView):
         # Authenticate user
         user = authenticate(username=username, password=password)
         if user:
-            # Check user's role
+            # Check user's role and tenant
             role = user.role
-            # Implement your logic to determine which views to show based on the role
-            # For example:
+            tenant_id = user.tenant.id  # Get the tenant ID associated with the user
+            user_id = user.id  # Get the user ID of the logged-in user
+
+            # Construct the response based on the user's role
             if role == CustomUser.ADMIN:
                 # Show admin views
-                return Response({'msg': 'Login successful as admin'}, status=status.HTTP_200_OK)
+                return Response({'msg': 'Login successful as admin', 'tenant_id': tenant_id, 'user_id': user_id}, status=status.HTTP_200_OK)
             elif role == CustomUser.MANAGER:
                 # Show manager views
-                return Response({'msg': 'Login successful as manager'}, status=status.HTTP_200_OK)
+                return Response({'msg': 'Login successful as manager', 'tenant_id': tenant_id, 'user_id': user_id}, status=status.HTTP_200_OK)
             else:
                 # Show employee views
-                return Response({'msg': 'Login successful as employee'}, status=status.HTTP_200_OK)
+                return Response({'msg': 'Login successful as employee', 'tenant_id': tenant_id, 'user_id': user_id}, status=status.HTTP_200_OK)
         else:
             return Response({'msg': 'Invalid credentials'}, status=status.HTTP_401_UNAUTHORIZED)
+
+
+class LogoutView(APIView):
+    def post(self, request):
+        # Log out the user
+        logout(request)
+        
+        # Reset the database connection to default superuser
+        connection = connections['default']
+        connection.settings_dict.update({
+            'USER': 'nurenai',
+            'PASSWORD': 'Biz1nurenWar*',
+        })
+        connection.close()
+        connection.connect()
+        logger.debug("Database connection reset to default superuser")
+        
+        return Response({'msg': 'Logout successful'}, status=status.HTTP_200_OK)
