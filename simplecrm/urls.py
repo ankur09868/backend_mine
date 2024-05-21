@@ -31,6 +31,8 @@ from simplecrm import ingestexcel as ingex
 from simplecrm import get_column_name as getxcol
 from simplecrm import get_user as getuser
 from tenant import views as tenview
+from campaign import views as campview
+
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
@@ -55,5 +57,7 @@ urlpatterns = [
     path('get-user/<str:username>/', getuser.get_user_by_username, name='get_user'),
     path('createTenant/', tenview.tenant_list, name='tenant'),
     path('logout/', Reg.LogoutView.as_view(), name='logout'),
+    path('campaign/', campview.CampaignViewSet.as_view(), name='campaigns'),
+    path('campaign/<int:pk>', campview.CampaignDetailAPIView.as_view(), name='campaigns'),
 
 ]
