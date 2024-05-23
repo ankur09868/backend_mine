@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from datetime import datetime
 from .models import Interaction
-
+from tenant.models import Tenant
 from django.contrib.contenttypes.models import ContentType
 from .serializers import InteractionSerializer
 
@@ -35,11 +35,12 @@ class InteractionListAPIView(APIView):
             entity_type = request.data.get('entity_type')
             entity_id = request.data.get('entity_id')
             interaction_type = request.data.get('interaction_type')
+            tenant_id=request.data.get('tenant_id')
             notes = request.data.get('notes')
 
             # Get the ContentType object for the specified entity type (case insensitive)
             content_type = ContentType.objects.get(model__iexact=entity_type)
-
+            tenant = get_object_or_404(Tenant, id=tenant_id)
             # Retrieve the entity instance based on entity_id
             entity_instance = content_type.get_object_for_this_type(id=entity_id)
 
@@ -49,7 +50,8 @@ class InteractionListAPIView(APIView):
                 entity_id=entity_instance.id,
                 interaction_type=interaction_type,
                 interaction_datetime=datetime.now(),
-                notes=notes
+                notes=notes,
+                tenant=tenant
             )
 
             serializer = self.serializer_class(interaction)
