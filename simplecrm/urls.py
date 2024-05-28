@@ -32,8 +32,10 @@ from simplecrm import get_column_name as getxcol
 from simplecrm import get_user as getuser
 from tenant import views as tenview
 from campaign import views as campview
-
-
+from simplecrm import recent_request as rr
+from interaction.active_account import get_most_active_accounts
+from interaction.active_account import get_most_active_contacts
+from interaction.active_account import get_lead_summation
 urlpatterns = [
     #path('admin/', admin.site.urls),
     path('register/', Reg.register, name='register'),  # Endpoint for user registration
@@ -43,12 +45,15 @@ urlpatterns = [
     path(r'leads/', lviews.LeadListCreateAPIView.as_view(), name='lead-list'),
     path('leads/<int:pk>/',lviews.LeadDetailAPIView.as_view(), name='lead-detail'),
     path(r'opportunities/', oviews.OpportunityListAPIView.as_view(), name='opportunity-list'),
+    path('opportunities/<int:pk>/', oviews.OpportunityDetailAPIView.as_view(), name='opportunity-detail'),
     path('contacts/', cviews.ContactListCreateAPIView.as_view(), name='contact-list-create'),
     path('contacts/<int:pk>/', cviews.ContactDetailAPIView.as_view(), name='contact-detail'),
     path('meetings/', mviews.MeetingListCreateAPIView.as_view(), name='meeting-list-create'),
     path('meetings/<int:pk>/', mviews.MeetingDetailAPIView.as_view(), name='meeting-detail'),
     path('calls/', caviews.callsListAPIView.as_view(), name='calls'), 
+    path('calls/<int:pk>/', caviews.callsDetailAPIView.as_view(), name='calls-detail'),
     path('interaction/', inviews.InteractionListAPIView.as_view(), name='interaction'),  
+    path('interaction/<int:pk>/',inviews.InteractionDetailAPIView.as_view(), name='interaction-detail'),
     path('tasks/', tviews.TaskListCreateAPIView.as_view(), name='task-list'),
     path('tasks/<int:pk>/', tviews.TaskRetrieveUpdateDestroyAPIView.as_view(), name='task-detail'), 
     path('reminders/', rviews.ReminderListAPIView.as_view(), name='reminder-list'),
@@ -59,5 +64,9 @@ urlpatterns = [
     path('logout/', Reg.LogoutView.as_view(), name='logout'),
     path('campaign/', campview.CampaignViewSet.as_view(), name='campaigns'),
     path('campaign/<int:pk>', campview.CampaignDetailAPIView.as_view(), name='campaigns'),
+    path('recent_request/<str:model_name>/',rr.recent_request, name='recent_request'),
+    path("active_accounts/",get_most_active_accounts, name="most-active-entites"),
+    path("active_contacts/",get_most_active_contacts, name="most-active-entites"),
+    path("leads_sum/",get_lead_summation, name="most-active-entites"),
 
 ]

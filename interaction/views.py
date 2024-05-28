@@ -35,7 +35,7 @@ class InteractionListAPIView(APIView):
             entity_type = request.data.get('entity_type')
             entity_id = request.data.get('entity_id')
             interaction_type = request.data.get('interaction_type')
-            tenant_id=request.data.get('tenant_id')
+            tenant_id = request.data.get('tenant_id')
             notes = request.data.get('notes')
 
             # Get the ContentType object for the specified entity type (case insensitive)
@@ -60,3 +60,11 @@ class InteractionListAPIView(APIView):
             return Response({'error': f"ContentType matching query does not exist for entity type: {entity_type}"}, status=status.HTTP_400_BAD_REQUEST)
         except Exception as e:
             return Response({'error': f'An error occurred while processing the request: {e}'}, status=status.HTTP_400_BAD_REQUEST)
+
+class InteractionDetailAPIView(APIView):
+    serializer_class = InteractionSerializer
+
+    def get(self, request, pk, *args, **kwargs):
+        interaction = get_object_or_404(Interaction, pk=pk)
+        serializer = self.serializer_class(interaction)
+        return Response(serializer.data, status=status.HTTP_200_OK)

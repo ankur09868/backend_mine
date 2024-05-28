@@ -15,3 +15,9 @@ class callsListAPIView(generics.ListCreateAPIView):
         except Exception as e:
             print(f"An error occurred while processing the request: {e}")
             raise  # Re-raise the exception for Django to handle
+
+class callsDetailAPIView(generics.RetrieveAPIView):
+    queryset = calls.objects.all()
+    serializer_class = callsSerializer
+    # Uncomment the line below to restrict access to admin users only
+    # permission_classes = (IsAdminUser,)
