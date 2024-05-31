@@ -36,6 +36,9 @@ from simplecrm import recent_request as rr
 from interaction.active_account import get_most_active_accounts
 from interaction.active_account import get_most_active_contacts
 from interaction.active_account import get_lead_summation
+from vendors import views as vendview
+from product import views as prodview
+from documents import views as docview
 urlpatterns = [
     #path('admin/', admin.site.urls),
     path('register/', Reg.register, name='register'),  # Endpoint for user registration
@@ -68,5 +71,11 @@ urlpatterns = [
     path("active_accounts/",get_most_active_accounts, name="most-active-entites"),
     path("active_contacts/",get_most_active_contacts, name="most-active-entites"),
     path("leads_sum/",get_lead_summation, name="most-active-entites"),
+    path('products/', prodview.ProductListAPIView.as_view(), name='products-list'),
+    path('product/<int:pk>/', prodview.ProductDetailAPIView.as_view(), name='product-detail'),
+    path('vendors', vendview.VendorsListAPIView.as_view(), name='vendors-list'),
+    path('vendor/<int:pk>', vendview.VendorDetailAPIView.as_view(), name='vendor-detail'),
+    path('documents/', docview.DocumentListAPIView.as_view(), name='vendors-list'),
+    path('documents/<int:pk>', docview.DocumentDetailAPIView.as_view(), name='vendor-detail'),
 
 ]

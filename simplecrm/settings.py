@@ -52,6 +52,9 @@ INSTALLED_APPS = [
     'simplecrm',
      'tenant',
      'campaign',
+     'vendors',
+     'product',
+     'documents',
 ]
 
 MIDDLEWARE = [
