@@ -9,3 +9,8 @@ class ReminderListAPIView(generics.ListCreateAPIView):
     queryset = Reminder.objects.all()
     serializer_class = ReminderSerializer
     #permission_classes = (IsAdminUser,)
+
+class ReminderDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Reminder.objects.all()
+    serializer_class = ReminderSerializer
+    # permission_classes = (IsAdminUser,)

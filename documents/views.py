@@ -4,6 +4,7 @@ from .models import Document
 from .serializers import DocumentSerializer
 from rest_framework.permissions import IsAdminUser
 
+
 class DocumentListAPIView(generics.ListCreateAPIView):
     queryset = Document.objects.all()
     serializer_class = DocumentSerializer

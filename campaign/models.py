@@ -16,7 +16,7 @@ class Campaign(models.Model):
     budgeted_cost = models.DecimalField(max_digits=10, decimal_places=2)
     expected_response = models.DecimalField(max_digits=5, decimal_places=2)
     description = models.TextField()
-    tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)
+    tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE,default=3)
 
     def __str__(self):
         return self.campaign_name

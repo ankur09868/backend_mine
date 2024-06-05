@@ -50,11 +50,12 @@ INSTALLED_APPS = [
     'channels',
     'reminder',
     'simplecrm',
-     'tenant',
-     'campaign',
-     'vendors',
-     'product',
-     'documents',
+    'tenant',
+    'campaign',
+    'node_temps',
+    'vendors',
+    'product',
+    'documents',
 ]
 
 MIDDLEWARE = [
@@ -70,28 +71,28 @@ MIDDLEWARE = [
    
 ]
 
-""""LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'console': {
-            'level': 'DEBUG',  # Set the desired log level
-            'class': 'logging.StreamHandler',
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['console'],
-            'level': 'DEBUG',
-            'propagate': True,
-        },
-        'simplecrm': {  # Replace 'yourapp' with the actual app name
-            'handlers': ['console'],
-            'level': 'DEBUG',
-            'propagate': True,
-        },
-    },
-}"""
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'handlers': {
+#         'console': {
+#             'level': 'DEBUG',  # Set the desired log level
+#             'class': 'logging.StreamHandler',
+#         },
+#     },
+#     'loggers': {
+#         'django': {
+#             'handlers': ['console'],
+#             'level': 'DEBUG',
+#             'propagate': True,
+#         },
+#         'simplecrm': {  # Replace 'yourapp' with the actual app name
+#             'handlers': ['console'],
+#             'level': 'DEBUG',
+#             'propagate': True,
+#         },
+#     },
+# }
 AUTH_USER_MODEL = 'simplecrm.CustomUser'
 
 ROOT_URLCONF = 'simplecrm.urls'

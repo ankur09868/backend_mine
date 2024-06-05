@@ -21,3 +21,4 @@ class Interaction(models.Model):
     tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)
     def __str__(self):
         return f'{self.interaction_type} with {self.entity}'
+   

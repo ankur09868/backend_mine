@@ -17,8 +17,6 @@ from rest_framework import status
 from .models import Account
 
 
-
-
 from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
 
 class AccountListCreateAPIView(ListCreateAPIView):

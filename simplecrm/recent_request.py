@@ -18,10 +18,12 @@ def recent_request(request, model_name):
             model_class = Contact
         else:
             return JsonResponse({'message': 'Invalid model name.'}, status=400)
+        
+        vals = model_class.objects.all().order_by('createdOn')
 
         vals = model_class.objects.all().order_by('createdOn')
 
-        created_on_date = request.GET.get('created_on')
+        created_on_date = request.GET.get('createdOn')
         if created_on_date:
             try:
                 vals = vals.filter(createdOn=created_on_date)
@@ -31,7 +33,7 @@ def recent_request(request, model_name):
         data = [
             {
                 'id': val.id,
-                'created_on': val.createdOn,
+                'createdOn': val.createdOn,
             }
             for val in vals
         ]
@@ -39,4 +41,6 @@ def recent_request(request, model_name):
         return JsonResponse(data, safe=False)
     except Exception as e:
         print("Error:", e)
+
         return JsonResponse({'message': 'An error occurred.'}, status=500)
+    

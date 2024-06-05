@@ -1,5 +1,6 @@
 from django.shortcuts import get_object_or_404
 from rest_framework import status
+
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from datetime import datetime
@@ -8,6 +9,16 @@ from tenant.models import Tenant
 from django.contrib.contenttypes.models import ContentType
 from .serializers import InteractionSerializer
 
+from django.http import JsonResponse
+# from .utils import fetch_entity_details
+from interaction.models import Interaction
+from django.db.models import Count
+
+from django.views.decorators.http import require_http_methods
+
+import re
+import logging
+logger = logging.getLogger('simplecrm')
 class InteractionListAPIView(APIView):
     serializer_class = InteractionSerializer
 
@@ -60,7 +71,50 @@ class InteractionListAPIView(APIView):
             return Response({'error': f"ContentType matching query does not exist for entity type: {entity_type}"}, status=status.HTTP_400_BAD_REQUEST)
         except Exception as e:
             return Response({'error': f'An error occurred while processing the request: {e}'}, status=status.HTTP_400_BAD_REQUEST)
+        
 
+
+def extract_cltv(request, entity_type_id):
+    try:
+        interactions = Interaction.objects.filter(entity_type_id=entity_type_id)
+
+        report_data = []
+
+        # Iterate over interactions
+        for interaction in interactions:
+            # Parse notes field to extract amount and contact information
+            notes = interaction.notes
+            contact = None
+            amount = None
+
+            if notes:
+                # Use regular expressions to extract contact and amount
+                contact_match = re.search(r'Contact: (\w+)', notes)
+                amount_match = re.search(r'amount: (\d+)', notes)
+
+                if contact_match:
+                    contact = contact_match.group(1)
+                if amount_match:
+                    amount = amount_match.group(1)
+
+            # Construct report entry
+            report_entry = {
+                'interaction_type': interaction.interaction_type,
+                'interaction_datetime': interaction.interaction_datetime,
+                'contact': contact,
+                'amount': amount
+            }
+
+            # Add report entry to report data list
+            report_data.append(report_entry)
+
+            response_data = {'total_interaction':interactions.count(), 'interaction':report_data}
+
+        # Return report data as JSON response
+        return JsonResponse(response_data, safe=False)
+    except Exception as e:
+        # Handle exceptions
+        return JsonResponse({'error': str(e)}, status=500)
 class InteractionDetailAPIView(APIView):
     serializer_class = InteractionSerializer
 

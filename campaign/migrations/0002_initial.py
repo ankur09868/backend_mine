@@ -10,20 +10,20 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
+        ('campaign', '0001_initial'),
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('calls', '0002_initial'),
         ('tenant', '0001_initial'),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='calls',
-            name='createdBy',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='created_calls', to=settings.AUTH_USER_MODEL),
+            model_name='campaign',
+            name='campaign_owner',
+            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='campaign_created_by', to=settings.AUTH_USER_MODEL),
         ),
         migrations.AddField(
-            model_name='calls',
+            model_name='campaign',
             name='tenant',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='tenant.tenant'),
+            field=models.ForeignKey(default=3, on_delete=django.db.models.deletion.CASCADE, to='tenant.tenant'),
         ),
     ]
