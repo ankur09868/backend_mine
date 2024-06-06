@@ -8,10 +8,10 @@ from django.contrib.contenttypes.fields import GenericForeignKey
 
 class Document(models.Model):
     # Information about the document
-    name = models.CharField('Document Name', max_length=255)
-    document_type = models.CharField('Document Type', max_length=100)
+    name = models.CharField('Document Name',)
+    document_type = models.CharField('Document Type')
     description = models.TextField('Description', blank=True)
-    file_url = models.URLField('File URL', default='') 
+    file_url = models.CharField('File URL', default='') 
     # GenericForeignKey to associate with any entity
     entity_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
     entity_id = models.PositiveIntegerField()
