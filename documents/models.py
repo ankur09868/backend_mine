@@ -11,11 +11,11 @@ class Document(models.Model):
     name = models.CharField('Document Name',)
     document_type = models.CharField('Document Type')
     description = models.TextField('Description', blank=True)
-    file_url = models.CharField('File URL', default='') 
+    file_url = models.CharField('File URL', default='',max_length=600) 
     # GenericForeignKey to associate with any entity
-    entity_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
-    entity_id = models.PositiveIntegerField()
-    entity = GenericForeignKey('entity_type', 'entity_id')
+    entity_type = models.ForeignKey(ContentType, on_delete=models.CASCADE,blank=True,null=True)
+    entity_id = models.PositiveIntegerField(blank=True,null=True)
+    entity = GenericForeignKey('entity_type', 'entity_id'blank=True,null=True)
     
     # Other metadata
     uploaded_at = models.DateTimeField('Uploaded At', auto_now_add=True)
