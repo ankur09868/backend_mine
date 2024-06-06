@@ -3,6 +3,8 @@ from .models import CustomUser
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
 from django.views.decorators.http import require_http_methods
+from tenant import models as modt
+
 # Import other necessary modules as needed...
 import json
 # Endpoint to retrieve user details by username
@@ -90,3 +92,29 @@ def user_details_by_id(request, user_id):
             return JsonResponse(updated_user_data)
         except json.JSONDecodeError:
             return JsonResponse({'error': 'Invalid JSON'}, status=400)
+        
+
+@csrf_exempt
+@require_http_methods(["GET"])
+def get_all_users(request):
+    tenant_id = request.headers.get('X-Tenant-ID')
+    
+    if not tenant_id:
+        return JsonResponse({'error': 'Tenant ID is required in headers'}, status=400)
+
+    # Fetch all users, RLS in the database will ensure tenant-specific filtering
+    users = CustomUser.objects.all()
+    users_data = [
+        {
+            'id': user.id,
+            'username': user.username,
+            'email': user.email,
+            'role': user.role,
+            'name': user.name,
+            'phone_number': user.phone_number,
+            'address': user.address,
+            'job_profile': user.job_profile,
+        }
+        for user in users
+    ]
+    return JsonResponse(users_data, safe=False)
