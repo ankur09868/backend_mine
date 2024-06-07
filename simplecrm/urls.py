@@ -46,6 +46,7 @@ from interaction.active_account import get_lead_summation
 from vendors import views as vendview
 from product import views as prodview
 from documents import views as docview
+from loyalty import views as loyalview
 urlpatterns = [
     #path('admin/', admin.site.urls),
     path('register/', Reg.register, name='register'),  # Endpoint for user registration
@@ -91,6 +92,8 @@ urlpatterns = [
     path('vendor/<int:pk>', vendview.VendorDetailAPIView.as_view(), name='vendor-detail'),
     path('documents/', docview.DocumentListAPIView.as_view(), name='vendors-list'),
     path('documents/<int:pk>', docview.DocumentDetailAPIView.as_view(), name='vendor-detail'),
+    path('loyalty_programs/', loyalview.LoyaltyListCreateAPIView.as_view(), name='loyalty_program'),
+    path('loyalty_programs/<int:pk>',  loyalview.LoyaltyDetailAPIView.as_view(), name='loyalty_program_details'),
 
    
 
