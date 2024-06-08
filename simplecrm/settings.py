@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'product',
     'documents',
     'loyalty',
+    'dynamic_entities',
 ]
 
 MIDDLEWARE = [

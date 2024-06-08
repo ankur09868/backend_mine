@@ -47,6 +47,8 @@ from vendors import views as vendview
 from product import views as prodview
 from documents import views as docview
 from loyalty import views as loyalview
+from documents import views as docview
+from dynamic_entities import views as dyv
 urlpatterns = [
     #path('admin/', admin.site.urls),
     path('register/', Reg.register, name='register'),  # Endpoint for user registration
@@ -94,6 +96,12 @@ urlpatterns = [
     path('documents/<int:pk>', docview.DocumentDetailAPIView.as_view(), name='vendor-detail'),
     path('loyalty_programs/', loyalview.LoyaltyListCreateAPIView.as_view(), name='loyalty_program'),
     path('loyalty_programs/<int:pk>',  loyalview.LoyaltyDetailAPIView.as_view(), name='loyalty_program_details'),
+    path('return-documents/<int:entity_type>/<int:entity_id>/', docview.RetrieveDocumentsView.as_view(), name='retrieve-documents'),
+    path('return-documents/<int:entity_type>/', docview.RetrieveDocumentsView.as_view(), name='retrieve-documents'),    
+    path('create-dynamic-model/', dyv.CreateDynamicModelView.as_view(), name='create_dynamic_model'),
+    path('dynamic-models/', dyv.DynamicModelListView.as_view(), name='dynamic_model_list'),
+    path('dynamic-model-data/<str:model_name>/', dyv.DynamicModelDataView.as_view(), name='dynamic_model_data'),
+    path('delete-dynamic-model/<str:model_name>/', dyv.DeleteDynamicModelView.as_view(), name='delete_dynamic_model'),
 
    
 
