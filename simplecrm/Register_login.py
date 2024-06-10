@@ -10,6 +10,7 @@ from .models import CustomUser
 from tenant.models import Tenant 
 from django.contrib.auth import logout
 from django.db import connections
+from django.db import connection
 import logging
 logger = logging.getLogger(__name__)
 
@@ -39,7 +40,8 @@ def register(request):
         
         # Create a new user with the specified role, organization, and tenant
         user = CustomUser.objects.create_user(username=username, email=email, password=password, role=role, organization=organization, tenant=tenant)
-        
+        with connection.cursor() as cursor:
+            cursor.execute(f"GRANT crm_tenant_{tenant_name}_{role} TO {username}")
         return JsonResponse({'msg': 'User registered successfully'})
     else:
         return JsonResponse({'msg': 'Method not allowed'}, status=405)

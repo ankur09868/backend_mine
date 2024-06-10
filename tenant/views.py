@@ -13,9 +13,11 @@ from simplecrm import database_settings
 def create_tenant_role(tenant_id, password):
     try:
         with connection.cursor() as cursor:
-            cursor.execute(f"create role crm_tenant_{tenant_id} with inherit login password '{password}' in role crm_tenant;")
+            cursor.execute(f"CREATE ROLE crm_tenant_{tenant_id} WITH INHERIT LOGIN PASSWORD '{password}' IN ROLE crm_tenant;")
+            cursor.execute(f"CREATE ROLE crm_tenant_{tenant_id}_admin WITH INHERIT IN ROLE crm_tenant_{tenant_id};")
+            cursor.execute(f"CREATE ROLE crm_tenant_{tenant_id}_employee WITH INHERIT IN ROLE crm_tenant_{tenant_id};")
+            cursor.execute(f"CREATE ROLE crm_tenant_{tenant_id}_manager WITH INHERIT IN ROLE crm_tenant_{tenant_id};")
         
-        # Dynamically update DATABASES settings only if role creation is successful
         database_settings = settings.get_database_settings(tenant_id, password)
         settings.DATABASES['default'] = database_settings
 
