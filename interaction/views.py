@@ -122,3 +122,21 @@ class InteractionDetailAPIView(APIView):
         interaction = get_object_or_404(Interaction, pk=pk)
         serializer = self.serializer_class(interaction)
         return Response(serializer.data, status=status.HTTP_200_OK)
+    
+
+class RetrieveInteractionsView(APIView):
+    def get(self, request, entity_type, entity_id=None, *args, **kwargs):
+        try:
+            content_type = ContentType.objects.get(pk=entity_type)
+            if entity_id:
+                interactions = Interaction.objects.filter(entity_type=content_type, entity_id=entity_id)
+            else:
+                interactions = Interaction.objects.filter(entity_type=content_type, entity_id__isnull=True)
+
+            interactions_data = [{'interaction_type': inter.interaction_type, 'datetime':inter.interaction_datetime} for inter in interactions]
+
+            return Response({'success': True, 'interactions': interactions_data}, status=status.HTTP_200_OK)
+        except ContentType.DoesNotExist:
+            return Response({'success': False, 'message': 'Invalid entity_type'}, status=status.HTTP_400_BAD_REQUEST)
+        except Exception as e:
+            return Response({'success': False, 'message': str(e)}, status=status.HTTP_400_BAD_REQUEST)

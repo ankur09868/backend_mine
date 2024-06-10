@@ -68,6 +68,7 @@ urlpatterns = [
     path('calls/', caviews.callsListAPIView.as_view(), name='calls'), 
     path('calls/<int:pk>/', caviews.callsDetailAPIView.as_view(), name='calls-detail'),
     path('interaction/', inviews.InteractionListAPIView.as_view(), name='interaction'),  
+    path('interaction/<int:entity_type>/<int:entity_id>/',inviews.RetrieveInteractionsView.as_view(),name='interaction view'),
     path('interaction/<int:pk>/',inviews.InteractionDetailAPIView.as_view(), name='interaction-detail'),
     path('tasks/', tviews.TaskListCreateAPIView.as_view(), name='task-list'),
     path('tasks/<int:pk>/', tviews.TaskRetrieveUpdateDestroyAPIView.as_view(), name='task-detail'), 
