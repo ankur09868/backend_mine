@@ -3,12 +3,14 @@ import pandas as pd
 from django.views.decorators.csrf import csrf_exempt
 import os
 from tablib import Dataset
+from django.shortcuts import get_object_or_404
 from leads import models as leads_models
 from accounts import models as account_models
 from contacts import models as contact_models
 from meetings import models as meeting_models
 from calls import models as calls_models
-from django.contrib.auth.models import User
+#from django.contrib.auth.models import User
+from .models import CustomUser
 user_id = 1
 from django.apps import apps
 import json
@@ -72,6 +74,7 @@ def ImportLeadData(request):
             dataset = Dataset().load(selected_columns)
 
             print("Dataset:", dataset)
+            User = get_object_or_404(CustomUser, id=user_id)
 
             # Create instances of Lead model using tablib dataset
             try:
