@@ -15,6 +15,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 @csrf_exempt
+@csrf_exempt
 def register(request):
     if request.method == 'POST':
         data = json.loads(request.body)
@@ -22,17 +23,15 @@ def register(request):
         email = data.get('email')
         password = data.get('password')
         role = data.get('role', CustomUser.EMPLOYEE)  # Default role to employee if not provided
-        organization = data.get('organization')  # Get organization from request data
-        tenant_name = data.get('tenant')  # Get tenant name from request data
+        organization = data.get('organization')
+        tenant_name = data.get('tenant')
         
         if not (username and email and password and organization and tenant_name):
             return JsonResponse({'msg': 'Missing required fields'}, status=400)
         
-        # Check if the username or email already exists
         if CustomUser.objects.filter(username=username).exists() or CustomUser.objects.filter(email=email).exists():
             return JsonResponse({'msg': 'Username or email already exists'}, status=400)
         
-        # Check if the provided tenant exists
         try:
             tenant = Tenant.objects.get(id=tenant_name)
         except Tenant.DoesNotExist:
@@ -40,8 +39,12 @@ def register(request):
         
         # Create a new user with the specified role, organization, and tenant
         user = CustomUser.objects.create_user(username=username, email=email, password=password, role=role, organization=organization, tenant=tenant)
+
+        # Create a corresponding PostgreSQL role for the userx``
         with connection.cursor() as cursor:
-            cursor.execute(f"GRANT crm_tenant_{tenant_name}_{role} TO {username}")
+            cursor.execute(f"CREATE ROLE {username} WITH LOGIN PASSWORD %s IN ROLE crm_tenant_{role};", [password])
+            cursor.execute(f"GRANT crm_tenant_{role} TO {username};")
+
         return JsonResponse({'msg': 'User registered successfully'})
     else:
         return JsonResponse({'msg': 'Method not allowed'}, status=405)
@@ -68,13 +71,13 @@ class LoginView(APIView):
             # Construct the response based on the user's role
             if role == CustomUser.ADMIN:
                 # Show admin views
-                return Response({'msg': 'Login successful as admin', 'tenant_id': tenant_id, 'user_id': user_id}, status=status.HTTP_200_OK)
+                return Response({'msg': 'Login successful as admin', 'tenant_id': tenant_id, 'user_id': user_id,'role':user.role}, status=status.HTTP_200_OK)
             elif role == CustomUser.MANAGER:
                 # Show manager views
-                return Response({'msg': 'Login successful as manager', 'tenant_id': tenant_id, 'user_id': user_id}, status=status.HTTP_200_OK)
+                return Response({'msg': 'Login successful as manager', 'tenant_id': tenant_id, 'user_id': user_id,'role':user.role}, status=status.HTTP_200_OK)
             else:
                 # Show employee views
-                return Response({'msg': 'Login successful as employee', 'tenant_id': tenant_id, 'user_id': user_id}, status=status.HTTP_200_OK)
+                return Response({'msg': 'Login successful as employee', 'tenant_id': tenant_id, 'user_id': user_id,'role':user.role}, status=status.HTTP_200_OK)
         else:
             return Response({'msg': 'Invalid credentials'}, status=status.HTTP_401_UNAUTHORIZED)
 

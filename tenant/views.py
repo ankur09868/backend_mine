@@ -24,7 +24,7 @@ def create_tenant_role(tenant_id, password):
         return True
     except Exception as e:
         print(f"Error creating tenant role: {e}")
-        return False
+        return False    
 
 @csrf_exempt
 def tenant_list(request):
