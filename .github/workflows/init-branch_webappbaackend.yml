@@ -2,12 +2,12 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - backendcrmnurenai
+name: Build and deploy Python app to Azure Web App - webappbaackend
 
 on:
   push:
     branches:
-      - main
+      - init-branch
   workflow_dispatch:
 
 jobs:
@@ -20,7 +20,7 @@ jobs:
       - name: Set up Python version
         uses: actions/setup-python@v1
         with:
-          python-version: '3.11'
+          python-version: '3.10'
 
       - name: Create and start virtual environment
         run: |
@@ -65,14 +65,14 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_AD22BCC4C1A94835B9626A7789B99872 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_37973DDFBB6744E7835608DED9AB217F }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_BCAD6BD0F20949AEBB292B73FBADCC73 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_0D2E67CF51404804A87CDA4F80661A7D }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_080FE548F6BD466E80EAFDECB3A8CC5A }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_71D251FAB0B642458D4D291C4DBD4082 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'backendcrmnurenai'
+          app-name: 'webappbaackend'
           slot-name: 'Production'
           
