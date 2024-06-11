@@ -11,7 +11,7 @@ from meetings import models as meeting_models
 from calls import models as calls_models
 #from django.contrib.auth.models import User
 from .models import CustomUser
-user_id = 1
+user_id = 7
 from django.apps import apps
 import json
 model_mapping = {
@@ -76,13 +76,7 @@ def ImportLeadData(request):
             print("Dataset:", dataset)
             User = get_object_or_404(CustomUser, id=user_id)
 
-            # Create instances of Lead model using tablib dataset
-            try:
-                user = User.objects.get(id=user_id)
-            except User.DoesNotExist:
-                print(f"User with ID {user_id} does not exist")
-                user = None
-
+       
             # Assign the User instance to the `createdBy` field of the Lead model
             model = model_mapping.get(model_name)
             if not model:
@@ -92,8 +86,8 @@ def ImportLeadData(request):
 
             for row in dataset.dict:
                 print("Processing row:", row)
-                row['createdBy'] = user
-                print("User assigned to row:", user)
+                row['createdBy'] = User
+                print("User assigned to row:", User)
 
                 # Create the Lead instance with the updated row dictionary
                 model.objects.create(**row)
