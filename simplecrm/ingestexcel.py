@@ -44,7 +44,7 @@ def ImportLeadData(request):
             print("Encoding:", encoding)
 
             if file_extension == '.xlsx':
-                df = pd.read_excel(excel_file, engine='openpyxl', header=3)
+                df = pd.read_excel(excel_file, engine='openpyxl', header=0)
             elif file_extension == '.xls':
                 df = pd.read_excel(excel_file, header=3)
             elif file_extension == '.csv':
@@ -86,7 +86,7 @@ def ImportLeadData(request):
 
             for row in dataset.dict:
                 print("Processing row:", row)
-                row['createdBy'] = User
+                row['created_by'] = User
                 print("User assigned to row:", User)
 
                 # Create the Lead instance with the updated row dictionary
