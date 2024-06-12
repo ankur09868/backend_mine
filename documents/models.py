@@ -10,7 +10,7 @@ class Document(models.Model):
     name = models.CharField('Document Name', max_length=255)
     document_type = models.CharField('Document Type', max_length=100)
     description = models.TextField('Description', blank=True)
-    file_url = models.URLField('File URL', default='') 
+    file_url = models.CharField('File URL', default='', max_length=600) 
     # GenericForeignKey to associate with any entity
     entity_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
     entity_id = models.PositiveIntegerField()
