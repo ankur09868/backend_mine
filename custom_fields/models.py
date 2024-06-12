@@ -29,8 +29,8 @@ class CustomField(models.Model):
     custom_field = models.CharField(max_length=255)
     value = models.TextField(blank=True, null=True)
     field_type = models.CharField(max_length=20, choices=FIELD_TYPE_CHOICES)
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)
+    user_id = models.IntegerField()  # Field to store the user ID
+    tenant_id = models.IntegerField()
 
     def save(self, *args, **kwargs):
         super().save(*args, **kwargs)
