@@ -32,13 +32,11 @@ from simplecrm import get_column_name as getxcol
 from simplecrm import get_user as getuser
 from tenant import views as tenview
 from campaign import views as campview
-
 from simplecrm.recent_request import recent_request
 from interaction.active_account import get_most_active_accounts
 from node_temps import views as nviews
 from interaction.views import extract_cltv
 from opportunities.views import get_report_by_id
-
 from simplecrm import recent_request as rr
 from interaction.active_account import get_most_active_accounts
 from interaction.active_account import get_most_active_contacts
@@ -46,9 +44,13 @@ from interaction.active_account import get_lead_summation
 from vendors import views as vendview
 from product import views as prodview
 from documents import views as docview
-from loyalty import views as loyalview
-from documents import views as docview
 from dynamic_entities import views as dyv
+# from loyalty import views as lv
+from simplecrm import views as simviews
+from custom_fields import views as cfviews
+
+
+
 urlpatterns = [
     #path('admin/', admin.site.urls),
     path('register/', Reg.register, name='register'),  # Endpoint for user registration
@@ -63,20 +65,20 @@ urlpatterns = [
     path('opportunities/<int:pk>/', oviews.OpportunityDetailAPIView.as_view(), name='opportunity-detail'),
     path('contacts/', cviews.ContactListCreateAPIView.as_view(), name='contact-list-create'),
     path('contacts/<int:pk>/', cviews.ContactDetailAPIView.as_view(), name='contact-detail'),
+    path('contacts/', cviews.ContactDetailAPIView.as_view(), name='contact-detail'),
     path('meetings/', mviews.MeetingListCreateAPIView.as_view(), name='meeting-list-create'),
     path('meetings/<int:pk>/', mviews.MeetingDetailAPIView.as_view(), name='meeting-detail'),
     path('calls/', caviews.callsListAPIView.as_view(), name='calls'), 
     path('calls/<int:pk>/', caviews.callsDetailAPIView.as_view(), name='calls-detail'),
     path('interaction/', inviews.InteractionListAPIView.as_view(), name='interaction'),  
-    path('interaction/<int:entity_type>/<int:entity_id>/',inviews.RetrieveInteractionsView.as_view(),name='interaction view'),
     path('interaction/<int:pk>/',inviews.InteractionDetailAPIView.as_view(), name='interaction-detail'),
     path('tasks/', tviews.TaskListCreateAPIView.as_view(), name='task-list'),
     path('tasks/<int:pk>/', tviews.TaskRetrieveUpdateDestroyAPIView.as_view(), name='task-detail'), 
     path('reminders/', rviews.ReminderListAPIView.as_view(), name='reminder-list'),
+    path('reminder/<int:pk>/', rviews.ReminderDetailAPIView.as_view(), name='reminder-detail'), 
     path('uploadexcel/', ingex.ImportLeadData, name='excel'),
     path('excel-column/', getxcol.get_excel_columns, name='column_excel'),
     path('get-user/<str:username>/', getuser.get_user_by_username, name='get_user'),
-    path('get-all-user/', getuser.get_all_users, name='get_users_by_tenant_id'),
     path('createTenant/', tenview.tenant_list, name='tenant'),
     path('logout/', Reg.LogoutView.as_view(), name='logout'),
     path('campaign/', campview.CampaignViewSet.as_view(), name='campaigns'),
@@ -84,7 +86,7 @@ urlpatterns = [
     path(r'node-templates/', nviews.NodeTemplateListCreateAPIView.as_view(), name='node-template-list-create'),
     path('node-templates/<int:pk>/', nviews.NodeTemplateDetailAPIView.as_view(), name='node-template-detail'),
     path('extract_cltv/<int:entity_type_id>/', extract_cltv, name='extract_cltv'),
-    path ('r/<str:report_id>/', get_report_by_id, name='get_report_by_id'),
+    path ('report/<str:report_id>/', get_report_by_id, name='get_report_by_id'),
     path('recent_request/<str:model_name>/',rr.recent_request, name='recent_request'),
     path("active_accounts/",get_most_active_accounts, name="most-active-entites"),
     path("active_contacts/",get_most_active_contacts, name="most-active-entites"),
@@ -95,15 +97,16 @@ urlpatterns = [
     path('vendor/<int:pk>', vendview.VendorDetailAPIView.as_view(), name='vendor-detail'),
     path('documents/', docview.DocumentListAPIView.as_view(), name='vendors-list'),
     path('documents/<int:pk>', docview.DocumentDetailAPIView.as_view(), name='vendor-detail'),
-    path('loyalty_programs/', loyalview.LoyaltyListCreateAPIView.as_view(), name='loyalty_program'),
-    path('loyalty_programs/<int:pk>',  loyalview.LoyaltyDetailAPIView.as_view(), name='loyalty_program_details'),
     path('return-documents/<int:entity_type>/<int:entity_id>/', docview.RetrieveDocumentsView.as_view(), name='retrieve-documents'),
     path('return-documents/<int:entity_type>/', docview.RetrieveDocumentsView.as_view(), name='retrieve-documents'),    
     path('create-dynamic-model/', dyv.CreateDynamicModelView.as_view(), name='create_dynamic_model'),
     path('dynamic-models/', dyv.DynamicModelListView.as_view(), name='dynamic_model_list'),
     path('dynamic-model-data/<str:model_name>/', dyv.DynamicModelDataView.as_view(), name='dynamic_model_data'),
     path('delete-dynamic-model/<str:model_name>/', dyv.DeleteDynamicModelView.as_view(), name='delete_dynamic_model'),
-
-   
-
+    path('return-interaction/<int:entity_type>/<int:entity_id>/', inviews.RetrieveInteractionsView.as_view(), name='retrieve-interaction'),
+    path('return-interaction/<int:entity_type>/', inviews.RetrieveInteractionsView.as_view(), name='retrieve-interaction'),    
+    path('deduplicate/', simviews.deduplicate_view, name='deduplicate'),
+    path('create-custom-field/', cfviews.create_custom_field, name='create_custom_field'),
+    path('user/<int:user_id>/tasks/', tviews.UserTasksListAPIView.as_view(), name='user-tasks-list'),
 ]
+

@@ -3,15 +3,13 @@ import pandas as pd
 from django.views.decorators.csrf import csrf_exempt
 import os
 from tablib import Dataset
-from django.shortcuts import get_object_or_404
 from leads import models as leads_models
 from accounts import models as account_models
 from contacts import models as contact_models
 from meetings import models as meeting_models
 from calls import models as calls_models
-#from django.contrib.auth.models import User
-from .models import CustomUser
-user_id = 7
+from django.contrib.auth.models import User
+user_id = 1
 from django.apps import apps
 import json
 model_mapping = {
@@ -44,7 +42,7 @@ def ImportLeadData(request):
             print("Encoding:", encoding)
 
             if file_extension == '.xlsx':
-                df = pd.read_excel(excel_file, engine='openpyxl', header=0)
+                df = pd.read_excel(excel_file, engine='openpyxl', header=3)
             elif file_extension == '.xls':
                 df = pd.read_excel(excel_file, header=3)
             elif file_extension == '.csv':
@@ -74,9 +72,14 @@ def ImportLeadData(request):
             dataset = Dataset().load(selected_columns)
 
             print("Dataset:", dataset)
-            User = get_object_or_404(CustomUser, id=user_id)
 
-       
+            # Create instances of Lead model using tablib dataset
+            try:
+                user = User.objects.get(id=user_id)
+            except User.DoesNotExist:
+                print(f"User with ID {user_id} does not exist")
+                user = None
+
             # Assign the User instance to the `createdBy` field of the Lead model
             model = model_mapping.get(model_name)
             if not model:
@@ -86,8 +89,8 @@ def ImportLeadData(request):
 
             for row in dataset.dict:
                 print("Processing row:", row)
-                row['created_by'] = User
-                print("User assigned to row:", User)
+                row['createdBy'] = user
+                print("User assigned to row:", user)
 
                 # Create the Lead instance with the updated row dictionary
                 model.objects.create(**row)

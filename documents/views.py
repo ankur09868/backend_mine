@@ -19,20 +19,6 @@ class DocumentDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = DocumentSerializer
     # permission_classes = (IsAdminUser,)
 
-# class RetrieveDocumentsView(APIView):
-#     def get(self, request, , entity_id, *args, **kwargs):
-#         try:
-#             entity_type = ContentType.objects.get(model=model_name)
-#             documents = Document.objects.filter(entity_type=entity_type, entity_id=entity_id)
-#             documents_data = [{'id': doc.id, 'title': doc.title, 'file': doc.file.url, 'created_at': doc.created_at} for doc in documents]
-
-#             return Response({'success': True, 'documents': documents_data}, status=status.HTTP_200_OK)
-#         except ContentType.DoesNotExist:
-#             return Response({'success': False, 'message': 'Invalid model_name'}, status=status.HTTP_400_BAD_REQUEST)
-#         except Exception as e:
-#             return Response({'success': False, 'message': str(e)}, status=status.HTTP_400_BAD_REQUEST)
-        
-
 
 class RetrieveDocumentsView(APIView):
     def get(self, request, entity_type, entity_id=None, *args, **kwargs):

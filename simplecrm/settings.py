@@ -56,8 +56,10 @@ INSTALLED_APPS = [
     'vendors',
     'product',
     'documents',
+    'dynamic_entities',
     'loyalty',
-     'dynamic_entities',
+    'custom_fields',
+
 ]
 
 MIDDLEWARE = [
@@ -67,7 +69,7 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-     'simplecrm.middleware.TenantMiddleware',
+    'simplecrm.middleware.TenantMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
    

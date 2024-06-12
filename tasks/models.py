@@ -29,6 +29,7 @@ class Tasks(models.Model):
     reminder = models.BooleanField(default=False)
     description = models.TextField()
     tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)
+    assigned_to = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='task_assigned_to', on_delete=models.CASCADE, blank=True, null=True)
     
 
     def __str__(self):

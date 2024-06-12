@@ -7,16 +7,14 @@ from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes.fields import GenericForeignKey 
 
 class Document(models.Model):
-    # Information about the document
-    name = models.CharField('Document Name',max_length=600)
-    document_type = models.CharField('Document Type',max_length=600)
+    name = models.CharField('Document Name', max_length=255)
+    document_type = models.CharField('Document Type', max_length=100)
     description = models.TextField('Description', blank=True)
-    file_url = models.CharField('File URL', default='', max_length=600)
+    file_url = models.URLField('File URL', default='') 
     # GenericForeignKey to associate with any entity
-    entity_type = models.ForeignKey(ContentType, on_delete=models.CASCADE, blank=True, null=True)
-    entity_id = models.PositiveIntegerField(blank=True, null=True)
+    entity_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
+    entity_id = models.PositiveIntegerField()
     entity = GenericForeignKey('entity_type', 'entity_id')
-
     
     # Other metadata
     uploaded_at = models.DateTimeField('Uploaded At', auto_now_add=True)

@@ -13,3 +13,11 @@ class TaskRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Tasks.objects.all()
     serializer_class = TasksSerializer
     permission_classes = (AllowAny,)
+
+class UserTasksListAPIView(generics.ListAPIView):
+    serializer_class = TasksSerializer
+    permission_classes = (AllowAny,)
+
+    def get_queryset(self):
+        user_id = self.kwargs['user_id']
+        return Tasks.objects.filter(assigned_to_id=user_id)

@@ -2,6 +2,7 @@ from django.db import models
 from django.conf import settings
 from django.contrib.auth.models import User
 from tenant.models import Tenant
+from custom_fields.models import CustomField
 
 INDCHOICES = (
     ('FINANCE', 'FINANCE'),
@@ -54,11 +55,16 @@ class Account(models.Model):
     is_active = models.BooleanField(default=False)
     company = models.CharField(max_length=100, default='Unknown')
     tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE )
-
     account_type = models.CharField(max_length=10, choices=ACCOUNT_TYPE_CHOICES, null=True)
     stage = models.CharField(max_length=20, choices=STAGE_CHOICES, blank=True, null=True)
+    custom_fields = models.ForeignKey(CustomField, on_delete=models.CASCADE, null=True, blank=True, related_name='account_custom_fields')
+
+
+
 
     def __str__(self):
         return self.name
+    
+    
 
   
