@@ -11,8 +11,17 @@ class TenantMiddleware(MiddlewareMixin):
 
     def process_request(self, request):
         logger.debug("Processing request in TenantMiddleware")
-        if request.path.startswith('/login/') or request.path.startswith('/register/') or request.path.startswith('/createTenant/'):
-            logger.debug("Skipping tenant processing for login or register endpoint")
+        paths_to_skip = [
+            '/login/',
+            '/register/',
+            '/createTenant/',
+            '/track_open/',
+            '/track_open_count/'
+        ]
+        
+        # Check if the request path starts with any of the paths to skip
+        if any(request.path.startswith(path) for path in paths_to_skip):
+            logger.debug(f"Skipping tenant processing for path: {request.path}")
             return
 
         tenant_id = request.headers.get('X-Tenant-Id')
