@@ -9,30 +9,26 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
+        ("contacts", "0001_initial"),
         ("tenant", "0001_initial"),
-        ("campaign", "0001_initial"),
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
     ]
 
     operations = [
         migrations.AddField(
-            model_name="campaign",
-            name="campaign_owner",
+            model_name="contact",
+            name="createdBy",
             field=models.ForeignKey(
-                blank=True,
-                null=True,
                 on_delete=django.db.models.deletion.CASCADE,
-                related_name="campaign_created_by",
+                related_name="contact_created_by",
                 to=settings.AUTH_USER_MODEL,
             ),
         ),
         migrations.AddField(
-            model_name="campaign",
+            model_name="contact",
             name="tenant",
             field=models.ForeignKey(
-                default=3,
-                on_delete=django.db.models.deletion.CASCADE,
-                to="tenant.tenant",
+                on_delete=django.db.models.deletion.CASCADE, to="tenant.tenant"
             ),
         ),
     ]
