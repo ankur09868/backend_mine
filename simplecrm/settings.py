@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'dynamic_entities',
     'loyalty',
     'custom_fields',
+    'tickets',
 
 ]
 
@@ -126,7 +127,7 @@ WSGI_APPLICATION = 'simplecrm.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres', 
+        'NAME': 'nurenpostgres', 
         'USER': 'nurenai',
         'PASSWORD': 'Biz1nurenWar*',
         'HOST': 'nurenaistore.postgres.database.azure.com', 
