@@ -32,7 +32,7 @@ class Lead(models.Model):
     email = models.EmailField()
     phone = models.CharField(max_length=20, null=True, blank=True)
     account = models.ForeignKey(Account, related_name='Leads', on_delete=models.CASCADE, blank=True, null=True)
-    status = models.CharField("Status of Lead", max_length=255, blank=True, null=True, choices=LEAD_STATUS)
+    status = models.CharField("Status of Lead", max_length=255, choices=LEAD_STATUS)
     source = models.CharField("Source of Lead", max_length=255, blank=True, null=True, choices=LEAD_SOURCE)
     address = models.CharField("Address", max_length=255, blank=True, null=True)
     website = models.CharField("Website", max_length=255, blank=True, null=True)
