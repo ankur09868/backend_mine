@@ -1,6 +1,7 @@
 from django.db import models
 from accounts.models import Account
 from contacts.models import Contact
+from tenant.models import Tenant 
 
 class Ticket(models.Model):
     CASE_STATUS_CHOICES = [
@@ -39,6 +40,7 @@ class Ticket(models.Model):
     priority = models.CharField(max_length=20, choices=PRIORITY_CHOICES)
     type = models.CharField(max_length=20, choices=TYPE_CHOICES) 
     case_origin = models.CharField(max_length=20, choices=CASE_ORIGIN_CHOICES)
+    tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)
 
     def __str__(self):
         return f"Ticket {self.casenumber}: {self.subject}"
