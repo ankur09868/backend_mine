@@ -126,7 +126,7 @@ class InteractionDetailAPIView(APIView):
 class RetrieveInteractionsView(APIView):
     def get(self, request, entity_type, entity_id=None, *args, **kwargs):
         try:
-            content_type = ContentType.objects.get(interaction=entity_type)
+            content_type = ContentType.objects.get(id=entity_type)
             if entity_id:
                 interactions = Interaction.objects.filter(entity_type=content_type, entity_id=entity_id)
             else:
