@@ -27,7 +27,7 @@ class LeadSerializer(serializers.ModelSerializer):
             'id', 'title', 'first_name', 'last_name', 'email', 'phone', 'account',
             'source', 'address', 'website', 'description', 'assigned_to',
             'account_name', 'opportunity_amount', 'createdBy', 'createdOn', 'isActive',
-            'enquery_type', 'money', 'tenant', 'priority','custom_fields'
+            'enquery_type', 'money', 'tenant', 'priority','custom_fields','stage','status'
         )
 
     def to_representation(self, instance):

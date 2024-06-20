@@ -35,7 +35,7 @@ def stage_list(request, model_name):
     # Get all stages for the given model_name and tenant
     all_stages = Stage.objects.filter(tenant=tenant, model_name=model_name).order_by('id')
 
-    stages_data = [{'id': stage.id, 'status': stage.status, 'model_name': stage.model_name} for stage in all_stages]
+    stages_data = [{'id': stage.id, 'status': stage.status} for stage in all_stages]
     return JsonResponse(stages_data, safe=False, status=200)
 
 @csrf_exempt

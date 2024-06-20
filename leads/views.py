@@ -43,21 +43,6 @@ def lead_stage(request, lead_id):
         return JsonResponse({'error': 'Stage not found for this lead'}, status=404)
 
 
-# @require_http_methods(["GET"])
-# def all_stages(request):
-#     try:
-#         stages = Stage.objects.filter(model_name='lead')  # Adjust the filter as per your model
-
-#         if stages.exists():
-#             stages_data = [{
-#                 'id': stage.id,
-#                 'status': stage.status,
-#             } for stage in stages]
-#             return JsonResponse({'stages': stages_data}, status=200)
-#         else:
-#             return JsonResponse({'error': 'No stages found'}, status=404)
-#     except Exception as e:
-#         return JsonResponse({'error': str(e)}, status=500)
 
 @require_http_methods(["GET"])
 def all_stages(request):
