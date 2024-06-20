@@ -81,6 +81,7 @@ urlpatterns = [
     path('uploadexcel/', ingex.ImportLeadData, name='excel'),
     path('excel-column/', getxcol.get_excel_columns, name='column_excel'),
     path('get-user/<str:username>/', getuser.get_user_by_username, name='get_user'),
+    path('get-all-user/', getuser.get_all_users, name='get_all_user'),
     path('createTenant/', tenview.tenant_list, name='tenant'),
     path('logout/', Reg.LogoutView.as_view(), name='logout'),
     path('campaign/', campview.CampaignViewSet.as_view(), name='campaigns'),

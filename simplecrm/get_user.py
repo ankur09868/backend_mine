@@ -90,3 +90,26 @@ def user_details_by_id(request, user_id):
             return JsonResponse(updated_user_data)
         except json.JSONDecodeError:
             return JsonResponse({'error': 'Invalid JSON'}, status=400)
+        
+@csrf_exempt
+@require_http_methods(["GET"])
+def get_all_users(request):
+    tenant_id = request.headers.get('X-Tenant-ID')
+    if not tenant_id:
+        return JsonResponse({'error': 'Tenant-ID header is required'}, status=400)
+
+    users = CustomUser.objects.filter(tenant_id=tenant_id)
+    users_data = []
+    for user in users:
+        user_data = {
+            'id': user.id,
+            'username': user.username,
+            'email': user.email,
+            'role': user.role,
+            'name': user.name,
+            'phone_number': user.phone_number,
+            'address': user.address,
+            'job_profile': user.job_profile,
+        }
+        users_data.append(user_data)
+    return JsonResponse(users_data, safe=False)
