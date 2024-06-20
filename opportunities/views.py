@@ -17,6 +17,8 @@ from meetings.models import meetings
 from campaign.models import Campaign
 from django.contrib.auth import get_user_model
 from vendors.models import Vendors
+from django.views.decorators.http import require_http_methods
+from stage.models import Stage  # Import your Stage model here
 
 # Create your views here.
 
@@ -41,6 +43,48 @@ def rfm_analysis(request):
         recency, frequency, monetary = calculate_rfm_metrics(customer_opportunities)
         rfm_data.append({'customer_id': customer_id, 'recency': recency, 'frequency': frequency, 'monetary': monetary})
     return JsonResponse(rfm_data, safe=False)
+
+#stage for opportunity
+
+@require_http_methods(["GET"])
+def opportunity_stage(request, opportunity_id):
+    try:
+        opportunity = Opportunity.objects.get(id=opportunity_id)
+        if opportunity.stage_id:
+            stage = Stage.objects.get(id=opportunity.stage_id, model_name='opportunity')  # Assuming model_name field exists in Stage
+            stage_data = {
+                'id': stage.id,
+                'status': stage.status,
+                'model_name': stage.model_name,
+            }
+            return JsonResponse(stage_data, status=200)
+        else:
+            return JsonResponse({'error': 'Opportunity stage not found'}, status=404)
+    except Opportunity.DoesNotExist:
+        return JsonResponse({'error': 'Opportunity not found'}, status=404)
+    except Stage.DoesNotExist:
+        return JsonResponse({'error': 'Stage not found for this opportunity'}, status=404)
+    
+@require_http_methods(["GET"])
+def all_stages(request):
+    tenant_id = request.headers.get('X-Tenant-ID')
+    if not tenant_id:
+        return JsonResponse({'error': 'Tenant ID is required in headers'}, status=400)
+
+    try:
+        stages = Stage.objects.filter(model_name='opportunity', tenant_id=tenant_id)  # Adjust the filter as per your model
+
+        if stages.exists():
+            stages_data = [{
+                'id': stage.id,
+                'status': stage.status,
+            } for stage in stages]
+            return JsonResponse({'stages': stages_data}, status=200)
+        else:
+            return JsonResponse({'error': 'No stages found for the given tenant'}, status=404)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
 
 
 CustomUser = get_user_model()
