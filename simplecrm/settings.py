@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     'loyalty',
     'custom_fields',
     'tickets',
+    'stage',
 
 ]
 
