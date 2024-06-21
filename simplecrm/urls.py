@@ -32,11 +32,9 @@ from simplecrm import get_column_name as getxcol
 from simplecrm import get_user as getuser
 from tenant import views as tenview
 from campaign import views as campview
-from simplecrm.recent_request import recent_request
 from interaction.active_account import get_most_active_accounts
 from node_temps import views as nviews
 from interaction.views import extract_cltv
-from opportunities.views import get_report_by_id
 from simplecrm import recent_request as rr
 from interaction.active_account import get_most_active_accounts
 from interaction.active_account import get_most_active_contacts
@@ -63,7 +61,6 @@ urlpatterns = [
     path("active_accounts/",get_most_active_accounts, name="most-active-entites"),
     path(r'leads/', lviews.LeadListCreateAPIView.as_view(), name='lead-list'),
     path('leads/<int:pk>/',lviews.LeadDetailAPIView.as_view(), name='lead-detail'),
-    path('request/<str:module_name>/',recent_request, name='recent_request'),
     path(r'opportunities/', oviews.OpportunityListAPIView.as_view(), name='opportunity-list'),
     path('opportunities/<int:pk>/', oviews.OpportunityDetailAPIView.as_view(), name='opportunity-detail'),
     path('contacts/', cviews.ContactListCreateAPIView.as_view(), name='contact-list-create'),
@@ -86,11 +83,11 @@ urlpatterns = [
     path('createTenant/', tenview.tenant_list, name='tenant'),
     path('logout/', Reg.LogoutView.as_view(), name='logout'),
     path('campaign/', campview.CampaignViewSet.as_view(), name='campaigns'),
-    path('campaign/<int:pk>', campview.CampaignDetailAPIView.as_view(), name='campaigns'),
+    path('campaign/<int:pk>/', campview.CampaignDetailAPIView.as_view(), name='campaigns'),
     path(r'node-templates/', nviews.NodeTemplateListCreateAPIView.as_view(), name='node-template-list-create'),
     path('node-templates/<int:pk>/', nviews.NodeTemplateDetailAPIView.as_view(), name='node-template-detail'),
     path('extract_cltv/<int:entity_type_id>/', extract_cltv, name='extract_cltv'),
-    path ('report/<str:report_id>/', get_report_by_id, name='get_report_by_id'),
+    path ('report/<str:report_id>/', oviews.get_report_by_id, name='get_report_by_id'),
     path('recent_request/<str:model_name>/',rr.recent_request, name='recent_request'),
     path("active_accounts/",get_most_active_accounts, name="most-active-entites"),
     path("active_contacts/",get_most_active_contacts, name="most-active-entites"),
@@ -100,7 +97,7 @@ urlpatterns = [
     path('vendors', vendview.VendorsListAPIView.as_view(), name='vendors-list'),
     path('vendor/<int:pk>', vendview.VendorDetailAPIView.as_view(), name='vendor-detail'),
     path('documents/', docview.DocumentListAPIView.as_view(), name='vendors-list'),
-    path('documents/<int:pk>', docview.DocumentDetailAPIView.as_view(), name='vendor-detail'),
+    path('documents/<int:pk>/', docview.DocumentDetailAPIView.as_view(), name='vendor-detail'),
     path('return-documents/<int:entity_type>/<int:entity_id>/', docview.RetrieveDocumentsView.as_view(), name='retrieve-documents'),
     path('return-documents/<int:entity_type>/', docview.RetrieveDocumentsView.as_view(), name='retrieve-documents'),    
     path('create-dynamic-model/', dyv.CreateDynamicModelView.as_view(), name='create_dynamic_model'),
@@ -124,5 +121,6 @@ urlpatterns = [
     path('lead/<int:lead_id>/stage/', lviews.lead_stage, name='lead_stage'), 
     path('lead/stage/', lviews.all_stages, name='all_lead_stage'), 
     path('opportunity/stage/', oviews.all_stages, name='all_opportunity_stage'), 
+    
 ]
 

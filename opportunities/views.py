@@ -19,6 +19,7 @@ from django.contrib.auth import get_user_model
 from vendors.models import Vendors
 from django.views.decorators.http import require_http_methods
 from stage.models import Stage  # Import your Stage model here
+import json
 
 # Create your views here.
 
@@ -101,17 +102,19 @@ def get_report_by_id(request, report_id):
         'total_meetings': get_meetings_report_data,
         'top_users': get_top_users, 
         'Contact_mailing_list':get_contact_address,
-        'call_email':get_calls_and_emails,
+        'total_emails':get_emails,
         'total_campaign':get_total_campaign,
         'total_interaction':get_interaction_total,
         'today_lead':get_leads_by_today,
         'leads_account_name':get_leads_by_account_name,
         'campaign_status':get_campaign_status,
         'today_sales':get_todays_sales,
-        'lead_by_source':get_sales_by_lead_source,
+        'sales_by_lead_source':get_sales_by_lead_source,
         'sales_this_month':get_sales_this_month,
-        # 'deal_lost':deal_lost,
-        'vendor_owner':get_vendors_owner
+        'deal_lost':deal_lost,
+        'vendor_owner':get_vendors_owner,
+        'lead_stages':get_lead_status_counts,
+        'opportunity_stages':get_opportunity_status_counts,
   
 
     }
@@ -130,7 +133,28 @@ def get_report_by_id(request, report_id):
 
 def get_total_leads():
         leads = Lead.objects.all()
-        return{'total_leads': leads.count(), 'leads': list(leads.values())}
+        return{'total_leads': leads.count(), 'leads': list(leads.values(
+        'id',
+        'title',
+        'first_name',
+        'last_name',
+        'email',
+        'phone',
+        'stage__status', 
+        'source',
+        'address',
+        'website',
+        'description',
+        'assigned_to',
+        'account__Name',  
+        'opportunity_amount',
+        'createdBy__username', 
+        'createdOn',
+        'isActive',
+        'enquery_type',
+        'money',
+        'tenant',  
+        'priority'))}
 
 def get_new_leads_this_month():
     today = datetime.today()
@@ -142,19 +166,19 @@ def get_new_leads_this_month():
     return{'new_leads_count': new_leads_count}
 
 def get_converted_leads():
-    converted_leads = Lead.objects.filter(status='converted')
-    return{'total_converted leads':converted_leads.count(),'converted_leads':list(converted_leads.values('id', 'first_name', 'last_name','phone','status','account'))}
+    converted_leads = Lead.objects.filter(stage__status='converted')
+    return{'total_converted leads':converted_leads.count(),'converted_leads':list(converted_leads.values('id', 'first_name', 'last_name','phone','stage__status','account'))}
 
 
 def get_leads_by_source():
-    lead_source = Lead.objects.all()
+    lead_source = Lead.objects.filter(source__isnull=False)
     return{'total lead':lead_source.count(), 'source':list(lead_source.values('id', 'source','email','createdOn','createdBy','account_name','first_name','last_name'))}
     
 
 def get_leads_by_today():
     today_date = date.today()
     leads_today = Lead.objects.filter(createdOn__date=today_date)
-    return {'total_today_leads':leads_today.count(), 'today_leads':list(leads_today.values('email','phone','source','status')) }
+    return {'total_today_leads':leads_today.count(), 'today_leads':list(leads_today.values('email','phone','source','stage__status')) }
   
 def get_leads_by_account_name():
     Account_name = Lead.objects.filter()
@@ -178,7 +202,7 @@ def get_meetings_report_data():
     return {'total_meeting': Meeting.count(),'meetings':list(Meeting.values())}
  
 def get_top_users():
-    top_users = CustomUser.objects.order_by('-date_joine')[:10]
+    top_users = CustomUser.objects.order_by('-date_joined')[:10]
     return {'top_users': list(top_users.values('id', 'username', 'date_joined'))}
 
 
@@ -187,12 +211,12 @@ def get_contact_address():
     return {'total contacts': contacts.count(), 'Contacts': list(contacts.values('id','first_name','last_name', 'address'))}
 
 
-def get_calls_and_emails():
-    call = calls.objects.all()
+def get_emails():
+    # call = calls.objects.all()
     email = Contact.objects.all()
-    call_data = list(call.values())
+    # call_data = list(call.values())
     email_data = list(email.values())
-    return {'total calls': call.count(), 'calls':call_data, 'total emails': email.count(), 'eamils':email_data}
+    return {'total emails': email.count(), 'eamils':email_data}
  
 
 def get_total_campaign():
@@ -212,13 +236,13 @@ def get_interaction_total():
 
 def get_todays_sales():
     today = date.today()
-    opportunities = Opportunity.objects.filter(stage='closed won', closedOn=today)
+    opportunities = Opportunity.objects.filter(stage__status='CLOSED WON', closedOn=today)
     total_sales = sum(opportunity.amount for opportunity in opportunities)
     return {'total_sales': total_sales, 'opportunities': list(opportunities.values())}
 
 
 def get_sales_by_lead_source():
-    opportunities = Opportunity.objects.filter(stage='closed won')
+    opportunities = Opportunity.objects.filter(stage__status='CLOSED WON')
     sales_by_source = opportunities.values('lead_source').annotate(total_sales=Sum('amount'))
     sales_data = list(sales_by_source)
     return {'total_sales_by_lead_source': sales_data}
@@ -228,7 +252,7 @@ def get_sales_this_month():
     today = date.today()
     start_of_month = today.replace(day=1)    
     opportunities = Opportunity.objects.filter(
-        stage='CLOSED WON',
+        stage__status='CLOSED WON',
         closedOn__gte=start_of_month,
         closedOn__lte=today
     ) 
@@ -236,10 +260,10 @@ def get_sales_this_month():
     return {'total_sales_this_month': total_sales}
   
 
-# def deal_lost():
-#     Opportunities = Opportunity.objects.filter(stage='CLOSED LOST')
-#     lead_lost= {'total lost lead':Opportunities.count(),'lead_lost':list(Opportunities.values())}
-#     return lead_lost
+def deal_lost():
+    Opportunities = Opportunity.objects.filter(stage__status='CLOSED LOST')
+    deal_lost= {'total_lost_deal':Opportunities.count(),'deal_lost':list(Opportunities.values())}
+    return deal_lost
 
 
 def get_vendors_owner():
@@ -250,6 +274,27 @@ def get_vendors_owner():
 
 
 
+def get_lead_status_counts():
+    # Query to count leads grouped by stage__status
+    status_counts = Lead.objects.values('stage__status').annotate(count=Count('id'))
+    
+    # Prepare data in the desired format
+    data = [['Stage', 'Count']]  # Initial header row
+    
+    for item in status_counts:
+        data.append([item['stage__status'], item['count']])
+    
+    # Return data as JSON response
+    return data
 
-
-
+def get_opportunity_status_counts():
+    # Query to count opportunities grouped by stage__status
+    status_counts = Opportunity.objects.values('stage__status').annotate(count=Count('id'))
+    
+    # Prepare data in the desired format
+    data = [['Stage', 'Count']]  # Initial header row
+    
+    for item in status_counts:
+        data.append([item['stage__status'], item['count']])
+    
+    return data
