@@ -61,6 +61,8 @@ INSTALLED_APPS = [
     'custom_fields',
     'tickets',
     'stage',
+    'reports',
+    'api',
 
 ]
 
