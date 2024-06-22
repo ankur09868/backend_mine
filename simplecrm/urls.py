@@ -50,7 +50,8 @@ from custom_fields import views as cfviews
 from simplecrm import tractcount as trac
 from tickets import views as tickview
 from stage import views as sviews
-
+from reports import views as rpviews
+from api import views as apiviews
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
@@ -121,6 +122,8 @@ urlpatterns = [
     path('lead/<int:lead_id>/stage/', lviews.lead_stage, name='lead_stage'), 
     path('lead/stage/', lviews.all_stages, name='all_lead_stage'), 
     path('opportunity/stage/', oviews.all_stages, name='all_opportunity_stage'), 
+    path('generate-report/', rpviews.generate_and_get_report_view, name='generate_report'),#report
+    path('execute-query/', apiviews.ExecuteQueryView.as_view(), name='execute_query'),
     
 ]
 

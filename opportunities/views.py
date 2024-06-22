@@ -95,6 +95,7 @@ def get_report_by_id(request, report_id):
     report_id_to_function = {
         'total_leads': get_total_leads,
         'this_month_leads': get_new_leads_this_month,
+        'today_lead':get_leads_by_today,
         'converted_leads':get_converted_leads,
         'lead_source':get_leads_by_source,
         'total_calls': get_calls_report_data,
@@ -102,10 +103,9 @@ def get_report_by_id(request, report_id):
         'total_meetings': get_meetings_report_data,
         'top_users': get_top_users, 
         'Contact_mailing_list':get_contact_address,
-        'total_emails':get_emails,
+        'total_calls_emails':get_calls_emails,
         'total_campaign':get_total_campaign,
         'total_interaction':get_interaction_total,
-        'today_lead':get_leads_by_today,
         'leads_account_name':get_leads_by_account_name,
         'campaign_status':get_campaign_status,
         'today_sales':get_todays_sales,
@@ -184,6 +184,11 @@ def get_leads_by_account_name():
     Account_name = Lead.objects.filter()
     return {'total_leads_account_name':Account_name.count(),'leads_account_name':list(Account_name.values('id','account_name'))}
   
+def get_sales_by_lead_source():
+    opportunities = Opportunity.objects.filter(stage__status='CLOSED WON')
+    sales_by_source = opportunities.values('lead_source').annotate(total_sales=Sum('amount'))
+    sales_data = list(sales_by_source)
+    return {'total_sales_by_lead_source': sales_data}
 
 #-----end leads------
 
@@ -211,12 +216,12 @@ def get_contact_address():
     return {'total contacts': contacts.count(), 'Contacts': list(contacts.values('id','first_name','last_name', 'address'))}
 
 
-def get_emails():
-    # call = calls.objects.all()
+def get_calls_emails():
+    call = calls.objects.all()
     email = Contact.objects.all()
-    # call_data = list(call.values())
+    call_data = list(call.values())
     email_data = list(email.values())
-    return {'total emails': email.count(), 'eamils':email_data}
+    return {'total calls':call.count(),'calls':call_data,'total emails': email.count(), 'eamils':email_data}
  
 
 def get_total_campaign():
@@ -241,11 +246,6 @@ def get_todays_sales():
     return {'total_sales': total_sales, 'opportunities': list(opportunities.values())}
 
 
-def get_sales_by_lead_source():
-    opportunities = Opportunity.objects.filter(stage__status='CLOSED WON')
-    sales_by_source = opportunities.values('lead_source').annotate(total_sales=Sum('amount'))
-    sales_data = list(sales_by_source)
-    return {'total_sales_by_lead_source': sales_data}
 
 
 def get_sales_this_month():
