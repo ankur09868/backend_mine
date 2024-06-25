@@ -271,9 +271,6 @@ def get_vendors_owner():
     owner_data = {'total_owner':vender.count(),'vendor_owner':list(vender.values('vendor_owner'))}
     return owner_data
 
-
-
-
 def get_lead_status_counts():
     # Query to count leads grouped by stage__status
     status_counts = Lead.objects.values('stage__status').annotate(count=Count('id'))
