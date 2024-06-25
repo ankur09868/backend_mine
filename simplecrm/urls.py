@@ -123,6 +123,9 @@ urlpatterns = [
     path('lead/stage/', lviews.all_stages, name='all_lead_stage'), 
     path('opportunity/stage/', oviews.all_stages, name='all_opportunity_stage'), 
     path('generate-report/', rpviews.generate_and_get_report_view, name='generate_report'),#report
+    path('retrieve-reports/', rpviews.retrieve_all_reports_view, name='retrieve_reports'),
+    path('today/', rpviews.retrieve_today_report_view, name='retrieve_today_report'),
+    path('yesterday/', rpviews.retrieve_yesterday_report_view, name='retrieve_yesterday_report'),
     path('execute-query/', apiviews.ExecuteQueryView.as_view(), name='execute_query'),
     
 ]
