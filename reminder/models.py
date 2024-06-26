@@ -12,7 +12,7 @@ class Reminder(models.Model):
     ]
     
     subject = models.CharField(max_length=255)
-    trigger_type = models.CharField(max_length=100, choices=TRIGGER_CHOICES)
+    
     event_date_time = models.DateTimeField(blank=True, null=True)
     time_trigger = models.DateTimeField(blank=True, null=True)
     is_triggered = models.BooleanField(default=False)
