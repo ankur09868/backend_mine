@@ -40,7 +40,7 @@ def tenant_list(request):
         data = json.loads(request.body)
         tenant_id = data.get('tenant_id')
         organization=data.get('organization')
-        db_user_password = data.    get('password')
+        db_user_password = data.get('password')
         
         try:
             # Start a database transaction
