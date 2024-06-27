@@ -66,6 +66,7 @@ INSTALLED_APPS = [
 
 ]
 
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'corsheaders.middleware.CorsMiddleware',
@@ -191,6 +192,7 @@ CORS_ALLOW_HEADERS = [
     'Content-Type',
 ]
 CORS_ALLOWED_ORIGINS = [
+    "*",
     "http://localhost:3000",
     "http://localhost:5173",
         # Add your React frontend URL here
