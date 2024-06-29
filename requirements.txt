@@ -6,3 +6,4 @@ tablib
 channels
 openpyxl
 psycopg2
+openai
