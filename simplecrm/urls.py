@@ -53,6 +53,7 @@ from stage import views as sviews
 from reports import views as rpviews
 from api import views as apiviews
 
+
 urlpatterns = [
     #path('admin/', admin.site.urls),
     path('register/', Reg.register, name='register'),  # Endpoint for user registration
