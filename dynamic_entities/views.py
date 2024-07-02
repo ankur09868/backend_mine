@@ -10,6 +10,7 @@ from django.contrib.auth.models import User
 from django.conf import settings
 from django.contrib.auth import get_user_model
 import sys
+import re
 
 User =  get_user_model()
 
@@ -116,12 +117,18 @@ class DynamicModelListView(APIView):
 
         for dynamic_model in dynamic_models:
             try:
-                model_class = get_dynamic_model_class(dynamic_model.model_name)
+              
+                # Sanitize the model name to ensure it's a valid SQL identifier
+                model_name = dynamic_model.model_name.lower()
+                sanitized_model_name = re.sub(r'\W|^(?=\d)', '_', model_name)
+                table_name = f"dynamic_entities_{sanitized_model_name}"
+
+                # Check if the table exists
                 with connection.cursor() as cursor:
-                    cursor.execute(f"SELECT to_regclass('dynamic_entities_{dynamic_model.model_name.lower()}')")
+                    cursor.execute("SELECT to_regclass(%s)", [table_name])
                     if cursor.fetchone()[0] is None:
                         raise ValueError(f"Table for model {dynamic_model.model_name} does not exist.")
-                
+
                 fields = DynamicField.objects.filter(dynamic_model=dynamic_model)
                 fields_data = [{'field_name': field.field_name, 'field_type': field.field_type} for field in fields]
 
