@@ -52,7 +52,7 @@ from tickets import views as tickview
 from stage import views as sviews
 from reports import views as rpviews
 from api import views as apiviews
-
+from whatsapp_chat import views as whatsappview
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
@@ -128,6 +128,9 @@ urlpatterns = [
     path('today/', rpviews.retrieve_today_report_view, name='retrieve_today_report'),
     path('yesterday/', rpviews.retrieve_yesterday_report_view, name='retrieve_yesterday_report'),
     path('execute-query/', apiviews.ExecuteQueryView.as_view(), name='execute_query'),
+    path('whatsapp_convo_post/<str:contact_id>/', whatsappview.save_conversations, name='save_whatsapp_convo'),
+    path('whatsapp_convo_get/<str:contact_id>/',whatsappview.view_conversation, name='get_whatsapp_convo'),
+    path('unique_insta_profiles/',whatsappview.get_unique_instagram_contact_ids, name='get_all_insta'),
     
-]
+] 
 

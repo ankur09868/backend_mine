@@ -29,7 +29,7 @@ class OpportunityListAPIView(generics.ListCreateAPIView):
     #permission_classes = (IsAdminUser,)
 
 # views.py
-class OpportunityDetailAPIView(generics.RetrieveUpdateAPIView):
+class OpportunityDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Opportunity.objects.all()
     serializer_class = OpportunitySerializer
     # Uncomment the line below to restrict access to admin users only

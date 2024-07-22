@@ -3,6 +3,7 @@ from accounts.models import *
 from leads.models import Lead
 from contacts.models import * 
 from opportunities.models import * 
+from django.forms.models import model_to_dict
 from django.core.exceptions import FieldError
 
 def recent_request(request, model_name):
@@ -30,13 +31,7 @@ def recent_request(request, model_name):
             except FieldError:
                 return JsonResponse({'message': 'createdOn field not found in the model.'}, status=400)
 
-        data = [
-            {
-                'id': val.id,
-                'createdOn': val.createdOn,
-            }
-            for val in vals
-        ]
+        data = [model_to_dict(val) for val in vals]
 
         return JsonResponse(data, safe=False)
     except Exception as e:
