@@ -53,6 +53,7 @@ from stage import views as sviews
 from reports import views as rpviews
 from api import views as apiviews
 from whatsapp_chat import views as whatsappview
+from drafts import views as draftview
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
@@ -131,6 +132,7 @@ urlpatterns = [
     path('whatsapp_convo_post/<str:contact_id>/', whatsappview.save_conversations, name='save_whatsapp_convo'),
     path('whatsapp_convo_get/<str:contact_id>/',whatsappview.view_conversation, name='get_whatsapp_convo'),
     path('unique_insta_profiles/',whatsappview.get_unique_instagram_contact_ids, name='get_all_insta'),
-    
+    path('drafts/', draftview.DraftListCreateAPIView.as_view()),           # List and create drafts
+    path('drafts/<int:id>/', draftview.DraftDetailAPIView.as_view()),
 ] 
 

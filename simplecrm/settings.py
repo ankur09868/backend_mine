@@ -64,6 +64,7 @@ INSTALLED_APPS = [
     'reports',
     'api',
     'whatsapp_chat',
+    'drafts',
 
 ]
 
