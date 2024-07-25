@@ -1,7 +1,7 @@
 from django.db import models
 from django.conf import settings
 class drafts(models.Model):
-    image_url = models.URLField(max_length=200)
+    image_url = models.URLField(max_length=20000)
     caption = models.TextField()
     access_token = models.CharField(max_length=1200)
     timestamp = models.DateTimeField(auto_now_add=True)
