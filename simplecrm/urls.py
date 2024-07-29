@@ -134,5 +134,6 @@ urlpatterns = [
     path('unique_insta_profiles/',whatsappview.get_unique_instagram_contact_ids, name='get_all_insta'),
     path('drafts/', draftview.DraftListCreateAPIView.as_view()),           # List and create drafts
     path('drafts/<int:id>/', draftview.DraftDetailAPIView.as_view()),
+    path('contacts_of_account/<int:account_id>/',cviews.ContactByAccountAPIView.as_view(), name='contacts-by-account'),
 ] 
 
