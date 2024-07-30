@@ -89,6 +89,7 @@ urlpatterns = [
     path('logout/', Reg.LogoutView.as_view(), name='logout'),
     path('campaign/', campview.CampaignViewSet.as_view(), name='campaigns'),
     path('campaign/<int:pk>/', campview.CampaignDetailAPIView.as_view(), name='campaigns'),
+    path('campaign/stats/', campview.CampaignStatsAPIView.as_view(), name='campaign-stats'),  # Add this line
     path(r'node-templates/', nviews.NodeTemplateListCreateAPIView.as_view(), name='node-template-list-create'),
     path('node-templates/<int:pk>/', nviews.NodeTemplateDetailAPIView.as_view(), name='node-template-detail'),
     path('extract_cltv/<int:entity_type_id>/', extract_cltv, name='extract_cltv'),
