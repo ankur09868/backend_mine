@@ -55,6 +55,7 @@ from api import views as apiviews
 from whatsapp_chat import views as whatsappview
 from drafts import views as draftview
 from wallet import views as wallview
+from .query import query
 
 
 urlpatterns = [
@@ -142,5 +143,6 @@ urlpatterns = [
     path('wallet/deduct/',wallview.deduct_from_wallet, name='deduct_from_wallet'),
     path('wallet/balance/',wallview.get_wallet_balance, name='get_wallet_balance'),
     path('wallet/transactions/',wallview.get_last_n_transactions, name='get_wallet_balance'),
+    path('recommend/', query, name='recommend')
 ] 
 
