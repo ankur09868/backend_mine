@@ -94,7 +94,7 @@ def get_data(records, keys):
 
     return nodes, relationships
 
-def get_schema(graph):
+def get_graph_schema(graph):
     driver = get_graphConnection(graph)
     query = "MATCH(n) MATCH ()-[l]-() RETURN n,l"
 
@@ -160,7 +160,7 @@ def query(request):
         try:
             # Parse the incoming request
             data = json.loads(request.body)
-            question = data.get("question")
+            question = data.get("prompt")
 
             if not question:
                 return HttpResponse(
@@ -171,7 +171,7 @@ def query(request):
             # Define graph and execute functions
             graph_path = r"simplecrm/Neo4j-a71a08f7-Created-2024-07-25.txt"
             driver = get_graphConnection(graph_path)
-            n_schema, r_schema = get_schema(graph_path)
+            n_schema, r_schema = get_graph_schema(graph_path)
             graph_schema = f"""The nodes are: {n_schema}
 The relationships are: {r_schema}"""
 

@@ -22,47 +22,7 @@ table_mappings = {
 import os, json, psycopg2
 from openai import OpenAI
 from prompts import SYS_PROMPT_ETL
-from psycopg2.extras import RealDictCursor
-
-
-def get_db_connection():
-    return psycopg2.connect(
-            dbname="postgres",
-            user="nurenai",
-            password="Biz1nurenWar*",
-            host="nurenaistore.postgres.database.azure.com",
-            port="5432"
-        )
-
-def fetch_table(table_name: str):
-    try: 
-        conn = get_db_connection()
-        cur=conn.cursor(cursor_factory=RealDictCursor)
-
-        cur.execute(f"SELECT * FROM {table_name}")
-            
-            # Fetch all rows from the executed query
-        data = cur.fetchall()
-            
-            # Close the cursor and connection
-        cur.close()
-        conn.close()
-
-
-        def format_row(row) -> str:
-            ans="{" + "\n"
-            ans+=",".join(f' "{key}": "{value}"' for key, value in row.items())
-            ans+="\n" + "}"
-            return ans
-
-        # Iterate through each row and format
-        formatted_rows = [format_row(row) for row in data]
-
-        return formatted_rows
-    
-    except Exception as e:
-        print(f"Error fetching data: {e}")
-        return []
+from storage.tables import get_db_connection, fetch_table
 
 
 def get_leads(row):
