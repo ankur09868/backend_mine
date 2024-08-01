@@ -1,6 +1,4 @@
-from dotenv import load_dotenv
-import os, json
-from neo4j import GraphDatabase
+import json
 from storage.graph import get_graphConnection
 
 def create(graph_entities, entity):

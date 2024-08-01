@@ -1,11 +1,9 @@
 import os, json
-from dotenv import load_dotenv
 from openai import OpenAI
-from neo4j import GraphDatabase
-from simplecrm.new_database import get_graphConnection
 from django.views.decorators.csrf import csrf_exempt
-
+from helpers.prompts import SYS_PROMPT_1_psyq as SYS_PROMPT_1, SYS_PROMPT_2_psyq as SYS_PROMPT_2
 from django.http import HttpResponse
+from storage.graph import get_graph_schema, get_graphConnection
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key = OPENAI_API_KEY)
@@ -94,86 +92,11 @@ def get_data(records, keys):
 
     return nodes, relationships
 
-def get_graph_schema(graph):
-    driver = get_graphConnection(graph)
-    query = "MATCH(n) MATCH ()-[l]-() RETURN n,l"
-
-    records,summary,keys = driver.execute_query(query, database_="neo4j")
-    driver.close()
-    nodes={}
-    checkset= set()
-    relationships=[]
-    for record in records:
-        for key in keys:
-            element = record[key]
-            if key =='n':
-                label = list(element.labels)[0]
-                properties = {k: element[k] for k in element}
-                if label not in checkset:
-                    checkset.add(label)
-                    nodes[label] = properties
-            else:
-                internal_nodes = element.nodes
-                start = list(internal_nodes[0].labels)[0]
-                end = list(internal_nodes[1].labels)[0]
-                type = element.type
-                
-                rel = f"(:{start})-[:{type}]->(:{end})"
-                if rel not in checkset:
-                    relationships.append(rel)
-                    checkset.add(rel)
-    return nodes, relationships
-    
-
-SYS_PROMPT_1 = """
-You will be given a graph schema which tells about the nodes, their properties and possible relationships between them. Understand the schema.
-You will also be given a question. based on what is being asked, reformulate the question for the graph.
-
-Instructions: Return the reformed question only. Do not return anything else.
-
-Examples-
-#1 what product should be suggested to lead 8?
-response:- Return all the products. Return characterestics of lead id 8. Also return if theres any relationship present.
-"""
-
-SYS_PROMPT_2 = f"""
-Generate Cypher statement to query a graph database.
-Instructions:
-Do not use any other relationship types or properties that are not provided.
-
-IF THE RELATIONSHIP DIRECTION IN THE GENERATED  CYPHER QUERY DOESNT MATCH TO ANY OF THE ALLOWED RELATIONSHIPS IN Schema. THEN REVERSE THE RELATIONSHIP
-
-Note: Do not include any explanations or apologies in your responses.
-Do not include two return statements.
-Do not respond to any questions that might ask anything else than for you to construct a Cypher statement.
-Do not include any text except the generated Cypher statement.
-Do not include node properties.
-
-instead of [:r1|:r2|:r3] format, prefer use of [:r1|r2|r3] format
-
-PROMOTE USE OF OPTIONAL MATCH
-"""
-
 @csrf_exempt
-def query(request):
-    if request.method == "POST":
+def query(question, graph_path):
         try:
-            # Parse the incoming request
-            data = json.loads(request.body)
-            question = data.get("prompt")
-
-            if not question:
-                return HttpResponse(
-                    "Error: Question is required",
-                    status=400
-                )
-
-            # Define graph and execute functions
-            graph_path = r"simplecrm/Neo4j-a71a08f7-Created-2024-07-25.txt"
             driver = get_graphConnection(graph_path)
-            n_schema, r_schema = get_graph_schema(graph_path)
-            graph_schema = f"""The nodes are: {n_schema}
-The relationships are: {r_schema}"""
+            graph_schema = get_graph_schema(graph_path)
 
             result_1 = LLMlayer_1(SYS_PROMPT_1, question, graph_schema)
             result_2 = LLMlayer_2(SYS_PROMPT_2, result_1, graph_schema)
@@ -211,8 +134,3 @@ The relationships are: {r_schema}"""
                 f"Error: {str(e)}",
                 status=500
             )
-    else:
-        return HttpResponse(
-            "Error: Only POST method is allowed",
-            status=405
-        )

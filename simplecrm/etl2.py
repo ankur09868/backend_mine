@@ -19,9 +19,9 @@ table_mappings = {
     "hp_users":"User"
 }
 
-import os, json, psycopg2
+import os, json
 from openai import OpenAI
-from prompts import SYS_PROMPT_ETL
+from helpers.prompts import SYS_PROMPT_ETL
 from storage.tables import get_db_connection, fetch_table
 
 
@@ -104,7 +104,6 @@ def add_connections():
         json.dump(query_list, file)
         print("json file exported!")
 
-
 conn = get_db_connection()
 cursor = conn.cursor()
 query =f"SELECT * from hp_wa"
@@ -112,12 +111,9 @@ cursor.execute(query)
 results = cursor.fetchall()
 
 leads=[]
-
 for row in results:
     lead = get_leads(row)
     leads.append(lead)
-
-# print(leads)
 
 add_nodes(leads=leads)
 add_connections()
