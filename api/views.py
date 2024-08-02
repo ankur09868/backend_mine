@@ -5,7 +5,8 @@ from .serializers import PromptSerializer
 from .middle import name_to_model
 from django.db import connection
 from openai import OpenAI
-client = OpenAI(api_key="sk-proj-XsFPegZDKVJjoJ4OjxwhT3BlbkFJUiZB2h5ZEuVN7DFPbv0Y")
+import os
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 
 
