@@ -156,16 +156,17 @@ def find_similar_embeddings(query_embedding, threshold=0.5):
 def make_openai_call(combined_query, query_text):
     try:
         response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4o-mini",
             messages=[
-                {"role": "system", "content": "You are a helpful assistant. You will provide the best 4 documesnts which are similar to query.Present the source as it is don't change anything "},
-                {"role": "user", "content": f"You shall answer the queries asked based on the following text provided: {combined_query}"},
-                {"role": "user", "content": f"Here is the query: {query_text}"}
+                {"role": "system", "content": "You are a helpful assistant. You will analyze the provided similar documents and select the four best matches based on the query. Provide the relevant sources ."},
+                {"role": "user", "content": f"Here are the similar documents:\n{combined_query}"},
+                {"role": "user", "content": f"Based on the provided documents, here is the query: {query_text}. Please select the four documents that best match this query."}
             ]
         )
-        
+
         content = response.choices[0].message.content
         return content
+        
         
     except Exception as e:
         print(f"Error making OpenAI call: {e}")
@@ -247,18 +248,18 @@ class HandleQueryView(APIView):
                 similar_docs = find_similar_embeddings(query_embedding)
                 
                 if similar_docs:
-                    # Limit to the top 4 similar documents
+                    # Limit to the top 10 similar documents
                     top_docs = similar_docs[:10]
                     print(top_docs)
-                    
-                    # Create a detailed combined_query including the top 4 similar documents
-                    combined_query = "Here are the top 4 similar documents:\n"
+            
+                    # Create a detailed combined_query including the top 10 similar documents
+                    combined_query = ""
                     for idx, doc in enumerate(top_docs):
                         combined_query += f"Document {idx+1}: ID: {doc[0]}, Score: {doc[1]}, Source: {doc[2]}\n"
-                    
+            
                     # Make the OpenAI call
-                    openai_response = make_openai_call(combined_query, query_text)
-                    
+                        openai_response = make_openai_call(combined_query, query_text)
+            
                     response = {
                         "query": query_text,
                         "combined_query": combined_query,
