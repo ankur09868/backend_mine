@@ -7,3 +7,4 @@ channels
 openpyxl
 psycopg2
 openai
+pymupdf
