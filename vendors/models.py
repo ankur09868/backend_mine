@@ -3,6 +3,7 @@ from django.utils import timezone
 from django.contrib.auth.models import User
 from django.conf import settings
 from tenant.models import Tenant 
+
 class Vendors(models.Model):
     vendor_owner = models.CharField(max_length=100)
     vendor_name = models.CharField(max_length=100)
@@ -17,6 +18,7 @@ class Vendors(models.Model):
     country = models.CharField(max_length=100)
     description = models.TextField(blank=True)
     tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)
+    
 
 
     def __str__(self):
