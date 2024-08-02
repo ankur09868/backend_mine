@@ -1,8 +1,24 @@
 from django.http import JsonResponse
 import pandas as pd
-import os
-
+import os, json,requests
+from openai import OpenAI
+from leads import models as leads_models
+from accounts import models as account_models
+from contacts import models as contact_models
+from meetings import models as meeting_models
+from calls import models as calls_models
 from django.views.decorators.csrf import csrf_exempt
+
+
+model_mapping = {
+    "Lead": leads_models.Lead,
+    "Account": account_models.Account,
+    "Contact": contact_models.Contact,
+    "Meeting": meeting_models.meetings,
+    "Call": calls_models.calls,
+    # Add more model mappings as needed
+}
+
 
 @csrf_exempt
 def get_excel_columns(request):
@@ -29,3 +45,42 @@ def get_excel_columns(request):
             return JsonResponse({'error': str(e)}, status=500)
     else:
         return JsonResponse({'error': 'No file uploaded'}, status=400)
+
+
+def get_model_fields(model_name):
+    model = model_mapping.get(model_name)
+    if not model:
+        return JsonResponse({'error': f'Model {model_name} not found'}, status=400)
+
+    return [field.name for field in model._meta.get_fields()]
+
+
+def get_column_mappings(list1, list2):
+    client = OpenAI(api_key = os.getenv("OPENAI_API_KEY"))
+    response = client.chat.completions.create(
+        model = "gpt-4o-mini",
+        messages = [
+            {
+                "role": "system",
+                "content": "You are an expert software that helps to map two given lists and return answer in only json format."
+            },
+            {
+                "role": "user",
+                "content": f"map these two lists one to one: list1={list1} and list2={list2} return ONLY the answer in json format with null values with unmapped ones"
+            }
+        ]
+    )
+    response = response.choices[0].message.content
+    if response.status_code == 200:
+        result = response.choices[0].message.content
+        
+        #trim the result
+        fin=result.find('{')
+        lin=result.rfind('}')
+        trimmed_result = result [fin:lin + 1]
+
+        parsed_result = json.loads(trimmed_result)
+
+        return parsed_result
+    else:
+        print(f"Error: {response.status_code}, {response.text}")

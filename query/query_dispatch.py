@@ -6,6 +6,7 @@ from openai import OpenAI
 from storage.tables import get_tables_schema
 from api.views import ExecuteQueryView
 from helpers.prompts import SYS_PROMPT_QD as SYS_PROMPT
+from vectors.views import HandleQueryView
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
@@ -53,9 +54,11 @@ def dispatch(request):
             elif type == "Graph":
                 result = query(question, graph_path)
                 print("graph result: " ,result)
-            elif type == "None":
-                print("None type is yet to be defined")
-                result = "null"
+            elif type == "Vector":
+                view = HandleQueryView.as_view()
+                response = view(request)
+                result = response
+                print("vector :",result)
             else:
                 result = "Data doesnt belong with us"
 
