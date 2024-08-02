@@ -1,10 +1,8 @@
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
-import os
+import os, psycopg2, pymupdf, json
 from openai import OpenAI
 import numpy as np
-import psycopg2
-import pymupdf, json
 # Initialize OpenAI client
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 

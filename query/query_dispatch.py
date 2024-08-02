@@ -54,7 +54,7 @@ def dispatch(request):
             elif type == "Graph":
                 result = query(question, graph_path)
                 print("graph result: " ,result)
-            elif type == "Vector":
+            elif type == "None":
                 view = HandleQueryView.as_view()
                 response = view(request)
                 result = response
