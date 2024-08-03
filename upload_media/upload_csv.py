@@ -1,20 +1,7 @@
-import csv, pandas as pd
-import os
-import psycopg2
-from django.shortcuts import render, redirect
+import csv, pandas as pd, os
 from django.views.decorators.csrf import csrf_exempt
-from django.conf import settings
 from django.http import JsonResponse
-
-# Database connection function
-def get_db_connection():
-    return psycopg2.connect(
-        dbname="postgres",
-        user="nurenai",
-        password="Biz1nurenWar*",
-        host="nurenaistore.postgres.database.azure.com",
-        port="5432"
-    )
+from storage.tables import get_db_connection
 
 @csrf_exempt
 def upload_csv(request):
@@ -22,7 +9,7 @@ def upload_csv(request):
         csv_file = request.FILES.get('file')
         if not csv_file or not csv_file.name.endswith('.csv'):
             return JsonResponse({"error": "File is not in CSV format"}, status=400)
-        model_name = request.FILES.get('model_name')
+        model_name = request.POST.get('model_name', None)
         
         # Extract file name without extension to use as table name
         file_name = os.path.splitext(csv_file.name)[0]

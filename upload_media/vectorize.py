@@ -3,6 +3,7 @@ from django.views.decorators.csrf import csrf_exempt
 import os, psycopg2, pymupdf, json
 from openai import OpenAI
 import numpy as np
+from storage.tables import get_db_connection
 # Initialize OpenAI client
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
@@ -22,15 +23,6 @@ def get_embeddings(chunks):
         response = client.embeddings.create(input=chunk, model="text-embedding-3-small")
         embeddings.append(response.data[0].embedding)
     return embeddings
-
-def get_db_connection():
-    return psycopg2.connect(
-            dbname="postgres",
-            user="nurenai",
-            password="Biz1nurenWar*",
-            host="nurenaistore.postgres.database.azure.com",
-            port="5432"
-        )
 
 def vectorize(request):
     try:
@@ -148,14 +140,6 @@ def process_and_search_similar_queries(query):
 
 def make_openai_call(combined_query, query_string):
 
-    # Combine the template with the query
-    # prompt = prompt_template.format(combined_query=combined_query, query_string=query_string)
-
-    # print("PROMPT: " ,prompt)
-
-    # Make the OpenAI API request
-    # client = openai.OpenAI(api_key = API_KEY)
-
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
@@ -184,11 +168,6 @@ def query(request):
 
     for item in similar_queries:
         combined_query += item[1] + " "
-        # print(f"ID: {item[0]}, Chunk: {item[1]}, Similarity: {item[2]:.4f}")
-        
-    # print("COMB QUERY: " ,combined_query)
-    # prompt = "based on the {}, answer the query: {} suitably in minimum words.".format(combined_query, query_string)
-
     # Make the OpenAI call
     openai_response = make_openai_call(combined_query, query_string)
     return JsonResponse({"status": 200, "message": openai_response})
