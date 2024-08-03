@@ -1,22 +1,20 @@
 tables=[
-    "hp_products",
-    "hp_users"
+    "accounts_account" ,
+    "contacts_contact",
+    "product_product",
+    "vendors_vendor",
+    "tenant_tenant",
+    "simplecrm_customuser"
+
 ]
 
 table_mappings = {
-    "hp_accounts" : "Accounts",
-    "hp_calls" : "Call",
-    "hp_contacts" : "Contact",
-    "hp_interaction": "Interaction",
-    "hp_leads": "Lead",
-    "hp_meetings": "Meeting",
-    "hp_products": "Product",
-    "hp_reminder": "Reminder",
-    "hp_tenant": "Tenant",
-    "hp_tickets": "Ticket",
-    "hp_vendors": "Vendor",
-    "hp_psycho":"Lead",
-    "hp_users":"User"
+    "accounts_account" : "Accounts",
+    "contacts_contact" : "Contact",
+    "product_product": "Product",
+    "vendors_vendor": "Vendor",
+    "tenant_tenant": "Tenant",
+    "simplecrm_customuser":"User"
 }
 
 import os, json
