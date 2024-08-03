@@ -3,11 +3,12 @@ from django.utils import timezone
 from django.contrib.auth.models import User
 from django.conf import settings
 from tenant.models import Tenant 
+from vendors.models import Vendors
 class Product(models.Model):
     product_owner = models.CharField(max_length=100)
     product_name = models.CharField(max_length=100)
     product_code = models.CharField(max_length=50, unique=True)
-    vendor_name = models.CharField(max_length=100)
+    vendor_name = models.ManyToManyField(Vendors, related_name='products', blank=True)
     product_active = models.BooleanField(default=True)
     manufacturer = models.CharField(max_length=100)
     product_category = models.CharField(max_length=100)

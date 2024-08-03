@@ -3,6 +3,7 @@ from accounts.models import *
 from leads.models import Lead
 from contacts.models import * 
 from opportunities.models import * 
+from reminder.models import * 
 from django.forms.models import model_to_dict
 from django.core.exceptions import FieldError
 
@@ -17,6 +18,8 @@ def recent_request(request, model_name):
             model_class = Opportunity
         elif model_name == 'contacts':
             model_class = Contact
+        elif model_name == 'reminder':
+            model_class = Reminder
         else:
             return JsonResponse({'message': 'Invalid model name.'}, status=400)
         
