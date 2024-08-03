@@ -1,5 +1,5 @@
 from dotenv import load_dotenv
-import os, json
+import os
 from neo4j import GraphDatabase
 
 
@@ -47,3 +47,4 @@ def get_graph_schema(graph):
     graph_schema = f"""The nodes are: {nodes}
     The relationships are: {relationships}"""
     return graph_schema
+

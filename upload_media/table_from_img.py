@@ -1,15 +1,8 @@
 from django.http import JsonResponse
-import boto3, json, threading, psycopg2, os
-from botocore.exceptions import NoCredentialsError, PartialCredentialsError
-from simplecrm.get_column_name import get_model_fields, get_column_mappings
-
-table_mappings = {
-    "Lead": "leadss_lead",
-    "Account": "accounts_account",
-    "Contact": "contacts_contact",
-    "Meeting": "meetings_meeting",
-    "Call": "calls_calls",
-}
+import boto3, json, os
+from botocore.exceptions import NoCredentialsError, PartialCredentialsError, ClientError
+from storage.tables import upload_table, create_table
+from django.views.decorators.csrf import csrf_exempt
 
 def upload_image_to_s3(file, bucket, object_name=None, region="ap-south-1"):
     if object_name is None:
@@ -32,7 +25,7 @@ def upload_image_to_s3(file, bucket, object_name=None, region="ap-south-1"):
         return False
     return object_name
 
-def extract_table(doc_name):
+def extract_table_from_image(doc_name):
     client = boto3.client('textract')
     response = client.analyze_document(
         Document={
@@ -82,107 +75,53 @@ def convert_into_df(textract_data):
     # print(df)
     return table_list
 
-def create_table(table_list, index):
-    print("table_list: " ,table_list[0])
-    conn = conn_cred
-    cur = conn.cursor()
-    table_name = "upload_%s" % index
-    column_names = [str(x) for x in table_list[0]]
-    create_table_query = f"""
-        CREATE TABLE IF NOT EXISTS {table_name} (
-        id SERIAL PRIMARY KEY,
-        {', '.join(f'"{column}" VARCHAR(50)' for column in column_names)}
-    );
-    """
-    cur.execute(create_table_query)
-    conn.commit()
-    for row in table_list[1:]:
-        insert_data_query = f"""
-        INSERT INTO {table_name} ({', '.join(f'"{column}" ' for column in column_names)})
-        VALUES ({', '.join(['%s'] * len(column_names))});
-        """
-        cur.execute(insert_data_query, tuple(row))
-        conn.commit()
+def delete_file(bucket, file, region= "ap-south-1"):
+    try:
+        s3_client = boto3.client('s3', region_name=region)
+        s3_client.delete_object(Bucket=bucket, Key=file)
+        print("Delete Successful")
+        return True
+    except NoCredentialsError:
+        print("Credentials not available")
+        return False
+    except ClientError as e:
+        print(f"Error occurred: {e}")
+        return False
 
-    cur.execute(f"SELECT * FROM {table_name};")
-    rows = cur.fetchall()
-    print("\nData in the new PostgreSQL table:")
-    for row in rows:
-        print(row)
-
-    # Close the cursor and connection
-    cur.close()
-    conn.close()
-
-conn_cred = psycopg2.connect(
-        dbname="postgres",
-        user="nurenai",
-        password="Biz1nurenWar*",
-        host="nurenaistore.postgres.database.azure.com",
-        port="5432"
-    )
-
-def upload_to_table(data_list, model_name):
-    columns = data_list[0]
-    fields = get_model_fields(model_name)
-    mappings = get_column_mappings(fields, columns)
-    table_name = table_mappings.get(model_name)
-    print(mappings)
-    
-    for index, item in enumerate(data_list[0]):
-        if item in mappings.values():
-            key_to_replace = next(key for key, value in mappings.items() if value == item)
-            data_list[0][index] = key_to_replace
-    print("table name: " ,table_name)
-    column_names = [str(x) for x in data_list[0]]
-    print("column list: " ,column_names)
-    conn = conn_cred
-    cur= conn.cursor()
-    for row in data_list[1:]:
-        insert_data_query = f"""
-        INSERT INTO {table_name} ({', '.join(f'"{column}" ' for column in column_names)})
-        VALUES ({', '.join(['%s'] * len(column_names))});
-        """
-        cur.execute(insert_data_query, tuple(row))
-        print("testingg")
-        conn.commit()
-    cur.execute(f"SELECT * FROM {table_name};")
-    rows = cur.fetchall()
-    print("\nData in the PostgreSQL table:")
-    for row in rows:
-        print(row)
-
-    # Close the cursor and connection
-    cur.close()
-    conn.close()
-
-index =0
-index_lock = threading.Lock()
-
+@csrf_exempt
 def table_from_image(request):
-    global index
     try:
         if 'file' not in request.FILES:
             return JsonResponse({"status": 400, "message": "No file provided in the request"}, status=400)
         
         file = request.FILES['file']
-        model_name = request.POST.get('model_name')
+        model_name = request.POST.get('model_name', None)
+        table_name = request.POST.get('table_name', None)
+        
+        if table_name == None:
+                table_name = os.path.splitext(file.name)[0]
+        if (model_name and table_name) or (not model_name and not table_name):
+            return JsonResponse({"status": 400, "message": f"""Either model_name or table_name must be provided, but not both.\nprovide model_name to upload table to database. \nprovide table_name to create a new table to database and upload data"""}, status=400)
+        
+        print("rcvd data with file and model name: " ,model_name)
         bucket = 'nurenai'
-        object_name = 'upload5.jpg'
+        file_name = 'upload.jpg'
         region = "ap-south-1"
-        doc_name = upload_image_to_s3(file, bucket, object_name, region)
+        doc_name = upload_image_to_s3(file, bucket, file_name, region)
         if not doc_name:
             return JsonResponse({"status": 500, "message": "Failed to upload image to S3"}, status=500)
-        
-        textract_data = extract_table(doc_name)
+            
+        textract_data = extract_table_from_image(doc_name)
         table_list = convert_into_df(textract_data)
-        print(table_list)
-        with index_lock:
-            current_index= index
-            index+=1
+        print("table list: " ,table_list)
+        delete_file(bucket, file=file_name)
 
-        # create_table(table_list, index)
-        upload_to_table(table_list, model_name)
+        if table_name:
+            create_table(table_list, table_name)
+        else:
+            upload_table(table_list, model_name)
+
+            
 
         return JsonResponse({"status": 200, "message": "File processed successfully"})
     
@@ -196,5 +135,3 @@ def table_from_image(request):
         return JsonResponse({"status": 500, "message": "Failed to upload file to S3"}, status=500)
     except Exception as e:
         return JsonResponse({"status": 500, "message": f"Internal server error: {e}"}, status=500)
-
-
