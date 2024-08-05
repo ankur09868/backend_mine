@@ -35,24 +35,24 @@ def generate_or_get_report():
   
     report_yesterday = Report.objects.filter(created_at__date=yesterday).first()
     
-    if report_yesterday:
+    
         # Generate a new report for today
-        closed_won_revenue = Opportunity.objects.filter(stage__status='CLOSED WON').aggregate(total_revenue=Sum('amount'))['total_revenue'] or 0
-        other_lead_amount = Lead.objects.exclude(stage__status='closed won').aggregate(total_amount=Sum('opportunity_amount'))['total_amount'] or 0
-        total_leads = Lead.objects.count()
+    closed_won_revenue = Opportunity.objects.filter(stage__status='CLOSED WON').aggregate(total_revenue=Sum('amount'))['total_revenue'] or 0
+    other_lead_amount = Lead.objects.exclude(stage__status='closed won').aggregate(total_amount=Sum('opportunity_amount'))['total_amount'] or 0
+    total_leads = Lead.objects.count()
 
-        new_report = Report(
+    new_report = Report(
             leads_amount=other_lead_amount,
             revenue=closed_won_revenue,
             total_leads=total_leads,
             created_at=today  # Set the created_at field to today's date
         )
-        new_report.save()
+    new_report.save()
         
-        return new_report
-    else:
+    return new_report
+  
         # There's no report for yesterday, so we cannot proceed with generating today's report
-        return None
+        
 
 # View function to generate or retrieve the latest report
 def generate_and_get_report_view(request):
