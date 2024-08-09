@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes.fields import GenericForeignKey
 from tenant.models import Tenant 
+
 class Interaction(models.Model):
     INTERACTION_TYPES = (
         ('Call', 'Call'),
@@ -21,4 +22,55 @@ class Interaction(models.Model):
     tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)
     def __str__(self):
         return f'{self.interaction_type} with {self.entity}'
-   
+
+from django.conf import settings
+from contacts.models import Contact
+
+class calls(models.Model):
+    call_to = models.ForeignKey(Contact, on_delete=models.SET_NULL, related_name='call_to_meetings', blank=True, null=True, verbose_name='Contact Name')
+    related_to = models.CharField(max_length=255, blank=True, null=True, verbose_name='Related To')
+    call_type = models.CharField(max_length=255, blank=True, null=True, verbose_name='Call Type')
+    outgoing_status = models.CharField(max_length=255, blank=True, null=True, verbose_name='Outgoing Status')
+    start_time = models.DateTimeField(verbose_name='Start Time', blank=True, null=True)
+    call_duration = models.DurationField(verbose_name='Call Duration', blank=True, null=True)
+    location = models.CharField(max_length=255, blank=True, null=True, verbose_name='Location')
+    voice_recording = models.CharField(max_length=255, blank=True, null=True, verbose_name='Voice Recording')
+    to_time = models.DateTimeField(verbose_name='To', blank=True, null=True)
+    createdBy = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='created_calls', on_delete=models.CASCADE, blank=True, null=True)
+    tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)
+    def __str__(self):
+        return self.title
+
+from django.contrib.auth.models import User
+
+class meetings(models.Model):
+    title = models.CharField(max_length=64, blank=True, null=True, verbose_name='Title')
+    location = models.CharField(max_length=255, blank=True, null=True, verbose_name='Location')
+    from_time = models.DateTimeField(verbose_name='From')
+    to_time = models.DateTimeField(verbose_name='To')
+    related_to = models.CharField(max_length=255, blank=True, null=True, verbose_name='Related To')
+    contact_name = models.ForeignKey(Contact, related_name='meeting_contacts', blank=True, null=True, verbose_name='Contact Name', on_delete=models.CASCADE )
+    host = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, related_name='meeting_hosts', blank=True, null=True, verbose_name='Host')
+    participants = models.ForeignKey(Contact, related_name='meeting_participants', blank=True, on_delete=models.CASCADE)
+    description = models.TextField(blank=True, null=True, verbose_name='Description')
+    account = models.ForeignKey('accounts.Account', related_name='meetings', on_delete=models.CASCADE, blank=True, null=True)
+    assigned_to = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, related_name='meeting_assigned_users',blank=True, null=True)
+    createdBy = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='meeting_created_by', on_delete=models.CASCADE,blank=True, null=True)
+    tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)
+    def __str__(self):
+        return self.title
+
+
+class Conversation(models.Model):
+    contact_id = models.CharField(max_length=255)
+    message_text = models.TextField()
+    sender = models.CharField(max_length=50)
+    tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)
+    source=models.CharField(max_length=255)
+    # Add any other fields you may need
+
+    # Assuming you have tenant-specific tables, add a foreign key to connect them
+    # tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE) 
+
+    def __str__(self):
+        return f"Conversation ID: {self.id}, Contact ID: {self.contact_id}, Sender: {self.sender}"

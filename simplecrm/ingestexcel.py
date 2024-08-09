@@ -6,8 +6,7 @@ from tablib import Dataset
 from leads import models as leads_models
 from accounts import models as account_models
 from contacts import models as contact_models
-from meetings import models as meeting_models
-from calls import models as calls_models
+from interaction import models as interaction_models
 from django.contrib.auth.models import User
 user_id = 1
 from django.apps import apps
@@ -16,8 +15,8 @@ model_mapping = {
     "Lead": leads_models.Lead,
     "Account": account_models.Account,
     "Contact": contact_models.Contact,
-    "Meeting": meeting_models.meetings,
-    "Call": calls_models.calls,
+    "Meeting": interaction_models.meetings,
+    "Call": interaction_models.calls,
     # Add more model mappings as needed
 }
 @csrf_exempt

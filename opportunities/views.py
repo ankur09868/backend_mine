@@ -11,14 +11,13 @@ from datetime import datetime, timedelta,date
 from django.db.models import Count,Sum
 from .models import Contact , Account
 from leads.models import Lead
-from calls.models import calls
-from interaction.models import Interaction
-from meetings.models import meetings
+from interaction.models import Interaction, calls
+from interaction.models import meetings
 from campaign.models import Campaign
 from django.contrib.auth import get_user_model
 from vendors.models import Vendors
 from django.views.decorators.http import require_http_methods
-from stage.models import Stage  # Import your Stage model here
+from leads.models import Stage  # Import your Stage model here
 import json
 
 # Create your views here.

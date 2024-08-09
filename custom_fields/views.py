@@ -9,11 +9,10 @@ from simplecrm.models import CustomUser
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
 from accounts.models import Account
-from calls.models import calls
 from contacts.models import Contact
 from leads.models import Lead
 from documents.models import Document
-from interaction.models import Interaction
+from interaction.models import Interaction, calls
 from tenant.models import Tenant
 
 MODEL_CLASSES = {

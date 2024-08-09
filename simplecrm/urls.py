@@ -21,8 +21,6 @@ from accounts import views as aviews
 from leads import views as lviews
 from opportunities import views as oviews
 from contacts import views as cviews
-from meetings import views as mviews
-from calls import views as caviews
 from interaction import views as inviews
 from tasks import views as tviews
 from reminder import views as rviews
@@ -49,14 +47,13 @@ from simplecrm import tracking as track
 from custom_fields import views as cfviews
 from simplecrm import tractcount as trac
 from tickets import views as tickview
-from stage import views as sviews
-from reports import views as rpviews
-from api import views as apiviews
-from whatsapp_chat import views as whatsappview
+from analytics import views as analyticsviews
 from drafts import views as draftview
 from wallet import views as wallview
-from query.query_dispatch import dispatch
-from upload_media import upload_dispatch as u_dispatch
+from helpers import upload_dispatch as u_dispatch, query_dispatch as q_dispatch
+from .etl2  import add_nodes
+from .new_database import process_nodes
+
 
 
 
@@ -74,10 +71,10 @@ urlpatterns = [
     path('contacts/', cviews.ContactListCreateAPIView.as_view(), name='contact-list-create'),
     path('contacts/<int:pk>/', cviews.ContactDetailAPIView.as_view(), name='contact-detail'),
     path('contacts/', cviews.ContactDetailAPIView.as_view(), name='contact-detail'),
-    path('meetings/', mviews.MeetingListCreateAPIView.as_view(), name='meeting-list-create'),
-    path('meetings/<int:pk>/', mviews.MeetingDetailAPIView.as_view(), name='meeting-detail'),
-    path('calls/', caviews.callsListAPIView.as_view(), name='calls'), 
-    path('calls/<int:pk>/', caviews.callsDetailAPIView.as_view(), name='calls-detail'),
+    path('meetings/', inviews.MeetingListCreateAPIView.as_view(), name='meeting-list-create'),
+    path('meetings/<int:pk>/', inviews.MeetingDetailAPIView.as_view(), name='meeting-detail'),
+    path('calls/', inviews.callsListAPIView.as_view(), name='calls'), 
+    path('calls/<int:pk>/', inviews.callsDetailAPIView.as_view(), name='calls-detail'),
     path('interaction/', inviews.InteractionListAPIView.as_view(), name='interaction'),  
     path('interaction/<int:pk>/',inviews.InteractionDetailAPIView.as_view(), name='interaction-detail'),
     path('tasks/', tviews.TaskListCreateAPIView.as_view(), name='task-list'),
@@ -122,22 +119,22 @@ urlpatterns = [
     path('track_open_count/', trac.TrackOpenCountView.as_view(), name='track_open_count'),
     path('tickets/', tickview.TicketListAPIView.as_view(), name='ticket-list'),
     path('tickets/<int:pk>/', tickview.TicketDetailAPIView.as_view(), name='ticket-detail'),
-    path('stage/list/<str:model_name>/', sviews.stage_list, name='stage-list'),#stage
-    path('stage/create/', sviews.stage_create, name='stage-create'),
-    path('stage/update/<int:stage_id>/', sviews.stage_update, name='stage-update'),
-    path('stage/delete/<int:stage_id>/', sviews.stage_delete, name='stage-delete'),
+    path('stage/list/<str:model_name>/', lviews.stage_list, name='stage-list'),#stage
+    path('stage/create/', lviews.stage_create, name='stage-create'),
+    path('stage/update/<int:stage_id>/', lviews.stage_update, name='stage-update'),
+    path('stage/delete/<int:stage_id>/', lviews.stage_delete, name='stage-delete'),
     path('opportunity/<int:opportunity_id>/stage/', oviews.opportunity_stage, name='opportunity_stage'),
     path('lead/<int:lead_id>/stage/', lviews.lead_stage, name='lead_stage'), 
     path('lead/stage/', lviews.all_stages, name='all_lead_stage'), 
     path('opportunity/stage/', oviews.all_stages, name='all_opportunity_stage'), 
-    path('generate-report/', rpviews.generate_and_get_report_view, name='generate_report'),#report
-    path('retrieve-reports/', rpviews.retrieve_all_reports_view, name='retrieve_reports'),
-    path('today/', rpviews.retrieve_today_report_view, name='retrieve_today_report'),
-    path('yesterday/', rpviews.retrieve_yesterday_report_view, name='retrieve_yesterday_report'),
-    path('execute-query/', apiviews.ExecuteQueryView.as_view(), name='execute_query'),
-    path('whatsapp_convo_post/<str:contact_id>/', whatsappview.save_conversations, name='save_whatsapp_convo'),
-    path('whatsapp_convo_get/<str:contact_id>/',whatsappview.view_conversation, name='get_whatsapp_convo'),
-    path('unique_insta_profiles/',whatsappview.get_unique_instagram_contact_ids, name='get_all_insta'),
+    path('generate-report/', lviews.generate_and_get_report_view, name='generate_report'),#report
+    path('retrieve-reports/', lviews.retrieve_all_reports_view, name='retrieve_reports'),
+    path('today/', lviews.retrieve_today_report_view, name='retrieve_today_report'),
+    path('yesterday/', lviews.retrieve_yesterday_report_view, name='retrieve_yesterday_report'),
+    path('execute-query/', analyticsviews.ExecuteQueryView.as_view(), name='execute_query'),
+    path('whatsapp_convo_post/<str:contact_id>/', inviews.save_conversations, name='save_whatsapp_convo'),
+    path('whatsapp_convo_get/<str:contact_id>/',inviews.view_conversation, name='get_whatsapp_convo'),
+    path('unique_insta_profiles/',inviews.get_unique_instagram_contact_ids, name='get_all_insta'),
     path('drafts/', draftview.DraftListCreateAPIView.as_view()),           # List and create drafts
     path('drafts/<int:id>/', draftview.DraftDetailAPIView.as_view()),
     path('contacts_of_account/<int:account_id>/',cviews.ContactByAccountAPIView.as_view(), name='contacts-by-account'),
@@ -145,7 +142,9 @@ urlpatterns = [
     path('wallet/deduct/',wallview.deduct_from_wallet, name='deduct_from_wallet'),
     path('wallet/balance/',wallview.get_wallet_balance, name='get_wallet_balance'),
     path('wallet/transactions/',wallview.get_last_n_transactions, name='get_wallet_balance'),
-    path('query/', dispatch, name='query'),
-    path('upload/', u_dispatch.dispatcher, name='upload_dispatch')
+    path('query/', q_dispatch.dispatch, name='query'),
+    path('upload/', u_dispatch.dispatcher, name='upload_dispatch'),
+    path('addrows/' , add_nodes, name="add nodes"),
+    path('processrows/' ,process_nodes, name="process nodes")
 ]
 

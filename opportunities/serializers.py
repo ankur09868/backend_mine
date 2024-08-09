@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from .models import Opportunity
-from stage.models import Stage  # Assuming Stage model is imported correctly
+from leads.models import Stage  # Assuming Stage model is imported correctly
 
 class StageSerializer(serializers.ModelSerializer):
     class Meta:

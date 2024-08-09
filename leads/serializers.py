@@ -3,7 +3,7 @@
 from rest_framework import serializers
 from .models import Lead
 from custom_fields.models import CustomField
-from stage.models import Stage  # Assuming Stage model is imported correctly
+from .models import Stage  # Assuming Stage model is imported correctly
 
 class StageSerializer(serializers.ModelSerializer):
     class Meta:
