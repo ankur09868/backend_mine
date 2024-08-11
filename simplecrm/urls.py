@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.urls.conf import include
+from rest_framework.routers import DefaultRouter
+
 
 from accounts import views as aviews 
 from leads import views as lviews
@@ -57,95 +59,128 @@ from drafts import views as draftview
 from wallet import views as wallview
 from query.query_dispatch import dispatch
 from upload_media import upload_dispatch as u_dispatch
-
+from communication import insta_msg as imsg 
+router = DefaultRouter()
+router.register(r'instagram-campaigns', campview.InstagramCampaignViewSet)
+router.register(r'whatsapp-campaigns',campview.WhatsAppCampaignViewSet)
+router.register(r'email-campaigns', campview.EmailCampaignViewSet)
+router.register(r'call-campaigns', caviews.CallCampaignViewSet)
 
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
+    # User Registration
     path('register/', Reg.register, name='register'),  # Endpoint for user registration
-    path('login/', Reg.LoginView.as_view(), name='login'), 
-    path(r'accounts/', aviews.AccountListCreateAPIView.as_view(), name='account-list'),
-    path('accounts/<int:pk>/', aviews.AccountDetailAPIView.as_view(), name='account-detail'),
-    path("active_accounts/",get_most_active_accounts, name="most-active-entites"),
-    path(r'leads/', lviews.LeadListCreateAPIView.as_view(), name='lead-list'),
-    path('leads/<int:pk>/',lviews.LeadDetailAPIView.as_view(), name='lead-detail'),
-    path(r'opportunities/', oviews.OpportunityListAPIView.as_view(), name='opportunity-list'),
-    path('opportunities/<int:pk>/', oviews.OpportunityDetailAPIView.as_view(), name='opportunity-detail'),
-    path('contacts/', cviews.ContactListCreateAPIView.as_view(), name='contact-list-create'),
-    path('contacts/<int:pk>/', cviews.ContactDetailAPIView.as_view(), name='contact-detail'),
-    path('contacts/', cviews.ContactDetailAPIView.as_view(), name='contact-detail'),
-    path('meetings/', mviews.MeetingListCreateAPIView.as_view(), name='meeting-list-create'),
-    path('meetings/<int:pk>/', mviews.MeetingDetailAPIView.as_view(), name='meeting-detail'),
-    path('calls/', caviews.callsListAPIView.as_view(), name='calls'), 
-    path('calls/<int:pk>/', caviews.callsDetailAPIView.as_view(), name='calls-detail'),
-    path('interaction/', inviews.InteractionListAPIView.as_view(), name='interaction'),  
-    path('interaction/<int:pk>/',inviews.InteractionDetailAPIView.as_view(), name='interaction-detail'),
-    path('tasks/', tviews.TaskListCreateAPIView.as_view(), name='task-list'),
-    path('tasks/<int:pk>/', tviews.TaskRetrieveUpdateDestroyAPIView.as_view(), name='task-detail'), 
-    path('reminders/', rviews.ReminderListAPIView.as_view(), name='reminder-list'),
-    path('reminder/<int:pk>/', rviews.ReminderDetailAPIView.as_view(), name='reminder-detail'), 
-    path('uploadexcel/', ingex.ImportLeadData, name='excel'),
-    path('excel-column/', getxcol.get_excel_columns, name='column_excel'),
-    path('get-user/<str:username>/', getuser.get_user_by_username, name='get_user'),
-    path('get-all-user/', getuser.get_all_users, name='get_all_user'),
-    path('createTenant/', tenview.tenant_list, name='tenant'),
-    path('logout/', Reg.LogoutView.as_view(), name='logout'),
-    path('campaign/', campview.CampaignViewSet.as_view(), name='campaigns'),
-    path('campaign/<int:pk>/', campview.CampaignDetailAPIView.as_view(), name='campaigns'),
-    path('campaign/stats/', campview.CampaignStatsAPIView.as_view(), name='campaign-stats'),  # Add this line
-    path(r'node-templates/', nviews.NodeTemplateListCreateAPIView.as_view(), name='node-template-list-create'),
-    path('node-templates/<int:pk>/', nviews.NodeTemplateDetailAPIView.as_view(), name='node-template-detail'),
-    path('extract_cltv/<int:entity_type_id>/', extract_cltv, name='extract_cltv'),
-    path ('report/<str:report_id>/', oviews.get_report_by_id, name='get_report_by_id'),
-    path('recent_request/<str:model_name>/',rr.recent_request, name='recent_request'),
-    path("active_accounts/",get_most_active_accounts, name="most-active-entites"),
-    path("active_contacts/",get_most_active_contacts, name="most-active-entites"),
-    path("leads_sum/",get_lead_summation, name="most-active-entites"),
-    path('products/', prodview.ProductListAPIView.as_view(), name='products-list'),
-    path('product/<int:pk>/', prodview.ProductDetailAPIView.as_view(), name='product-detail'),
-    path('vendors', vendview.VendorsListAPIView.as_view(), name='vendors-list'),
-    path('vendor/<int:pk>', vendview.VendorDetailAPIView.as_view(), name='vendor-detail'),
-    path('documents/', docview.DocumentListAPIView.as_view(), name='vendors-list'),
-    path('documents/<int:pk>/', docview.DocumentDetailAPIView.as_view(), name='vendor-detail'),
-    path('return-documents/<int:entity_type>/<int:entity_id>/', docview.RetrieveDocumentsView.as_view(), name='retrieve-documents'),
-    path('return-documents/<int:entity_type>/', docview.RetrieveDocumentsView.as_view(), name='retrieve-documents'),    
-    path('create-dynamic-model/', dyv.CreateDynamicModelView.as_view(), name='create_dynamic_model'),
-    path('dynamic-models/', dyv.DynamicModelListView.as_view(), name='dynamic_model_list'),
-    path('dynamic-model-data/<str:model_name>/', dyv.DynamicModelDataView.as_view(), name='dynamic_model_data'),
-    path('delete-dynamic-model/<str:model_name>/', dyv.DeleteDynamicModelView.as_view(), name='delete_dynamic_model'),
-    path('return-interaction/<int:entity_type>/<int:entity_id>/', inviews.RetrieveInteractionsView.as_view(), name='retrieve-interaction'),
-    path('return-interaction/<int:entity_type>/', inviews.RetrieveInteractionsView.as_view(), name='retrieve-interaction'),    
-    path('deduplicate/', simviews.deduplicate_view, name='deduplicate'),
-    path('create-custom-field/', cfviews.create_custom_field, name='create_custom_field'),
-    path('user/<int:user_id>/tasks/', tviews.UserTasksListAPIView.as_view(), name='user-tasks-list'),
-    path('track_open/<int:contact_id>/', track.TrackOpenView.as_view(), name='track_open'),
-    path('track_open_count/', trac.TrackOpenCountView.as_view(), name='track_open_count'),
-    path('tickets/', tickview.TicketListAPIView.as_view(), name='ticket-list'),
-    path('tickets/<int:pk>/', tickview.TicketDetailAPIView.as_view(), name='ticket-detail'),
-    path('stage/list/<str:model_name>/', sviews.stage_list, name='stage-list'),#stage
-    path('stage/create/', sviews.stage_create, name='stage-create'),
-    path('stage/update/<int:stage_id>/', sviews.stage_update, name='stage-update'),
-    path('stage/delete/<int:stage_id>/', sviews.stage_delete, name='stage-delete'),
-    path('opportunity/<int:opportunity_id>/stage/', oviews.opportunity_stage, name='opportunity_stage'),
-    path('lead/<int:lead_id>/stage/', lviews.lead_stage, name='lead_stage'), 
-    path('lead/stage/', lviews.all_stages, name='all_lead_stage'), 
-    path('opportunity/stage/', oviews.all_stages, name='all_opportunity_stage'), 
-    path('generate-report/', rpviews.generate_and_get_report_view, name='generate_report'),#report
-    path('retrieve-reports/', rpviews.retrieve_all_reports_view, name='retrieve_reports'),
-    path('today/', rpviews.retrieve_today_report_view, name='retrieve_today_report'),
-    path('yesterday/', rpviews.retrieve_yesterday_report_view, name='retrieve_yesterday_report'),
-    path('execute-query/', apiviews.ExecuteQueryView.as_view(), name='execute_query'),
-    path('whatsapp_convo_post/<str:contact_id>/', whatsappview.save_conversations, name='save_whatsapp_convo'),
-    path('whatsapp_convo_get/<str:contact_id>/',whatsappview.view_conversation, name='get_whatsapp_convo'),
-    path('unique_insta_profiles/',whatsappview.get_unique_instagram_contact_ids, name='get_all_insta'),
-    path('drafts/', draftview.DraftListCreateAPIView.as_view()),           # List and create drafts
-    path('drafts/<int:id>/', draftview.DraftDetailAPIView.as_view()),
-    path('contacts_of_account/<int:account_id>/',cviews.ContactByAccountAPIView.as_view(), name='contacts-by-account'),
-    path('wallet/recharge/',wallview.recharge_wallet, name='recharge_wallet'),
-    path('wallet/deduct/',wallview.deduct_from_wallet, name='deduct_from_wallet'),
-    path('wallet/balance/',wallview.get_wallet_balance, name='get_wallet_balance'),
-    path('wallet/transactions/',wallview.get_last_n_transactions, name='get_wallet_balance'),
-    path('query/', dispatch, name='query'),
-    path('upload/', u_dispatch.dispatcher, name='upload_dispatch')
+
+    # User Authentication
+    path('login/', Reg.LoginView.as_view(), name='login'),  # User login
+    path('logout/', Reg.LogoutView.as_view(), name='logout'),  # User logout
+
+    # Account Management
+    path('accounts/', aviews.AccountListCreateAPIView.as_view(), name='account-list'),  # List and create accounts
+    path('accounts/<int:pk>/', aviews.AccountDetailAPIView.as_view(), name='account-detail'),  # Retrieve, update, delete account by ID
+
+    # Active Accounts
+    path("active_accounts/", get_most_active_accounts, name="most-active-entities"),  # Get most active accounts
+
+    # Lead Management
+    path('leads/', lviews.LeadListCreateAPIView.as_view(), name='lead-list'),  # List and create leads
+    path('leads/<int:pk>/', lviews.LeadDetailAPIView.as_view(), name='lead-detail'),  # Retrieve, update, delete lead by ID
+
+    # Opportunity Management
+    path('opportunities/', oviews.OpportunityListAPIView.as_view(), name='opportunity-list'),  # List and create opportunities
+    path('opportunities/<int:pk>/', oviews.OpportunityDetailAPIView.as_view(), name='opportunity-detail'),  # Retrieve, update, delete opportunity by ID
+
+    # Contact Management
+    path('contacts/', cviews.ContactListCreateAPIView.as_view(), name='contact-list-create'),  # List and create contacts
+    path('contacts/<int:pk>/', cviews.ContactDetailAPIView.as_view(), name='contact-detail'),  # Retrieve, update, delete contact by ID
+
+    # Meeting Management
+    path('meetings/', mviews.MeetingListCreateAPIView.as_view(), name='meeting-list-create'),  # List and create meetings
+    path('meetings/<int:pk>/', mviews.MeetingDetailAPIView.as_view(), name='meeting-detail'),  # Retrieve, update, delete meeting by ID
+
+    # Call Management
+    path('calls/', caviews.callsListAPIView.as_view(), name='calls'),  # List calls
+    path('calls/<int:pk>/', caviews.callsDetailAPIView.as_view(), name='calls-detail'),  # Retrieve, update, delete call by ID
+
+    # Interaction Management
+    path('interaction/', inviews.InteractionListAPIView.as_view(), name='interaction'),  # List interactions
+    path('interaction/<int:pk>/', inviews.InteractionDetailAPIView.as_view(), name='interaction-detail'),  # Retrieve, update, delete interaction by ID
+
+    # Task Management
+    path('tasks/', tviews.TaskListCreateAPIView.as_view(), name='task-list'),  # List and create tasks
+    path('tasks/<int:pk>/', tviews.TaskRetrieveUpdateDestroyAPIView.as_view(), name='task-detail'),  # Retrieve, update, delete task by ID
+
+    # Reminder Management
+    path('reminders/', rviews.ReminderListAPIView.as_view(), name='reminder-list'),  # List reminders
+    path('reminder/<int:pk>/', rviews.ReminderDetailAPIView.as_view(), name='reminder-detail'),  # Retrieve, update, delete reminder by ID
+
+    # Excel Data Upload
+    path('uploadexcel/', ingex.ImportLeadData, name='excel'),  # Upload leads from Excel file
+    path('excel-column/', getxcol.get_excel_columns, name='column_excel'),  # Get columns from Excel file
+
+    # User Management
+    path('get-user/<str:username>/', getuser.get_user_by_username, name='get_user'),  # Get user by username
+    path('get-all-user/', getuser.get_all_users, name='get_all_user'),  # Get all users
+
+    # Tenant Management
+    path('createTenant/', tenview.tenant_list, name='tenant'),  # Create a new tenant
+    path('getTenantDetail/<str:tenant_id>/', tenview.tenant_detail, name='tenant_details'),  # Create a new tenant
+
+    # Campaign Management
+    path('campaign/', campview.CampaignViewSet.as_view(), name='campaigns'),  # List and create campaigns
+    path('campaign/<int:pk>/', campview.CampaignDetailAPIView.as_view(), name='campaigns'),  # Retrieve, update, delete campaign by ID
+    path('campaign/stats/', campview.CampaignStatsAPIView.as_view(), name='campaign-stats'),  # Get campaign statistics
+
+    # Node Template Management
+    path('node-templates/', nviews.NodeTemplateListCreateAPIView.as_view(), name='node-template-list-create'),  # List and create node templates
+    path('node-templates/<int:pk>/', nviews.NodeTemplateDetailAPIView.as_view(), name='node-template-detail'),  # Retrieve, update, delete node template by ID
+
+    # CLTV Extraction
+    path('extract_cltv/<int:entity_type_id>/', extract_cltv, name='extract_cltv'),  # Extract CLTV for given entity type
+
+    # Report Management
+    path('report/<str:report_id>/', oviews.get_report_by_id, name='get_report_by_id'),  # Get report by ID
+    path('generate-report/', rpviews.generate_and_get_report_view, name='generate_report'),  # Generate and retrieve report
+    path('retrieve-reports/', rpviews.retrieve_all_reports_view, name='retrieve_reports'),  # Retrieve all reports
+    path('today/', rpviews.retrieve_today_report_view, name='retrieve_today_report'),  # Retrieve today's report
+    path('yesterday/', rpviews.retrieve_yesterday_report_view, name='retrieve_yesterday_report'),  # Retrieve yesterday's report
+
+    # Query Execution
+    path('execute-query/', apiviews.ExecuteQueryView.as_view(), name='execute_query'),  # Execute custom query
+
+    # WhatsApp Conversation Management
+    path('whatsapp_convo_post/<str:contact_id>/', whatsappview.save_conversations, name='save_whatsapp_convo'),  # Save WhatsApp conversations
+    path('whatsapp_convo_get/<str:contact_id>/', whatsappview.view_conversation, name='get_whatsapp_convo'),  # Get WhatsApp conversations
+    path('unique_insta_profiles/', whatsappview.get_unique_instagram_contact_ids, name='get_all_insta'),  # Get unique Instagram contact IDs
+
+    # Draft Management
+    path('drafts/', draftview.DraftListCreateAPIView.as_view(), name='draft-list-create'),  # List and create drafts
+    path('drafts/<int:id>/', draftview.DraftDetailAPIView.as_view(), name='draft-detail'),  # Retrieve, update, delete draft by ID
+
+    # Contact by Account
+    path('contacts_of_account/<int:account_id>/', cviews.ContactByAccountAPIView.as_view(), name='contacts-by-account'),  # Get contacts for specific account
+
+    # Wallet Management
+    path('wallet/recharge/', wallview.recharge_wallet, name='recharge_wallet'),  # Recharge wallet
+    path('wallet/deduct/', wallview.deduct_from_wallet, name='deduct_from_wallet'),  # Deduct from wallet
+    path('wallet/balance/', wallview.get_wallet_balance, name='get_wallet_balance'),  # Get wallet balance
+    path('wallet/transactions/', wallview.get_last_n_transactions, name='get_wallet_balance'),  # Get last transactions
+
+    # Generic Query
+    path('query/', dispatch, name='query'),  # Generic query endpoint
+
+    # File Upload
+    path('upload/', u_dispatch.dispatcher, name='upload_dispatch'),  # Upload dispatcher
+
+    # Message Saving
+    path('save-messages/', imsg.save_messages, name='save-messages'),  # Save messages
+    path('save-email-messages/', imsg.save_email_messages, name='save-email-messages'),  # Save email messages
+    path('store-selected-emails/', simviews.store_selected_emails, name='store_selected_emails'),  # Store selected emails
+    path('fetch-all-emails/', simviews.fetch_all_emails, name='fetch_all_emails'),  # Fetch all emails
+
+    # Include Router URLs
+    path('', include(router.urls)),  # Include individual campaign routing
+
 ]
 

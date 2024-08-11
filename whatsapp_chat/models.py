@@ -6,6 +6,7 @@ class Conversation(models.Model):
     sender = models.CharField(max_length=50)
     tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)
     source=models.CharField(max_length=255)
+    timestamp = models.DateTimeField(auto_now_add=True)
     # Add any other fields you may need
 
     # Assuming you have tenant-specific tables, add a foreign key to connect them

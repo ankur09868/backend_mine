@@ -66,6 +66,7 @@ INSTALLED_APPS = [
     'whatsapp_chat',
     'drafts',
     'wallet',
+    'communication',
 
 ]
 

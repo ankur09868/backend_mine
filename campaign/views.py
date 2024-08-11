@@ -8,6 +8,13 @@ from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIV
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from django.db.models import Sum
+from .models import InstagramCampaign
+from .models import WhatsAppCampaign
+from .models import EmailCampaign
+from .serializers import EmailCampaignSerializer
+from .serializers import WhatsAppCampaignSerializer
+from .serializers import InstagramCampaignSerializer
+
 class CampaignViewSet(ListCreateAPIView):
     queryset = Campaign.objects.all()
     serializer_class = CampaignSerializer
@@ -30,3 +37,33 @@ class CampaignStatsAPIView(APIView):  # Add this new view
             'total_revenue': str(total_revenue),  # Convert to string if needed
             'total_actual_cost': str(total_actual_cost),  # Convert to string if needed
         })
+    
+class InstagramCampaignViewSet(viewsets.ModelViewSet):
+    queryset = InstagramCampaign.objects.all()
+    serializer_class = InstagramCampaignSerializer
+
+    def perform_create(self, serializer):
+        serializer.save()
+
+    def perform_update(self, serializer):
+        serializer.save()
+
+class WhatsAppCampaignViewSet(viewsets.ModelViewSet):
+    queryset = WhatsAppCampaign.objects.all()
+    serializer_class = WhatsAppCampaignSerializer
+
+    def perform_create(self, serializer):
+        serializer.save()
+
+    def perform_update(self, serializer):
+        serializer.save()
+
+class EmailCampaignViewSet(viewsets.ModelViewSet):
+    queryset = EmailCampaign.objects.all()
+    serializer_class = EmailCampaignSerializer
+
+    def perform_create(self, serializer):
+        serializer.save()
+
+    def perform_update(self, serializer):
+        serializer.save()

@@ -22,12 +22,13 @@ class DocumentDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
 
 class RetrieveDocumentsView(APIView):
     def get(self, request, entity_type, entity_id=None, *args, **kwargs):
+        print(f"Received entity_type: {entity_type}, entity_id: {entity_id}")  
         try:
             content_type = ContentType.objects.get(document=entity_type)
+            documents = Document.objects.filter(entity_type=content_type)
             if entity_id:
-                documents = Document.objects.filter(entity_type=content_type, entity_id=entity_id)
-            else:
-                documents = Document.objects.filter(entity_type=content_type, entity_id__isnull=True)
+                documents = documents.filter(entity_id=int(entity_id))
+                print(f"Filtered documents: {documents}")  # Debugging line
 
             documents_data = [{'id': doc.id, 'name':doc.name, 'file': doc.file_url} for doc in documents]
 
