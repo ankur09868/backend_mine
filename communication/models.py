@@ -27,6 +27,7 @@ class Conversation(models.Model):
     ]
     user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
     conversation_id = models.CharField(max_length=255, unique=True)
+    messages = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     platform = models.CharField(max_length=50, choices=PLATFORM_CHOICES)

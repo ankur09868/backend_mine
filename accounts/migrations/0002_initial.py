@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
         ("tenant", "0001_initial"),
         ("accounts", "0001_initial"),
-        ("custom_fields", "0001_initial"),
+      
     ]
 
     operations = [
@@ -38,17 +38,7 @@ class Migration(migrations.Migration):
                 to=settings.AUTH_USER_MODEL,
             ),
         ),
-        migrations.AddField(
-            model_name="account",
-            name="custom_fields",
-            field=models.ForeignKey(
-                blank=True,
-                null=True,
-                on_delete=django.db.models.deletion.CASCADE,
-                related_name="account_custom_fields",
-                to="custom_fields.customfield",
-            ),
-        ),
+       
         migrations.AddField(
             model_name="account",
             name="tenant",

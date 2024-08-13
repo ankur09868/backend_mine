@@ -48,7 +48,7 @@ from dynamic_entities import views as dyv
 # from loyalty import views as lv
 from simplecrm import views as simviews
 from simplecrm import tracking as track
-from custom_fields import views as cfviews
+#from custom_fields import views as cfviews
 from simplecrm import tractcount as trac
 from tickets import views as tickview
 from stage import views as sviews
@@ -60,6 +60,7 @@ from wallet import views as wallview
 from query.query_dispatch import dispatch
 from upload_media import upload_dispatch as u_dispatch
 from communication import insta_msg as imsg 
+from communication import views as comview 
 router = DefaultRouter()
 router.register(r'instagram-campaigns', campview.InstagramCampaignViewSet)
 router.register(r'whatsapp-campaigns',campview.WhatsAppCampaignViewSet)
@@ -181,6 +182,7 @@ urlpatterns = [
 
     # Include Router URLs
     path('', include(router.urls)),  # Include individual campaign routing
+    path('msgtoconversation/', comview.GroupMessagesView.as_view(), name='messages to conversation'),  # Fetch all emails
 
 ]
 

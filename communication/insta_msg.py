@@ -82,3 +82,58 @@ def fetch_all_email_ids(request):
     email_id_list = list(email_ids)
 
     return Response(email_id_list, status=status.HTTP_200_OK)
+
+from datetime import timedelta
+from .models import Message, Conversation
+from django.utils import timezone
+def group_messages_into_conversations():
+    messages = Message.objects.all().order_by('sent_at')  # Fetch all messages, ordered by sent_at
+
+    # Group messages by user and platform
+    grouped_messages = {}
+    for message in messages:
+        key = (message.userid, message.platform)
+        if key not in grouped_messages:
+            grouped_messages[key] = []
+        grouped_messages[key].append(message)
+
+    # Now process the grouped messages to create conversations
+    for (userid, platform), message_group in grouped_messages.items():
+        current_conversation = []
+
+        # Sort the messages by sent_at
+        message_group.sort(key=lambda x: x.sent_at)
+
+        for message in message_group:
+            if not current_conversation:
+                current_conversation.append(message)
+            else:
+                last_message_time = current_conversation[-1].sent_at
+                # Set a time threshold (e.g., 30 minutes)
+                if message.sent_at - last_message_time <= timedelta(minutes=30):
+                    current_conversation.append(message)
+                else:
+                    # Save the current conversation to the database
+                    save_conversation(current_conversation, userid, platform)
+                    current_conversation = [message]
+
+        if current_conversation:
+            save_conversation(current_conversation, userid, platform)
+
+def save_conversation(message_group, userid, platform):
+    # Create a conversation from the grouped messages
+    contact_id = message_group[0].userid  # Assuming contact_id is the same as userid for grouping
+
+    # Combine messages into a single string
+    combined_messages = "\n".join([f"{message.sent_at}: {message.content}" for message in message_group])
+
+    # Create a unique conversation_id (you can adjust this logic as needed)
+    conversation_id = f"{userid}_{platform}_{timezone.now().timestamp()}"
+
+    # Create a new Conversation object
+    Conversation.objects.create(
+        user=message_group[0].sender,  # Set the user (or change as necessary)
+        conversation_id=conversation_id,
+        messages=combined_messages,  # Store the combined messages
+        platform=platform,
+    )
