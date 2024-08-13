@@ -4,7 +4,8 @@ from accounts.models import Account
 from contacts.models import Contact
 from django.conf import settings
 from tenant.models import Tenant 
-from stage.models import Stage
+from leads.models import Stage
+
 STAGES = (
     ('QUALIFICATION', 'QUALIFICATION'),
     ('NEEDS ANALYSIS', 'NEEDS ANALYSIS'),

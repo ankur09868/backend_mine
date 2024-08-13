@@ -38,10 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accounts',
-    'calls',
-    'leads',
-    'meetings',
     'opportunities',
+    'leads',
     'contacts',
     'interaction',
     'rest_framework',
@@ -54,16 +52,13 @@ INSTALLED_APPS = [
     'campaign',
     'node_temps',
     'vendors',
+    'custom_fields',
     'product',
     'documents',
     'dynamic_entities',
     'loyalty',
-    'custom_fields',
     'tickets',
-    'stage',
-    'reports',
-    'api',
-    'whatsapp_chat',
+    'analytics',
     'drafts',
     'wallet',
     'communication',
@@ -81,8 +76,41 @@ MIDDLEWARE = [
     'simplecrm.middleware.TenantMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-   
+    'simplecrm.middleware.LogRequestTimeMiddleware',
 ]
+# settings.py
+import os
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'requests.log'),
+            'formatter': 'verbose',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        '__main__': {
+            'handlers': ['file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+    },
+}
 
 # LOGGING = {
 #      'version': 1,

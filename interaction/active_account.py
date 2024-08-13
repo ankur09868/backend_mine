@@ -9,7 +9,7 @@ from django.http import JsonResponse
 from interaction.models import Interaction
 from accounts import serializers as accser
 from contacts import serializers as conser
-from stage.models import Stage
+from leads.models import Stage
 
 AccountSerializer=accser.AccountSerializer
 ContactSerializer=conser.ContactSerializer
