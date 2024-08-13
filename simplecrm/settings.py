@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     'analytics',
     'drafts',
     'wallet',
+    'communication',
 
 ]
 

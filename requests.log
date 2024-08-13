@@ -6442,3 +6442,11 @@ INFO 2024-08-13 19:12:47,749 basehttp "GET /products/ HTTP/1.1" 200 424256
 INFO 2024-08-13 19:14:10,920 basehttp "GET /product/167 HTTP/1.1" 301 0
 INFO 2024-08-13 19:14:13,506 basehttp "GET /product/167/ HTTP/1.1" 200 1917
 INFO 2024-08-13 19:14:38,143 basehttp "GET /products/ HTTP/1.1" 200 424256
+INFO 2024-08-13 21:16:50,604 autoreload Watching for file changes with StatReloader
+INFO 2024-08-13 21:17:28,226 autoreload D:\Nuren AI\New folder\backend_mine1\leads\serializers.py changed, reloading.
+INFO 2024-08-13 21:17:29,009 autoreload Watching for file changes with StatReloader
+INFO 2024-08-13 21:18:01,013 autoreload Watching for file changes with StatReloader
+INFO 2024-08-13 21:18:18,211 autoreload D:\Nuren AI\New folder\backend_mine1\custom_fields\views.py changed, reloading.
+INFO 2024-08-13 21:18:19,195 autoreload Watching for file changes with StatReloader
+INFO 2024-08-13 21:19:18,649 autoreload D:\Nuren AI\New folder\backend_mine1\custom_fields\views.py changed, reloading.
+INFO 2024-08-13 21:19:19,735 autoreload Watching for file changes with StatReloader

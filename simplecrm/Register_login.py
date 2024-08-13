@@ -24,7 +24,7 @@ def register(request):
         password = data.get('password')
         role = data.get('role', CustomUser.EMPLOYEE)  # Default role to employee if not provided
         organization = data.get('organization')
-        tenant_name = data.get('organization')
+        tenant_name = data.get('tenant')
         
         if not (username and email and password and organization and tenant_name):
             return JsonResponse({'msg': 'Missing required fields'}, status=400)
