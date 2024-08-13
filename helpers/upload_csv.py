@@ -7,6 +7,7 @@ from .tables import get_db_connection
 def upload_csv(request):
     if request.method == 'POST':
         csv_file = request.FILES.get('file')
+        tenant_id = request.headers.get('X-tenant-Id')
         if not csv_file or not csv_file.name.endswith('.csv'):
             return JsonResponse({"error": "File is not in CSV format"}, status=400)
         # table_name = request.POST.get('table_name', None)
@@ -53,8 +54,8 @@ def upload_csv(request):
             for row in csv_data:
                 # Prepare the INSERT query dynamically based on headers
                 insert_query = f"""
-                    INSERT INTO "{table_name}" ({', '.join(f'"{header}"' for header in headers)}) 
-                    VALUES ({', '.join('%s' for _ in range(len(headers)))})
+                    INSERT INTO "{table_name}" ({', '.join(f'"{header}"' for header in headers)}, tenant_id) 
+                    VALUES ({', '.join('%s' for _ in range(len(headers)))},{tenant_id})
                 """
                 cur.execute(insert_query, row)
                 print("row  created")
@@ -74,27 +75,32 @@ def upload_csv(request):
 
 
 @csrf_exempt
-def upload_xls(request):
+def upload_xls(request, df):
     if request.method == 'POST':
+        print("entering upload xls")
+        print("df: " ,df[:1])
+        model_name = request.POST.get('model_name')
         xls_file = request.FILES.get('file')
+        tenant_id = request.headers.get('X-Tenant-Id')
+        print("rcvd model_name: " ,model_name)
         if not (xls_file.name.endswith('.xls') or xls_file.name.endswith('.xlsx')):
             return JsonResponse({"error": "File is not in XLS/XLSX format"}, status=400)
         
-        # Extract file name without extension to use as table name
-        file_name = os.path.splitext(xls_file.name)[0]
-        table_name = file_name.lower().replace(' ', '_')  # Ensure table name is lowercase and replace spaces with underscores
+        if not model_name:
+            file_name = os.path.splitext(xls_file.name)[0]
+            table_name = file_name.lower().replace(' ', '_')  # Ensure table name is lowercase and replace spaces with underscores
+        else:
+            table_name = model_name
         
         # Read XLS file
-        df = pd.read_excel(xls_file)
-        
         # Extract headers and data
         headers = df.columns.tolist()
+        print("headers:" ,headers)
         data = df.values.tolist()
-
-        # Generate column names and their types (assuming VARCHAR(255) for simplicity)
+        print("data: " ,data[0])
+        
         column_definitions = ', '.join(f'"{header}" VARCHAR(255)' for header in headers)
-
-        # Create the table dynamically
+        
         create_table_query = f"""
             CREATE TABLE IF NOT EXISTS "{table_name}" (
                 id SERIAL PRIMARY KEY,
@@ -104,7 +110,7 @@ def upload_xls(request):
         # Connect to the PostgreSQL database
         conn = get_db_connection()
         cur = conn.cursor()
-
+        print("table created/found")
         try:
             # Create the table
             cur.execute(create_table_query)
@@ -112,14 +118,15 @@ def upload_xls(request):
 
             # Insert data into the table
             for row in data:
-                # Prepare the INSERT query dynamically based on headers
+                # Assuming `tenant_id` is part of the `row` or provided separately
                 insert_query = f"""
-                    INSERT INTO "{table_name}" ({', '.join(f'"{header}"' for header in headers)}) 
-                    VALUES ({', '.join('%s' for _ in range(len(headers)))})
+                    INSERT INTO "{table_name}" ({', '.join(f'"{header}"' for header in headers)}, "tenant_id") 
+                    VALUES ({', '.join('%s' for _ in range(len(headers)))}, %s);
                 """
-                cur.execute(insert_query, row)
+                print("row: ", row)
+                cur.execute(insert_query, row + [tenant_id])
                 print("row created")
-            conn.commit()
+                conn.commit()
 
             return JsonResponse({"message": "XLS file uploaded and data inserted successfully", "table_name": table_name}, status=200)
         

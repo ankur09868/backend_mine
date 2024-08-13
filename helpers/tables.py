@@ -10,9 +10,9 @@ table_mappings = {
     "Call": "calls_calls",
 }
 
-def get_db_connection(dbname="nurenpostgres"):
+def get_db_connection():
     return psycopg2.connect(
-            dbname="postgres",
+            dbname="nurenpostgres",
             user="nurenai",
             password="Biz1nurenWar*",
             host="nurenaistore.postgres.database.azure.com",

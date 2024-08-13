@@ -38,6 +38,7 @@ def tenant_list(request):
     
     elif request.method == 'POST':
         data = json.loads(request.body)
+        print("RCVD DATA: " ,data)
         tenant_id = data.get('tenant_id')
         organization=data.get('organization')
         db_user_password = data.get('password')
@@ -46,23 +47,25 @@ def tenant_list(request):
             # Start a database transaction
             with connection.cursor() as cursor:
                 cursor.execute("BEGIN")
-                
+                print("begin")
                 # Create the tenant in the database
                 tenant = Tenant.objects.create(id=tenant_id,organization=organization, db_user=f"crm_tenant_{tenant_id}", db_user_password=db_user_password)
-                
+                print("middle")
                 # Create role for the tenant
                 cursor.execute(f"CREATE ROLE crm_tenant_{tenant_id} INHERIT LOGIN PASSWORD '{db_user_password}' IN ROLE crm_tenant")
-
+                
                 # Commit the transaction
                 cursor.execute("COMMIT")
-                
+                print("end")
                 return JsonResponse({'msg': 'Tenant registered successfully'})
         except IntegrityError as e:
             # Rollback the transaction if any error occurs
             cursor.execute("ROLLBACK")
-            return JsonResponse({'msg': f'Error creating tenant: {str(e)}'}, status=500)
+            print("error: " ,str(e))
+            return JsonResponse({'message': f'Error creating tenant: {str(e)}'}, status=500)
         except Exception as e:
-            return JsonResponse({'msg': f'Error creating tenant: {str(e)}'}, status=500)
+            print("ERROR: " ,str(e))
+            return JsonResponse({'message': f'Error creating tenant: {str(e)}'}, status=500)
     
     else:
         return JsonResponse({'msg': 'Method not allowed'}, status=405)

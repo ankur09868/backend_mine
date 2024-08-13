@@ -53,7 +53,7 @@ from wallet import views as wallview
 from helpers import upload_dispatch as u_dispatch, query_dispatch as q_dispatch
 from .etl2  import add_nodes
 from .new_database import process_nodes
-
+from custom_fields.views import export_data_for_custom_field as edfc
 
 
 
@@ -98,7 +98,7 @@ urlpatterns = [
     path("active_accounts/",get_most_active_accounts, name="most-active-entites"),
     path("active_contacts/",get_most_active_contacts, name="most-active-entites"),
     path("leads_sum/",get_lead_summation, name="most-active-entites"),
-    path('products/', prodview.ProductListAPIView.as_view(), name='products-list'),
+    path('products/', prodview.get_products, name='products-list'),
     path('product/<int:pk>/', prodview.ProductDetailAPIView.as_view(), name='product-detail'),
     path('vendors', vendview.VendorsListAPIView.as_view(), name='vendors-list'),
     path('vendor/<int:pk>', vendview.VendorDetailAPIView.as_view(), name='vendor-detail'),
@@ -145,6 +145,7 @@ urlpatterns = [
     path('query/', q_dispatch.dispatch, name='query'),
     path('upload/', u_dispatch.dispatcher, name='upload_dispatch'),
     path('addrows/' , add_nodes, name="add nodes"),
-    path('processrows/' ,process_nodes, name="process nodes")
+    path('processrows/' ,process_nodes, name="process nodes"),
+    path('test/', edfc, name="export_custom_field")
 ]
 
