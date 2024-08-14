@@ -7,6 +7,3 @@ class ReportsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'reports'
     
-class StageConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'stage'

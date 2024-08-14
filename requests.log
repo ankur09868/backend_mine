@@ -6450,3 +6450,321 @@ INFO 2024-08-13 21:18:18,211 autoreload D:\Nuren AI\New folder\backend_mine1\cus
 INFO 2024-08-13 21:18:19,195 autoreload Watching for file changes with StatReloader
 INFO 2024-08-13 21:19:18,649 autoreload D:\Nuren AI\New folder\backend_mine1\custom_fields\views.py changed, reloading.
 INFO 2024-08-13 21:19:19,735 autoreload Watching for file changes with StatReloader
+INFO 2024-08-14 08:35:09,602 autoreload Watching for file changes with StatReloader
+INFO 2024-08-14 08:37:33,681 autoreload D:\Nuren AI\New folder\backend_mine1\custom_fields\views.py changed, reloading.
+INFO 2024-08-14 08:37:35,105 autoreload Watching for file changes with StatReloader
+INFO 2024-08-14 08:41:12,209 autoreload D:\Nuren AI\New folder\backend_mine1\custom_fields\views.py changed, reloading.
+INFO 2024-08-14 08:41:13,469 autoreload Watching for file changes with StatReloader
+INFO 2024-08-14 08:41:36,310 basehttp "GET /products/ HTTP/1.1" 200 424256
+INFO 2024-08-14 08:41:44,269 basehttp "GET /products/ HTTP/1.1" 200 424256
+INFO 2024-08-14 08:42:36,169 autoreload D:\Nuren AI\New folder\backend_mine1\custom_fields\views.py changed, reloading.
+INFO 2024-08-14 08:42:37,479 autoreload Watching for file changes with StatReloader
+INFO 2024-08-14 08:47:39,262 autoreload Watching for file changes with StatReloader
+INFO 2024-08-14 08:50:52,138 autoreload D:\Nuren AI\New folder\backend_mine1\custom_fields\views.py changed, reloading.
+INFO 2024-08-14 08:50:53,316 autoreload Watching for file changes with StatReloader
+INFO 2024-08-14 08:51:14,753 basehttp "POST /test/ HTTP/1.1" 200 41
+INFO 2024-08-14 08:52:18,500 autoreload D:\Nuren AI\New folder\backend_mine1\custom_fields\views.py changed, reloading.
+INFO 2024-08-14 08:52:19,762 autoreload Watching for file changes with StatReloader
+INFO 2024-08-14 08:52:35,835 autoreload D:\Nuren AI\New folder\backend_mine1\custom_fields\views.py changed, reloading.
+INFO 2024-08-14 08:52:36,929 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-14 08:52:56,523 log Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\custom_fields\views.py", line 200, in export_data_for_custom_field
+    cursor.execute(query, data)
+TypeError: not all arguments converted during string formatting
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\custom_fields\views.py", line 205, in export_data_for_custom_field
+    return JsonResponse(f"Error processing column '{column}': {error}")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 684, in __init__
+    raise TypeError(
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\custom_fields\views.py", line 208, in export_data_for_custom_field
+    return JsonResponse(f"Unexpected error: {e}")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 684, in __init__
+    raise TypeError(
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+ERROR 2024-08-14 08:52:56,538 basehttp "POST /test/ HTTP/1.1" 500 125580
+INFO 2024-08-14 08:53:40,320 autoreload D:\Nuren AI\New folder\backend_mine1\custom_fields\views.py changed, reloading.
+INFO 2024-08-14 08:53:41,568 autoreload Watching for file changes with StatReloader
+INFO 2024-08-14 08:54:21,499 autoreload D:\Nuren AI\New folder\backend_mine1\custom_fields\views.py changed, reloading.
+INFO 2024-08-14 08:54:22,594 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-14 08:54:52,809 log Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\custom_fields\views.py", line 200, in export_data_for_custom_field
+    cursor.execute(query, data)
+TypeError: not all arguments converted during string formatting
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\custom_fields\views.py", line 205, in export_data_for_custom_field
+    return JsonResponse({f"Error processing column '{column}'": error})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 691, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acs\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\Acs\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acs\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\serializers\json.py", line 106, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acs\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type TypeError is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\custom_fields\views.py", line 208, in export_data_for_custom_field
+    return JsonResponse({"Unexpected error": e})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 691, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acs\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\Acs\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acs\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\serializers\json.py", line 106, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acs\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type TypeError is not JSON serializable
+ERROR 2024-08-14 08:54:52,825 basehttp "POST /test/ HTTP/1.1" 500 167172
+INFO 2024-08-14 08:55:31,197 autoreload D:\Nuren AI\New folder\backend_mine1\custom_fields\views.py changed, reloading.
+INFO 2024-08-14 08:55:32,476 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-14 08:55:58,481 log Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\custom_fields\views.py", line 200, in export_data_for_custom_field
+    cursor.execute(query, data)
+TypeError: not all arguments converted during string formatting
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\custom_fields\views.py", line 205, in export_data_for_custom_field
+    return JsonResponse({f"Error processing column '{column}'": error}, status = 500)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 691, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acs\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\Acs\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acs\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\serializers\json.py", line 106, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acs\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type TypeError is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\custom_fields\views.py", line 208, in export_data_for_custom_field
+    return JsonResponse({"Unexpected error": e}, status = 500)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 691, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acs\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\Acs\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acs\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\serializers\json.py", line 106, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acs\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type TypeError is not JSON serializable
+ERROR 2024-08-14 08:55:58,485 basehttp "POST /test/ HTTP/1.1" 500 167320
+INFO 2024-08-14 08:57:58,079 autoreload D:\Nuren AI\New folder\backend_mine1\custom_fields\views.py changed, reloading.
+INFO 2024-08-14 08:57:59,441 autoreload Watching for file changes with StatReloader
+INFO 2024-08-14 09:00:18,329 autoreload D:\Nuren AI\New folder\backend_mine1\custom_fields\views.py changed, reloading.
+INFO 2024-08-14 09:00:19,629 autoreload Watching for file changes with StatReloader
+INFO 2024-08-14 09:00:39,306 basehttp "POST /test/ HTTP/1.1" 200 91
+INFO 2024-08-14 09:01:02,965 autoreload D:\Nuren AI\New folder\backend_mine1\custom_fields\views.py changed, reloading.
+INFO 2024-08-14 09:01:04,169 autoreload Watching for file changes with StatReloader
+INFO 2024-08-14 09:06:21,236 basehttp "POST /test/ HTTP/1.1" 200 41
+INFO 2024-08-14 11:03:15,041 basehttp "POST /query/ HTTP/1.1" 200 0
+INFO 2024-08-14 11:05:35,026 basehttp "POST /query/ HTTP/1.1" 200 109
+INFO 2024-08-14 11:06:31,360 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\psy_query.py changed, reloading.
+INFO 2024-08-14 11:06:34,055 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-14 11:39:34,763 log Internal Server Error: /leads/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 187, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\db\models\fields\mixins.py", line 15, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'stage'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "leads_stage" does not exist
+LINE 1: ...age"."model_name", "leads_stage"."tenant_id" FROM "leads_sta...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 713, in to_representation
+    return [
+           ^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 714, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 525, in to_representation
+    attribute = field.get_attribute(instance)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\rest_framework\fields.py", line 439, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\rest_framework\fields.py", line 106, in get_attribute
+    instance = getattr(instance, attr)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 205, in __get__
+    rel_obj = self.get_object(instance)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 168, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 646, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "leads_stage" does not exist
+LINE 1: ...age"."model_name", "leads_stage"."tenant_id" FROM "leads_sta...
+                                                             ^
+
+ERROR 2024-08-14 11:39:34,763 basehttp "GET /leads/ HTTP/1.1" 500 205199
+INFO 2024-08-14 12:01:34,068 autoreload Watching for file changes with StatReloader
+INFO 2024-08-14 12:01:57,055 basehttp "GET /leads/ HTTP/1.1" 200 2192
+WARNING 2024-08-14 12:05:39,023 log Not Found: /opportunity/
+WARNING 2024-08-14 12:05:39,024 basehttp "GET /opportunity/ HTTP/1.1" 404 14621
+INFO 2024-08-14 12:05:57,307 basehttp "GET /opportunities/ HTTP/1.1" 200 2449
