@@ -1,18 +1,23 @@
 from django.shortcuts import get_object_or_404
-from rest_framework import status
+from rest_framework import status, generics
 
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from datetime import datetime
-from .models import Interaction
+from .models import Interaction, calls, meetings, Conversation
 from tenant.models import Tenant
 from django.contrib.contenttypes.models import ContentType
-from .serializers import InteractionSerializer
+from .serializers import InteractionSerializer, callsSerializer, meetingsSerializer
+
+from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
 
 from django.http import JsonResponse
 # from .utils import fetch_entity_details
 from interaction.models import Interaction
 from django.db.models import Count
+
+from django.views.decorators.csrf import csrf_exempt
+import json
 
 from django.views.decorators.http import require_http_methods
 
@@ -72,8 +77,6 @@ class InteractionListAPIView(APIView):
         except Exception as e:
             return Response({'error': f'An error occurred while processing the request: {e}'}, status=status.HTTP_400_BAD_REQUEST)
         
-
-
 def extract_cltv(request, entity_type_id):
     try:
         interactions = Interaction.objects.filter(entity_type_id=entity_type_id)
@@ -139,3 +142,85 @@ class RetrieveInteractionsView(APIView):
             return Response({'success': False, 'message': 'Invalid entity_type'}, status=status.HTTP_400_BAD_REQUEST)
         except Exception as e:
             return Response({'success': False, 'message': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+
+class callsListAPIView(generics.ListCreateAPIView):
+    queryset = calls.objects.all()  # Using call model queryset instead of Lead
+    serializer_class = callsSerializer  # Using callSerializer instead of LeadSerializer
+    # permission_classes = (IsAdminUser,)  # Optionally, uncomment and modify the permission classes
+
+    def create(self, request, *args, **kwargs):
+        try:
+            return super().create(request, *args, **kwargs)
+        except Exception as e:
+            print(f"An error occurred while processing the request: {e}")
+            raise  # Re-raise the exception for Django to handle
+
+class callsDetailAPIView(RetrieveUpdateDestroyAPIView):
+    queryset = calls.objects.all()
+    serializer_class = callsSerializer
+    # Uncomment the line below to restrict access to admin users only
+    # permission_classes = (IsAdminUser,)
+
+class MeetingListCreateAPIView(ListCreateAPIView):
+    queryset = meetings.objects.all()
+    serializer_class = meetingsSerializer
+
+class MeetingDetailAPIView(RetrieveUpdateDestroyAPIView):
+    queryset = meetings.objects.all()
+    serializer_class = meetingsSerializer
+
+
+@csrf_exempt
+def save_conversations(request, contact_id):
+    try:
+        if request.method == 'POST':
+            source = request.GET.get('source', '')
+            body = json.loads(request.body)
+            conversations = body.get('conversations', [])
+            tenant = body.get('tenant')
+            
+
+            for message in conversations:
+                text = message.get('text', '')
+                sender = message.get('sender', '')
+
+                # Create and save Conversation object
+                Conversation.objects.create(contact_id=contact_id, message_text=text, sender=sender,tenant_id=tenant,source=source)
+
+            print("Conversation data saved successfully!")
+            return JsonResponse({"message": "Conversation data saved successfully!"}, status=200)
+
+        return JsonResponse({"error": "Invalid request method"}, status=400)
+
+    except Exception as e:
+        print("Error while saving conversation data:", e)
+        return JsonResponse({"error": str(e)}, status=500)
+
+
+@csrf_exempt
+def view_conversation(request, contact_id):
+    try:
+        # Query conversations for a specific contact_id
+        source = request.GET.get('source', '')
+        conversations = Conversation.objects.filter(contact_id=contact_id,source=source).values('message_text', 'sender')
+
+        # Format data as per your requirement
+        formatted_conversations = []
+        for conv in conversations:
+            formatted_conversations.append({'text': conv['message_text'], 'sender': conv['sender']})
+
+        return JsonResponse(formatted_conversations, safe=False)
+
+    except Exception as e:
+        print("Error while fetching conversation data:", e)
+        return JsonResponse({'error': str(e)}, status=500)
+    
+@csrf_exempt
+def get_unique_instagram_contact_ids(request):
+    try:
+        unique_contact_ids = Conversation.objects.filter(source='instagram').values_list('contact_id', flat=True).distinct()
+        return JsonResponse({"unique_contact_ids": list(unique_contact_ids)})
+    except Exception as e:
+        print("Error while fetching unique contact IDs:", e)
+        return JsonResponse({"error": "Error while fetching unique contact IDs"}, status=500)

@@ -23,3 +23,4 @@ class Vendors(models.Model):
 
     def __str__(self):
         return self.vendor_name
+

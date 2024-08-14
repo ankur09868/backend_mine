@@ -1,5 +1,5 @@
-from storage.graph import get_graph_schema
-from storage.tables import get_tables_schema
+from .graph import get_graph_schema
+from .tables import get_tables_schema
 
 graph_path = r"simplecrm/Neo4j-a71a08f7-Created-2024-07-25.txt"
 graph_schema = get_graph_schema(graph=graph_path)

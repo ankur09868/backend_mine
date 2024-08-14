@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from accounts.models import Account
 from django.conf import settings
 from tenant.models import Tenant 
-from stage.models import Stage
+
 LEAD_SOURCE = (
     ('call', 'Call'),
     ('email', 'Email'),
@@ -26,6 +26,21 @@ PRIORITY_CHOICES = (
     ('Medium', 'Medium'),
     ('Low', 'Low')
 )
+
+class Stage(models.Model):
+    MODEL_CHOICES = (
+        ('LEAD', 'lead'),
+        ('OPPORTUNITY', 'opportunity'),
+    )
+
+    status = models.CharField(max_length=64)
+    model_name = models.CharField(max_length=20, choices=MODEL_CHOICES)
+    tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.status
+
+
 class Lead(models.Model):
     title = models.CharField("Treatment Pronouns for the customer", max_length=64, blank=True, null=True)
     first_name = models.CharField(("First name"), max_length=255)
@@ -50,3 +65,13 @@ class Lead(models.Model):
     priority = models.CharField("Lead Priority", max_length=6, blank= True, null= True, choices=PRIORITY_CHOICES )
     def __str__(self):
         return self.first_name + self.last_name
+
+class Report(models.Model):
+    created_at = models.DateTimeField(auto_now_add=True)
+    leads_amount = models.DecimalField(max_digits=12, decimal_places=2, default=0)
+    revenue = models.DecimalField(max_digits=12, decimal_places=2, default=0)
+    total_leads = models.IntegerField(default=0)
+
+    def __str__(self):
+        return f"Report {self.created_at.strftime('%Y-%m-%d %H:%M:%S')}"
+
