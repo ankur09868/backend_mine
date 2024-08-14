@@ -50,6 +50,7 @@ from tickets import views as tickview
 from analytics import views as analyticsviews
 from drafts import views as draftview
 from wallet import views as wallview
+from stage import views as stageview
 from helpers import upload_dispatch as u_dispatch, query_dispatch as q_dispatch
 from .etl2  import add_nodes
 from .new_database import process_nodes
@@ -119,10 +120,10 @@ urlpatterns = [
     path('track_open_count/', trac.TrackOpenCountView.as_view(), name='track_open_count'),
     path('tickets/', tickview.TicketListAPIView.as_view(), name='ticket-list'),
     path('tickets/<int:pk>/', tickview.TicketDetailAPIView.as_view(), name='ticket-detail'),
-    path('stage/list/<str:model_name>/', lviews.stage_list, name='stage-list'),#stage
-    path('stage/create/', lviews.stage_create, name='stage-create'),
-    path('stage/update/<int:stage_id>/', lviews.stage_update, name='stage-update'),
-    path('stage/delete/<int:stage_id>/', lviews.stage_delete, name='stage-delete'),
+    path('stage/list/<str:model_name>/', stageview.stage_list, name='stage-list'),#stage
+    path('stage/create/', stageview.stage_create, name='stage-create'),
+    path('stage/update/<int:stage_id>/', stageview.stage_update, name='stage-update'),
+    path('stage/delete/<int:stage_id>/', stageview.stage_delete, name='stage-delete'),
     path('opportunity/<int:opportunity_id>/stage/', oviews.opportunity_stage, name='opportunity_stage'),
     path('lead/<int:lead_id>/stage/', lviews.lead_stage, name='lead_stage'), 
     path('lead/stage/', lviews.all_stages, name='all_lead_stage'), 

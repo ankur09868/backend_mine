@@ -6,7 +6,7 @@ from rest_framework.permissions import AllowAny
 # from simplecrm.models import CustomUser
 from django.conf import settings
 from simplecrm.models import CustomUser
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 from django.shortcuts import get_object_or_404
 from accounts.models import Account
 from interaction.models import calls
@@ -172,7 +172,7 @@ def export_data_for_custom_field(request):
         tenant_id = request.headers.get('X-Tenant-ID')
 
         df = create_subfile(uploaded_file, columns_text, merge_columns)
-        print("DATAFRAM CREATED")
+        print("DATAFRAM CREATED: " ,df.columns)
         
         # Open database connection
         conn = get_db_connection()
@@ -202,15 +202,14 @@ def export_data_for_custom_field(request):
                 print(f"Data for column '{column}' inserted successfully.")
                 
             except Exception as error:
-                print(f"Error processing column '{column}': {error}")
-        
-        
+                return HttpResponse(f"Error processing column '{column}': {error}")
+        return JsonResponse({"message": "data successfully uploaded"}, status = 200)
     except Exception as e:
-        print(f"Unexpected error: {e}")
+        return HttpResponse(f"Unexpected error: {e}")
     
     finally:
         if cursor:
             cursor.close()
         if conn:
             conn.close()
-        return JsonResponse({"message": "data successfully uploaded"}, status = 200)
+
