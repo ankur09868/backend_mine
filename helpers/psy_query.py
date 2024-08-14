@@ -1,8 +1,8 @@
 import os, json
 from openai import OpenAI
 from django.views.decorators.csrf import csrf_exempt
-from .prompts import SYS_PROMPT_1_psyq as SYS_PROMPT_1, SYS_PROMPT_2_psyq as SYS_PROMPT_2
-from django.http import HttpResponse
+from .prompts import SYS_PROMPT_1_psyq as SYS_PROMPT_1, SYS_PROMPT_2_psyq as SYS_PROMPT_2, SYS_PROMPT_3
+from django.http import HttpResponse, JsonResponse
 from .graph import get_graph_schema, get_graphConnection
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -14,17 +14,6 @@ def LLMlayer_1(SYS_PROMPT, USER_PROMPT, graph_schema):
         messages=[
             {"role": "system", "content": SYS_PROMPT},
             {"role": "user", "content": graph_schema},
-            {"role": "user", "content": USER_PROMPT}
-        ]
-    )
-    return response.choices[0].message.content
-
-def LLMlayer_2(SYS_PROMPT, USER_PROMPT, graph_schema):
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[
-            {"role": "system", "content": SYS_PROMPT},
-            {"role": "user", "content" : graph_schema},
             {"role": "user", "content": USER_PROMPT}
         ]
     )
@@ -42,6 +31,18 @@ def LLMlayer2(question, cypher_response):
     )
     return response.choices[0].message.content
 
+def get_node_name_and_id(node):
+    type = list(node.labels)[0]
+    mapping = {
+        'Accounts': 'Account_Name',
+        'Contact' : 'Contact_Name',
+        'Leads': 'Lead_Name',
+        'Meetings': 'Title',
+        'Tasks': 'Subject'
+    }
+    name = mapping.get(type)
+    id = node.element_id
+    return node.get(name), id
 def get_data(records, keys):
     nodes = []
     relationships = []
@@ -54,31 +55,34 @@ def get_data(records, keys):
                 # Check if the element has a 'type' attribute, indicating it's a relationship
                 if hasattr(element, 'type'):
                     # id = element.element_id
+                    # print("relationship element: " ,element)
                     type = element.type
                     properties = {k: element[k] for k in element}
                     
-                    # Try to get the start and end nodes, defaulting to empty strings if not found
-                    startNode = element.nodes[0].get('name') or element.nodes[0].get('firstname') or element.nodes[0].get('productname', '')
-                    endNode = element.nodes[1].get('name') or element.nodes[1].get('firstname') or element.nodes[1].get('productname', '')
-                    
+                    startNode, startNode_id = get_node_name_and_id(element.nodes[0])
+                    endNode, endNode_id = get_node_name_and_id(element.nodes[1])
+
+
                     # Add all this data in JSON format in relationships
                     relationship = {
                         # 'id': id,
                         'type': type,
                         'properties': properties,
                         'startNode': startNode,
-                        'endNode': endNode
+                        'startNode_id': startNode_id,
+                        'endNode': endNode,
+                        'endNode_id': endNode_id
                     }
                     relationships.append(relationship)
                 
                 else:
-                    # id = record[key].element_id
-                    # labels = list(element.labels)
-                    properties = {k: element[k] for k in element}
                     
+                    name, id = get_node_name_and_id(element)
+                    properties = {k: element[k] for k in element}
                     # Add all this data in JSON format in nodes
                     node = {
-                        # 'id': id,
+                        'id': id,
+                        'name': name,
                         'properties': properties
                     }
                     nodes.append(node)
@@ -98,8 +102,9 @@ def query(question, graph_path):
             driver = get_graphConnection(graph_path)
             graph_schema = get_graph_schema(graph_path)
 
-            result_1 = LLMlayer_1(SYS_PROMPT_1, question, graph_schema)
-            result_2 = LLMlayer_2(SYS_PROMPT_2, result_1, graph_schema)
+            result_1 = LLMlayer_1(SYS_PROMPT_1, question, graph_schema) #natural language, graph wise
+            result_2 = LLMlayer_1(SYS_PROMPT_2, result_1, graph_schema) #query neo4j
+            # result_3 = LLMlayer_1(SYS_PROMPT_3, result_2, graph_schema)
 
             if result_2.startswith("```") and result_2.endswith("```"):
                 query_str = result_2.strip().replace("```", "").strip()
@@ -107,11 +112,12 @@ def query(question, graph_path):
                     query_str = query_str.strip().replace("cypher", "").strip()
             else:
                 query_str = result_2
-
+            
+            print("QUEYR: " ,query_str)
             if driver is None:
-                 print("Driver is not initialized!")
+                print("Driver is not initialized!")
             else:
-                 records, summary, keys = driver.execute_query(query_str, database_="neo4j")
+                records, summary, keys = driver.execute_query(query_str, database_="neo4j")
             driver.close()
 
             nodes, relationships = get_data(records, keys)
@@ -120,13 +126,15 @@ def query(question, graph_path):
             cypher_response = f"""
             These are the nodes: {nodes}
             These are the relationships: {relationships}"""
-
-            final_result = LLMlayer2(question, cypher_response)
             
-            return HttpResponse(
-                f"Success: {final_result}",
-                status=200
-            )
+            final_result = LLMlayer2(question, cypher_response) #query result  -> natural language
+            response_data = {
+            "message" : final_result,
+            "nodes": [{"id": node["id"], "name": node["name"]} for node in nodes],
+            "links": [{"source" : link["startNode_id"], "target": link["endNode_id"]} for link in relationships]
+            }
+
+            return HttpResponse(json.dumps(response_data, indent=4), content_type = 'application/json')
 
         except json.JSONDecodeError:
             return HttpResponse(
