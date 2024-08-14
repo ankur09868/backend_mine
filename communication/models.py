@@ -44,4 +44,5 @@ class Message(models.Model):
     content = models.TextField()
     sent_at = models.DateTimeField(auto_now_add=True)
     platform = models.CharField(max_length=50, choices=PLATFORM_CHOICES)
-    userid=models.CharField(max_length=5000)    
+    userid=models.CharField(max_length=5000)  
+    mapped = models.BooleanField(default=False)  

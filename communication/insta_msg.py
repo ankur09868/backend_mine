@@ -87,7 +87,8 @@ from datetime import timedelta
 from .models import Message, Conversation
 from django.utils import timezone
 def group_messages_into_conversations():
-    messages = Message.objects.all().order_by('sent_at')  # Fetch all messages, ordered by sent_at
+    # Fetch only messages that haven't been mapped, ordered by sent_at
+    messages = Message.objects.filter(mapped=False).order_by('sent_at')
 
     # Group messages by user and platform
     grouped_messages = {}
@@ -119,6 +120,12 @@ def group_messages_into_conversations():
 
         if current_conversation:
             save_conversation(current_conversation, userid, platform)
+
+        # After saving conversations, mark these messages as mapped
+        for msg in current_conversation:
+            msg.mapped = True
+            msg.save() 
+
 
 def save_conversation(message_group, userid, platform):
     # Create a conversation from the grouped messages

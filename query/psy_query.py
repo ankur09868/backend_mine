@@ -108,7 +108,10 @@ def query(question, graph_path):
             else:
                 query_str = result_2
 
-            records, summary, keys = driver.execute_query(query_str, database_="neo4j")
+            if driver is None:
+                 print("Driver is not initialized!")
+            else:
+                 records, summary, keys = driver.execute_query(query_str, database_="neo4j")
             driver.close()
 
             nodes, relationships = get_data(records, keys)
