@@ -112,7 +112,8 @@ def query(question, graph_path):
             driver.close()
 
             nodes, relationships = get_data(records, keys)
-
+            print("NODES: " , nodes)
+            print("Relationships: " ,relationships)
             cypher_response = f"""
             These are the nodes: {nodes}
             These are the relationships: {relationships}"""

@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from accounts.models import Account
 from django.conf import settings
 from tenant.models import Tenant 
+from stage.models import Stage
 
 LEAD_SOURCE = (
     ('call', 'Call'),
@@ -26,20 +27,6 @@ PRIORITY_CHOICES = (
     ('Medium', 'Medium'),
     ('Low', 'Low')
 )
-
-class Stage(models.Model):
-    MODEL_CHOICES = (
-        ('LEAD', 'lead'),
-        ('OPPORTUNITY', 'opportunity'),
-    )
-
-    status = models.CharField(max_length=64)
-    model_name = models.CharField(max_length=20, choices=MODEL_CHOICES)
-    tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return self.status
-
 
 class Lead(models.Model):
     title = models.CharField("Treatment Pronouns for the customer", max_length=64, blank=True, null=True)
