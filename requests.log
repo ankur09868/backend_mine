@@ -6975,3 +6975,23 @@ INFO 2024-08-14 16:33:09,880 basehttp "POST /query/ HTTP/1.1" 200 4685
 INFO 2024-08-14 16:53:17,249 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\psy_query.py changed, reloading.
 INFO 2024-08-14 16:53:18,419 autoreload Watching for file changes with StatReloader
 INFO 2024-08-14 16:53:48,739 basehttp "POST /query/ HTTP/1.1" 200 4537
+INFO 2024-08-14 20:11:49,230 autoreload Watching for file changes with StatReloader
+WARNING 2024-08-14 20:13:05,616 log Not Found: /query/ 
+WARNING 2024-08-14 20:13:05,617 basehttp "GET /query/%20 HTTP/1.1" 404 14608
+WARNING 2024-08-14 20:13:13,434 log Not Found: /accounts/ 
+WARNING 2024-08-14 20:13:13,434 basehttp "GET /accounts/%20 HTTP/1.1" 404 14617
+WARNING 2024-08-14 20:13:23,276 log Not Found: /leads/ 
+WARNING 2024-08-14 20:13:23,277 basehttp "GET /leads/%20 HTTP/1.1" 404 14608
+WARNING 2024-08-14 20:13:33,200 log Not Found: /interactions/ 
+WARNING 2024-08-14 20:13:33,201 basehttp "GET /interactions/%20 HTTP/1.1" 404 14629
+INFO 2024-08-14 20:14:32,137 basehttp "POST /query/ HTTP/1.1" 200 6415
+INFO 2024-08-14 20:15:47,212 autoreload D:\new_nuren\backend_mine\helpers\vectors_views.py changed, reloading.
+INFO 2024-08-14 20:15:48,513 autoreload Watching for file changes with StatReloader
+INFO 2024-08-14 20:17:04,291 basehttp "POST /query/ HTTP/1.1" 200 5449
+INFO 2024-08-14 20:17:19,529 autoreload D:\new_nuren\backend_mine\helpers\graph.py changed, reloading.
+INFO 2024-08-14 20:17:20,848 autoreload Watching for file changes with StatReloader
+INFO 2024-08-14 20:17:45,533 autoreload Watching for file changes with StatReloader
+INFO 2024-08-14 20:18:16,630 autoreload Watching for file changes with StatReloader
+INFO 2024-08-14 20:19:35,477 basehttp "POST /query/ HTTP/1.1" 200 162
+INFO 2024-08-14 20:19:51,596 autoreload D:\new_nuren\backend_mine\helpers\graph.py changed, reloading.
+INFO 2024-08-14 20:19:52,671 autoreload Watching for file changes with StatReloader

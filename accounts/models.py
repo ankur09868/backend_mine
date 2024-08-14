@@ -57,8 +57,6 @@ class Account(models.Model):
     tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE )
     account_type = models.CharField(max_length=10, choices=ACCOUNT_TYPE_CHOICES, null=True)
     stage = models.CharField(max_length=20, choices=STAGE_CHOICES, blank=True, null=True)
-   # custom_fields = models.ForeignKey(CustomField, on_delete=models.CASCADE, null=True, blank=True, related_name='account_custom_fields')
-
 
 
 
