@@ -8,25 +8,24 @@ from .graph import get_graph_schema, get_graphConnection
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key = OPENAI_API_KEY)
 
-def LLMlayer_1(SYS_PROMPT, USER_PROMPT, graph_schema):
+def LLMlayer(SYS_PROMPT, USER_PROMPT, graph_schema):
+    messages = [{"role": "system", "content": SYS_PROMPT}]
+    if graph_schema:
+        messages.append({"role": "user", "content": graph_schema})
+    messages.append({"role": "user", "content": USER_PROMPT})
     response = client.chat.completions.create(
         model="gpt-4o-mini",
-        messages=[
-            {"role": "system", "content": SYS_PROMPT},
-            {"role": "user", "content": graph_schema},
-            {"role": "user", "content": USER_PROMPT}
-        ]
+        messages=messages
     )
     return response.choices[0].message.content
 
-def LLMlayer2(question, cypher_response):
+def correctionLayer(question, cypher_response):
     response = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[
             {"role": "system", "content": "You are a helpful assistant who answers STRICTLY to what is asked, based on the info provided. DO NOT ADD DATA FROM THE INTERNET. YOU KNOW NOTHING ELSE EXCEPT THE DATA BEING PROVIDED TO YOU. Keep your answers concise and only the required information"},
             {"role": "user", "content": f"on asking a cypher query, this is the response recieved: {cypher_response} "},
-            {"role": "assistant", "content": "Sure, please provide the data you would like converted into a paragraph."},
-            {"role": "user", "content":f"""Based on the Nodes OR Relationships, craft a suitable response that also answers to the question: {question}."""}
+            {"role": "user", "content":f"""Based on the Nodes OR Relationships, craft a suitable response that also answers to the question: {question}. Keep your response concise."""}
         ]
     )
     return response.choices[0].message.content
@@ -79,7 +78,6 @@ def get_data(records, keys):
                     
                     name, id = get_node_name_and_id(element)
                     properties = {k: element[k] for k in element}
-                    # Add all this data in JSON format in nodes
                     node = {
                         'id': id,
                         'name': name,
@@ -102,16 +100,16 @@ def query(question, graph_path):
             driver = get_graphConnection(graph_path)
             graph_schema = get_graph_schema(graph_path)
 
-            result_1 = LLMlayer_1(SYS_PROMPT_1, question, graph_schema) #natural language, graph wise
-            result_2 = LLMlayer_1(SYS_PROMPT_2, result_1, graph_schema) #query neo4j
-            # result_3 = LLMlayer_1(SYS_PROMPT_3, result_2, graph_schema)
+            result_1 = LLMlayer(SYS_PROMPT_1, question, graph_schema) #natural language, graph wise
+            result_2 = LLMlayer(SYS_PROMPT_2, result_1, graph_schema) #query neo4j
+            result_3 = LLMlayer(SYS_PROMPT_3, result_2, graph_schema=None)
 
-            if result_2.startswith("```") and result_2.endswith("```"):
-                query_str = result_2.strip().replace("```", "").strip()
+            if result_3.startswith("```") and result_3.endswith("```"):
+                query_str = result_3.strip().replace("```", "").strip()
                 if query_str.startswith("cypher"):
                     query_str = query_str.strip().replace("cypher", "").strip()
             else:
-                query_str = result_2
+                query_str = result_3
             
             print("QUEYR: " ,query_str)
             if driver is None:
@@ -127,11 +125,11 @@ def query(question, graph_path):
             These are the nodes: {nodes}
             These are the relationships: {relationships}"""
             
-            final_result = LLMlayer2(question, cypher_response) #query result  -> natural language
+            final_result = correctionLayer(question, cypher_response) #query result  -> natural language
             response_data = {
             "message" : final_result,
             "nodes": [{"id": node["id"], "name": node["name"]} for node in nodes],
-            "links": [{"source" : link["startNode_id"], "target": link["endNode_id"]} for link in relationships]
+            "links": [{"source" : link["startNode_id"], "target": link["endNode_id"], "title": link["type"]} for link in relationships]
             }
 
             return HttpResponse(json.dumps(response_data, indent=4), content_type = 'application/json')
