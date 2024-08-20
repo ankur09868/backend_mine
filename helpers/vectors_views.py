@@ -158,9 +158,9 @@ def make_openai_call(combined_query, query_text):
         response = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[
-                {"role": "system", "content": "You are a helpful assistant. You will analyze the provided similar documents and select the four best matches based on the query. Provide the relevant sources ."},
+               {"role": "system", "content": "You are a helpful assistant. You are a specialized assistant tasked with analyzing a set of similar documents. You are an expert assistant specialized in analyzing documents. Your task is to carefully read the provided document and extract the information that best answers the given query.If relevant information is found, include the file path in your response. If no relevant information is found, do not mention the file name or path"},
                 {"role": "user", "content": f"Here are the similar documents:\n{combined_query}"},
-                {"role": "user", "content": f"Based on the provided documents, here is the query: {query_text}. Please select the four documents that best match this query."}
+                {"role": "user", "content": f"Based on the provided documents, here is the query: {query_text}. Provide a concise and accurate response.Also written the file path"}
             ]
         )
 
@@ -262,13 +262,11 @@ class HandleQueryView(APIView):
             
                     response = {
                         "query": query_text,
-                        "combined_query": combined_query,
                         "openai_response": openai_response
                     }
                     
                     fresponse = (
                         f"query: {response['query']}\n"
-                        f"combined_query: {response['combined_query']}\n"
                         f"openai_response: {response['openai_response']}\n"
                     )
                     return HttpResponse(f"Success: {fresponse}", status=200)
