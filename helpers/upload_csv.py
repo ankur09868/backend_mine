@@ -4,18 +4,22 @@ from django.http import JsonResponse
 from .tables import get_db_connection
 
 @csrf_exempt
-def upload_csv(request):
+def upload_csv(request, df):
     if request.method == 'POST':
+        print("entering upload xls")
+        print("df: " ,df[:1])
+        model_name = request.POST.get('model_name')
         csv_file = request.FILES.get('file')
-        tenant_id = request.headers.get('X-tenant-Id')
+        tenant_id = request.headers.get('X-Tenant-Id')
         if not csv_file or not csv_file.name.endswith('.csv'):
             return JsonResponse({"error": "File is not in CSV format"}, status=400)
         # table_name = request.POST.get('table_name', None)
         
-        # Extract file name without extension to use as table name
-        file_name = os.path.splitext(csv_file.name)[0]
-        table_name = file_name.lower().replace(' ', '_')  # Ensure table name is lowercase and replace spaces with underscores
-        
+        if not model_name:
+            file_name = os.path.splitext(csv_file.name)[0]
+            table_name = file_name.lower().replace(' ', '_')  # Ensure table name is lowercase and replace spaces with underscores
+        else:
+            table_name = model_name
         # Try reading the CSV file with different encodings
         try:
             try:

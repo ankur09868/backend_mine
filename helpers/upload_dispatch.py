@@ -7,14 +7,8 @@ from .upload_csv import upload_csv, upload_xls
 from io import BytesIO
 
 
-def create_subfile(input_file, columns_text, merge_columns):
-    if not input_file:
-        return JsonResponse({'error': 'Input file must be provided'}, status=400)
-
-    try:
-        df = pd.read_excel(input_file)
-    except Exception as e:
-        return JsonResponse({'error': str(e)}, status=400)
+def create_subfile(df, columns_text, merge_columns):
+    
     print("dataframe: " ,df.columns)
     columns_dict = json.loads(columns_text) if columns_text else {}
 
@@ -83,12 +77,29 @@ def dispatcher(request):
         elif file_extension in ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff']:
             return data_from_image(request)
         elif file_extension == '.csv':
-            return upload_csv(request)
-        elif file_extension in ['.xls', '.xlsx']:
-            print("file rcvd")
-            df = create_subfile(uploaded_file, columns_text, merge_columns)
+            if not uploaded_file:
+                return JsonResponse({'error': 'Input file must be provided'}, status=400)
 
-            return upload_xls(request, df)
+            try:
+                df = pd.read_csv(uploaded_file)
+            except Exception as e:
+                return JsonResponse({'error': str(e)}, status=400)
+            print("file rcvd")
+            new_df = create_subfile(df, columns_text, merge_columns)
+
+            return upload_xls(request, new_df)
+        elif file_extension in ['.xls', '.xlsx']:
+            if not uploaded_file:
+                return JsonResponse({'error': 'Input file must be provided'}, status=400)
+
+            try:
+                df = pd.read_excel(uploaded_file)
+            except Exception as e:
+                return JsonResponse({'error': str(e)}, status=400)
+            print("file rcvd")
+            new_df = create_subfile(df, columns_text, merge_columns)
+
+            return upload_xls(request, new_df)
         else:
             return HttpResponseBadRequest('Unsupported file type.')
     else:
