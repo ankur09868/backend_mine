@@ -75,5 +75,3 @@ jobs:
         with:
           app-name: 'webappbaackend'
           slot-name: 'Production'
-          app-settings: |
-            OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}
