@@ -55,7 +55,7 @@ from helpers import upload_dispatch as u_dispatch, query_dispatch as q_dispatch
 from .etl2  import add_nodes
 from .new_database import process_nodes
 from custom_fields.views import export_data_for_custom_field as edfc
-
+from topicmodelling import views as topicviews
 
 
 urlpatterns = [
@@ -147,6 +147,13 @@ urlpatterns = [
     path('upload/', u_dispatch.dispatcher, name='upload_dispatch'),
     path('addrows/' , add_nodes, name="add nodes"),
     path('processrows/' ,process_nodes, name="process nodes"),
-    path('test/', edfc, name="export_custom_field")
+    path('test/', edfc, name="export_custom_field"),
+    path('perform-topic-modeling/', topicviews.perform_topic_modelling, name='perform_topic_modeling'),
+    path('email-campaigns/', campview.EmailCampaignViewSet.as_view({'get': 'list', 'post': 'create'}), name='email-campaign-list'),
+    path('email-campaigns/<int:pk>/', campview.EmailCampaignViewSet.as_view({'get': 'retrieve', 'put': 'update', 'patch': 'partial_update', 'delete': 'destroy'}), name='email-campaign-detail'),
+    path('instagram-campaigns/', campview.InstagramCampaignViewSet.as_view({'get': 'list', 'post': 'create'}), name='instagram-campaign-list'),
+    path('instagram-campaigns/<int:pk>/', campview.InstagramCampaignViewSet.as_view({'get': 'retrieve', 'put': 'update', 'patch': 'partial_update', 'delete': 'destroy'}), name='instagram-campaign-detail'),
+    path('whatsapp-campaigns/', campview.WhatsAppCampaignViewSet.as_view({'get': 'list', 'post': 'create'}), name='whatsapp-campaign-list'),
+    path('whatsapp-campaigns/<int:pk>/', campview.WhatsAppCampaignViewSet.as_view({'get': 'retrieve', 'put': 'update', 'patch': 'partial_update', 'delete': 'destroy'}), name='whatsapp-campaign-detail'),
 ]
 

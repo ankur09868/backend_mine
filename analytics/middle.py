@@ -312,5 +312,69 @@ class opportunities_opportunity(models.Model):
     case_origin = models.CharField(max_length=20, choices=CASE_ORIGIN_CHOICES)
     tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)
 """
+    elif 'product_product' in modelName.lower():
+        return"""
+    product_owner = models.CharField(max_length=100)
+    product_name = models.CharField(max_length=100)
+    product_code = models.CharField(max_length=50, unique=True)
+    vendor_name = models.CharField(max_length=100, null=True)
+    product_active = models.BooleanField(default=True)
+    manufacturer = models.CharField(max_length=100)
+    product_category = models.CharField(max_length=100)
+    sales_start_date = models.DateField(null=True, blank=True)
+    sales_end_date = models.DateField(null=True, blank=True)
+    support_start_date = models.DateField(null=True, blank=True)
+    support_end_date = models.DateField(null=True, blank=True)
+    unit_price = models.CharField(max_length=200, null=True, blank=True)
+    commission_rate = models.DecimalField(max_digits=5, decimal_places=2)
+    tax = models.DecimalField(max_digits=5, decimal_places=2)
+    is_taxable = models.BooleanField(default=False)
+    usage_unit = models.CharField(max_length=50)
+    qty_ordered = models.PositiveIntegerField(default=0)
+    reorder_level = models.PositiveIntegerField(default=0)
+    quantity_in_stock = models.PositiveIntegerField(default=0)
+    handler = models.CharField(max_length=100)
+    quantity_in_demand = models.PositiveIntegerField(default=0)
+    description = models.TextField(blank=True)
+    tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)
+"""
+    elif 'stage_stage'in modelName.lower():
+        return"""
+    status = models.CharField(max_length=64)
+    model_name = models.CharField(max_length=20, choices=MODEL_CHOICES)
+    tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)
+"""
+    elif 'loyalty_loyalty' in modelName.lower():
+        return"""
+    LOYALTY_PROGRAMS = (
+        ('Promo Code', 'Promo Code'),
+        ('Loyalty Cards', 'Loyalty Cards'),
+        ('Fidelity Cards', 'Fidelity Cards'),
+        ('Promotional Program', 'Promotional Program'),
+        ('Coupons', 'Coupons'),
+        ('2+1 Free', '2+1 Free'),
+        ('Next Order Coupons' , 'Next Order Coupons')
+    )
+    CURRENCY_CHOICES = (
+    ('USD', 'US Dollar'),
+    ('EUR', 'Euro'),
+    ('GBP', 'British Pound'),
+    ('JPY', 'Japanese Yen'),
+    ('INR', 'Indian Rupee'),
+)
+
+    entity_id = models.PositiveIntegerField()
+    content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
+    entity = GenericForeignKey('content_type' , 'entity_id')
+    
+    loyalty_program = models.CharField(max_length=50, choices=LOYALTY_PROGRAMS)
+    contacts = models.ForeignKey(Contact, on_delete=models.CASCADE)
+    currency = models.CharField(max_length=3, choices=CURRENCY_CHOICES, default='INR')
+    points_unit = models.IntegerField(default=0),
+    start_date = models.DateField(),
+    end_date = models.DateField(),
+    company = models.CharField(max_length=50),
+    website = models.URLField(blank=True, null=True)
+"""
     else:
         raise ValueError('Prompt could not be translated to SQL query.')

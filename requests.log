@@ -7675,3 +7675,18 @@ INFO 2024-08-21 13:58:14,179 basehttp "POST /execute-query/ HTTP/1.1" 200 3349
 INFO 2024-08-21 13:58:37,130 basehttp "POST /execute-query/ HTTP/1.1" 200 3349
 INFO 2024-08-21 13:58:57,305 basehttp "POST /execute-query/ HTTP/1.1" 200 3349
 INFO 2024-08-21 13:59:15,724 basehttp "POST /execute-query/ HTTP/1.1" 200 456
+INFO 2024-08-21 14:12:32,407 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 14:13:04,388 basehttp "GET /instagram-campaigns/ HTTP/1.1" 200 306
+WARNING 2024-08-21 14:13:07,798 log Bad Request: /execute-query/
+WARNING 2024-08-21 14:13:07,799 basehttp "POST /execute-query/ HTTP/1.1" 400 56
+WARNING 2024-08-21 14:13:13,277 log Bad Request: /execute-query/
+WARNING 2024-08-21 14:13:13,278 basehttp "POST /execute-query/ HTTP/1.1" 400 56
+WARNING 2024-08-21 14:13:44,512 log Bad Request: /execute-query/
+WARNING 2024-08-21 14:13:44,512 basehttp "POST /execute-query/ HTTP/1.1" 400 56
+INFO 2024-08-21 14:13:50,782 autoreload D:\NURENAI\backend_mine\analytics\middle.py changed, reloading.
+INFO 2024-08-21 14:13:52,112 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 14:14:25,776 basehttp "POST /execute-query/ HTTP/1.1" 200 3349
+INFO 2024-08-21 14:14:42,481 basehttp "POST /execute-query/ HTTP/1.1" 200 38
+INFO 2024-08-21 14:14:50,863 basehttp "POST /execute-query/ HTTP/1.1" 200 1637
+ERROR 2024-08-21 14:14:58,640 log Internal Server Error: /execute-query/
+ERROR 2024-08-21 14:14:58,641 basehttp "POST /execute-query/ HTTP/1.1" 500 112
