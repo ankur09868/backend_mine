@@ -1,7 +1,7 @@
 import csv, pandas as pd, os
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
-from .tables import get_db_connection
+from .tables import get_db_connection, table_mappings
 
 
 @csrf_exempt
@@ -20,7 +20,7 @@ def upload_file(request, df):
             file_name = os.path.splitext(xls_file.name)[0]
             table_name = file_name.lower().replace(' ', '_')  # Ensure table name is lowercase and replace spaces with underscores
         else:
-            table_name = model_name
+            table_name = table_mappings.get(model_name)
         
         # Read XLS file
         # Extract headers and data
@@ -41,11 +41,11 @@ def upload_file(request, df):
         # Connect to the PostgreSQL database
         conn = get_db_connection()
         cur = conn.cursor()
-        print("table created/found")
         try:
             # Create the table
             cur.execute(create_table_query)
             conn.commit()
+            print("table created/found")
 
             # Insert data into the table
             for row in data:

@@ -3,11 +3,15 @@ from psycopg2.extras import RealDictCursor
 from simplecrm.get_column_name import get_model_fields, get_column_mappings
 
 table_mappings = {
-    "Lead": "leadss_lead",
+    "Lead": "leads_lead",
     "Account": "accounts_account",
     "Contact": "contacts_contact",
-    "Meeting": "meetings_meeting",
-    "Call": "calls_calls",
+    "Meeting": "interaction_meetings",
+    "Call": "interaction_calls",
+    "Opportunity" : "opportunities_opportunity",
+    "Tasks" : "tasks_tasks",
+    "Interaction" : "interaction_interaction",
+    "Campaign" : "campaign_campaign"
 }
 
 def get_db_connection():

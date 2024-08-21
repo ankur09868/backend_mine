@@ -24,7 +24,7 @@ def create_subfile(df, columns_text, merge_columns):
                     return JsonResponse({'error': 'Merge columns should be a list of atleast two indices'}, status=400)
                 try:
                     columns = get_column_names(df, indices)
-                    df[new_col] = df[columns].astype(str).agg(', '.join, axis =1)
+                    df_new[new_col] = df[columns].apply(lambda x: ', '.join([f'{col}: {val}' for col, val in zip(columns, x)]), axis=1)
                     # df = df.drop([col1, col2], axis=1)  
                         
                     # print(f"{new_col}: " ,df[new_col])

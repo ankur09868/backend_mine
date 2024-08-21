@@ -7066,3 +7066,29 @@ INFO 2024-08-21 08:34:54,995 autoreload Watching for file changes with StatReloa
 INFO 2024-08-21 08:35:16,165 basehttp "POST /upload/ HTTP/1.1" 200 97
 INFO 2024-08-21 08:36:18,637 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py changed, reloading.
 INFO 2024-08-21 08:36:20,025 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 08:39:54,974 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 08:49:13,932 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 08:49:33,283 basehttp "GET /upload HTTP/1.1" 301 0
+WARNING 2024-08-21 08:49:33,944 log Bad Request: /upload/
+WARNING 2024-08-21 08:49:33,945 basehttp "GET /upload/ HTTP/1.1" 400 21
+INFO 2024-08-21 08:53:03,498 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py changed, reloading.
+INFO 2024-08-21 08:53:04,772 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 08:56:21,443 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py changed, reloading.
+INFO 2024-08-21 08:56:22,689 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 08:58:33,651 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py changed, reloading.
+INFO 2024-08-21 08:58:34,921 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 09:00:32,853 basehttp "OPTIONS /upload/ HTTP/1.1" 200 0
+INFO 2024-08-21 09:00:45,201 basehttp "POST /upload/ HTTP/1.1" 200 92
+INFO 2024-08-21 09:17:19,793 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\tables.py changed, reloading.
+INFO 2024-08-21 09:17:21,875 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 09:24:56,774 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\tables.py changed, reloading.
+INFO 2024-08-21 09:24:58,261 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 09:28:45,986 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\tables.py changed, reloading.
+INFO 2024-08-21 09:28:47,510 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 09:29:11,977 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py changed, reloading.
+INFO 2024-08-21 09:29:13,510 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 09:31:02,783 log Internal Server Error: /upload/
+ERROR 2024-08-21 09:31:02,784 basehttp "POST /upload/ HTTP/1.1" 500 240
+INFO 2024-08-21 09:31:10,477 basehttp "OPTIONS /upload/ HTTP/1.1" 200 0
+ERROR 2024-08-21 09:31:13,548 log Internal Server Error: /upload/
+ERROR 2024-08-21 09:31:13,549 basehttp "POST /upload/ HTTP/1.1" 500 240
