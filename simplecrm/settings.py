@@ -63,6 +63,8 @@ INSTALLED_APPS = [
     'wallet',
     'communication',
     'stage',
+    'topicmodelling',
+    
     
 ]
 
