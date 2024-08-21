@@ -110,11 +110,14 @@ def upload_table(data_list: list, model_name: str):
     model_name: str = name of the table you would like to upload the data to. could be among [Lead, Account, Contact, Meeting, Call]
 
     '''
+    print("model name: " ,model_name)
     columns = data_list[0]
+    print("columns: " ,columns)
     fields = get_model_fields(model_name)
+    print("model fields: " ,fields)
     mappings = get_column_mappings(fields, columns)
+    print("mappings: " ,mappings)
     table_name = table_mappings.get(model_name)
-    print("mappings : " ,mappings)
     
     for index, item in enumerate(data_list[0]):
         if item in mappings.values():

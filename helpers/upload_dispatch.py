@@ -3,7 +3,7 @@ from django.http import HttpResponseBadRequest,JsonResponse
 import os, pandas as pd,json
 from .vectorize import vectorize
 from .table_from_img import data_from_image
-from .upload_csv import upload_csv, upload_xls
+from .upload_csv import upload_file
 from io import BytesIO
 
 
@@ -87,7 +87,7 @@ def dispatcher(request):
             print("file rcvd")
             new_df = create_subfile(df, columns_text, merge_columns)
 
-            return upload_xls(request, new_df)
+            return upload_file(request, new_df)
         elif file_extension in ['.xls', '.xlsx']:
             if not uploaded_file:
                 return JsonResponse({'error': 'Input file must be provided'}, status=400)
@@ -99,7 +99,7 @@ def dispatcher(request):
             print("file rcvd")
             new_df = create_subfile(df, columns_text, merge_columns)
 
-            return upload_xls(request, new_df)
+            return upload_file(request, new_df)
         else:
             return HttpResponseBadRequest('Unsupported file type.')
     else:
