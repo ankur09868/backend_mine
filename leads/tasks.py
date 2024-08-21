@@ -1,4 +1,4 @@
-from celery import shared_task
+
 from datetime import date, timedelta
 from django.db.models import Sum
 from .models import Report, Lead
