@@ -165,15 +165,15 @@ def data_from_image(request):
             return JsonResponse({"status": 400, "message": "No file provided in the request"}, status=400)
         
         file = request.FILES['file']
-        model_name = request.POST.get('model_name')
+        model_name = request.POST.get('model_name', None)
         table_name = request.POST.get('table_name', None)
         
-        if table_name == None:
-                table_name = os.path.splitext(file.name)[0].replace(' ','_').replace('-','_')
-        if (model_name and table_name) or (not model_name and not table_name):
+        if table_name == None and model_name == None:
+            table_name = os.path.splitext(file.name)[0].replace(' ','_').replace('-','_')
+        elif model_name and table_name:
             return JsonResponse({"status": 400, "message": f"""Either of model_name or table_name must be provided, but not both.\nprovide model_name to upload table to database. \nprovide table_name to create a new table to database and upload data"""}, status=400)
-        
-        print("rcvd data with file and model name: " ,model_name)
+         
+        print("rcvd data with file and model name: " ,model_name, table_name)
         bucket = 'nurenai'
         file_name = 'upload.jpg'
         region = "ap-south-1"
@@ -198,14 +198,14 @@ def data_from_image(request):
         #if model_name is provided
         else:
             for table in tables:
-                
+                print("table: ", table)
                 upload_table(table, model_name)
                 print("table uploaded succesfully: " ,model_name)
 
-        if len(text)>0:        
-            print("generated text: " ,text)
-            upload_text_to_db(text)
-            print("text uploaded succesfully")
+        # if len(text)>0:        
+        #     print("generated text: " ,text)
+        #     upload_text_to_db(text)
+        #     print("text uploaded succesfully")
             
             
         delete_file(bucket, file=file_name)

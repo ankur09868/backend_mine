@@ -3,7 +3,7 @@ from django.http import HttpResponseBadRequest,JsonResponse
 import os, pandas as pd,json
 from .vectorize import vectorize
 from .table_from_img import data_from_image
-from .upload_csv import upload_csv, upload_xls
+from .upload_csv import upload_file
 from io import BytesIO
 
 
@@ -24,7 +24,7 @@ def create_subfile(df, columns_text, merge_columns):
                     return JsonResponse({'error': 'Merge columns should be a list of atleast two indices'}, status=400)
                 try:
                     columns = get_column_names(df, indices)
-                    df[new_col] = df[columns].astype(str).agg(', '.join, axis =1)
+                    df_new[new_col] = df[columns].apply(lambda x: ', '.join([f'{col}: {val}' for col, val in zip(columns, x)]), axis=1)
                     # df = df.drop([col1, col2], axis=1)  
                         
                     # print(f"{new_col}: " ,df[new_col])
@@ -87,7 +87,7 @@ def dispatcher(request):
             print("file rcvd")
             new_df = create_subfile(df, columns_text, merge_columns)
 
-            return upload_xls(request, new_df)
+            return upload_file(request, new_df)
         elif file_extension in ['.xls', '.xlsx']:
             if not uploaded_file:
                 return JsonResponse({'error': 'Input file must be provided'}, status=400)
@@ -99,7 +99,7 @@ def dispatcher(request):
             print("file rcvd")
             new_df = create_subfile(df, columns_text, merge_columns)
 
-            return upload_xls(request, new_df)
+            return upload_file(request, new_df)
         else:
             return HttpResponseBadRequest('Unsupported file type.')
     else:

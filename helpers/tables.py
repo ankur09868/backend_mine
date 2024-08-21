@@ -3,11 +3,15 @@ from psycopg2.extras import RealDictCursor
 from simplecrm.get_column_name import get_model_fields, get_column_mappings
 
 table_mappings = {
-    "Lead": "leadss_lead",
+    "Lead": "leads_lead",
     "Account": "accounts_account",
     "Contact": "contacts_contact",
-    "Meeting": "meetings_meeting",
-    "Call": "calls_calls",
+    "Meeting": "interaction_meetings",
+    "Call": "interaction_calls",
+    "Opportunity" : "opportunities_opportunity",
+    "Tasks" : "tasks_tasks",
+    "Interaction" : "interaction_interaction",
+    "Campaign" : "campaign_campaign"
 }
 
 def get_db_connection():
@@ -110,11 +114,14 @@ def upload_table(data_list: list, model_name: str):
     model_name: str = name of the table you would like to upload the data to. could be among [Lead, Account, Contact, Meeting, Call]
 
     '''
+    print("model name: " ,model_name)
     columns = data_list[0]
+    print("columns: " ,columns)
     fields = get_model_fields(model_name)
+    print("model fields: " ,fields)
     mappings = get_column_mappings(fields, columns)
+    print("mappings: " ,mappings)
     table_name = table_mappings.get(model_name)
-    print("mappings : " ,mappings)
     
     for index, item in enumerate(data_list[0]):
         if item in mappings.values():
