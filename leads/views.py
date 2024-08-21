@@ -9,6 +9,7 @@ from django.http import JsonResponse
 from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
 from django.views.decorators.http import require_http_methods
 from .models import Stage  # Import your Stage model here
+from .tasks import generate_or_get_report, get_today_report, get_yesterday_report,get_today,get_yesterday
 
 class LeadListCreateAPIView(ListCreateAPIView):
     queryset = Lead.objects.all()

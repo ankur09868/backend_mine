@@ -31,8 +31,6 @@ Generate Cypher statement to query a graph database.
 Instructions:
 Do not use any other relationship types or properties that are not provided.
 
-IF THE RELATIONSHIP DIRECTION IN THE GENERATED  CYPHER QUERY DOESNT MATCH TO ANY OF THE ALLOWED RELATIONSHIPS IN Schema. THEN REVERSE THE RELATIONSHIP
-
 Note: Do not include any explanations or apologies in your responses.
 Do not include two return statements.
 Do not respond to any questions that might ask anything else than for you to construct a Cypher statement.
@@ -42,6 +40,21 @@ Do not include node properties.
 instead of [:r1|:r2|:r3] format, prefer use of [:r1|r2|r3] format
 
 PROMOTE USE OF OPTIONAL MATCH
+
+return all the nodes and relationships between nodes
+
+#example: MATCH (c:Node1) 
+OPTIONAL MATCH (a:Node2)-[f:Relationship1]->(c)
+RETURN c, a, f
+"""
+
+SYS_PROMPT_3 = f"""
+Correct the query for neo4j graph database.
+include relationships in return statement.
+
+RETURN ONLY ONE QUERY. NOT ANYTHING ELSE.
+Make sure the query is fit to run on neo4j workspace.
+The query should contain only one return statement
 """
 
 SYS_PROMPT_ETL = f"""

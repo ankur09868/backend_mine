@@ -105,6 +105,8 @@ class EmailCampaign(models.Model):
     unsubscribes = models.IntegerField(default=0)  # Number of unsubscribes from the email list
     engagement_rate = models.DecimalField(max_digits=5, decimal_places=2, blank=True, null=True)  # Engagement rate of the campaign
     notes = models.TextField(blank=True, null=True)  # Additional notes about the campaign
+    email_html = models.TextField(blank=True, null=True)
+
 
     def __str__(self):
         return f"{self.campaign.campaign_name} - Email Campaign"
