@@ -1,7 +1,7 @@
 # leads/serializers.py
 
 from rest_framework import serializers
-from .models import Lead
+from .models import Lead,Report
 from custom_fields.models import CustomField # Assuming Stage model is imported correctly
 
 from stage.models import Stage 
@@ -18,3 +18,8 @@ class LeadSerializer(serializers.ModelSerializer):
             'account_name', 'opportunity_amount', 'createdBy', 'createdOn', 'isActive',
             'enquery_type', 'money', 'tenant', 'priority','stage','status'
         )
+
+class ReportSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Report
+        fields ='__all__'

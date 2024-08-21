@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 import os
 from neo4j import GraphDatabase
 
-
+load_dotenv()
 def get_graphConnection(graph):
     try:
         # Retrieve environment variables
