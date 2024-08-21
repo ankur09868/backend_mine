@@ -6768,3 +6768,220 @@ INFO 2024-08-14 12:01:57,055 basehttp "GET /leads/ HTTP/1.1" 200 2192
 WARNING 2024-08-14 12:05:39,023 log Not Found: /opportunity/
 WARNING 2024-08-14 12:05:39,024 basehttp "GET /opportunity/ HTTP/1.1" 404 14621
 INFO 2024-08-14 12:05:57,307 basehttp "GET /opportunities/ HTTP/1.1" 200 2449
+INFO 2024-08-14 12:36:00,050 autoreload Watching for file changes with StatReloader
+INFO 2024-08-14 12:39:10,117 autoreload Watching for file changes with StatReloader
+INFO 2024-08-14 12:40:00,370 basehttp "GET /generate-report/ HTTP/1.1" 200 89
+INFO 2024-08-14 12:40:16,103 basehttp "GET /generate-report/ HTTP/1.1" 200 89
+INFO 2024-08-14 12:51:06,132 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\leads\views.py changed, reloading.
+INFO 2024-08-14 12:51:09,720 autoreload Watching for file changes with StatReloader
+INFO 2024-08-14 12:52:14,435 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\leads\views.py changed, reloading.
+INFO 2024-08-14 12:52:15,675 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-14 12:52:39,384 log Internal Server Error: /generate-report/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: new row violates row-level security policy for table "leads_report"
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\leads\views.py", line 120, in generate_and_get_report_view
+    report = generate_or_get_report()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\leads\views.py", line 113, in generate_or_get_report
+    new_report.save()
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 831, in save
+    self.save_base(
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 882, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 1025, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 1066, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1790, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\compiler.py", line 1657, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: new row violates row-level security policy for table "leads_report"
+
+ERROR 2024-08-14 12:52:39,384 basehttp "GET /generate-report/ HTTP/1.1" 500 145936
+ERROR 2024-08-14 12:53:27,889 log Internal Server Error: /generate-report/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: new row violates row-level security policy for table "leads_report"
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\leads\views.py", line 120, in generate_and_get_report_view
+    report = generate_or_get_report()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\leads\views.py", line 113, in generate_or_get_report
+    new_report.save()
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 831, in save
+    self.save_base(
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 882, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 1025, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 1066, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1790, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\compiler.py", line 1657, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: new row violates row-level security policy for table "leads_report"
+
+ERROR 2024-08-14 12:53:27,889 basehttp "GET /generate-report/ HTTP/1.1" 500 145936
+ERROR 2024-08-14 12:54:41,146 log Internal Server Error: /generate-report/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: new row violates row-level security policy for table "leads_report"
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\leads\views.py", line 120, in generate_and_get_report_view
+    report = generate_or_get_report()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\leads\views.py", line 113, in generate_or_get_report
+    new_report.save()
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 831, in save
+    self.save_base(
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 882, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 1025, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 1066, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1790, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\compiler.py", line 1657, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: new row violates row-level security policy for table "leads_report"
+
+ERROR 2024-08-14 12:54:41,146 basehttp "GET /generate-report/ HTTP/1.1" 500 145936
+INFO 2024-08-14 12:55:16,197 basehttp "GET /generate-report/ HTTP/1.1" 200 112
+INFO 2024-08-14 16:00:02,814 basehttp "OPTIONS /whatsapp_convo_get/919643393874/?source=whatsapp HTTP/1.1" 200 0
+INFO 2024-08-14 16:00:04,715 basehttp "GET /whatsapp_convo_get/919643393874/?source=whatsapp HTTP/1.1" 200 2
+INFO 2024-08-14 16:00:28,188 basehttp "OPTIONS /fetch-all-emails HTTP/1.1" 200 0
+INFO 2024-08-14 16:00:28,206 basehttp "OPTIONS /fetch-all-emails/ HTTP/1.1" 200 0
+WARNING 2024-08-14 16:00:28,381 log Not Found: /fetch-all-emails/
+WARNING 2024-08-14 16:00:28,381 basehttp "GET /fetch-all-emails/ HTTP/1.1" 404 14636
+INFO 2024-08-14 20:12:43,826 basehttp "OPTIONS /whatsapp_convo_get/919643393874/?source=whatsapp HTTP/1.1" 200 0
+INFO 2024-08-14 20:12:45,541 basehttp "GET /whatsapp_convo_get/919643393874/?source=whatsapp HTTP/1.1" 200 2
+INFO 2024-08-14 20:17:55,934 basehttp "OPTIONS /whatsapp_convo_post/919643393874/?source=whatsapp HTTP/1.1" 200 0
+INFO 2024-08-14 20:17:55,941 basehttp "OPTIONS /whatsapp_convo_get/9528227181/?source=whatsapp HTTP/1.1" 200 0
+INFO 2024-08-14 20:17:57,692 basehttp "GET /whatsapp_convo_get/9528227181/?source=whatsapp HTTP/1.1" 200 2
+INFO 2024-08-14 20:17:59,018 basehttp "POST /whatsapp_convo_post/919643393874/?source=whatsapp HTTP/1.1" 200 52
+INFO 2024-08-14 20:18:35,968 basehttp "OPTIONS /whatsapp_convo_get/5678901/?source=whatsapp HTTP/1.1" 200 0
+INFO 2024-08-14 20:18:37,697 basehttp "GET /whatsapp_convo_get/5678901/?source=whatsapp HTTP/1.1" 200 2
+INFO 2024-08-14 20:18:43,040 basehttp "GET /whatsapp_convo_get/919643393874/?source=whatsapp HTTP/1.1" 200 262
+INFO 2024-08-16 09:57:47,325 basehttp "OPTIONS /fetch-all-emails HTTP/1.1" 200 0
+INFO 2024-08-16 09:57:47,340 basehttp "OPTIONS /fetch-all-emails/ HTTP/1.1" 200 0
+WARNING 2024-08-16 09:57:47,606 log Not Found: /fetch-all-emails/
+WARNING 2024-08-16 09:57:47,606 basehttp "GET /fetch-all-emails/ HTTP/1.1" 404 14636
+INFO 2024-08-16 09:58:02,630 basehttp "OPTIONS /store-selected-emails/ HTTP/1.1" 200 0
+WARNING 2024-08-16 09:58:02,676 log Not Found: /store-selected-emails/
+WARNING 2024-08-16 09:58:02,676 basehttp "POST /store-selected-emails/ HTTP/1.1" 404 14652
+WARNING 2024-08-16 09:58:17,830 log Not Found: /store-selected-emails/
+WARNING 2024-08-16 09:58:17,830 basehttp "POST /store-selected-emails/ HTTP/1.1" 404 14652
+WARNING 2024-08-16 10:00:07,855 log Not Found: /msgtoconversation/
+WARNING 2024-08-16 10:00:07,855 basehttp "POST /msgtoconversation/ HTTP/1.1" 404 14640
+WARNING 2024-08-16 16:36:08,952 log Bad Request: /api/upload-pdf/
+WARNING 2024-08-16 16:36:08,962 basehttp "POST /api/upload-pdf/ HTTP/1.1" 400 21
