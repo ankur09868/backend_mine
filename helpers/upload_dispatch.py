@@ -3,18 +3,12 @@ from django.http import HttpResponseBadRequest,JsonResponse
 import os, pandas as pd,json
 from .vectorize import vectorize
 from .table_from_img import data_from_image
-from .upload_csv import upload_csv, upload_xls
+from .upload_csv import upload_file
 from io import BytesIO
 
 
-def create_subfile(input_file, columns_text, merge_columns):
-    if not input_file:
-        return JsonResponse({'error': 'Input file must be provided'}, status=400)
-
-    try:
-        df = pd.read_excel(input_file)
-    except Exception as e:
-        return JsonResponse({'error': str(e)}, status=400)
+def create_subfile(df, columns_text, merge_columns):
+    
     print("dataframe: " ,df.columns)
     columns_dict = json.loads(columns_text) if columns_text else {}
 
@@ -30,7 +24,7 @@ def create_subfile(input_file, columns_text, merge_columns):
                     return JsonResponse({'error': 'Merge columns should be a list of atleast two indices'}, status=400)
                 try:
                     columns = get_column_names(df, indices)
-                    df[new_col] = df[columns].astype(str).agg(', '.join, axis =1)
+                    df_new[new_col] = df[columns].apply(lambda x: ', '.join([f'{col}: {val}' for col, val in zip(columns, x)]), axis=1)
                     # df = df.drop([col1, col2], axis=1)  
                         
                     # print(f"{new_col}: " ,df[new_col])
@@ -83,12 +77,29 @@ def dispatcher(request):
         elif file_extension in ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff']:
             return data_from_image(request)
         elif file_extension == '.csv':
-            return upload_csv(request)
-        elif file_extension in ['.xls', '.xlsx']:
-            print("file rcvd")
-            df = create_subfile(uploaded_file, columns_text, merge_columns)
+            if not uploaded_file:
+                return JsonResponse({'error': 'Input file must be provided'}, status=400)
 
-            return upload_xls(request, df)
+            try:
+                df = pd.read_csv(uploaded_file)
+            except Exception as e:
+                return JsonResponse({'error': str(e)}, status=400)
+            print("file rcvd")
+            new_df = create_subfile(df, columns_text, merge_columns)
+
+            return upload_file(request, new_df)
+        elif file_extension in ['.xls', '.xlsx']:
+            if not uploaded_file:
+                return JsonResponse({'error': 'Input file must be provided'}, status=400)
+
+            try:
+                df = pd.read_excel(uploaded_file)
+            except Exception as e:
+                return JsonResponse({'error': str(e)}, status=400)
+            print("file rcvd")
+            new_df = create_subfile(df, columns_text, merge_columns)
+
+            return upload_file(request, new_df)
         else:
             return HttpResponseBadRequest('Unsupported file type.')
     else:
