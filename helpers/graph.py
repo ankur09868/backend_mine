@@ -6,9 +6,9 @@ from neo4j import GraphDatabase
 def get_graphConnection(graph):
     try:
         # Retrieve environment variables
-        URI = os.getenv("NEO4J_URI")
-        USERNAME = os.getenv("NEO4J_USERNAME")
-        PASSWORD = os.getenv("NEO4J_PASSWORD")
+        URI = "neo4j+s://363ace08.databases.neo4j.io"
+        USERNAME = "neo4j"
+        PASSWORD = "pN-boAI3TjfcZD56acBM9THb4_5r5sOGGF7N59VElyg"
         
         if not URI or not USERNAME or not PASSWORD:
             raise ValueError("Missing required environment variables: NEO4J_URI, NEO4J_USERNAME, or NEO4J_PASSWORD.")

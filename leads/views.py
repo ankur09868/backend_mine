@@ -9,6 +9,7 @@ from django.http import JsonResponse
 from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
 from django.views.decorators.http import require_http_methods
 from .models import Stage  # Import your Stage model here
+from .tasks import generate_or_get_report, get_today_report, get_yesterday_report,get_today,get_yesterday
 
 class LeadListCreateAPIView(ListCreateAPIView):
     queryset = Lead.objects.all()
@@ -86,19 +87,19 @@ def get_yesterday_report():
     return report_yesterday
 
 def generate_or_get_report():
-    today = get_today()
-    yesterday = get_yesterday()
+        today = get_today()
+        yesterday = get_yesterday()
+        
     
-   
-    report_today = Report.objects.filter(created_at__date=today).first()
+        report_today = Report.objects.filter(created_at__date=today).first()
+        
+        if report_today:
+            return report_today
+        
     
-    if report_today:
-        return report_today
-    
-  
-    report_yesterday = Report.objects.filter(created_at__date=yesterday).first()
-    
-    if report_yesterday:
+        #report_yesterday = Report.objects.filter(created_at__date=yesterday).first()
+        
+ 
         # Generate a new report for today
         closed_won_revenue = Opportunity.objects.filter(stage__status='CLOSED WON').aggregate(total_revenue=Sum('amount'))['total_revenue'] or 0
         other_lead_amount = Lead.objects.exclude(stage__status='closed won').aggregate(total_amount=Sum('opportunity_amount'))['total_amount'] or 0
@@ -113,9 +114,7 @@ def generate_or_get_report():
         new_report.save()
         
         return new_report
-    else:
-        # There's no report for yesterday, so we cannot proceed with generating today's report
-        return None
+    
 
 # View function to generate or retrieve the latest report
 def generate_and_get_report_view(request):
