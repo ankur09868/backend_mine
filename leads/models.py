@@ -58,7 +58,7 @@ class Report(models.Model):
     leads_amount = models.DecimalField(max_digits=12, decimal_places=2, default=0)
     revenue = models.DecimalField(max_digits=12, decimal_places=2, default=0)
     total_leads = models.IntegerField(default=0)
-    # tenant = models.ForeignKey(Tenant,on_delete=models.CASCADE)
+    tenant = models.ForeignKey(Tenant,on_delete=models.CASCADE)
 
     def __str__(self):
         return f"Report {self.created_at.strftime('%Y-%m-%d %H:%M:%S')}"

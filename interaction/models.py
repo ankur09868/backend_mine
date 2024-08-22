@@ -74,3 +74,31 @@ class Conversation(models.Model):
 
     def __str__(self):
         return f"Conversation ID: {self.id}, Contact ID: {self.contact_id}, Sender: {self.sender}"
+
+class Email(models.Model):
+    # Define the choices for the operator
+    OPERATOR_CHOICES = (
+        ('hostinger', 'Hostinger'),
+        ('email', 'Email'),
+        ('zoho', 'Zoho'),
+        ('outlook', 'Outlook'),
+        ('other', 'Other'),
+    )
+
+    # Define the choices for the email type
+    EMAIL_TYPE_CHOICES = (
+        ('draft', 'Draft'),
+        ('sent', 'Sent'),
+        )
+    
+    is_open = models.BooleanField(default=False)# Field to track whether the email is open or not 
+    time_open = models.DateTimeField(null=True, blank=True)
+    tracking_id = models.CharField(max_length=255, unique=True)# Unique identifier for tracking the email
+    operator = models.CharField(max_length=20, choices=OPERATOR_CHOICES, null=True, blank=True)# Operator choice field    
+    time = models.DateTimeField()# Timestamp for the email
+    subject = models.CharField(max_length=255)# Subject of the email
+    email_type = models.CharField(max_length=5, choices=EMAIL_TYPE_CHOICES, null=True, blank=True)# Email type choice field
+    email_id = models.EmailField(max_length=255) #store the email ID
+
+    def __str__(self):
+        return self.subject

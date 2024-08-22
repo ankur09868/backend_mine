@@ -14,7 +14,7 @@ def prompt_to_sql(prompt):
     response1 = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
-            {"role": "system", "content": "Extract the table name from the user prompt out of one of the following: 'accounts_account' ,'contacts_contact','calls_call','leads_lead','meetings_meeting','opportunities_opportunity','interaction_interaction','tasks_tasks','channels_channel','reminder_reminder'','tenant_tenant','campaign_campaign','node_temps_node_temp','vendors_vendor','product_product','documents_document','dynamic_entities_dynamic_entitie','loyalty_loyalty','custom_fields_custom_field','tickets_ticket''stage_stage''reports_report'"},
+            {"role": "system", "content": "Extract the table name from the user prompt out of one of the following: 'accounts_account' ,'contacts_contact','interaction_calls','leads_lead','interaction_meetings','opportunities_opportunity','interaction_interaction','tasks_tasks','channels_channel','reminder_reminder'','tenant_tenant','campaign_campaign','node_temps_node_temp','vendors_vendors','product_product','documents_document','dynamic_entities_dynamicmodel','loyalty_loyalty','custom_fields_custom_field','tickets_ticket','stage_stage','lead_report','campaign_campaign','campaign_instagramcampaign','campaign_whatsappcampaign','campaign_emailcampaign'"},
             {"role": "user", "content": prompt}
         ],
         max_tokens=50,
@@ -36,7 +36,7 @@ def prompt_to_sql(prompt):
                     "You are an assistant that determines whether a user prompt is asking for the stage with the most "
                     "number of leads or opportunities. If the prompt is asking for this, respond with 'yes', otherwise respond with 'no'."
                     "If the prompt have only leads or lead respond no only"
-                    "If the prompt other than stage with the most return no like 'leads with assigned'"
+                    "If the prompt other than stage with the most return no like 'leads with assigned'and 'opportunity with qualification'"
                 ),
             },
             {"role": "user", "content": prompt},

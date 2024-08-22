@@ -31,7 +31,7 @@ def name_to_model(modelName):
     isActive = models.BooleanField(default=False)
     tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)
     """
-    elif 'calls_call'in modelName.lower():
+    elif 'interaction_calls'in modelName.lower():
         return """
     call_to = models.ForeignKey(Contact, on_delete=models.SET_NULL, related_name='call_to_meetings', blank=True, null=True, verbose_name='Contact Name')
     related_to = models.CharField(max_length=255, blank=True, null=True, verbose_name='Related To')
@@ -44,7 +44,7 @@ def name_to_model(modelName):
     to_time = models.DateTimeField(verbose_name='To', blank=True, null=True)
     createdBy = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='created_calls', on_delete=models.CASCADE, blank=True, null=True)
     tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)"""
-    elif 'reports_report'in modelName.lower():
+    elif 'lead_report'in modelName.lower():
         return """ 
     created_at = models.DateTimeField(auto_now_add=True)
     leads_amount = models.DecimalField(max_digits=12, decimal_places=2, default=0)
@@ -62,7 +62,7 @@ def name_to_model(modelName):
     entity = GenericForeignKey('entity_type', 'entity_id')
     uploaded_at = models.DateTimeField('Uploaded At', auto_now_add=True)
     tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)"""
-    elif 'meetings_meeting'in modelName.lower():
+    elif 'interaction_meetings'in modelName.lower():
         return """
     title = models.CharField(max_length=64, blank=True, null=True, verbose_name='Title')
     location = models.CharField(max_length=255, blank=True, null=True, verbose_name='Location')
@@ -376,5 +376,119 @@ class opportunities_opportunity(models.Model):
     company = models.CharField(max_length=50),
     website = models.URLField(blank=True, null=True)
 """
+    elif'campaign_campaign' in modelName.lower():
+        return"""
+    campaign_owner = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='campaign_created_by', on_delete=models.CASCADE,blank=True, null=True)
+    campaign_name = models.CharField(max_length=255)
+    start_date = models.DateField()
+    end_date = models.DateField()
+    expected_revenue = models.DecimalField(max_digits=10, decimal_places=2)
+    actual_cost = models.DecimalField(max_digits=10, decimal_places=2)
+    numbers_sent = models.IntegerField()
+      # Change type field to an ArrayField
+    type = ArrayField(
+        models.CharField(max_length=50, choices=[('Email', 'Email'),('CALL', 'CALL'),('WHATSAPP', 'WHATSAPP'),('INSTAGRAM', 'INSTAGRAM')]), 
+        blank=True,
+        default=list
+    )
+    status = models.CharField(max_length=50, choices=[('None', 'None'), ('Active', 'Active'), ('Completed', 'Completed'), ('Cancelled', 'Cancelled')])
+    budgeted_cost = models.DecimalField(max_digits=10, decimal_places=2)
+    expected_response = models.DecimalField(max_digits=5, decimal_places=2)
+    description = models.TextField()
+    tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE,default=3)
+"""
+    elif 'campaign_instagramcampaign' in modelName.lower():
+        return"""
+    campaign = models.OneToOneField(Campaign, related_name='instagram_campaign', on_delete=models.CASCADE)
+    campaign_tone = models.CharField(max_length=50, choices=[
+        ('Informative', 'Informative'),
+        ('Promotional', 'Promotional'),
+        ('Engaging', 'Engaging'),
+        ('Storytelling', 'Storytelling'),
+    ], default='Promotional')  
+
+    number_of_posts = models.IntegerField(default=1)  
+    target_hashtags = models.TextField(blank=True, null=True) 
+    duration = models.DurationField(blank=True, null=True) 
+    audience_targeting = models.CharField(max_length=255, blank=True, null=True) 
+    call_to_action = models.CharField(max_length=255, blank=True, null=True)
+    engagement_goal = models.DecimalField(max_digits=5, decimal_places=2, blank=True, null=True) 
+    actual_engagement = models.DecimalField(max_digits=5, decimal_places=2, blank=True, null=True)
+    notes = models.TextField(blank=True, null=True)
+"""
+    elif 'campaign_whatsappcampaign' in modelName.lower():
+        return"""
+    campaign = models.OneToOneField(Campaign, related_name='whatsapp_campaign', on_delete=models.CASCADE)
+    broadcast_message = models.TextField(blank=True, null=True) 
+    chatbot_enabled = models.BooleanField(default=False) 
+    chatbot_script = models.TextField(blank=True, null=True)   
+    ai_integration = models.BooleanField(default=False) 
+    ai_features = models.TextField(blank=True, null=True) 
+    target_audience = models.CharField(max_length=255, blank=True, null=True) 
+    message_template = models.TextField(blank=True, null=True) 
+    number_of_recipients = models.IntegerField(default=0) 
+    scheduling_time = models.DateTimeField(blank=True, null=True)  
+    engagement_goal = models.DecimalField(max_digits=5, decimal_places=2, blank=True, null=True)  
+    actual_engagement = models.DecimalField(max_digits=5, decimal_places=2, blank=True, null=True)  
+    notes = models.TextField(blank=True, null=True) 
+"""
+    elif 'campaign_emailcampaign' in modelName.lower():
+        return"""
+    campaign = models.OneToOneField(Campaign, related_name='email_campaign', on_delete=models.CASCADE)
+    subject_line = models.CharField(max_length=255)  
+    email_body = models.TextField() 
+    sender_email = models.EmailField()
+    recipient_list = models.TextField(blank=True, null=True)
+    scheduled_time = models.DateTimeField(blank=True, null=True) 
+    email_template = models.TextField(blank=True, null=True) 
+    emails_sent = models.IntegerField(default=0)  
+    emails_opened = models.IntegerField(default=0) 
+    clicks = models.IntegerField(default=0) 
+    bounces = models.IntegerField(default=0)  
+    unsubscribes = models.IntegerField(default=0) 
+    engagement_rate = models.DecimalField(max_digits=5, decimal_places=2, blank=True, null=True) 
+    notes = models.TextField(blank=True, null=True) 
+    email_html = models.TextField(blank=True, null=True)
+"""
+    elif 'dynamic_entities_dynamicmodel' in modelName.lower():
+        return"""
+    model_name = models.CharField(max_length=255)
+    created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE, null=True, blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+"""
+    elif'reminder_reminder' in modelName.lower():
+        return"""
+    EVENT_TRIGGER = 'event'
+    TIME_TRIGGER = 'time'
+    TRIGGER_CHOICES = [
+        (EVENT_TRIGGER, 'Event Trigger'),
+        (TIME_TRIGGER, 'Time Trigger'),
+    ]
+    
+    subject = models.CharField(max_length=255)
+    trigger_type = models.CharField(max_length=10, choices=TRIGGER_CHOICES)
+    event_date_time = models.DateTimeField(blank=True, null=True)
+    time_trigger = models.DateTimeField(blank=True, null=True)
+    is_triggered = models.BooleanField(default=False)
+    created_at = models.DateTimeField(default=timezone.now)
+    createdBy = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='reminder_created_by', on_delete=models.CASCADE)
+    tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)
+"""
+    elif 'vendors_vendors' in modelName.lower():
+        return""" vendor_owner = models.CharField(max_length=100)
+    vendor_name = models.CharField(max_length=100)
+    phone = models.CharField(max_length=20)
+    email = models.EmailField(max_length=254)
+    website = models.URLField(max_length=200, blank=True)
+    category = models.CharField(max_length=100)
+    street = models.CharField(max_length=100)
+    city = models.CharField(max_length=100)
+    state = models.CharField(max_length=100)
+    zipcode = models.CharField(max_length=20)
+    country = models.CharField(max_length=100)
+    description = models.TextField(blank=True)
+    tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)"""
+    
     else:
         raise ValueError('Prompt could not be translated to SQL query.')

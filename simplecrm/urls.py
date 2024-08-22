@@ -116,7 +116,7 @@ urlpatterns = [
     path('deduplicate/', simviews.deduplicate_view, name='deduplicate'),
     path('create-custom-field/', cfviews.create_custom_field, name='create_custom_field'),
     path('user/<int:user_id>/tasks/', tviews.UserTasksListAPIView.as_view(), name='user-tasks-list'),
-    path('track_open/<int:contact_id>/', track.TrackOpenView.as_view(), name='track_open'),
+    path('track_open/<str:tracking_id>/', track.TrackOpenView.as_view(), name='track_open'),
     path('track_open_count/', trac.TrackOpenCountView.as_view(), name='track_open_count'),
     path('tickets/', tickview.TicketListAPIView.as_view(), name='ticket-list'),
     path('tickets/<int:pk>/', tickview.TicketDetailAPIView.as_view(), name='ticket-detail'),
@@ -155,5 +155,9 @@ urlpatterns = [
     path('instagram-campaigns/<int:pk>/', campview.InstagramCampaignViewSet.as_view({'get': 'retrieve', 'put': 'update', 'patch': 'partial_update', 'delete': 'destroy'}), name='instagram-campaign-detail'),
     path('whatsapp-campaigns/', campview.WhatsAppCampaignViewSet.as_view({'get': 'list', 'post': 'create'}), name='whatsapp-campaign-list'),
     path('whatsapp-campaigns/<int:pk>/', campview.WhatsAppCampaignViewSet.as_view({'get': 'retrieve', 'put': 'update', 'patch': 'partial_update', 'delete': 'destroy'}), name='whatsapp-campaign-detail'),
+    path('call-campaigns/', campview.CallCampaignViewSet.as_view({'get': 'list', 'post': 'create'}), name='call-campaign-list'),
+    path('call-campaigns/<int:pk>/', campview.CallCampaignViewSet.as_view({'get': 'retrieve', 'put': 'update', 'patch': 'partial_update', 'delete': 'destroy'}), name='call-campaign-detail'),
+    path('emails/', inviews.EmailListAPIView.as_view(), name='email-list'),
+    path('emails/<int:pk>/', inviews.EmailDetailAPIView.as_view(), name='email-detail'),
 ]
 

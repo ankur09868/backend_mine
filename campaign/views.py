@@ -8,12 +8,8 @@ from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIV
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from django.db.models import Sum
-from .models import InstagramCampaign
-from .models import WhatsAppCampaign
-from .models import EmailCampaign
-from .serializers import EmailCampaignSerializer
-from .serializers import WhatsAppCampaignSerializer
-from .serializers import InstagramCampaignSerializer
+from .models import InstagramCampaign, WhatsAppCampaign, EmailCampaign, CallCampaign
+from .serializers import EmailCampaignSerializer, WhatsAppCampaignSerializer, InstagramCampaignSerializer, CallCampaignSerializer
 from rest_framework import status
 class CampaignViewSet(ListCreateAPIView):
     queryset = Campaign.objects.all()
@@ -97,6 +93,16 @@ class WhatsAppCampaignViewSet(viewsets.ModelViewSet):
 class EmailCampaignViewSet(viewsets.ModelViewSet):
     queryset = EmailCampaign.objects.all()
     serializer_class = EmailCampaignSerializer
+
+    def perform_create(self, serializer):
+        serializer.save()
+
+    def perform_update(self, serializer):
+        serializer.save()
+
+class CallCampaignViewSet(viewsets.ModelViewSet):
+    queryset = CallCampaign.objects.all()
+    serializer_class = CallCampaignSerializer
 
     def perform_create(self, serializer):
         serializer.save()
