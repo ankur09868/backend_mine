@@ -55,6 +55,8 @@ def get_model_fields(model_name):
 
 
 def get_column_mappings(list1, list2):
+    print("rcvd list1: " ,list1)
+    print("rcvd list2: ", list2)
     client = OpenAI(api_key = os.getenv("OPENAI_API_KEY"))
     response = client.chat.completions.create(
         model = "gpt-4o-mini",
@@ -69,17 +71,14 @@ def get_column_mappings(list1, list2):
             }
         ]
     )
-    response = response.choices[0].message.content
-    if response.status_code == 200:
-        result = response.choices[0].message.content
+    result = response.choices[0].message.content
         
         #trim the result
-        fin=result.find('{')
-        lin=result.rfind('}')
-        trimmed_result = result [fin:lin + 1]
+    fin=result.find('{')
+    lin=result.rfind('}')
+    trimmed_result = result [fin:lin + 1]
 
-        parsed_result = json.loads(trimmed_result)
+    parsed_result = json.loads(trimmed_result)
 
-        return parsed_result
-    else:
-        print(f"Error: {response.status_code}, {response.text}")
+    return parsed_result
+    

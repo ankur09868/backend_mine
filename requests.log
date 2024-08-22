@@ -7092,3 +7092,1252 @@ ERROR 2024-08-21 09:31:02,784 basehttp "POST /upload/ HTTP/1.1" 500 240
 INFO 2024-08-21 09:31:10,477 basehttp "OPTIONS /upload/ HTTP/1.1" 200 0
 ERROR 2024-08-21 09:31:13,548 log Internal Server Error: /upload/
 ERROR 2024-08-21 09:31:13,549 basehttp "POST /upload/ HTTP/1.1" 500 240
+INFO 2024-08-21 09:39:45,475 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 09:40:11,040 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 102, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:1])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 09:40:11,043 basehttp "POST /upload/ HTTP/1.1" 500 88488
+INFO 2024-08-21 09:40:33,071 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py changed, reloading.
+INFO 2024-08-21 09:40:34,513 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 09:40:55,413 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 102, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:0])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 09:40:55,416 basehttp "POST /upload/ HTTP/1.1" 500 88488
+ERROR 2024-08-21 09:46:23,339 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 102, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:0])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 09:46:23,341 basehttp "POST /upload/ HTTP/1.1" 500 88512
+ERROR 2024-08-21 09:46:36,811 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 102, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:0])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 09:46:36,813 basehttp "POST /upload/ HTTP/1.1" 500 88512
+ERROR 2024-08-21 09:47:24,495 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 102, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:0])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 09:47:24,497 basehttp "POST /upload/ HTTP/1.1" 500 88512
+INFO 2024-08-21 09:47:42,687 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py changed, reloading.
+INFO 2024-08-21 09:47:44,191 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 09:48:04,747 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 102, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:0])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 09:48:04,751 basehttp "POST /upload/ HTTP/1.1" 500 88512
+INFO 2024-08-21 09:49:22,967 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py changed, reloading.
+INFO 2024-08-21 09:49:24,202 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 09:49:44,528 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 103, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:0])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 09:49:44,531 basehttp "POST /upload/ HTTP/1.1" 500 88512
+INFO 2024-08-21 09:50:39,459 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py changed, reloading.
+INFO 2024-08-21 09:50:40,711 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 09:50:59,620 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 104, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:0])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 09:50:59,623 basehttp "POST /upload/ HTTP/1.1" 500 88512
+ERROR 2024-08-21 09:51:10,303 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 104, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:0])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 09:51:10,306 basehttp "POST /upload/ HTTP/1.1" 500 88512
+ERROR 2024-08-21 09:51:15,235 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 104, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:0])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 09:51:15,238 basehttp "POST /upload/ HTTP/1.1" 500 88512
+INFO 2024-08-21 09:52:22,414 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py changed, reloading.
+INFO 2024-08-21 09:52:23,642 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 09:52:42,794 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 106, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:0])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 09:52:42,797 basehttp "POST /upload/ HTTP/1.1" 500 88512
+INFO 2024-08-21 09:53:11,078 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py changed, reloading.
+INFO 2024-08-21 09:53:12,452 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 09:53:34,249 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 106, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:0])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 09:53:34,251 basehttp "POST /upload/ HTTP/1.1" 500 88512
+ERROR 2024-08-21 09:54:28,933 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 106, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:0])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 09:54:28,936 basehttp "POST /upload/ HTTP/1.1" 500 88516
+ERROR 2024-08-21 09:54:42,441 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 106, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:0])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 09:54:42,443 basehttp "POST /upload/ HTTP/1.1" 500 88492
+ERROR 2024-08-21 09:54:50,086 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 106, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:0])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 09:54:50,087 basehttp "POST /upload/ HTTP/1.1" 500 88492
+ERROR 2024-08-21 09:54:58,583 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 106, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:0])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 09:54:58,585 basehttp "POST /upload/ HTTP/1.1" 500 88516
+INFO 2024-08-21 09:55:54,771 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py changed, reloading.
+INFO 2024-08-21 09:55:56,061 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 09:56:22,590 log Internal Server Error: /upload/
+ERROR 2024-08-21 09:56:22,591 basehttp "POST /upload/ HTTP/1.1" 500 250
+INFO 2024-08-21 09:57:26,485 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\tables.py changed, reloading.
+INFO 2024-08-21 09:57:28,229 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 09:57:53,625 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\tables.py changed, reloading.
+INFO 2024-08-21 09:57:55,068 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 09:58:21,266 log Internal Server Error: /upload/
+ERROR 2024-08-21 09:58:21,267 basehttp "POST /upload/ HTTP/1.1" 500 236
+INFO 2024-08-21 10:04:38,280 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py changed, reloading.
+INFO 2024-08-21 10:04:39,699 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 10:05:02,204 log Internal Server Error: /upload/
+ERROR 2024-08-21 10:05:02,205 basehttp "POST /upload/ HTTP/1.1" 500 236
+INFO 2024-08-21 10:07:12,498 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py changed, reloading.
+INFO 2024-08-21 10:07:14,411 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 13:18:36,996 autoreload D:\Nuren AI\New folder\backend_mine1\product\models.py changed, reloading.
+INFO 2024-08-21 13:18:38,532 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 13:22:38,409 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py changed, reloading.
+INFO 2024-08-21 13:22:39,842 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 13:24:02,899 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py changed, reloading.
+INFO 2024-08-21 13:24:03,949 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 13:27:23,288 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py changed, reloading.
+INFO 2024-08-21 13:27:24,433 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 13:34:23,072 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 113, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:1])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 13:34:23,072 basehttp "POST /upload/ HTTP/1.1" 500 89376
+ERROR 2024-08-21 13:36:52,377 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 113, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:1])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 13:36:52,379 basehttp "POST /upload/ HTTP/1.1" 500 89400
+INFO 2024-08-21 13:38:25,871 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py changed, reloading.
+INFO 2024-08-21 13:38:27,211 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 13:39:08,341 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py changed, reloading.
+INFO 2024-08-21 13:39:09,667 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 13:39:24,869 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py changed, reloading.
+INFO 2024-08-21 13:39:26,031 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 13:39:44,931 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 113, in dispatcher
+    new_df = create_subfile(df, columns_text, merge_columns)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 51, in create_subfile
+    columns_dict = json.loads(columns_text)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acs\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acs\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acs\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+ERROR 2024-08-21 13:39:44,936 basehttp "POST /upload/ HTTP/1.1" 500 95012
+ERROR 2024-08-21 13:41:54,621 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 115, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:1])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 13:41:54,623 basehttp "POST /upload/ HTTP/1.1" 500 89614
+INFO 2024-08-21 13:42:16,440 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py changed, reloading.
+INFO 2024-08-21 13:42:17,829 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 13:42:43,275 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 115, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:1])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 13:42:43,280 basehttp "POST /upload/ HTTP/1.1" 500 89614
+ERROR 2024-08-21 13:43:21,875 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 115, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:1])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 13:43:21,877 basehttp "POST /upload/ HTTP/1.1" 500 89782
+INFO 2024-08-21 13:44:13,564 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py changed, reloading.
+INFO 2024-08-21 13:44:14,695 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 13:44:37,860 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 118, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:1])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 13:44:37,867 basehttp "POST /upload/ HTTP/1.1" 500 89782
+INFO 2024-08-21 13:45:26,581 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py changed, reloading.
+INFO 2024-08-21 13:45:27,733 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 13:45:46,760 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 118, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:1])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 13:45:46,770 basehttp "POST /upload/ HTTP/1.1" 500 89782
+INFO 2024-08-21 14:01:37,217 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py changed, reloading.
+INFO 2024-08-21 14:01:38,587 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 14:02:00,667 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 119, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:1])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 14:02:00,667 basehttp "POST /upload/ HTTP/1.1" 500 89782
+INFO 2024-08-21 14:03:42,892 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py changed, reloading.
+INFO 2024-08-21 14:03:44,036 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 14:04:07,127 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 119, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:1])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 14:04:07,127 basehttp "POST /upload/ HTTP/1.1" 500 89782
+ERROR 2024-08-21 14:06:31,368 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 117, in dispatcher
+    new_df = create_subfile(df, columns_text, merge_columns)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 51, in create_subfile
+    columns_dict = json.loads(columns_text)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acs\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acs\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acs\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+ERROR 2024-08-21 14:06:31,376 basehttp "POST /upload/ HTTP/1.1" 500 93958
+ERROR 2024-08-21 14:07:26,667 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 119, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:1])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 14:07:26,669 basehttp "POST /upload/ HTTP/1.1" 500 89784
+INFO 2024-08-21 14:07:52,596 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py changed, reloading.
+INFO 2024-08-21 14:07:53,766 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 14:10:41,725 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 14:13:08,265 basehttp "POST /upload/ HTTP/1.1" 200 96
+INFO 2024-08-21 14:29:07,297 autoreload D:\Nuren AI\New folder\backend_mine1\product\models.py changed, reloading.
+INFO 2024-08-21 14:29:08,574 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 14:30:24,678 autoreload D:\Nuren AI\New folder\backend_mine1\product\models.py changed, reloading.
+INFO 2024-08-21 14:30:25,904 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 14:35:26,446 autoreload D:\Nuren AI\New folder\backend_mine1\product\models.py changed, reloading.
+INFO 2024-08-21 14:35:27,728 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 15:16:52,749 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 15:17:22,112 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 119, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:1])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 15:17:22,112 basehttp "POST /upload/ HTTP/1.1" 500 90178
+ERROR 2024-08-21 15:17:53,011 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 119, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:1])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 15:17:53,017 basehttp "POST /upload/ HTTP/1.1" 500 90202
+ERROR 2024-08-21 15:18:09,227 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 119, in dispatcher
+    return upload_file(request, new_df)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_csv.py", line 11, in upload_file
+    print("df: " ,df[:1])
+                  ~~^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\http\response.py", line 196, in __getitem__
+    return self.headers[header]
+           ~~~~~~~~~~~~^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\utils\datastructures.py", line 309, in __getitem__
+    return self._store[key.lower()][1]
+                       ^^^^^^^^^
+AttributeError: 'slice' object has no attribute 'lower'
+ERROR 2024-08-21 15:18:09,229 basehttp "POST /upload/ HTTP/1.1" 500 90250
+ERROR 2024-08-21 15:18:27,752 log Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 117, in dispatcher
+    new_df = create_subfile(df, columns_text, merge_columns)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py", line 51, in create_subfile
+    columns_dict = json.loads(columns_text)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acs\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acs\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acs\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+ERROR 2024-08-21 15:18:27,752 basehttp "POST /upload/ HTTP/1.1" 500 96341
+ERROR 2024-08-21 15:20:27,701 log Internal Server Error: /upload/
+ERROR 2024-08-21 15:20:27,701 basehttp "POST /upload/ HTTP/1.1" 500 241
+INFO 2024-08-21 15:45:45,146 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 15:46:31,713 log Internal Server Error: /upload/
+ERROR 2024-08-21 15:46:31,714 basehttp "POST /upload/ HTTP/1.1" 500 258
+ERROR 2024-08-21 15:46:58,495 log Internal Server Error: /upload/
+ERROR 2024-08-21 15:46:58,496 basehttp "POST /upload/ HTTP/1.1" 500 238
+INFO 2024-08-21 15:47:19,059 autoreload D:\Nuren AI\New folder\backend_mine1\product\models.py changed, reloading.
+INFO 2024-08-21 15:47:20,239 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 16:13:40,337 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 16:14:06,571 log Internal Server Error: /upload/
+ERROR 2024-08-21 16:14:06,571 basehttp "POST /upload/ HTTP/1.1" 500 162
+ERROR 2024-08-21 16:19:33,645 log Internal Server Error: /upload/
+ERROR 2024-08-21 16:19:33,646 basehttp "POST /upload/ HTTP/1.1" 500 241
+INFO 2024-08-21 16:19:52,275 autoreload D:\Nuren AI\New folder\backend_mine1\product\models.py changed, reloading.
+INFO 2024-08-21 16:19:53,451 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 16:21:21,442 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 16:21:48,305 log Internal Server Error: /upload/
+ERROR 2024-08-21 16:21:48,305 basehttp "POST /upload/ HTTP/1.1" 500 241
+INFO 2024-08-21 16:25:52,326 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 16:26:18,954 log Internal Server Error: /upload/
+ERROR 2024-08-21 16:26:18,961 basehttp "POST /upload/ HTTP/1.1" 500 68
+INFO 2024-08-21 16:26:39,404 autoreload D:\Nuren AI\New folder\backend_mine1\product\models.py changed, reloading.
+INFO 2024-08-21 16:28:39,790 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 16:29:13,598 log Internal Server Error: /upload/
+ERROR 2024-08-21 16:29:13,598 basehttp "POST /upload/ HTTP/1.1" 500 68
+INFO 2024-08-21 16:37:04,736 autoreload D:\Nuren AI\New folder\backend_mine1\product\models.py changed, reloading.
+INFO 2024-08-21 16:37:05,915 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 16:38:24,415 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 16:38:51,195 log Internal Server Error: /upload/
+ERROR 2024-08-21 16:38:51,195 basehttp "POST /upload/ HTTP/1.1" 500 68
+INFO 2024-08-21 16:39:00,515 autoreload D:\Nuren AI\New folder\backend_mine1\product\models.py changed, reloading.
+INFO 2024-08-21 16:40:11,875 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 16:40:51,954 log Internal Server Error: /upload/
+ERROR 2024-08-21 16:40:51,954 basehttp "POST /upload/ HTTP/1.1" 500 42
+INFO 2024-08-21 16:43:29,565 autoreload D:\Nuren AI\New folder\backend_mine1\product\models.py changed, reloading.
+INFO 2024-08-21 16:43:30,832 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 16:44:30,199 autoreload D:\Nuren AI\New folder\backend_mine1\product\models.py changed, reloading.
+INFO 2024-08-21 16:45:42,804 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 16:46:29,273 log Internal Server Error: /upload/
+ERROR 2024-08-21 16:46:29,273 basehttp "POST /upload/ HTTP/1.1" 500 42
+INFO 2024-08-21 16:48:42,033 autoreload D:\Nuren AI\New folder\backend_mine1\product\models.py changed, reloading.
+INFO 2024-08-21 16:49:58,370 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 16:50:43,123 log Internal Server Error: /upload/
+ERROR 2024-08-21 16:50:43,123 basehttp "POST /upload/ HTTP/1.1" 500 42
+INFO 2024-08-21 16:51:38,725 autoreload D:\Nuren AI\New folder\backend_mine1\product\models.py changed, reloading.
+INFO 2024-08-21 16:51:39,896 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 16:53:06,634 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 16:54:18,522 log Internal Server Error: /upload/
+ERROR 2024-08-21 16:54:18,522 basehttp "POST /upload/ HTTP/1.1" 500 42
+INFO 2024-08-21 16:56:43,607 autoreload D:\Nuren AI\New folder\backend_mine1\product\models.py changed, reloading.
+INFO 2024-08-21 16:56:44,882 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 16:58:15,791 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 16:59:18,006 log Internal Server Error: /upload/
+ERROR 2024-08-21 16:59:18,012 basehttp "POST /upload/ HTTP/1.1" 500 42
+INFO 2024-08-21 17:00:42,074 autoreload D:\Nuren AI\New folder\backend_mine1\product\models.py changed, reloading.
+INFO 2024-08-21 17:00:44,191 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 17:01:10,660 autoreload D:\Nuren AI\New folder\backend_mine1\product\models.py changed, reloading.
+INFO 2024-08-21 17:01:12,652 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 17:03:01,316 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 17:04:47,020 log Internal Server Error: /upload/
+ERROR 2024-08-21 17:04:47,020 basehttp "POST /upload/ HTTP/1.1" 500 68
+INFO 2024-08-21 17:09:05,380 autoreload D:\Nuren AI\New folder\backend_mine1\product\models.py changed, reloading.
+INFO 2024-08-21 17:09:07,375 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 17:11:09,100 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 17:12:54,849 log Internal Server Error: /upload/
+ERROR 2024-08-21 17:12:54,849 basehttp "POST /upload/ HTTP/1.1" 500 68
+INFO 2024-08-21 17:15:05,319 autoreload D:\Nuren AI\New folder\backend_mine1\product\models.py changed, reloading.
+INFO 2024-08-21 17:15:07,569 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 17:17:34,018 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 17:20:05,808 basehttp "POST /upload/ HTTP/1.1" 200 99
+INFO 2024-08-21 17:32:19,131 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 17:34:43,503 basehttp "POST /upload/ HTTP/1.1" 200 99
+INFO 2024-08-21 17:39:21,174 autoreload D:\Nuren AI\New folder\backend_mine1\product\models.py changed, reloading.
+INFO 2024-08-21 17:39:23,738 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 17:41:17,451 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py changed, reloading.
+INFO 2024-08-21 17:41:18,677 autoreload Watching for file changes with StatReloader
+WARNING 2024-08-21 18:24:16,179 log Bad Request: /upload/
+WARNING 2024-08-21 18:24:16,179 basehttp "POST /upload/ HTTP/1.1" 400 56
+INFO 2024-08-21 18:27:31,049 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\table_from_img.py changed, reloading.
+INFO 2024-08-21 18:27:32,570 autoreload Watching for file changes with StatReloader
+WARNING 2024-08-21 18:27:56,753 log Bad Request: /upload/
+WARNING 2024-08-21 18:27:56,753 basehttp "POST /upload/ HTTP/1.1" 400 56
+INFO 2024-08-21 18:29:29,038 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\table_from_img.py changed, reloading.
+INFO 2024-08-21 18:29:30,328 autoreload Watching for file changes with StatReloader
+WARNING 2024-08-21 18:29:54,173 log Bad Request: /upload/
+WARNING 2024-08-21 18:29:54,173 basehttp "POST /upload/ HTTP/1.1" 400 56
+INFO 2024-08-21 18:30:50,606 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\table_from_img.py changed, reloading.
+INFO 2024-08-21 18:30:51,889 autoreload Watching for file changes with StatReloader
+WARNING 2024-08-21 18:31:24,698 log Bad Request: /upload/
+WARNING 2024-08-21 18:31:24,698 basehttp "POST /upload/ HTTP/1.1" 400 56
+INFO 2024-08-21 18:34:27,230 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\table_from_img.py changed, reloading.
+INFO 2024-08-21 18:34:28,602 autoreload Watching for file changes with StatReloader
+WARNING 2024-08-21 18:34:54,928 log Bad Request: /upload/
+WARNING 2024-08-21 18:34:54,929 basehttp "POST /upload/ HTTP/1.1" 400 56
+INFO 2024-08-21 18:36:21,228 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\table_from_img.py changed, reloading.
+INFO 2024-08-21 18:36:22,369 autoreload Watching for file changes with StatReloader
+WARNING 2024-08-21 18:36:44,597 log Bad Request: /upload/
+WARNING 2024-08-21 18:36:44,599 basehttp "POST /upload/ HTTP/1.1" 400 56
+INFO 2024-08-21 18:38:05,729 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\table_from_img.py changed, reloading.
+INFO 2024-08-21 18:38:06,938 autoreload Watching for file changes with StatReloader
+WARNING 2024-08-21 18:38:30,062 log Bad Request: /upload/
+WARNING 2024-08-21 18:38:30,063 basehttp "POST /upload/ HTTP/1.1" 400 56
+INFO 2024-08-21 18:40:29,303 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\table_from_img.py changed, reloading.
+INFO 2024-08-21 18:40:30,560 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 18:40:52,308 basehttp "POST /upload/ HTTP/1.1" 200 57
+INFO 2024-08-21 18:54:46,291 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\table_from_img.py changed, reloading.
+INFO 2024-08-21 18:54:47,669 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 18:55:09,628 basehttp "POST /upload/ HTTP/1.1" 200 57
+INFO 2024-08-21 18:56:54,508 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\table_from_img.py changed, reloading.
+INFO 2024-08-21 18:56:55,951 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 18:57:21,679 basehttp "POST /upload/ HTTP/1.1" 200 57
+INFO 2024-08-21 18:57:47,279 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\table_from_img.py changed, reloading.
+INFO 2024-08-21 18:57:48,528 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 18:58:09,568 basehttp "POST /upload/ HTTP/1.1" 200 57
+INFO 2024-08-21 18:59:53,067 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\table_from_img.py changed, reloading.
+INFO 2024-08-21 18:59:54,308 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 19:00:18,118 log Internal Server Error: /upload/
+ERROR 2024-08-21 19:00:18,118 basehttp "POST /upload/ HTTP/1.1" 500 96
+INFO 2024-08-21 19:03:53,947 autoreload D:\Nuren AI\New folder\backend_mine1\simplecrm\get_column_name.py changed, reloading.
+INFO 2024-08-21 19:03:55,306 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 19:04:25,820 autoreload D:\Nuren AI\New folder\backend_mine1\simplecrm\get_column_name.py changed, reloading.
+INFO 2024-08-21 19:04:26,880 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 19:04:50,622 log Internal Server Error: /upload/
+ERROR 2024-08-21 19:04:50,622 basehttp "POST /upload/ HTTP/1.1" 500 96
+INFO 2024-08-21 19:07:06,118 autoreload D:\Nuren AI\New folder\backend_mine1\simplecrm\get_column_name.py changed, reloading.
+INFO 2024-08-21 19:07:07,346 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 19:07:34,320 log Internal Server Error: /upload/
+ERROR 2024-08-21 19:07:34,320 basehttp "POST /upload/ HTTP/1.1" 500 107
+INFO 2024-08-21 19:08:09,366 autoreload D:\Nuren AI\New folder\backend_mine1\simplecrm\get_column_name.py changed, reloading.
+INFO 2024-08-21 19:08:10,631 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 19:08:36,146 log Internal Server Error: /upload/
+ERROR 2024-08-21 19:08:36,146 basehttp "POST /upload/ HTTP/1.1" 500 231
+INFO 2024-08-21 19:28:02,006 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\upload_dispatch.py changed, reloading.
+INFO 2024-08-21 19:28:03,296 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 19:28:31,256 basehttp "POST /upload/ HTTP/1.1" 200 57
+ERROR 2024-08-21 19:31:03,986 log Internal Server Error: /upload/
+ERROR 2024-08-21 19:31:03,986 basehttp "POST /upload/ HTTP/1.1" 500 253
+ERROR 2024-08-21 19:32:50,436 log Internal Server Error: /upload/
+ERROR 2024-08-21 19:32:50,436 basehttp "POST /upload/ HTTP/1.1" 500 263
+INFO 2024-08-21 19:37:26,406 autoreload D:\Nuren AI\New folder\backend_mine1\contacts\models.py changed, reloading.
+INFO 2024-08-21 19:38:50,506 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-21 19:40:27,826 log Internal Server Error: /upload/
+ERROR 2024-08-21 19:40:27,826 basehttp "POST /upload/ HTTP/1.1" 500 246
+INFO 2024-08-21 19:41:58,256 autoreload D:\Nuren AI\New folder\backend_mine1\contacts\models.py changed, reloading.
+INFO 2024-08-21 19:43:39,174 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 19:44:15,874 basehttp "POST /upload/ HTTP/1.1" 200 57
+INFO 2024-08-21 19:45:35,524 basehttp "POST /upload/ HTTP/1.1" 200 57
+INFO 2024-08-21 19:46:33,397 basehttp "POST /upload/ HTTP/1.1" 200 57
+INFO 2024-08-21 19:48:45,043 basehttp "POST /upload/ HTTP/1.1" 200 57
+INFO 2024-08-21 19:49:37,413 basehttp "POST /upload/ HTTP/1.1" 200 57
+INFO 2024-08-21 19:49:51,456 basehttp "POST /upload/ HTTP/1.1" 200 57
+INFO 2024-08-21 19:50:36,709 basehttp "POST /upload/ HTTP/1.1" 200 57
+INFO 2024-08-21 19:53:00,175 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\table_from_img.py changed, reloading.
+INFO 2024-08-21 19:53:01,314 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 19:53:37,556 basehttp "POST /upload/ HTTP/1.1" 200 57
+ERROR 2024-08-21 19:54:16,817 log Internal Server Error: /upload/
+ERROR 2024-08-21 19:54:16,819 basehttp "POST /upload/ HTTP/1.1" 500 76
+ERROR 2024-08-21 19:54:49,976 log Internal Server Error: /upload/
+ERROR 2024-08-21 19:54:49,976 basehttp "POST /upload/ HTTP/1.1" 500 76
+ERROR 2024-08-21 19:55:24,335 log Internal Server Error: /upload/
+ERROR 2024-08-21 19:55:24,336 basehttp "POST /upload/ HTTP/1.1" 500 76
+ERROR 2024-08-21 19:55:58,655 log Internal Server Error: /upload/
+ERROR 2024-08-21 19:55:58,656 basehttp "POST /upload/ HTTP/1.1" 500 265
+ERROR 2024-08-21 19:57:25,732 log Internal Server Error: /upload/
+ERROR 2024-08-21 19:57:25,732 basehttp "POST /upload/ HTTP/1.1" 500 265
+ERROR 2024-08-21 19:57:34,512 log Internal Server Error: /upload/
+ERROR 2024-08-21 19:57:34,512 basehttp "POST /upload/ HTTP/1.1" 500 265
+ERROR 2024-08-21 20:00:43,659 log Internal Server Error: /upload/
+ERROR 2024-08-21 20:00:43,660 basehttp "POST /upload/ HTTP/1.1" 500 76
+INFO 2024-08-21 20:13:27,235 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\tables.py changed, reloading.
+INFO 2024-08-21 20:13:28,681 autoreload Watching for file changes with StatReloader
+INFO 2024-08-21 20:20:47,328 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\tables.py changed, reloading.
+INFO 2024-08-21 20:20:48,535 autoreload Watching for file changes with StatReloader
+INFO 2024-08-22 09:09:33,552 autoreload Watching for file changes with StatReloader
+INFO 2024-08-22 09:10:06,836 autoreload Watching for file changes with StatReloader
+INFO 2024-08-22 09:10:26,404 basehttp "GET /contacts/ HTTP/1.1" 200 32708
+WARNING 2024-08-22 09:11:09,858 log Bad Request: /contacts/
+WARNING 2024-08-22 09:11:09,858 basehttp "GET /contacts/ HTTP/1.1" 400 21
+INFO 2024-08-22 09:12:23,227 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:12:27,261 basehttp "GET /contacts/ HTTP/1.1" 200 32708
+INFO 2024-08-22 09:12:37,074 basehttp "GET /contacts/ HTTP/1.1" 200 32708
+INFO 2024-08-22 09:13:23,419 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:13:25,772 basehttp "GET /contacts/ HTTP/1.1" 200 32708
+INFO 2024-08-22 09:14:00,750 autoreload D:\Nuren AI\New folder\backend_mine1\helpers\tables.py changed, reloading.
+INFO 2024-08-22 09:14:02,341 autoreload Watching for file changes with StatReloader
+INFO 2024-08-22 09:15:42,509 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:15:46,555 basehttp "GET /contacts/ HTTP/1.1" 200 32708
+INFO 2024-08-22 09:16:09,463 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:16:11,863 basehttp "GET /contacts/ HTTP/1.1" 200 32708
+INFO 2024-08-22 09:17:34,815 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:17:36,925 basehttp "GET /contacts/ HTTP/1.1" 200 32708
+INFO 2024-08-22 09:19:05,141 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:19:07,579 basehttp "GET /contacts/ HTTP/1.1" 200 32708
+INFO 2024-08-22 09:27:18,847 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:27:21,180 basehttp "GET /contacts/ HTTP/1.1" 200 32708
+INFO 2024-08-22 09:27:33,985 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:27:33,996 basehttp "OPTIONS /active_contacts/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:27:34,377 basehttp "OPTIONS /interaction HTTP/1.1" 200 0
+INFO 2024-08-22 09:27:34,416 basehttp "OPTIONS /wallet/balance?user_id=3 HTTP/1.1" 200 0
+INFO 2024-08-22 09:27:34,992 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-08-22 09:27:35,105 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:27:35,144 basehttp "OPTIONS /recent_request/contacts/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:27:35,322 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-08-22 09:27:35,432 basehttp "OPTIONS /interaction/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:27:35,529 basehttp "OPTIONS /wallet/balance/?user_id=3 HTTP/1.1" 200 0
+INFO 2024-08-22 09:27:36,388 basehttp "GET /contacts/ HTTP/1.1" 200 32708
+INFO 2024-08-22 09:27:36,388 basehttp "GET /active_contacts/ HTTP/1.1" 200 40231
+INFO 2024-08-22 09:27:37,138 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-22 09:27:37,178 basehttp "GET /recent_request/contacts/ HTTP/1.1" 200 32721
+INFO 2024-08-22 09:27:37,287 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-08-22 09:27:37,530 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 200 21
+INFO 2024-08-22 09:28:19,633 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:28:19,633 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:28:19,633 basehttp "OPTIONS /interaction HTTP/1.1" 200 0
+INFO 2024-08-22 09:28:19,633 basehttp "OPTIONS /active_contacts/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:28:19,634 basehttp "OPTIONS /wallet/balance?user_id=3 HTTP/1.1" 200 0
+INFO 2024-08-22 09:28:19,732 basehttp "OPTIONS /recent_request/contacts/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:28:19,777 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-08-22 09:28:19,786 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-08-22 09:28:19,930 basehttp "OPTIONS /wallet/balance/?user_id=3 HTTP/1.1" 200 0
+INFO 2024-08-22 09:28:19,940 basehttp "OPTIONS /interaction/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:28:21,558 basehttp "GET /contacts/ HTTP/1.1" 200 32708
+INFO 2024-08-22 09:28:21,664 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-22 09:28:21,664 basehttp "GET /recent_request/contacts/ HTTP/1.1" 200 32721
+INFO 2024-08-22 09:28:21,664 basehttp "GET /active_contacts/ HTTP/1.1" 200 40231
+INFO 2024-08-22 09:28:21,693 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 200 21
+INFO 2024-08-22 09:28:21,848 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-08-22 09:36:19,670 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:36:19,674 basehttp "OPTIONS /active_contacts/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:36:19,679 basehttp "OPTIONS /interaction HTTP/1.1" 200 0
+INFO 2024-08-22 09:36:19,696 basehttp "OPTIONS /recent_request/contacts/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:36:19,697 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:36:19,709 basehttp "OPTIONS /wallet/balance?user_id=3 HTTP/1.1" 200 0
+INFO 2024-08-22 09:36:19,913 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-08-22 09:36:19,996 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-08-22 09:36:20,214 basehttp "OPTIONS /interaction/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:36:20,250 basehttp "OPTIONS /wallet/balance/?user_id=3 HTTP/1.1" 200 0
+INFO 2024-08-22 09:36:21,583 basehttp "GET /contacts/ HTTP/1.1" 200 32708
+INFO 2024-08-22 09:36:21,617 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-22 09:36:21,618 basehttp "GET /active_contacts/ HTTP/1.1" 200 40231
+INFO 2024-08-22 09:36:21,665 basehttp "GET /recent_request/contacts/ HTTP/1.1" 200 32721
+INFO 2024-08-22 09:36:22,094 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 200 21
+INFO 2024-08-22 09:36:22,095 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-08-22 09:36:43,227 log Bad Request: /
+WARNING 2024-08-22 09:36:43,227 basehttp "GET / HTTP/1.1" 400 21
+INFO 2024-08-22 09:37:06,073 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-08-22 09:37:06,074 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-08-22 09:37:07,705 basehttp "GET /recent_request/contacts/ HTTP/1.1" 200 32721
+INFO 2024-08-22 09:37:07,791 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-22 09:37:07,840 basehttp "GET /contacts/ HTTP/1.1" 200 32708
+INFO 2024-08-22 09:37:07,841 basehttp "GET /active_contacts/ HTTP/1.1" 200 40231
+INFO 2024-08-22 09:37:07,876 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-08-22 09:37:07,950 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 200 21
+INFO 2024-08-22 09:39:00,324 basehttp "GET /contacts/ HTTP/1.1" 200 32708
+INFO 2024-08-22 09:41:23,503 basehttp "GET /contacts/ HTTP/1.1" 200 32708
+INFO 2024-08-22 09:41:27,468 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-08-22 09:41:27,674 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-08-22 09:41:29,116 basehttp "GET /contacts/ HTTP/1.1" 200 32708
+INFO 2024-08-22 09:41:29,322 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 200 21
+INFO 2024-08-22 09:41:29,335 basehttp "GET /active_contacts/ HTTP/1.1" 200 40231
+INFO 2024-08-22 09:41:29,368 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-22 09:41:29,400 basehttp "GET /recent_request/contacts/ HTTP/1.1" 200 32721
+INFO 2024-08-22 09:41:29,492 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-08-22 09:41:55,786 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-08-22 09:41:55,797 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-08-22 09:41:59,167 basehttp "GET /recent_request/contacts/ HTTP/1.1" 200 32721
+INFO 2024-08-22 09:41:59,262 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-22 09:41:59,272 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 200 21
+INFO 2024-08-22 09:41:59,335 basehttp "GET /contacts/ HTTP/1.1" 200 32708
+INFO 2024-08-22 09:41:59,375 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-08-22 09:41:59,412 basehttp "GET /active_contacts/ HTTP/1.1" 200 40231
+INFO 2024-08-22 09:42:30,077 basehttp "OPTIONS /wallet/balance?user_id=3 HTTP/1.1" 200 0
+INFO 2024-08-22 09:42:30,078 basehttp "OPTIONS /interaction HTTP/1.1" 200 0
+INFO 2024-08-22 09:42:30,078 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:42:30,083 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:42:30,083 basehttp "OPTIONS /active_contacts/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:42:30,083 basehttp "OPTIONS /recent_request/contacts/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:42:30,464 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-08-22 09:42:30,513 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-08-22 09:42:30,653 basehttp "OPTIONS /wallet/balance/?user_id=3 HTTP/1.1" 200 0
+INFO 2024-08-22 09:42:30,730 basehttp "OPTIONS /interaction/ HTTP/1.1" 200 0
+INFO 2024-08-22 09:42:33,907 basehttp "GET /recent_request/contacts/ HTTP/1.1" 200 3899
+INFO 2024-08-22 09:42:33,985 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-22 09:42:33,988 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+INFO 2024-08-22 09:42:33,992 basehttp "GET /active_contacts/ HTTP/1.1" 200 5217
+INFO 2024-08-22 09:42:34,190 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 200 21
+INFO 2024-08-22 09:42:34,248 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-08-22 09:45:08,926 basehttp "GET /contacts/ HTTP/1.1" 200 28391
