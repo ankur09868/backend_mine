@@ -226,54 +226,75 @@ def data_from_image(request):
         return JsonResponse({"status": 500, "message": f"Internal server error: {e}"}, status=500)
 
 
-
 def extract(textract_data):
-    blocks = textract_data.get('Blocks', [])
-    
-    word_dic={}
-    curr_table = []
-    tables=[]
-    text = ""
+    try:
+        blocks = textract_data.get('Blocks', [])
+        word_dic = {}
+        curr_table = []
+        tables = []
+        text = ""
 
-    combined_list=[]
-    for block in blocks:
-        if block['BlockType'] == 'WORD':
-            id = block['Id']
-            text = block['Text']
-            word_dic[id] = text
-        
-        elif block['BlockType'] == 'TABLE' or block['BlockType'] == 'TABLE_TITLE' :
-            if len(curr_table) != 0:
-                tables.append(curr_table)
-            curr_table=[]
+        combined_list = []
+        for block in blocks:
+            print(block['BlockType'])
+            try:
+                if block['BlockType'] == 'WORD':
+                    id = block['Id']
+                    text = block['Text']
+                    word_dic[id] = text
+                
+                elif block['BlockType'] == 'TABLE' or block['BlockType'] == 'TABLE_TITLE' or block['BlockType']== 'KEY_VALUE_SET':
+                    if len(curr_table) != 0:
+                        tables.append(curr_table)
+                    curr_table = []
 
-        elif block['BlockType'] == 'CELL':
-            row = block['RowIndex']
-            column = block['ColumnIndex']
-            id = block['Relationships'][0]['Ids']
-            text=""
-            for i in id:
-                combined_list.append(i)
-                text+=word_dic[i]+" "
-            curr_table.append({"row":row, "column":column, "text": text})
-    text=""
-    for block in blocks:
-        if block['BlockType'] == 'WORD' and block['Id'] not in combined_list:
-            text += block['Text'] + " "
-    
-    formatted_tables = []
-    for table in tables:
-        rows=[]
-        for row_dict in table:
-            row_index = row_dict['row'] - 1
-            col_index = row_dict['column'] - 1
-            # Ensure the row exists in the list
-            while len(rows) <= row_index:
-                rows.append([])
-            # Ensure the column exists in the row
-            while len(rows[row_index]) <= col_index:
-                rows[row_index].append('')
-            # Set the value in the appropriate cell
-            rows[row_index][col_index] = row_dict['text']
-        formatted_tables.append(rows)
-    return text, formatted_tables
+                elif block['BlockType'] == 'CELL':
+                    print("cell block: ", block)
+                    row = block['RowIndex']
+                    column = block['ColumnIndex']
+                    id = block['Relationships'][0]['Ids']
+                    text = ""
+                    for i in id:
+                        combined_list.append(i)
+                        text += word_dic[i] + " "
+                    curr_table.append({"row": row, "column": column, "text": text})
+                    print("curr table: ", curr_table)
+            except Exception as e:
+                print(f"Error processing block: {block}, Error: {e}")
+                continue
+        tables.append(curr_table)
+        print("tables: ", tables)
+        text = ""
+        for block in blocks:
+            try:
+                if block['BlockType'] == 'WORD' and block['Id'] not in combined_list:
+                    text += block['Text'] + " "
+            except Exception as e:
+                print(f"Error processing block: {block}, Error: {e}")
+                continue
+
+        formatted_tables = []
+        for table in tables:
+            rows = []
+            for row_dict in table:
+                try:
+                    row_index = row_dict['row'] - 1
+                    col_index = row_dict['column'] - 1
+                    # Ensure the row exists in the list
+                    while len(rows) <= row_index:
+                        rows.append([])
+                    # Ensure the column exists in the row
+                    while len(rows[row_index]) <= col_index:
+                        rows[row_index].append('')
+                    # Set the value in the appropriate cell
+                    rows[row_index][col_index] = row_dict['text']
+                except Exception as e:
+                    print(f"Error processing row: {row_dict}, Error: {e}")
+                    continue
+            formatted_tables.append(rows)
+        print("FORMATTED TABLE: ", formatted_tables)
+        print("TEXT: ", text)
+        return text, formatted_tables
+    except Exception as e:
+        print(f"Error in extract function: {e}")
+        return "", []

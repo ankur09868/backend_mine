@@ -11,7 +11,9 @@ table_mappings = {
     "Opportunity" : "opportunities_opportunity",
     "Tasks" : "tasks_tasks",
     "Interaction" : "interaction_interaction",
-    "Campaign" : "campaign_campaign"
+    "Campaign" : "campaign_campaign",
+    "Vendor" : "vendors_vendors",
+    "Experience" : "product_experience"
 }
 
 def get_db_connection():
@@ -105,7 +107,7 @@ def get_tables_schema():
             conn.close()
 
 
-def upload_table(data_list: list, model_name: str):
+def upload_table(data_list: list, model_name: str, tenant_id):
     '''
     Function to upload data into tables in database. it maps the table columns with columns of preset tables and uploads it. uses chatGPT for mapping.
 
@@ -132,12 +134,15 @@ def upload_table(data_list: list, model_name: str):
     print("column list: " ,column_names)
     conn = get_db_connection()
     cur= conn.cursor()
+
     for row in data_list[1:]:
+        values = list(row) + [tenant_id]  # Ensure row is a list and concatenate tenant_id
+    
         insert_data_query = f"""
-        INSERT INTO {table_name} ({', '.join(f'"{column}" ' for column in column_names)})
-        VALUES ({', '.join(['%s'] * len(column_names))});
+        INSERT INTO {table_name} ({', '.join(f'"{column}" ' for column in column_names)}, "tenant_id")
+        VALUES ({', '.join('%s' for   _ in range(len(column_names)))}, %s);
         """
-        cur.execute(insert_data_query, tuple(row))
+        cur.execute(insert_data_query, values)
         print("testingg")
         conn.commit()
     cur.execute(f"SELECT * FROM {table_name};")
@@ -166,7 +171,8 @@ def create_table(table_list: list, table_name: str):
     create_table_query = f"""
         CREATE TABLE IF NOT EXISTS {table_name} (
         id SERIAL PRIMARY KEY,
-        {', '.join(f'"{column}" VARCHAR(500)' for column in column_names)}
+        {', '.join(f'"{column}" VARCHAR(500)' for column in column_names)},
+        "tenant_id" VARCHAR(255)
     );
     """
     cur.execute(create_table_query)
