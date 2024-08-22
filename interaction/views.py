@@ -4,10 +4,10 @@ from rest_framework import status, generics
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from datetime import datetime
-from .models import Interaction, calls, meetings, Conversation
+from .models import Interaction, calls, meetings, Conversation,Email
 from tenant.models import Tenant
 from django.contrib.contenttypes.models import ContentType
-from .serializers import InteractionSerializer, callsSerializer, meetingsSerializer
+from .serializers import InteractionSerializer, callsSerializer, meetingsSerializer,EmailSerializer
 
 from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
 
@@ -224,3 +224,23 @@ def get_unique_instagram_contact_ids(request):
     except Exception as e:
         print("Error while fetching unique contact IDs:", e)
         return JsonResponse({"error": "Error while fetching unique contact IDs"}, status=500)
+    
+class EmailListAPIView(generics.ListCreateAPIView):
+    serializer_class = EmailSerializer
+
+    def get_queryset(self):
+        queryset = Email.objects.all()
+        email_type = self.request.query_params.get('email_type', None)
+        if email_type:
+            queryset = queryset.filter(email_type=email_type)
+        return queryset
+
+    def post(self, request, *args, **kwargs):
+        try:
+            return super().post(request, *args, **kwargs)
+        except Exception as e:
+            logger.error(f"An error occurred while processing the request: {e}")
+            return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+class EmailDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Email.objects.all()
+    serializer_class = EmailSerializer
