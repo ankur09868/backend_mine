@@ -1,6 +1,5 @@
 from rest_framework import serializers
-from .models import Interaction, Calls, Meetings, Conversation
-from .models import Interaction,calls, meetings, Conversation,Email
+from .models import Interaction,Calls, Meetings, Conversation,Email
 
 class InteractionSerializer(serializers.ModelSerializer):
     class Meta:
