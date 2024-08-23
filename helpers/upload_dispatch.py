@@ -4,55 +4,54 @@ import os, pandas as pd,json
 from .vectorize import vectorize
 from .table_from_img import data_from_image
 from .upload_csv import upload_file
-from io import BytesIO
 
 
 def create_subfile(df, columns_text, merge_columns):
-    
-    print("dataframe: " ,df.columns)
-    
+    print("DataFrame columns: ", df.columns)
+
     def get_column_names(df, indices):
         return [df.columns[i] for i in indices]
-    
+
+    df_new = df.copy()   
+
     if merge_columns:
         try:
-            merge_columns_dict = json.loads(merge_columns)  # Parse the JSON string into a dictionary
-            print("something: " ,merge_columns_dict)
+            merge_columns_dict = json.loads(merge_columns)  
+            print("Merge columns dict: ", merge_columns_dict)
+
             for new_col, indices in merge_columns_dict.items():
                 desc = False
-                if indices[0]=="desc":
+                if indices[0] == "desc":
                     desc = True
-                print(new_col)
-                print(indices)
-                if len(indices) < 2:
-                    return JsonResponse({'error': 'Merge columns should be a list of atleast two indices'}, status=400)
-                try:
+                    indices = indices[1:]  
                     
+                if len(indices) < 2:
+                    return JsonResponse({'error': 'Merge columns should be a list of at least two indices'}, status=400)
+
+                try:
+                    columns = get_column_names(df, indices)
                     if desc:
-                        columns = get_column_names(df, indices[1:])
-                        df[new_col] = df[columns].apply(lambda x: ', '.join([f'{col}: {val}' for col, val in zip(columns, x)]), axis=1)
+                        df_new[new_col] = df_new[columns].apply(
+                            lambda x: ', '.join([f'{col}: {val}' for col, val in zip(columns, x)]), axis=1)
                     else:
-                        columns = get_column_names(df, indices)
-                        df[new_col] = df[columns].astype(str).agg(', '.join, axis =1)
-                    # df = df.drop([col1, col2], axis=1)
-                    print(f"{new_col}: " ,df[new_col])
+                        df_new[new_col] = df_new[columns].astype(str).agg(', '.join, axis=1)
+
+                    print(f"New column '{new_col}':", df_new[new_col])
                 except IndexError:
-                    return JsonResponse({'error1': 'One or more column indices are out of range'}, status=400)
-            
+                    return JsonResponse({'error': 'One or more column indices are out of range'}, status=400)
+
         except json.JSONDecodeError as e:
-            print("jsonerror", e)
+            print("JSONDecodeError:", e)
             return JsonResponse({'error': 'Invalid JSON format for merge_columns'}, status=400)
         except Exception as e:
-            print("exception", e)
+            print("Exception:", e)
             return JsonResponse({'error': str(e)}, status=400)
 
-
     if columns_text:
-        columns_dict = json.loads(columns_text)
-
         try:
-            print("columns dict: " ,columns_dict)
-                
+            columns_dict = json.loads(columns_text)
+            print("Columns dict:", columns_dict)
+
             columns_dict_with_names = {}
             for old_index, new_name in columns_dict.items():
                 try:
@@ -60,22 +59,27 @@ def create_subfile(df, columns_text, merge_columns):
                     columns_dict_with_names[old_col] = new_name
                 except IndexError:
                     return JsonResponse({'error': f'Column index {old_index} is out of range'}, status=400)
-            df_sub = df.rename(columns=columns_dict_with_names)
-            df_new = df_sub[list(columns_dict.values()) + list(merge_columns_dict.keys())]
 
-        except KeyError as e:
-            print("KeyError: ", e)
+            
+            df_new = df_new.rename(columns=columns_dict_with_names)
 
-            return JsonResponse({'error': f'Column {e} not found in the input file'}, status=400)
+            
+            df_new = df_new[list(columns_dict.values()) + (list(merge_columns_dict.keys()) if merge_columns else [])]
+
         except json.JSONDecodeError as e:
-            print("JsonDecodeError: " ,e)
+            print("JSONDecodeError:", e)
             return JsonResponse({'error': 'Invalid JSON format for columns'}, status=400)
+        except KeyError as e:
+            print("KeyError:", e)
+            return JsonResponse({'error': f'Column {e} not found in the input file'}, status=400)
         except Exception as e:
-            print("Exception: " ,e)
+            print("Exception:", e)
             return JsonResponse({'error': str(e)}, status=400)
     else:
+        
         df_new = df
-    print("files created")
+
+    print("Final DataFrame created")
     return df_new
 
 @csrf_exempt
@@ -114,7 +118,7 @@ def dispatcher(request):
             except Exception as e:
                 return JsonResponse({'error': str(e)}, status=400)
             print("file rcvd")
-            new_df = create_subfile(df, columns_text, merge_columns)
+            new_df = create_subfile(df, columns_text=columns_text, merge_columns=merge_columns)
 
             return upload_file(request, new_df)
         else:

@@ -56,6 +56,7 @@ from .etl2  import add_nodes
 from .new_database import process_nodes
 from custom_fields.views import export_data_for_custom_field as edfc
 from topicmodelling import views as topicviews
+from whatsapp_chat import views as wa_chat_views
 
 
 urlpatterns = [
@@ -156,6 +157,7 @@ urlpatterns = [
     path('instagram-campaigns/<int:pk>/', campview.InstagramCampaignViewSet.as_view({'get': 'retrieve', 'put': 'update', 'patch': 'partial_update', 'delete': 'destroy'}), name='instagram-campaign-detail'),
     path('whatsapp-campaigns/', campview.WhatsAppCampaignViewSet.as_view({'get': 'list', 'post': 'create'}), name='whatsapp-campaign-list'),
     path('whatsapp-campaigns/<int:pk>/', campview.WhatsAppCampaignViewSet.as_view({'get': 'retrieve', 'put': 'update', 'patch': 'partial_update', 'delete': 'destroy'}), name='whatsapp-campaign-detail'),
+    path('set-flow/', wa_chat_views.setFlow, name = "set whatsapp flow"),
     path('call-campaigns/', campview.CallCampaignViewSet.as_view({'get': 'list', 'post': 'create'}), name='call-campaign-list'),
     path('call-campaigns/<int:pk>/', campview.CallCampaignViewSet.as_view({'get': 'retrieve', 'put': 'update', 'patch': 'partial_update', 'delete': 'destroy'}), name='call-campaign-detail'),
     path('emails/', inviews.EmailListAPIView.as_view(), name='email-list'),

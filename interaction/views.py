@@ -4,7 +4,7 @@ from rest_framework import status, generics
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from datetime import datetime
-from .models import Interaction, calls, meetings, Conversation,Email
+from .models import Interaction, Calls, Meetings, Conversation,Email
 from tenant.models import Tenant
 from django.contrib.contenttypes.models import ContentType
 from .serializers import InteractionSerializer, callsSerializer, meetingsSerializer,EmailSerializer
@@ -145,7 +145,7 @@ class RetrieveInteractionsView(APIView):
 
 
 class callsListAPIView(generics.ListCreateAPIView):
-    queryset = calls.objects.all()  # Using call model queryset instead of Lead
+    queryset = Calls.objects.all()  # Using call model queryset instead of Lead
     serializer_class = callsSerializer  # Using callSerializer instead of LeadSerializer
     # permission_classes = (IsAdminUser,)  # Optionally, uncomment and modify the permission classes
 
@@ -157,17 +157,17 @@ class callsListAPIView(generics.ListCreateAPIView):
             raise  # Re-raise the exception for Django to handle
 
 class callsDetailAPIView(RetrieveUpdateDestroyAPIView):
-    queryset = calls.objects.all()
+    queryset = Calls.objects.all()
     serializer_class = callsSerializer
     # Uncomment the line below to restrict access to admin users only
     # permission_classes = (IsAdminUser,)
 
 class MeetingListCreateAPIView(ListCreateAPIView):
-    queryset = meetings.objects.all()
+    queryset = Meetings.objects.all()
     serializer_class = meetingsSerializer
 
 class MeetingDetailAPIView(RetrieveUpdateDestroyAPIView):
-    queryset = meetings.objects.all()
+    queryset = Meetings.objects.all()
     serializer_class = meetingsSerializer
 
 

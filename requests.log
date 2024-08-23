@@ -69,3 +69,6 @@ WARNING 2024-08-23 13:58:02,457 basehttp "GET /fetch-all-emails HTTP/1.1" 404 16
 INFO 2024-08-23 14:49:53,162 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\leads\models.py changed, reloading.
 INFO 2024-08-23 14:49:57,614 autoreload Watching for file changes with StatReloader
 INFO 2024-08-23 14:50:35,711 basehttp "GET /generate-report/ HTTP/1.1" 200 93
+INFO 2024-08-23 17:39:20,861 autoreload Watching for file changes with StatReloader
+INFO 2024-08-23 17:39:54,726 autoreload D:\Nuren AI\New folder\backend_mine1\interaction\serializers.py changed, reloading.
+INFO 2024-08-23 17:39:55,877 autoreload Watching for file changes with StatReloader

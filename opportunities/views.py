@@ -11,8 +11,7 @@ from datetime import datetime, timedelta,date
 from django.db.models import Count,Sum
 from .models import Contact , Account
 from leads.models import Lead
-from interaction.models import Interaction, calls
-from interaction.models import meetings
+from interaction.models import Interaction, Calls, Meetings
 from campaign.models import Campaign
 from django.contrib.auth import get_user_model
 from vendors.models import Vendors
@@ -192,7 +191,7 @@ def get_sales_by_lead_source():
 #-----end leads------
 
 def get_calls_report_data():
-    call = calls.objects.all()
+    call = Calls.objects.all()
     return {'total_calls': call.count(), 'calls': list(call.values())}
 
 
@@ -202,7 +201,7 @@ def get_opportunity_report_data():
 
 
 def get_meetings_report_data():
-    Meeting  = meetings.objects.all()
+    Meeting  = Meetings.objects.all()
     return {'total_meeting': Meeting.count(),'meetings':list(Meeting.values())}
  
 def get_top_users():
@@ -216,7 +215,7 @@ def get_contact_address():
 
 
 def get_calls_emails():
-    call = calls.objects.all()
+    call = Calls.objects.all()
     email = Contact.objects.all()
     call_data = list(call.values())
     email_data = list(email.values())

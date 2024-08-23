@@ -15,8 +15,8 @@ model_mapping = {
     "Lead": leads_models.Lead,
     "Account": account_models.Account,
     "Contact": contact_models.Contact,
-    "Meeting": interaction_models.meetings,
-    "Call": interaction_models.calls,
+    "Meeting": interaction_models.Meetings,
+    "Call": interaction_models.Calls,
     # Add more model mappings as needed
 }
 @csrf_exempt

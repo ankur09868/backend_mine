@@ -13,9 +13,9 @@ model_mapping = {
     "Lead": leads_models.Lead,
     "Account": account_models.Account,
     "Contact": contact_models.Contact,
-    "Meeting": interaction_models.meetings,
-    "Call": interaction_models.calls,
-    # Add more model mappings as needed
+    "Meeting": interaction_models.Meetings,
+    "Call": interaction_models.Calls,
+    
 }
 
 
