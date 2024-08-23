@@ -99,6 +99,7 @@ class Email(models.Model):
     subject = models.CharField(max_length=255)# Subject of the email
     email_type = models.CharField(max_length=5, choices=EMAIL_TYPE_CHOICES, null=True, blank=True)# Email type choice field
     email_id = models.EmailField(max_length=255) #store the email ID
+    links = models.JSONField(default=list) 
 
     def __str__(self):
         return self.subject

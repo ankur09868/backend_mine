@@ -117,6 +117,7 @@ urlpatterns = [
     path('create-custom-field/', cfviews.create_custom_field, name='create_custom_field'),
     path('user/<int:user_id>/tasks/', tviews.UserTasksListAPIView.as_view(), name='user-tasks-list'),
     path('track_open/<str:tracking_id>/', track.TrackOpenView.as_view(), name='track_open'),
+    path('track_click/<str:trackingId>/<str:linktrackingId>/', track.TrackLinkView.as_view(), name='track_click'),
     path('track_open_count/', trac.TrackOpenCountView.as_view(), name='track_open_count'),
     path('tickets/', tickview.TicketListAPIView.as_view(), name='ticket-list'),
     path('tickets/<int:pk>/', tickview.TicketDetailAPIView.as_view(), name='ticket-detail'),
