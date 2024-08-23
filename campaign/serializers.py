@@ -1,9 +1,8 @@
 # campaign/serializers.py
 
 from rest_framework import serializers
-from .models import Campaign
-from .models import InstagramCampaign
-from .models import EmailCampaign
+from .models import Campaign,InstagramCampaign,EmailCampaign,CallCampaign
+
 
 class CampaignSerializer(serializers.ModelSerializer):
     class Meta:
@@ -41,5 +40,14 @@ class EmailCampaignSerializer(serializers.ModelSerializer):
             # Example validation: Ensure recipient list is not empty
             if not attrs['recipient_list']:
                 raise serializers.ValidationError("Recipient list cannot be empty.")
+        return attrs
+
+class CallCampaignSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CallCampaign
+        fields = '__all__'  # Or specify the fields you want to include
+
+    def validate(self, attrs):
+        # Add any custom validation logic here
         return attrs
 

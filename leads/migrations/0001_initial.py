@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
     dependencies = [
         ('stage', '0001_initial'),
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('tenant', '0001_initial'),
+        
         ('accounts', '0002_initial'),
     ]
 
@@ -25,7 +25,7 @@ class Migration(migrations.Migration):
                 ('leads_amount', models.DecimalField(decimal_places=2, default=0, max_digits=12)),
                 ('revenue', models.DecimalField(decimal_places=2, default=0, max_digits=12)),
                 ('total_leads', models.IntegerField(default=0)),
-                ('tenant', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='tenant.tenant')),
+             
             ],
         ),
         migrations.CreateModel(
@@ -52,7 +52,7 @@ class Migration(migrations.Migration):
                 ('assigned_to', models.ManyToManyField(related_name='lead_assigned_users', to=settings.AUTH_USER_MODEL)),
                 ('createdBy', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='lead_created_by', to=settings.AUTH_USER_MODEL)),
                 ('stage', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='stage.stage')),
-                ('tenant', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='tenant.tenant')),
+                
             ],
         ),
     ]
