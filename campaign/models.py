@@ -114,3 +114,26 @@ class EmailCampaign(models.Model):
     class Meta:
         verbose_name = "Email Campaign"
         verbose_name_plural = "Email Campaigns"
+class CallCampaign(models.Model):
+    # Foreign key to the Campaign model
+    campaign = models.OneToOneField(Campaign, related_name='call_campaign', on_delete=models.CASCADE)
+
+    # Specific fields for Call campaigns
+    caller_id = models.CharField(max_length=255)  # Caller ID used for the campaign
+    call_script = models.TextField(blank=True, null=True)  # Script used during the call
+    number_of_calls = models.IntegerField(default=0)  # Total number of calls planned
+    call_duration = models.DurationField(blank=True, null=True)  # Average duration of each call
+    call_outcome = models.CharField(max_length=255, blank=True, null=True)  # Outcome of the calls
+
+    # Metrics for tracking performance
+    successful_calls = models.IntegerField(default=0)  # Number of successful calls
+    failed_calls = models.IntegerField(default=0)  # Number of failed calls
+    engagement_rate = models.DecimalField(max_digits=5, decimal_places=2, blank=True, null=True)  # Engagement rate from calls
+    notes = models.TextField(blank=True, null=True)  # Additional notes about the campaign
+
+    def __str__(self):
+        return f"{self.campaign.campaign_name} - Call Campaign"
+
+    class Meta:
+        verbose_name = "Call Campaign"
+        verbose_name_plural = "Call Campaigns"
