@@ -19,7 +19,8 @@ class TenantMiddleware(MiddlewareMixin):
             '/register/',
             '/createTenant/',
             '/track_open/',
-            '/track_open_count/'
+            '/track_open_count/',
+            '/track_click/',
         ]
         
         # Check if the request path starts with any of the paths to skip

@@ -8,7 +8,7 @@ from django.http import HttpResponseRedirect
 from django.utils import timezone
 from django.views import View
 from urllib.parse import unquote
-from .models import ClickTracking  # Assume you have a ClickTracking model
+
 logger = logging.getLogger(__name__)
 class TrackLinkView(View):
     def get(self, request, trackingId, linktrackingId, *args, **kwargs):
