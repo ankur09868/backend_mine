@@ -9,7 +9,7 @@ from simplecrm.models import CustomUser
 from django.http import JsonResponse, HttpResponse
 from django.shortcuts import get_object_or_404
 from accounts.models import Account
-from interaction.models import calls
+from interaction.models import Calls
 from contacts.models import Contact
 from leads.models import Lead
 from documents.models import Document
@@ -25,7 +25,7 @@ from helpers.tables import get_db_connection
 
 MODEL_CLASSES = {
     'account': Account,
-    'call':calls,
+    'call':Calls,
     'contact':Contact,
     'interaction':Interaction,
     'lead': Lead,

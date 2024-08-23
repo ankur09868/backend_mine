@@ -26,7 +26,7 @@ class Interaction(models.Model):
 from django.conf import settings
 from contacts.models import Contact
 
-class calls(models.Model):
+class Calls(models.Model):
     call_to = models.ForeignKey(Contact, on_delete=models.SET_NULL, related_name='call_to_meetings', blank=True, null=True, verbose_name='Contact Name')
     related_to = models.CharField(max_length=255, blank=True, null=True, verbose_name='Related To')
     call_type = models.CharField(max_length=255, blank=True, null=True, verbose_name='Call Type')
@@ -43,7 +43,7 @@ class calls(models.Model):
 
 from django.contrib.auth.models import User
 
-class meetings(models.Model):
+class Meetings(models.Model):
     title = models.CharField(max_length=64, blank=True, null=True, verbose_name='Title')
     location = models.CharField(max_length=255, blank=True, null=True, verbose_name='Location')
     from_time = models.DateTimeField(verbose_name='From')

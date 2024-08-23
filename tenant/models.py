@@ -8,3 +8,8 @@ class Tenant(models.Model):
 
     def __str__(self):
         return self.id
+
+class WA(models.Model):
+    tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)
+    access_token = models.CharField(max_length= 100)
+    business_phone_number_id = models.DecimalField(max_digits=40, decimal_places=0)
