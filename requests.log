@@ -72,3 +72,1480 @@ INFO 2024-08-23 14:50:35,711 basehttp "GET /generate-report/ HTTP/1.1" 200 93
 INFO 2024-08-23 17:39:20,861 autoreload Watching for file changes with StatReloader
 INFO 2024-08-23 17:39:54,726 autoreload D:\Nuren AI\New folder\backend_mine1\interaction\serializers.py changed, reloading.
 INFO 2024-08-23 17:39:55,877 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 09:49:58,281 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 09:50:37,246 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 09:51:28,211 basehttp "GET /emails/ HTTP/1.1" 200 4660
+INFO 2024-08-24 10:07:23,573 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 11:12:36,061 autoreload D:\new_nurenai\backend_mine\helpers\upload_csv.py changed, reloading.
+INFO 2024-08-24 11:12:37,420 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 11:16:56,121 basehttp "OPTIONS /upload/ HTTP/1.1" 200 0
+ERROR 2024-08-24 11:17:10,012 log Internal Server Error: /upload/
+ERROR 2024-08-24 11:17:10,014 basehttp "POST /upload/ HTTP/1.1" 500 260
+ERROR 2024-08-24 11:17:33,210 log Internal Server Error: /upload/
+ERROR 2024-08-24 11:17:33,211 basehttp "POST /upload/ HTTP/1.1" 500 260
+ERROR 2024-08-24 11:27:34,571 log Internal Server Error: /upload/
+ERROR 2024-08-24 11:27:34,572 basehttp "POST /upload/ HTTP/1.1" 500 259
+INFO 2024-08-24 11:55:39,570 autoreload D:\new_nurenai\backend_mine\helpers\upload_csv.py changed, reloading.
+INFO 2024-08-24 11:55:40,684 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-24 12:11:22,708 log Internal Server Error: /upload/
+ERROR 2024-08-24 12:11:22,709 basehttp "POST /upload/ HTTP/1.1" 500 150
+INFO 2024-08-24 12:12:04,334 autoreload D:\new_nurenai\backend_mine\helpers\upload_csv.py changed, reloading.
+INFO 2024-08-24 12:12:05,835 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 12:26:09,742 autoreload D:\new_nurenai\backend_mine\helpers\upload_csv.py changed, reloading.
+INFO 2024-08-24 12:26:10,738 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-24 12:27:17,139 log Internal Server Error: /upload/
+ERROR 2024-08-24 12:27:17,140 basehttp "POST /upload/ HTTP/1.1" 500 150
+INFO 2024-08-24 12:31:40,010 autoreload D:\new_nurenai\backend_mine\helpers\upload_csv.py changed, reloading.
+INFO 2024-08-24 12:31:40,955 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-24 12:32:33,045 log Internal Server Error: /upload/
+ERROR 2024-08-24 12:32:33,046 basehttp "POST /upload/ HTTP/1.1" 500 87
+INFO 2024-08-24 12:34:08,572 autoreload D:\new_nurenai\backend_mine\helpers\upload_csv.py changed, reloading.
+INFO 2024-08-24 12:34:09,461 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 12:34:48,745 basehttp "POST /upload/ HTTP/1.1" 200 97
+INFO 2024-08-24 12:36:36,222 basehttp "POST /upload/ HTTP/1.1" 200 97
+ERROR 2024-08-24 12:39:44,496 log Internal Server Error: /upload/
+ERROR 2024-08-24 12:39:44,496 basehttp "POST /upload/ HTTP/1.1" 500 248
+ERROR 2024-08-24 12:42:49,957 log Internal Server Error: /upload/
+ERROR 2024-08-24 12:42:49,958 basehttp "POST /upload/ HTTP/1.1" 500 248
+ERROR 2024-08-24 12:45:24,993 log Internal Server Error: /upload/
+ERROR 2024-08-24 12:45:24,993 basehttp "POST /upload/ HTTP/1.1" 500 248
+ERROR 2024-08-24 12:46:24,546 log Internal Server Error: /upload/
+ERROR 2024-08-24 12:46:24,548 basehttp "POST /upload/ HTTP/1.1" 500 232
+ERROR 2024-08-24 12:47:12,183 log Internal Server Error: /upload/
+ERROR 2024-08-24 12:47:12,184 basehttp "POST /upload/ HTTP/1.1" 500 245
+ERROR 2024-08-24 12:49:38,527 log Internal Server Error: /upload/
+ERROR 2024-08-24 12:49:38,528 basehttp "POST /upload/ HTTP/1.1" 500 246
+ERROR 2024-08-24 12:50:38,972 log Internal Server Error: /upload/
+ERROR 2024-08-24 12:50:38,972 basehttp "POST /upload/ HTTP/1.1" 500 323
+INFO 2024-08-24 13:09:46,511 basehttp "POST /upload/ HTTP/1.1" 200 97
+INFO 2024-08-24 15:17:20,951 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 15:27:47,346 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 15:29:59,996 basehttp "OPTIONS /upload/ HTTP/1.1" 200 0
+INFO 2024-08-24 15:30:14,228 basehttp "POST /upload/ HTTP/1.1" 200 97
+ERROR 2024-08-24 15:30:34,298 log Internal Server Error: /upload/
+ERROR 2024-08-24 15:30:34,299 basehttp "POST /upload/ HTTP/1.1" 500 327
+INFO 2024-08-24 15:32:08,234 autoreload D:\new_nurenai\backend_mine\leads\models.py changed, reloading.
+INFO 2024-08-24 15:32:09,514 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 15:34:09,100 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 15:34:51,134 basehttp "POST /upload/ HTTP/1.1" 200 91
+ERROR 2024-08-24 15:36:38,340 log Internal Server Error: /upload/
+ERROR 2024-08-24 15:36:38,341 basehttp "POST /upload/ HTTP/1.1" 500 230
+ERROR 2024-08-24 15:37:51,559 log Internal Server Error: /upload/
+ERROR 2024-08-24 15:37:51,560 basehttp "POST /upload/ HTTP/1.1" 500 260
+INFO 2024-08-24 15:40:04,988 basehttp "POST /upload/ HTTP/1.1" 200 106
+INFO 2024-08-24 15:49:00,135 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 15:54:04,806 basehttp "POST /upload/ HTTP/1.1" 200 106
+INFO 2024-08-24 15:57:48,401 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 16:13:28,201 basehttp "POST /upload/ HTTP/1.1" 200 91
+INFO 2024-08-24 16:18:54,711 basehttp "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2024-08-24 16:18:58,486 basehttp "POST /emails/ HTTP/1.1" 201 251
+INFO 2024-08-24 16:19:00,165 basehttp "GET /track_open/5408cee5-d24d-4a41-ad9f-884a9950e06c/ HTTP/1.1" 200 43
+INFO 2024-08-24 16:19:13,937 basehttp "GET /track_open/5408cee5-d24d-4a41-ad9f-884a9950e06c/ HTTP/1.1" 200 43
+INFO 2024-08-24 16:26:21,032 basehttp "POST /emails/ HTTP/1.1" 201 279
+INFO 2024-08-24 16:26:26,030 basehttp "GET /track_open/1339bd9d-f90d-4e18-a751-373e857add07/ HTTP/1.1" 200 43
+INFO 2024-08-24 16:28:01,842 autoreload D:\new_nurenai\backend_mine\helpers\upload_csv.py changed, reloading.
+INFO 2024-08-24 16:28:03,078 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-24 16:30:22,757 log Internal Server Error: /upload/
+ERROR 2024-08-24 16:30:22,758 basehttp "POST /upload/ HTTP/1.1" 500 223
+ERROR 2024-08-24 16:32:44,985 log Internal Server Error: /upload/
+ERROR 2024-08-24 16:32:44,985 basehttp "POST /upload/ HTTP/1.1" 500 39
+INFO 2024-08-24 16:35:34,136 basehttp "OPTIONS /fetch-all-emails HTTP/1.1" 200 0
+WARNING 2024-08-24 16:35:37,314 log Not Found: /fetch-all-emails
+WARNING 2024-08-24 16:35:37,315 basehttp "GET /fetch-all-emails HTTP/1.1" 404 16618
+INFO 2024-08-24 16:37:24,991 basehttp "OPTIONS /store-selected-emails/ HTTP/1.1" 200 0
+WARNING 2024-08-24 16:37:25,015 log Not Found: /store-selected-emails/
+WARNING 2024-08-24 16:37:25,015 basehttp "POST /store-selected-emails/ HTTP/1.1" 404 16637
+INFO 2024-08-24 16:46:11,435 autoreload D:\new_nurenai\backend_mine\helpers\upload_csv.py changed, reloading.
+INFO 2024-08-24 16:46:12,443 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-24 16:46:57,609 log Internal Server Error: /upload/
+ERROR 2024-08-24 16:46:57,610 basehttp "POST /upload/ HTTP/1.1" 500 275
+INFO 2024-08-24 16:51:13,901 autoreload D:\new_nurenai\backend_mine\helpers\upload_csv.py changed, reloading.
+INFO 2024-08-24 16:51:15,004 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-24 16:52:02,385 log Internal Server Error: /upload/
+ERROR 2024-08-24 16:52:02,386 basehttp "POST /upload/ HTTP/1.1" 500 281
+INFO 2024-08-24 16:52:36,033 autoreload D:\new_nurenai\backend_mine\helpers\upload_csv.py changed, reloading.
+INFO 2024-08-24 16:52:37,079 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-24 16:53:14,110 log Internal Server Error: /upload/
+ERROR 2024-08-24 16:53:14,111 basehttp "POST /upload/ HTTP/1.1" 500 113
+INFO 2024-08-24 16:54:28,075 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 16:55:13,804 basehttp "POST /upload/ HTTP/1.1" 200 91
+INFO 2024-08-24 16:57:52,005 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-24 16:58:58,133 log Internal Server Error: /upload/
+ERROR 2024-08-24 16:58:58,133 basehttp "POST /upload/ HTTP/1.1" 500 113
+INFO 2024-08-24 16:59:24,898 autoreload D:\new_nurenai\backend_mine\helpers\upload_csv.py changed, reloading.
+INFO 2024-08-24 16:59:25,869 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 16:59:44,305 autoreload D:\new_nurenai\backend_mine\helpers\upload_csv.py changed, reloading.
+INFO 2024-08-24 16:59:45,278 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-24 17:00:40,289 log Internal Server Error: /upload/
+ERROR 2024-08-24 17:00:40,289 basehttp "POST /upload/ HTTP/1.1" 500 114
+ERROR 2024-08-24 17:02:14,862 log Internal Server Error: /upload/
+ERROR 2024-08-24 17:02:14,862 basehttp "POST /upload/ HTTP/1.1" 500 114
+INFO 2024-08-24 17:08:32,694 autoreload D:\new_nurenai\backend_mine\helpers\upload_csv.py changed, reloading.
+INFO 2024-08-24 17:08:34,230 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-24 17:09:26,593 log Internal Server Error: /upload/
+ERROR 2024-08-24 17:09:26,593 basehttp "POST /upload/ HTTP/1.1" 500 130
+INFO 2024-08-24 17:16:44,524 basehttp "POST /upload/ HTTP/1.1" 200 91
+ERROR 2024-08-24 17:19:59,771 log Internal Server Error: /upload/
+ERROR 2024-08-24 17:19:59,772 basehttp "POST /upload/ HTTP/1.1" 500 228
+ERROR 2024-08-24 17:22:20,561 log Internal Server Error: /upload/
+ERROR 2024-08-24 17:22:20,562 basehttp "POST /upload/ HTTP/1.1" 500 228
+INFO 2024-08-24 17:22:30,042 autoreload D:\new_nurenai\backend_mine\helpers\upload_csv.py changed, reloading.
+INFO 2024-08-24 17:22:31,033 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-24 17:23:08,537 log Internal Server Error: /upload/
+ERROR 2024-08-24 17:23:08,538 basehttp "POST /upload/ HTTP/1.1" 500 51
+INFO 2024-08-24 17:23:31,076 autoreload D:\new_nurenai\backend_mine\helpers\upload_csv.py changed, reloading.
+INFO 2024-08-24 17:23:32,010 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 17:24:34,999 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-24 17:25:49,030 log Internal Server Error: /upload/
+ERROR 2024-08-24 17:25:49,031 basehttp "POST /upload/ HTTP/1.1" 500 228
+INFO 2024-08-24 17:26:43,918 basehttp "POST /upload/ HTTP/1.1" 200 91
+INFO 2024-08-24 17:27:33,469 autoreload D:\new_nurenai\backend_mine\helpers\upload_csv.py changed, reloading.
+INFO 2024-08-24 17:27:34,864 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-24 17:28:26,415 log Internal Server Error: /upload/
+ERROR 2024-08-24 17:28:26,416 basehttp "POST /upload/ HTTP/1.1" 500 228
+INFO 2024-08-24 17:29:19,195 autoreload D:\new_nurenai\backend_mine\helpers\upload_csv.py changed, reloading.
+INFO 2024-08-24 17:29:20,542 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 17:29:54,202 basehttp "GET /track_open/5408cee5-d24d-4a41-ad9f-884a9950e06c/ HTTP/1.1" 200 43
+INFO 2024-08-24 17:30:07,013 basehttp "OPTIONS /upload/ HTTP/1.1" 200 0
+INFO 2024-08-24 17:30:25,635 basehttp "GET /track_open/5408cee5-d24d-4a41-ad9f-884a9950e06c/ HTTP/1.1" 200 43
+INFO 2024-08-24 17:30:26,146 basehttp "GET /track_open/1339bd9d-f90d-4e18-a751-373e857add07/ HTTP/1.1" 200 43
+INFO 2024-08-24 17:30:39,340 basehttp "POST /upload/ HTTP/1.1" 200 106
+INFO 2024-08-24 17:34:41,656 basehttp "POST /upload/ HTTP/1.1" 200 91
+WARNING 2024-08-24 17:37:43,518 log Not Found: /store-selected-emails/
+WARNING 2024-08-24 17:37:43,518 basehttp "POST /store-selected-emails/ HTTP/1.1" 404 16637
+WARNING 2024-08-24 17:59:06,184 log Not Found: /store-selected-emails/
+WARNING 2024-08-24 17:59:06,190 basehttp "POST /store-selected-emails/ HTTP/1.1" 404 16637
+INFO 2024-08-24 18:02:12,095 autoreload D:\new_nurenai\backend_mine\simplecrm\urls.py changed, reloading.
+INFO 2024-08-24 18:02:13,585 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-24 18:02:43,549 log Internal Server Error: /store-selected-emails/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: new row violates row-level security policy for table "selected_emails"
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\new_nurenai\backend_mine\simplecrm\views.py", line 43, in store_selected_emails
+    cursor.execute("""
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: new row violates row-level security policy for table "selected_emails"
+
+ERROR 2024-08-24 18:02:43,556 basehttp "POST /store-selected-emails/ HTTP/1.1" 500 134842
+ERROR 2024-08-24 18:04:45,953 log Internal Server Error: /store-selected-emails/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: new row violates row-level security policy for table "selected_emails"
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\new_nurenai\backend_mine\simplecrm\views.py", line 43, in store_selected_emails
+    cursor.execute("""
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: new row violates row-level security policy for table "selected_emails"
+
+ERROR 2024-08-24 18:04:45,957 basehttp "POST /store-selected-emails/ HTTP/1.1" 500 134842
+INFO 2024-08-24 18:06:41,634 basehttp "OPTIONS /fetch-all-emails HTTP/1.1" 200 0
+INFO 2024-08-24 18:06:41,637 basehttp "GET /fetch-all-emails HTTP/1.1" 301 0
+INFO 2024-08-24 18:06:41,639 basehttp "OPTIONS /fetch-all-emails/ HTTP/1.1" 200 0
+INFO 2024-08-24 18:06:43,353 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 2
+INFO 2024-08-24 18:06:53,806 basehttp "OPTIONS /store-selected-emails/ HTTP/1.1" 200 0
+ERROR 2024-08-24 18:06:56,959 log Internal Server Error: /store-selected-emails/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: new row violates row-level security policy for table "selected_emails"
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\new_nurenai\backend_mine\simplecrm\views.py", line 43, in store_selected_emails
+    cursor.execute("""
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: new row violates row-level security policy for table "selected_emails"
+
+ERROR 2024-08-24 18:06:56,964 basehttp "POST /store-selected-emails/ HTTP/1.1" 500 136545
+INFO 2024-08-25 11:46:27,812 autoreload Watching for file changes with StatReloader
+WARNING 2024-08-25 11:47:25,362 log Method Not Allowed: /execute-query/
+WARNING 2024-08-25 11:47:25,363 basehttp "GET /execute-query/ HTTP/1.1" 405 40
+INFO 2024-08-25 11:47:30,360 basehttp "POST /execute-query/ HTTP/1.1" 200 282
+INFO 2024-08-25 11:47:37,898 basehttp "POST /execute-query/ HTTP/1.1" 200 22202
+ERROR 2024-08-25 11:47:49,926 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-08-25 11:47:49,929 basehttp "POST /execute-query/ HTTP/1.1" 500 132235
+ERROR 2024-08-25 11:47:58,538 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-08-25 11:47:58,539 basehttp "POST /execute-query/ HTTP/1.1" 500 132235
+ERROR 2024-08-25 12:02:58,749 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-08-25 12:02:58,750 basehttp "POST /execute-query/ HTTP/1.1" 500 132215
+INFO 2024-08-25 12:05:57,286 basehttp "POST /execute-query/ HTTP/1.1" 200 282
+ERROR 2024-08-25 12:06:04,047 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-08-25 12:06:04,049 basehttp "POST /execute-query/ HTTP/1.1" 500 132240
+INFO 2024-08-25 12:06:12,588 basehttp "POST /execute-query/ HTTP/1.1" 200 2066
+INFO 2024-08-25 12:12:25,522 autoreload D:\new_nurenai\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-08-25 12:12:27,156 autoreload Watching for file changes with StatReloader
+INFO 2024-08-25 12:15:24,114 autoreload D:\new_nurenai\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-08-25 12:15:25,226 autoreload Watching for file changes with StatReloader
+INFO 2024-08-25 12:16:01,913 basehttp "POST /execute-query/ HTTP/1.1" 200 1705
+ERROR 2024-08-25 12:16:17,673 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-08-25 12:16:17,675 basehttp "POST /execute-query/ HTTP/1.1" 500 132240
+INFO 2024-08-25 12:16:44,105 basehttp "POST /execute-query/ HTTP/1.1" 200 1705
+ERROR 2024-08-25 12:16:59,246 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-08-25 12:16:59,247 basehttp "POST /execute-query/ HTTP/1.1" 500 132215
+INFO 2024-08-25 12:18:01,721 basehttp "POST /execute-query/ HTTP/1.1" 200 282
+INFO 2024-08-25 12:18:18,109 basehttp "POST /execute-query/ HTTP/1.1" 200 22202
+INFO 2024-08-25 12:18:36,901 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-08-25 12:18:46,887 basehttp "POST /execute-query/ HTTP/1.1" 200 1879
+INFO 2024-08-25 12:19:06,750 basehttp "POST /execute-query/ HTTP/1.1" 200 2919
+ERROR 2024-08-25 12:19:31,530 log Internal Server Error: /execute-query/
+ERROR 2024-08-25 12:19:31,530 basehttp "POST /execute-query/ HTTP/1.1" 500 199
+ERROR 2024-08-25 12:19:41,258 log Internal Server Error: /execute-query/
+ERROR 2024-08-25 12:19:41,258 basehttp "POST /execute-query/ HTTP/1.1" 500 199
+INFO 2024-08-25 12:21:11,728 autoreload D:\new_nurenai\backend_mine\analytics\middle.py changed, reloading.
+INFO 2024-08-25 12:21:12,884 autoreload Watching for file changes with StatReloader
+INFO 2024-08-25 12:23:33,239 autoreload D:\new_nurenai\backend_mine\analytics\middle.py changed, reloading.
+INFO 2024-08-25 12:23:34,494 autoreload Watching for file changes with StatReloader
+INFO 2024-08-25 12:24:02,387 basehttp "POST /execute-query/ HTTP/1.1" 200 1879
+ERROR 2024-08-25 12:24:14,848 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-08-25 12:24:14,850 basehttp "POST /execute-query/ HTTP/1.1" 500 132240
+INFO 2024-08-25 12:25:27,380 basehttp "POST /execute-query/ HTTP/1.1" 200 1879
+ERROR 2024-08-25 12:25:37,314 log Internal Server Error: /execute-query/
+ERROR 2024-08-25 12:25:37,315 basehttp "POST /execute-query/ HTTP/1.1" 500 183
+ERROR 2024-08-25 12:26:43,157 log Internal Server Error: /execute-query/
+ERROR 2024-08-25 12:26:43,158 basehttp "POST /execute-query/ HTTP/1.1" 500 182
+INFO 2024-08-25 12:27:12,982 autoreload D:\new_nurenai\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-08-25 12:27:14,151 autoreload Watching for file changes with StatReloader
+INFO 2024-08-25 12:28:06,478 autoreload D:\new_nurenai\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-08-25 12:28:07,803 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-25 12:28:31,805 log Internal Server Error: /execute-query/
+ERROR 2024-08-25 12:28:31,806 basehttp "POST /execute-query/ HTTP/1.1" 500 182
+INFO 2024-08-25 12:31:46,945 autoreload D:\new_nurenai\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-08-25 12:31:48,066 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-25 12:32:39,110 log Internal Server Error: /execute-query/
+ERROR 2024-08-25 12:32:39,110 basehttp "POST /execute-query/ HTTP/1.1" 500 182
+INFO 2024-08-25 12:35:39,051 autoreload D:\new_nurenai\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-08-25 12:35:40,228 autoreload Watching for file changes with StatReloader
+INFO 2024-08-25 12:36:07,704 basehttp "POST /execute-query/ HTTP/1.1" 200 47
+INFO 2024-08-25 12:36:17,021 basehttp "POST /execute-query/ HTTP/1.1" 200 38
+INFO 2024-08-25 12:38:23,591 basehttp "POST /execute-query/ HTTP/1.1" 200 38
+INFO 2024-08-25 12:38:27,905 basehttp "POST /execute-query/ HTTP/1.1" 200 47
+ERROR 2024-08-25 12:39:05,683 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-08-25 12:39:05,689 basehttp "POST /execute-query/ HTTP/1.1" 500 132215
+INFO 2024-08-25 12:39:25,646 basehttp "POST /execute-query/ HTTP/1.1" 200 1705
+ERROR 2024-08-25 12:40:06,653 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-08-25 12:40:06,654 basehttp "POST /execute-query/ HTTP/1.1" 500 132240
+INFO 2024-08-25 12:40:19,818 basehttp "POST /execute-query/ HTTP/1.1" 200 1879
+WARNING 2024-08-25 12:41:11,192 log Bad Request: /leads/
+WARNING 2024-08-25 12:41:11,193 basehttp "GET /leads/ HTTP/1.1" 400 21
+INFO 2024-08-25 12:41:32,434 basehttp "GET /leads/ HTTP/1.1" 200 7803
+ERROR 2024-08-25 12:41:56,332 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-08-25 12:41:56,333 basehttp "POST /execute-query/ HTTP/1.1" 500 132235
+INFO 2024-08-25 12:44:18,968 basehttp "OPTIONS /fetch-all-emails HTTP/1.1" 200 0
+INFO 2024-08-25 12:44:18,970 basehttp "GET /fetch-all-emails HTTP/1.1" 301 0
+INFO 2024-08-25 12:44:18,973 basehttp "OPTIONS /fetch-all-emails/ HTTP/1.1" 200 0
+INFO 2024-08-25 12:44:20,883 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 2
+INFO 2024-08-25 12:44:30,224 basehttp "OPTIONS /store-selected-emails/ HTTP/1.1" 200 0
+ERROR 2024-08-25 12:44:32,390 log Internal Server Error: /store-selected-emails/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: new row violates row-level security policy for table "selected_emails"
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\new_nurenai\backend_mine\simplecrm\views.py", line 43, in store_selected_emails
+    cursor.execute("""
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: new row violates row-level security policy for table "selected_emails"
+
+ERROR 2024-08-25 12:44:32,394 basehttp "POST /store-selected-emails/ HTTP/1.1" 500 134308
+ERROR 2024-08-25 12:46:01,087 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-08-25 12:46:01,089 basehttp "POST /execute-query/ HTTP/1.1" 500 132215
+ERROR 2024-08-25 12:46:19,532 log Internal Server Error: /execute-query/
+ERROR 2024-08-25 12:46:19,534 basehttp "POST /execute-query/ HTTP/1.1" 500 272
+INFO 2024-08-25 12:46:32,761 basehttp "POST /execute-query/ HTTP/1.1" 200 1879
+INFO 2024-08-25 12:46:42,886 basehttp "POST /execute-query/ HTTP/1.1" 200 1879
+INFO 2024-08-25 12:49:36,074 basehttp "OPTIONS /execute-query/ HTTP/1.1" 200 0
+INFO 2024-08-25 12:49:42,948 basehttp "POST /execute-query/ HTTP/1.1" 200 282
+INFO 2024-08-25 12:50:06,602 basehttp "POST /execute-query/ HTTP/1.1" 200 22202
+ERROR 2024-08-25 12:50:46,001 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-08-25 12:50:46,006 basehttp "POST /execute-query/ HTTP/1.1" 500 135041
+ERROR 2024-08-25 12:51:01,301 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-08-25 12:51:01,303 basehttp "POST /execute-query/ HTTP/1.1" 500 135061
+ERROR 2024-08-25 12:51:18,778 log Internal Server Error: /execute-query/
+ERROR 2024-08-25 12:51:18,778 basehttp "POST /execute-query/ HTTP/1.1" 500 272
+ERROR 2024-08-25 12:52:51,863 log Internal Server Error: /execute-query/
+ERROR 2024-08-25 12:52:51,864 basehttp "POST /execute-query/ HTTP/1.1" 500 272
+INFO 2024-08-25 12:53:51,972 basehttp "POST /execute-query/ HTTP/1.1" 200 1705
+ERROR 2024-08-25 12:54:20,889 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-08-25 12:54:20,890 basehttp "POST /execute-query/ HTTP/1.1" 500 135041
+INFO 2024-08-25 12:56:53,237 basehttp "POST /execute-query/ HTTP/1.1" 200 282
+INFO 2024-08-25 12:57:05,013 basehttp "POST /execute-query/ HTTP/1.1" 200 83
+INFO 2024-08-25 12:57:18,872 basehttp "POST /execute-query/ HTTP/1.1" 200 83
+INFO 2024-08-25 12:58:04,396 autoreload D:\new_nurenai\backend_mine\analytics\middle.py changed, reloading.
+INFO 2024-08-25 12:58:05,448 autoreload Watching for file changes with StatReloader
+WARNING 2024-08-25 12:58:41,673 log Bad Request: /execute-query/
+WARNING 2024-08-25 12:58:41,674 basehttp "POST /execute-query/ HTTP/1.1" 400 56
+INFO 2024-08-25 12:59:12,104 autoreload D:\new_nurenai\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-08-25 12:59:13,313 autoreload Watching for file changes with StatReloader
+INFO 2024-08-25 12:59:42,789 basehttp "POST /execute-query/ HTTP/1.1" 200 11634
+ERROR 2024-08-25 13:00:07,277 log Internal Server Error: /execute-query/
+ERROR 2024-08-25 13:00:07,278 basehttp "POST /execute-query/ HTTP/1.1" 500 272
+ERROR 2024-08-25 13:00:18,439 log Internal Server Error: /execute-query/
+ERROR 2024-08-25 13:00:18,439 basehttp "POST /execute-query/ HTTP/1.1" 500 272
+ERROR 2024-08-25 13:04:28,918 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-08-25 13:04:28,922 basehttp "POST /execute-query/ HTTP/1.1" 500 135066
+INFO 2024-08-25 13:09:02,984 autoreload Watching for file changes with StatReloader
+INFO 2024-08-25 13:46:38,795 autoreload Watching for file changes with StatReloader
+INFO 2024-08-25 13:47:38,364 basehttp "POST /execute-query/ HTTP/1.1" 200 1705
+INFO 2024-08-25 13:51:09,108 basehttp "POST /execute-query/ HTTP/1.1" 200 1705
+INFO 2024-08-25 13:55:17,333 basehttp "POST /execute-query/ HTTP/1.1" 200 2351
+INFO 2024-08-25 13:56:19,513 basehttp "POST /execute-query/ HTTP/1.1" 200 3475
+INFO 2024-08-25 13:56:35,566 basehttp "POST /execute-query/ HTTP/1.1" 200 282
+INFO 2024-08-25 14:50:39,472 basehttp "OPTIONS /execute-query/ HTTP/1.1" 200 0
+INFO 2024-08-25 14:50:43,717 basehttp "POST /execute-query/ HTTP/1.1" 200 282
+INFO 2024-08-25 15:15:04,039 basehttp "POST /execute-query/ HTTP/1.1" 200 3475
+INFO 2024-08-25 15:40:48,174 basehttp "POST /execute-query/ HTTP/1.1" 200 282
+INFO 2024-08-25 15:54:40,665 basehttp "POST /execute-query/ HTTP/1.1" 200 282
+ERROR 2024-08-25 15:56:14,156 log Internal Server Error: /execute-query/
+ERROR 2024-08-25 15:56:14,156 basehttp "POST /execute-query/ HTTP/1.1" 500 173
+INFO 2024-08-25 15:56:35,466 basehttp "POST /execute-query/ HTTP/1.1" 200 282
+INFO 2024-08-25 15:56:48,463 basehttp "POST /execute-query/ HTTP/1.1" 200 3475
+INFO 2024-08-25 15:57:51,699 basehttp "POST /execute-query/ HTTP/1.1" 200 2351
+INFO 2024-08-25 15:59:12,064 basehttp - Broken pipe from ('127.0.0.1', 64434)
+INFO 2024-08-25 15:59:12,066 basehttp - Broken pipe from ('127.0.0.1', 64504)
+INFO 2024-08-25 15:59:12,055 basehttp - Broken pipe from ('127.0.0.1', 64467)
+INFO 2024-08-25 23:14:17,361 autoreload Watching for file changes with StatReloader
+INFO 2024-08-25 23:15:57,197 basehttp "OPTIONS /execute-query/ HTTP/1.1" 200 0
+INFO 2024-08-25 23:16:05,004 basehttp "POST /execute-query/ HTTP/1.1" 200 3475
+INFO 2024-08-25 23:17:27,895 basehttp "POST /execute-query/ HTTP/1.1" 200 282
+INFO 2024-08-25 23:18:15,270 basehttp "POST /execute-query/ HTTP/1.1" 200 2351
+INFO 2024-08-25 23:32:03,246 basehttp "POST /execute-query/ HTTP/1.1" 200 3475
+INFO 2024-08-25 23:32:14,688 basehttp "OPTIONS /fetch-all-emails HTTP/1.1" 200 0
+INFO 2024-08-25 23:32:14,708 basehttp "OPTIONS /fetch-all-emails/ HTTP/1.1" 200 0
+INFO 2024-08-25 23:32:16,673 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 2
+INFO 2024-08-25 23:32:32,713 basehttp "OPTIONS /store-selected-emails/ HTTP/1.1" 200 0
+ERROR 2024-08-25 23:32:36,545 log Internal Server Error: /store-selected-emails/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: new row violates row-level security policy for table "selected_emails"
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\new_nurenai\backend_mine\simplecrm\views.py", line 43, in store_selected_emails
+    cursor.execute("""
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: new row violates row-level security policy for table "selected_emails"
+
+ERROR 2024-08-25 23:32:36,549 basehttp "POST /store-selected-emails/ HTTP/1.1" 500 136544
+INFO 2024-08-25 23:35:08,077 basehttp "POST /store-selected-emails/ HTTP/1.1" 201 40
+INFO 2024-08-25 23:35:08,299 basehttp "OPTIONS /save-email-messages/ HTTP/1.1" 200 0
+ERROR 2024-08-25 23:35:11,408 log Internal Server Error: /save-email-messages/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: new row violates row-level security policy for table "communication_message"
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\new_nurenai\backend_mine\communication\insta_msg.py", line 70, in save_email_messages
+    serializer.save()
+  File "E:\.venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "E:\.venv\Lib\site-packages\django\db\models\base.py", line 831, in save
+    self.save_base(
+  File "E:\.venv\Lib\site-packages\django\db\models\base.py", line 882, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\base.py", line 1025, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\base.py", line 1066, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\query.py", line 1790, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1657, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: new row violates row-level security policy for table "communication_message"
+
+ERROR 2024-08-25 23:35:11,417 basehttp "POST /save-email-messages/ HTTP/1.1" 500 236130
+INFO 2024-08-25 23:37:15,437 basehttp "POST /store-selected-emails/ HTTP/1.1" 201 40
+ERROR 2024-08-25 23:37:22,686 log Internal Server Error: /save-email-messages/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: new row violates row-level security policy for table "communication_message"
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\new_nurenai\backend_mine\communication\insta_msg.py", line 70, in save_email_messages
+    serializer.save()
+  File "E:\.venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "E:\.venv\Lib\site-packages\django\db\models\base.py", line 831, in save
+    self.save_base(
+  File "E:\.venv\Lib\site-packages\django\db\models\base.py", line 882, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\base.py", line 1025, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\base.py", line 1066, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\query.py", line 1790, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1657, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: new row violates row-level security policy for table "communication_message"
+
+ERROR 2024-08-25 23:37:22,689 basehttp "POST /save-email-messages/ HTTP/1.1" 500 239267
+INFO 2024-08-25 23:39:15,905 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 1547
+INFO 2024-08-25 23:39:52,057 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 1547
+INFO 2024-08-25 23:40:57,683 basehttp "POST /store-selected-emails/ HTTP/1.1" 201 40
+INFO 2024-08-25 23:40:58,707 basehttp "OPTIONS /save-email-messages/ HTTP/1.1" 200 0
+ERROR 2024-08-25 23:41:02,939 log Internal Server Error: /save-email-messages/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: new row violates row-level security policy for table "communication_message"
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\new_nurenai\backend_mine\communication\insta_msg.py", line 70, in save_email_messages
+    serializer.save()
+  File "E:\.venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "E:\.venv\Lib\site-packages\django\db\models\base.py", line 831, in save
+    self.save_base(
+  File "E:\.venv\Lib\site-packages\django\db\models\base.py", line 882, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\base.py", line 1025, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\base.py", line 1066, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\query.py", line 1790, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1657, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: new row violates row-level security policy for table "communication_message"
+
+ERROR 2024-08-25 23:41:02,943 basehttp "POST /save-email-messages/ HTTP/1.1" 500 241723
+INFO 2024-08-25 23:41:21,145 autoreload Watching for file changes with StatReloader
+INFO 2024-08-25 23:43:04,051 basehttp "OPTIONS /fetch-all-emails HTTP/1.1" 200 0
+INFO 2024-08-25 23:43:04,563 basehttp "GET /fetch-all-emails HTTP/1.1" 301 0
+INFO 2024-08-25 23:43:05,482 basehttp "OPTIONS /fetch-all-emails/ HTTP/1.1" 200 0
+INFO 2024-08-25 23:43:10,910 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 1689
+INFO 2024-08-25 23:46:52,385 basehttp "GET /fetch-all-emails HTTP/1.1" 301 0
+INFO 2024-08-25 23:46:55,484 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 1689
+INFO 2024-08-25 23:47:39,655 basehttp "GET /fetch-all-emails HTTP/1.1" 301 0
+INFO 2024-08-25 23:47:42,590 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 1689
+INFO 2024-08-25 23:47:52,128 basehttp "POST /store-selected-emails/ HTTP/1.1" 201 40
+ERROR 2024-08-25 23:47:56,044 log Internal Server Error: /save-email-messages/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: new row violates row-level security policy for table "communication_message"
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\new_nurenai\backend_mine\communication\insta_msg.py", line 70, in save_email_messages
+    serializer.save()
+  File "E:\.venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "E:\.venv\Lib\site-packages\django\db\models\base.py", line 831, in save
+    self.save_base(
+  File "E:\.venv\Lib\site-packages\django\db\models\base.py", line 882, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\base.py", line 1025, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\base.py", line 1066, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\query.py", line 1790, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1657, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: new row violates row-level security policy for table "communication_message"
+
+ERROR 2024-08-25 23:47:56,051 basehttp "POST /save-email-messages/ HTTP/1.1" 500 240614
+INFO 2024-08-25 23:52:44,933 basehttp "GET /fetch-all-emails HTTP/1.1" 301 0
+INFO 2024-08-25 23:52:49,080 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 1831
+INFO 2024-08-25 23:53:02,799 basehttp "POST /store-selected-emails/ HTTP/1.1" 201 40
+ERROR 2024-08-25 23:53:06,546 log Internal Server Error: /save-email-messages/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: new row violates row-level security policy for table "communication_message"
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\new_nurenai\backend_mine\communication\insta_msg.py", line 70, in save_email_messages
+    serializer.save()
+  File "E:\.venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "E:\.venv\Lib\site-packages\django\db\models\base.py", line 831, in save
+    self.save_base(
+  File "E:\.venv\Lib\site-packages\django\db\models\base.py", line 882, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\base.py", line 1025, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\base.py", line 1066, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\query.py", line 1790, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1657, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: new row violates row-level security policy for table "communication_message"
+
+ERROR 2024-08-25 23:53:06,551 basehttp "POST /save-email-messages/ HTTP/1.1" 500 241213
+INFO 2024-08-25 23:59:18,623 basehttp "GET /fetch-all-emails HTTP/1.1" 301 0
+INFO 2024-08-25 23:59:22,000 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 15824
+INFO 2024-08-25 23:59:55,690 basehttp "GET /fetch-all-emails HTTP/1.1" 301 0
+INFO 2024-08-25 23:59:58,253 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 15824
+INFO 2024-08-26 00:00:18,242 basehttp - Broken pipe from ('127.0.0.1', 51852)
+INFO 2024-08-26 00:00:18,243 basehttp - Broken pipe from ('127.0.0.1', 51876)
+INFO 2024-08-26 00:00:18,243 basehttp - Broken pipe from ('127.0.0.1', 51847)
+INFO 2024-08-26 09:50:19,752 autoreload Watching for file changes with StatReloader

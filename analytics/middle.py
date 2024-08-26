@@ -112,10 +112,10 @@ class leads_lead(models.Model):
     address = models.CharField("Address", max_length=255, blank=True, null=True)
     website = models.CharField("Website", max_length=255, blank=True, null=True)
     description = models.TextField(blank=True, null=True)
-    assigned_to = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='lead_assigned_users')    
+    assigned_to = models.CharField(max_length=255, blank=True, null=True)    
     account_name = models.CharField(max_length=255, null=True, blank=True)
     opportunity_amount = models.DecimalField("Opportunity Amount", decimal_places=2, max_digits=12,blank=True, null=True)
-    createdBy = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='lead_created_by', on_delete=models.CASCADE)
+    createdBy = models.CharField(max_length=255, blank=True, null=True)
     createdOn = models.DateTimeField("Created on", auto_now_add=True)
     isActive = models.BooleanField(default=False)
     enquery_type = models.CharField(max_length=255, blank=True, null=True)
@@ -199,10 +199,10 @@ class opportunities_opportunity(models.Model):
     lead_source = models.CharField("Source of Lead", max_length=255, choices=SOURCES, blank=True, null=True)
     probability = models.IntegerField(default=0, blank=True, null=True)
     contacts = models.ForeignKey(Contact, related_name='opportunity', on_delete=models.CASCADE, blank=True, null=True)
-    closedBy = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True)
+    closedBy = models.CharField(max_length=255, blank=True, null=True)
     closedOn = models.DateTimeField(blank=True, null=True)
     description = models.TextField(blank=True, null=True)
-    createdBy = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='opportunity_created_by', on_delete=models.CASCADE)
+    createdBy = models.CharField(max_length=255, blank=True, null=True)
     createdOn = models.DateTimeField("Created on", auto_now_add=True)
     isActive = models.BooleanField(default=False)
     tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)"""
@@ -251,12 +251,12 @@ class opportunities_opportunity(models.Model):
     description = models.TextField()
     tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)
     assigned_to = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='task_assigned_to', on_delete=models.CASCADE, blank=True, null=True)"""
-    elif 'tenant_tenant'in modelName.lower():
-        return """
-    id = models.CharField(primary_key=True, max_length=50)
-    organization=models.CharField(max_length=100)
-    db_user = models.CharField(max_length=100)
-    db_user_password = models.CharField(max_length=100)"""
+    # elif 'tenant_tenant'in modelName.lower():
+    #     return """
+    # id = models.CharField(primary_key=True, max_length=50)
+    # organization=models.CharField(max_length=100)
+    # db_user = models.CharField(max_length=100)
+    # db_user_password = models.CharField(max_length=100)"""
     elif 'campaign_campaign'in modelName.lower():
         return """
     campaign_owner = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='campaign_created_by', on_delete=models.CASCADE,blank=True, null=True)
