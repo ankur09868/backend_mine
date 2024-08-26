@@ -1549,3 +1549,208 @@ INFO 2024-08-26 00:00:18,242 basehttp - Broken pipe from ('127.0.0.1', 51852)
 INFO 2024-08-26 00:00:18,243 basehttp - Broken pipe from ('127.0.0.1', 51876)
 INFO 2024-08-26 00:00:18,243 basehttp - Broken pipe from ('127.0.0.1', 51847)
 INFO 2024-08-26 09:50:19,752 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 10:10:09,709 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 10:10:36,988 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 10:18:24,114 basehttp "OPTIONS /fetch-all-emails HTTP/1.1" 200 0
+INFO 2024-08-26 10:18:24,143 basehttp "OPTIONS /fetch-all-emails/ HTTP/1.1" 200 0
+INFO 2024-08-26 10:18:27,483 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 15824
+ERROR 2024-08-26 10:57:22,754 log Internal Server Error: /track_open_count/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\new_nurenai\backend_mine\simplecrm\tractcount.py", line 8, in get
+    return JsonResponse({'total_count': count})
+                                        ^^^^^
+NameError: name 'count' is not defined
+ERROR 2024-08-26 10:57:22,757 basehttp "GET /track_open_count/ HTTP/1.1" 500 75027
+INFO 2024-08-26 11:00:54,413 autoreload D:\new_nurenai\backend_mine\interaction\models.py changed, reloading.
+INFO 2024-08-26 11:09:31,132 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 11:48:40,173 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 11:49:39,894 basehttp "OPTIONS /fetch-all-emails HTTP/1.1" 200 0
+INFO 2024-08-26 11:49:39,944 basehttp "OPTIONS /fetch-all-emails/ HTTP/1.1" 200 0
+INFO 2024-08-26 11:49:43,455 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 15824
+INFO 2024-08-26 11:50:28,100 basehttp "OPTIONS /store-selected-emails/ HTTP/1.1" 200 0
+INFO 2024-08-26 11:50:30,457 basehttp "POST /store-selected-emails/ HTTP/1.1" 201 40
+INFO 2024-08-26 11:50:30,466 basehttp "OPTIONS /save-email-messages/ HTTP/1.1" 200 0
+ERROR 2024-08-26 11:50:33,600 log Internal Server Error: /save-email-messages/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: new row violates row-level security policy for table "communication_message"
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\new_nurenai\backend_mine\communication\insta_msg.py", line 70, in save_email_messages
+    serializer.save()
+  File "E:\.venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "E:\.venv\Lib\site-packages\django\db\models\base.py", line 831, in save
+    self.save_base(
+  File "E:\.venv\Lib\site-packages\django\db\models\base.py", line 882, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\base.py", line 1025, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\base.py", line 1066, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\query.py", line 1790, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1657, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: new row violates row-level security policy for table "communication_message"
+
+ERROR 2024-08-26 11:50:33,612 basehttp "POST /save-email-messages/ HTTP/1.1" 500 235761
+INFO 2024-08-26 11:51:41,730 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 16199
+INFO 2024-08-26 11:53:12,266 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 16199
+INFO 2024-08-26 11:59:45,036 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 16199
+INFO 2024-08-26 12:11:59,798 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-26 12:12:24,733 log Internal Server Error: /track_open_count/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\new_nurenai\backend_mine\simplecrm\tractcount.py", line 9, in get
+    total_count = Email.objects.aggregate(total_open_count=models.Sum('open_count'))['total_open_count'] or 0
+                                                           ^^^^^^
+NameError: name 'models' is not defined
+ERROR 2024-08-26 12:12:24,735 basehttp "GET /track_open_count/ HTTP/1.1" 500 75662
+INFO 2024-08-26 12:14:40,443 autoreload D:\new_nurenai\backend_mine\simplecrm\tractcount.py changed, reloading.
+INFO 2024-08-26 12:14:41,721 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 12:15:01,452 basehttp "GET /track_open_count/ HTTP/1.1" 200 18
+INFO 2024-08-26 12:15:31,356 autoreload D:\new_nurenai\backend_mine\simplecrm\tractcount.py changed, reloading.
+INFO 2024-08-26 12:15:32,500 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 12:16:07,235 basehttp "GET /emails/ HTTP/1.1" 200 8855
+INFO 2024-08-26 12:16:27,809 basehttp "GET /track_open/6810fc2f-cdf9-457a-b29f-aec1e84cb641/ HTTP/1.1" 200 43
+INFO 2024-08-26 12:16:40,293 basehttp "GET /emails/ HTTP/1.1" 200 8879
+INFO 2024-08-26 12:18:04,566 basehttp "GET /emails/ HTTP/1.1" 200 8879
+INFO 2024-08-26 12:20:30,905 autoreload D:\new_nurenai\backend_mine\simplecrm\tracking.py changed, reloading.
+INFO 2024-08-26 12:20:32,218 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 12:24:15,340 autoreload D:\new_nurenai\backend_mine\simplecrm\tracking.py changed, reloading.
+INFO 2024-08-26 12:24:16,956 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 12:24:46,860 autoreload D:\new_nurenai\backend_mine\interaction\models.py changed, reloading.
+INFO 2024-08-26 12:24:47,951 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 12:25:11,109 basehttp "GET /emails/ HTTP/1.1" 200 8879
+INFO 2024-08-26 12:53:25,911 autoreload D:\new_nurenai\backend_mine\interaction\models.py changed, reloading.
+INFO 2024-08-26 12:53:27,057 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 12:54:07,955 basehttp "GET /emails/ HTTP/1.1" 200 8879
+INFO 2024-08-26 12:55:03,589 basehttp "OPTIONS /fetch-all-emails HTTP/1.1" 200 0
+INFO 2024-08-26 12:55:03,627 basehttp "OPTIONS /fetch-all-emails/ HTTP/1.1" 200 0
+INFO 2024-08-26 12:55:05,216 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 16199
+INFO 2024-08-26 13:02:06,692 autoreload D:\new_nurenai\backend_mine\simplecrm\tracking.py changed, reloading.
+INFO 2024-08-26 13:02:08,027 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 13:03:01,869 basehttp "GET /emails/ HTTP/1.1" 200 8879
+INFO 2024-08-26 13:09:23,913 basehttp "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2024-08-26 13:09:26,542 basehttp "POST /emails/ HTTP/1.1" 201 325
+INFO 2024-08-26 13:10:15,666 basehttp "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2024-08-26 13:10:17,936 basehttp "POST /emails/ HTTP/1.1" 201 326
+INFO 2024-08-26 13:14:36,370 basehttp "GET /emails/ HTTP/1.1" 200 9532
+INFO 2024-08-26 13:16:04,398 autoreload D:\new_nurenai\backend_mine\simplecrm\tracking.py changed, reloading.
+INFO 2024-08-26 13:16:05,617 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 13:16:57,782 basehttp "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2024-08-26 13:17:02,164 basehttp "POST /emails/ HTTP/1.1" 201 524
+INFO 2024-08-26 13:19:08,440 basehttp "GET /emails/ HTTP/1.1" 200 10081
+INFO 2024-08-26 13:19:21,697 basehttp "GET /emails/ HTTP/1.1" 200 10081
+INFO 2024-08-26 13:20:40,791 basehttp "GET /emails/ HTTP/1.1" 200 10081
+INFO 2024-08-26 13:34:01,169 basehttp "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2024-08-26 13:34:04,344 basehttp "POST /emails/ HTTP/1.1" 201 315
+INFO 2024-08-26 13:34:45,610 basehttp "GET /emails/ HTTP/1.1" 200 10397
+INFO 2024-08-26 13:34:53,808 basehttp "GET /emails/ HTTP/1.1" 200 10397
+INFO 2024-08-26 13:36:47,894 autoreload D:\new_nurenai\backend_mine\simplecrm\tracking.py changed, reloading.
+INFO 2024-08-26 13:36:49,103 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 13:37:00,936 autoreload D:\new_nurenai\backend_mine\simplecrm\tracking.py changed, reloading.
+INFO 2024-08-26 13:37:01,658 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 13:37:57,134 autoreload D:\new_nurenai\backend_mine\simplecrm\tracking.py changed, reloading.
+INFO 2024-08-26 13:37:58,210 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 13:38:02,326 autoreload D:\new_nurenai\backend_mine\simplecrm\tracking.py changed, reloading.
+INFO 2024-08-26 13:38:03,198 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 13:38:40,960 autoreload D:\new_nurenai\backend_mine\interaction\models.py changed, reloading.
+INFO 2024-08-26 13:38:42,178 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 13:39:35,516 basehttp "POST /emails/ HTTP/1.1" 201 319
+INFO 2024-08-26 13:47:11,412 basehttp "OPTIONS /fetch-all-emails HTTP/1.1" 200 0
+INFO 2024-08-26 13:47:11,967 basehttp "GET /fetch-all-emails HTTP/1.1" 301 0
+INFO 2024-08-26 13:47:12,785 basehttp "OPTIONS /fetch-all-emails/ HTTP/1.1" 200 0
+INFO 2024-08-26 13:47:15,438 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 16199
+INFO 2024-08-26 13:47:36,517 basehttp "POST /emails/ HTTP/1.1" 201 319
+INFO 2024-08-26 13:50:19,818 autoreload D:\new_nurenai\backend_mine\simplecrm\tracking.py changed, reloading.
+INFO 2024-08-26 13:50:21,062 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 13:51:08,270 basehttp "POST /emails/ HTTP/1.1" 201 317
+INFO 2024-08-26 15:13:40,271 basehttp "GET /fetch-all-emails HTTP/1.1" 301 0
+INFO 2024-08-26 15:13:42,369 basehttp - Broken pipe from ('127.0.0.1', 60219)
