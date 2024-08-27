@@ -48,6 +48,7 @@ class TrackOpenView(View):
     def get(self, request, tracking_id, *args, **kwargs):
         try:
             email = Email.objects.get(tracking_id=tracking_id)
+
             email.is_open = True
             email.time_open = timezone.now()
             email.save()
