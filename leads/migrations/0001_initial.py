@@ -52,7 +52,7 @@ class Migration(migrations.Migration):
                 ('assigned_to', models.ManyToManyField(related_name='lead_assigned_users', to=settings.AUTH_USER_MODEL)),
                 ('createdBy', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='lead_created_by', to=settings.AUTH_USER_MODEL)),
                 ('stage', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='stage.stage')),
-                
+                ('tenant', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='tenant.tenant')),
             ],
         ),
     ]
