@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Product
+from .models import Product, Experience
 from custom_fields.models import CustomField
 from custom_fields.serializers import CustomFieldSerializer
 from django.contrib.contenttypes.models import ContentType
@@ -36,3 +36,8 @@ class ProductSerializer(serializers.ModelSerializer):
             })
 
         return custom_fields_data
+    
+class ExperienceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Experience
+        fields = "__all__"

@@ -100,6 +100,19 @@ class Email(models.Model):
     email_type = models.CharField(max_length=5, choices=EMAIL_TYPE_CHOICES, null=True, blank=True)# Email type choice field
     email_id = models.EmailField(max_length=255) #store the email ID
     links = models.JSONField(default=list) 
+    open_times = models.JSONField(default=list, blank=True, null=True)
+    total_time_spent = models.DurationField(blank=True, null=True)
+    time_open = models.DateTimeField(null=True, blank=True)   
 
     def __str__(self):
         return self.subject
+    
+class Group(models.Model):
+    name = models.CharField(max_length=255)
+    members = models.ManyToManyField(Contact, related_name='groups')
+    date_created = models.DateTimeField(auto_now_add=True)
+    tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)
+    
+    def __str__(self):
+        return f"Group ID: {self.id}, Name: {self.name}, Members: {self.members.count()}"
+

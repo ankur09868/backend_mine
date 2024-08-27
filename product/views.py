@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import generics
-from .models import Product
-from .serializers import ProductSerializer
+from .models import Product, Experience
+from .serializers import ProductSerializer, ExperienceSerializer
 from rest_framework.permissions import IsAdminUser
 from helpers.tables import get_db_connection
 from django.views.decorators.csrf import csrf_exempt
@@ -18,6 +18,13 @@ class ProductDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = ProductSerializer
     # permission_classes = (IsAdminUser,)
 
+class ExperienceListAPIView(generics.ListCreateAPIView):
+    queryset = Experience.objects.all()
+    serializer_class = ExperienceSerializer
+
+class ExperienceDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Experience.objects.all()
+    serializer_class = ExperienceSerializer
 
 logger = logging.getLogger(__name__)
 

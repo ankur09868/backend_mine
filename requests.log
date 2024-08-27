@@ -72,3 +72,119 @@ INFO 2024-08-23 14:50:35,711 basehttp "GET /generate-report/ HTTP/1.1" 200 93
 INFO 2024-08-23 17:39:20,861 autoreload Watching for file changes with StatReloader
 INFO 2024-08-23 17:39:54,726 autoreload D:\Nuren AI\New folder\backend_mine1\interaction\serializers.py changed, reloading.
 INFO 2024-08-23 17:39:55,877 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 18:01:21,201 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 18:14:19,316 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 18:15:58,469 basehttp "GET /experience/ HTTP/1.1" 200 2
+INFO 2024-08-26 18:16:20,179 basehttp "GET /experience/ HTTP/1.1" 200 2
+INFO 2024-08-26 18:17:44,250 basehttp "GET /experience/ HTTP/1.1" 200 2
+WARNING 2024-08-26 18:20:56,575 log Not Found: /experience/1/
+WARNING 2024-08-26 18:20:56,576 basehttp "GET /experience/1/ HTTP/1.1" 404 23
+WARNING 2024-08-26 19:26:31,752 log Bad Request: /generate-report/
+WARNING 2024-08-26 19:26:31,753 basehttp "GET /generate-report/ HTTP/1.1" 400 21
+WARNING 2024-08-26 19:26:31,837 log Bad Request: /favicon.ico
+WARNING 2024-08-26 19:26:31,837 basehttp "GET /favicon.ico HTTP/1.1" 400 21
+INFO 2024-08-27 11:24:52,971 basehttp "GET /whatsapp_convo_get/$919643393874/?source=whatsapp HTTP/1.1" 200 2
+INFO 2024-08-27 11:25:07,638 basehttp "GET /whatsapp_convo_get/919643393874/?source=whatsapp HTTP/1.1" 200 295
+INFO 2024-08-27 11:38:30,057 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\interaction\models.py changed, reloading.
+INFO 2024-08-27 11:38:34,384 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 11:39:32,512 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\interaction\models.py changed, reloading.
+INFO 2024-08-27 11:39:33,901 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 11:40:15,229 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\interaction\serializers.py changed, reloading.
+INFO 2024-08-27 11:40:16,475 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 11:42:44,719 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\interaction\views.py changed, reloading.
+INFO 2024-08-27 11:42:46,323 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 11:42:58,496 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\interaction\views.py changed, reloading.
+INFO 2024-08-27 11:42:59,461 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 11:43:27,560 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\interaction\views.py changed, reloading.
+INFO 2024-08-27 11:43:28,430 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 11:44:12,406 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\urls.py changed, reloading.
+INFO 2024-08-27 11:44:13,754 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 11:44:42,463 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\urls.py changed, reloading.
+INFO 2024-08-27 11:44:43,799 autoreload Watching for file changes with StatReloader
+WARNING 2024-08-27 11:45:50,208 log Not Found: /groups/
+WARNING 2024-08-27 11:45:50,208 basehttp "GET /groups/ HTTP/1.1" 404 16878
+INFO 2024-08-27 11:54:40,270 autoreload Watching for file changes with StatReloader
+WARNING 2024-08-27 11:55:24,290 log Not Found: /groups/
+WARNING 2024-08-27 11:55:24,291 basehttp "GET /groups/ HTTP/1.1" 404 16878
+INFO 2024-08-27 11:59:46,383 autoreload Watching for file changes with StatReloader
+WARNING 2024-08-27 12:00:34,635 log Not Found: /groups/
+WARNING 2024-08-27 12:00:34,636 basehttp "GET /groups/ HTTP/1.1" 404 16878
+INFO 2024-08-27 12:01:40,912 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\urls.py changed, reloading.
+INFO 2024-08-27 12:01:42,642 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 12:03:25,092 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\urls.py changed, reloading.
+INFO 2024-08-27 12:03:26,352 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-27 12:19:29,734 log Internal Server Error: /groups/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table interaction_group
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\interaction\views.py", line 259, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+           ^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 394, in __iter__
+    self._fetch_all()
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table interaction_group
+
+ERROR 2024-08-27 12:19:29,770 basehttp "GET /groups/ HTTP/1.1" 500 160301
+INFO 2024-08-27 12:23:37,378 basehttp "GET /groups/ HTTP/1.1" 200 2
