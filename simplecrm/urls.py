@@ -58,11 +58,13 @@ from custom_fields.views import export_data_for_custom_field as edfc
 from topicmodelling import views as topicviews
 from whatsapp_chat import views as wa_chat_views
 from rest_framework.routers import DefaultRouter
+from communication import insta_msg as imsg 
 
 router = DefaultRouter()
 router.register(r'groups', inviews.GroupViewSet, basename='group')
 
 urlpatterns = router.urls
+
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
@@ -169,6 +171,13 @@ urlpatterns = [
     path('call-campaigns/<int:pk>/', campview.CallCampaignViewSet.as_view({'get': 'retrieve', 'put': 'update', 'patch': 'partial_update', 'delete': 'destroy'}), name='call-campaign-detail'),
     path('emails/', inviews.EmailListAPIView.as_view(), name='email-list'),
     path('emails/<int:pk>/', inviews.EmailDetailAPIView.as_view(), name='email-detail'),
+
+    # Message Saving
+    path('save-messages/', imsg.save_messages, name='save-messages'),  # Save messages
+    path('save-email-messages/', imsg.save_email_messages, name='save-email-messages'),  # Save email messages
+    path('store-selected-emails/', simviews.store_selected_emails, name='store_selected_emails'),  # Store selected emails
+    path('fetch-all-emails/', simviews.fetch_all_emails, name='fetch_all_emails'),  # Fetch all emails
+
 ]
 urlpatterns += router.urls
 
