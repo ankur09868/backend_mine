@@ -72,3 +72,2046 @@ INFO 2024-08-23 14:50:35,711 basehttp "GET /generate-report/ HTTP/1.1" 200 93
 INFO 2024-08-23 17:39:20,861 autoreload Watching for file changes with StatReloader
 INFO 2024-08-23 17:39:54,726 autoreload D:\Nuren AI\New folder\backend_mine1\interaction\serializers.py changed, reloading.
 INFO 2024-08-23 17:39:55,877 autoreload Watching for file changes with StatReloader
+INFO 2024-08-23 17:45:20,137 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 07:51:00,292 autoreload D:\Nuren AI\New folder\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-24 07:51:03,420 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 07:52:49,632 autoreload D:\Nuren AI\New folder\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-24 07:52:50,978 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 07:53:56,749 autoreload D:\Nuren AI\New folder\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-24 07:53:58,162 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 07:54:45,086 autoreload D:\Nuren AI\New folder\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-24 07:54:46,499 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 08:12:16,344 autoreload D:\Nuren AI\New folder\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-24 08:12:18,689 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 08:46:34,281 autoreload D:\Nuren AI\New folder\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-24 08:46:35,687 autoreload Watching for file changes with StatReloader
+WARNING 2024-08-24 08:47:53,310 log Bad Request: /set-flow/
+WARNING 2024-08-24 08:47:53,310 basehttp "POST /set-flow/ HTTP/1.1" 400 20
+WARNING 2024-08-24 08:49:03,885 log Bad Request: /set-flow/
+WARNING 2024-08-24 08:49:03,885 basehttp "POST /set-flow/ HTTP/1.1" 400 20
+ERROR 2024-08-24 08:52:51,528 log Internal Server Error: /set-flow/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\whatsapp_chat\views.py", line 90, in setFlow
+    adjList, nodes = convert_flow(flow)
+                     ^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\whatsapp_chat\views.py", line 16, in convert_flow
+    for i, node in enumerate(input_data["nodes"]):
+                             ~~~~~~~~~~^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+ERROR 2024-08-24 08:52:51,528 basehttp "POST /set-flow/ HTTP/1.1" 500 100857
+ERROR 2024-08-24 08:53:02,092 log Internal Server Error: /set-flow/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\whatsapp_chat\views.py", line 90, in setFlow
+    adjList, nodes = convert_flow(flow)
+                     ^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\whatsapp_chat\views.py", line 16, in convert_flow
+    for i, node in enumerate(input_data["nodes"]):
+                             ~~~~~~~~~~^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+ERROR 2024-08-24 08:53:02,094 basehttp "POST /set-flow/ HTTP/1.1" 500 100857
+INFO 2024-08-24 08:54:03,051 autoreload D:\Nuren AI\New folder\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-24 08:54:04,585 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-24 08:54:34,355 log Internal Server Error: /set-flow/
+Traceback (most recent call last):
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\whatsapp_chat\views.py", line 90, in setFlow
+    adjList, nodes = convert_flow(flow)
+                     ^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\New folder\backend_mine1\whatsapp_chat\views.py", line 16, in convert_flow
+    for i, node in enumerate(input_data["nodes"]):
+                             ~~~~~~~~~~^^^^^^^^^
+TypeError: byte indices must be integers or slices, not str
+ERROR 2024-08-24 08:54:34,355 basehttp "POST /set-flow/ HTTP/1.1" 500 95216
+INFO 2024-08-24 08:55:41,195 autoreload D:\Nuren AI\New folder\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-24 08:55:42,663 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-24 08:56:58,700 log Internal Server Error: /set-flow/
+ERROR 2024-08-24 08:56:58,700 basehttp "POST /set-flow/ HTTP/1.1" 500 46
+INFO 2024-08-24 08:58:02,213 autoreload D:\Nuren AI\New folder\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-24 08:58:03,519 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-24 08:58:23,137 log Internal Server Error: /set-flow/
+ERROR 2024-08-24 08:58:23,137 basehttp "POST /set-flow/ HTTP/1.1" 500 46
+INFO 2024-08-24 08:58:57,628 autoreload D:\Nuren AI\New folder\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-24 08:58:58,935 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-24 08:59:36,259 log Internal Server Error: /set-flow/
+ERROR 2024-08-24 08:59:36,259 basehttp "POST /set-flow/ HTTP/1.1" 500 46
+INFO 2024-08-24 09:00:53,419 autoreload D:\Nuren AI\New folder\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-24 09:00:54,735 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-24 09:01:15,633 log Internal Server Error: /set-flow/
+ERROR 2024-08-24 09:01:15,634 basehttp "POST /set-flow/ HTTP/1.1" 500 46
+WARNING 2024-08-24 10:13:34,531 log Bad Request: /
+WARNING 2024-08-24 10:13:34,533 basehttp "GET / HTTP/1.1" 400 21
+ERROR 2024-08-24 10:15:10,133 log Internal Server Error: /upload/
+ERROR 2024-08-24 10:15:10,133 basehttp "POST /upload/ HTTP/1.1" 500 150
+INFO 2024-08-24 10:16:30,624 basehttp "POST /upload/ HTTP/1.1" 200 97
+INFO 2024-08-24 10:16:58,230 basehttp "OPTIONS /upload/ HTTP/1.1" 200 0
+ERROR 2024-08-24 10:17:09,047 log Internal Server Error: /upload/
+ERROR 2024-08-24 10:17:09,048 basehttp "POST /upload/ HTTP/1.1" 500 248
+INFO 2024-08-24 11:37:17,519 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 11:39:26,201 basehttp "POST /upload/ HTTP/1.1" 200 97
+WARNING 2024-08-24 11:44:39,686 log Bad Request: /upload/
+WARNING 2024-08-24 11:44:39,686 basehttp "GET /upload/ HTTP/1.1" 400 21
+INFO 2024-08-24 11:45:14,758 basehttp "OPTIONS /upload/ HTTP/1.1" 200 0
+INFO 2024-08-24 11:45:26,355 basehttp "POST /upload/ HTTP/1.1" 200 97
+ERROR 2024-08-24 11:47:16,217 log Internal Server Error: /upload/
+ERROR 2024-08-24 11:47:16,217 basehttp "POST /upload/ HTTP/1.1" 500 54
+ERROR 2024-08-24 11:49:03,115 log Internal Server Error: /upload/
+ERROR 2024-08-24 11:49:03,115 basehttp "POST /upload/ HTTP/1.1" 500 251
+ERROR 2024-08-24 11:57:35,920 log Internal Server Error: /upload/
+ERROR 2024-08-24 11:57:35,921 basehttp "POST /upload/ HTTP/1.1" 500 259
+ERROR 2024-08-24 11:59:32,614 log Internal Server Error: /upload/
+ERROR 2024-08-24 11:59:32,615 basehttp "POST /upload/ HTTP/1.1" 500 259
+ERROR 2024-08-24 12:03:16,848 log Internal Server Error: /upload/
+ERROR 2024-08-24 12:03:16,849 basehttp "POST /upload/ HTTP/1.1" 500 259
+ERROR 2024-08-24 12:04:30,752 log Internal Server Error: /upload/
+ERROR 2024-08-24 12:04:30,753 basehttp "POST /upload/ HTTP/1.1" 500 230
+INFO 2024-08-24 15:13:35,958 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-24 15:15:40,498 log Internal Server Error: /set-flow/
+ERROR 2024-08-24 15:15:40,498 basehttp "POST /set-flow/ HTTP/1.1" 500 55
+INFO 2024-08-24 15:16:34,554 autoreload D:\Nuren AI\New folder\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-24 15:16:36,112 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-24 15:17:05,984 log Internal Server Error: /set-flow/
+ERROR 2024-08-24 15:17:05,984 basehttp "POST /set-flow/ HTTP/1.1" 500 46
+ERROR 2024-08-24 15:17:49,463 log Internal Server Error: /set-flow/
+ERROR 2024-08-24 15:17:49,463 basehttp "POST /set-flow/ HTTP/1.1" 500 46
+INFO 2024-08-24 15:19:06,552 autoreload D:\Nuren AI\New folder\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-24 15:19:07,986 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-24 15:19:29,836 log Internal Server Error: /set-flow/
+ERROR 2024-08-24 15:19:29,837 basehttp "POST /set-flow/ HTTP/1.1" 500 46
+INFO 2024-08-24 16:22:31,347 autoreload D:\Nuren AI\New folder\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-24 16:22:35,994 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 16:23:26,620 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-24 16:26:07,115 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-24 16:52:59,659 autoreload Watching for file changes with StatReloader
+INFO 2024-08-24 16:53:27,493 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-24 18:00:12,066 autoreload D:\Nuren AI\New folder\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-24 18:00:15,506 autoreload Watching for file changes with StatReloader
+INFO 2024-08-25 15:28:41,224 autoreload Watching for file changes with StatReloader
+INFO 2024-08-25 15:30:01,769 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-08-25 15:30:01,769 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-08-25 15:30:01,769 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-08-25 15:30:05,175 basehttp "GET /node-templates/ HTTP/1.1" 200 16620
+INFO 2024-08-25 15:30:05,260 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-25 15:30:06,802 basehttp "GET /node-templates/ HTTP/1.1" 200 16620
+INFO 2024-08-25 15:30:49,630 basehttp "OPTIONS /node-templates/56/ HTTP/1.1" 200 0
+INFO 2024-08-25 15:30:51,410 basehttp "GET /node-templates/56/ HTTP/1.1" 200 3282
+INFO 2024-08-25 15:31:51,422 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-25 15:31:56,113 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-08-25 15:31:56,425 basehttp "OPTIONS /interaction HTTP/1.1" 200 0
+INFO 2024-08-25 15:31:56,434 basehttp "OPTIONS /wallet/balance?user_id=3 HTTP/1.1" 200 0
+INFO 2024-08-25 15:31:56,436 basehttp "OPTIONS /report/opportunity_stages/ HTTP/1.1" 200 0
+INFO 2024-08-25 15:31:56,439 basehttp "OPTIONS /report/lead_stages/ HTTP/1.1" 200 0
+INFO 2024-08-25 15:31:56,440 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-08-25 15:31:56,730 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-08-25 15:31:56,735 basehttp "OPTIONS /interaction/ HTTP/1.1" 200 0
+INFO 2024-08-25 15:31:56,742 basehttp "OPTIONS /wallet/balance/?user_id=3 HTTP/1.1" 200 0
+INFO 2024-08-25 15:31:57,774 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-08-25 15:31:58,122 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-25 15:31:58,359 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+INFO 2024-08-25 15:31:58,372 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-08-25 15:31:58,439 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 140
+WARNING 2024-08-25 15:31:58,589 log Not Found: /wallet/balance/
+WARNING 2024-08-25 15:31:58,589 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-08-25 15:31:59,572 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-08-25 15:32:00,883 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-25 15:32:00,887 basehttp "OPTIONS /return-documents/10/undefined HTTP/1.1" 200 0
+WARNING 2024-08-25 15:32:01,083 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-25 15:32:01,083 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-25 15:32:02,526 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-25 15:33:07,602 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-25 15:33:07,603 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-25 15:33:08,318 basehttp "GET /node-templates/ HTTP/1.1" 200 16620
+INFO 2024-08-25 15:33:08,917 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+INFO 2024-08-25 15:33:10,078 basehttp "GET /node-templates/ HTTP/1.1" 200 16620
+WARNING 2024-08-25 16:26:49,119 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-25 16:26:49,120 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-25 16:26:50,863 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-25 16:26:50,863 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-25 16:30:10,786 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-25 16:30:10,786 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-25 16:30:12,625 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-25 16:31:06,770 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-25 16:31:06,770 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-25 16:31:08,482 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+INFO 2024-08-25 16:31:17,414 basehttp "OPTIONS /set-flow HTTP/1.1" 200 0
+ERROR 2024-08-25 16:31:17,508 log Internal Server Error: /set-flow
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/set-flow/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-25 16:31:17,524 basehttp "POST /set-flow HTTP/1.1" 500 73513
+ERROR 2024-08-25 16:31:19,499 log Internal Server Error: /set-flow
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/set-flow/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-25 16:31:19,499 basehttp "POST /set-flow HTTP/1.1" 500 73513
+WARNING 2024-08-25 16:31:26,118 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-25 16:31:26,118 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-25 16:31:27,830 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-25 16:31:27,931 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-25 16:44:43,784 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-25 16:44:43,785 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-25 16:44:45,659 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+INFO 2024-08-25 16:45:37,931 basehttp "OPTIONS /set-flow HTTP/1.1" 200 0
+ERROR 2024-08-25 16:45:37,947 log Internal Server Error: /set-flow
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/set-flow/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-25 16:45:37,963 basehttp "POST /set-flow HTTP/1.1" 500 73514
+ERROR 2024-08-25 16:45:45,927 log Internal Server Error: /set-flow
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/set-flow/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-25 16:45:45,927 basehttp "POST /set-flow HTTP/1.1" 500 73514
+ERROR 2024-08-25 16:45:49,343 log Internal Server Error: /set-flow
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/set-flow/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-25 16:45:49,343 basehttp "POST /set-flow HTTP/1.1" 500 73514
+ERROR 2024-08-25 16:46:00,689 log Internal Server Error: /set-flow
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/set-flow/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-25 16:46:00,689 basehttp "POST /set-flow HTTP/1.1" 500 73514
+WARNING 2024-08-25 16:46:07,541 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-25 16:46:07,541 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-25 16:46:09,296 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+INFO 2024-08-25 16:46:09,307 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+WARNING 2024-08-25 16:46:42,300 log Bad Request: /reminders/
+WARNING 2024-08-25 16:46:42,301 basehttp "GET /reminders/ HTTP/1.1" 400 21
+WARNING 2024-08-25 16:46:54,773 log Not Found: /wallet/balance/
+INFO 2024-08-25 16:46:54,773 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+WARNING 2024-08-25 16:46:54,773 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-08-25 16:46:54,811 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-08-25 16:46:54,833 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 140
+INFO 2024-08-25 16:46:54,851 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-08-25 16:46:56,440 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+WARNING 2024-08-25 16:46:58,798 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-25 16:46:58,799 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-25 16:47:00,430 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+ERROR 2024-08-25 16:47:03,340 log Internal Server Error: /set-flow
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/set-flow/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-25 16:47:03,340 basehttp "POST /set-flow HTTP/1.1" 500 73514
+ERROR 2024-08-25 16:47:05,137 log Internal Server Error: /set-flow
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/set-flow/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-25 16:47:05,137 basehttp "POST /set-flow HTTP/1.1" 500 73514
+ERROR 2024-08-25 16:47:05,903 log Internal Server Error: /set-flow
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/set-flow/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-25 16:47:05,904 basehttp "POST /set-flow HTTP/1.1" 500 73514
+ERROR 2024-08-25 16:47:06,094 log Internal Server Error: /set-flow
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/set-flow/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-25 16:47:06,095 basehttp "POST /set-flow HTTP/1.1" 500 73514
+ERROR 2024-08-25 16:47:06,296 log Internal Server Error: /set-flow
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/set-flow/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-25 16:47:06,297 basehttp "POST /set-flow HTTP/1.1" 500 73514
+ERROR 2024-08-25 16:47:06,506 log Internal Server Error: /set-flow
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/set-flow/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-25 16:47:06,507 basehttp "POST /set-flow HTTP/1.1" 500 73514
+ERROR 2024-08-25 16:47:06,720 log Internal Server Error: /set-flow
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/set-flow/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-25 16:47:06,720 basehttp "POST /set-flow HTTP/1.1" 500 73514
+ERROR 2024-08-25 16:47:10,018 log Internal Server Error: /set-flow
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/set-flow/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-25 16:47:10,018 basehttp "POST /set-flow HTTP/1.1" 500 73514
+ERROR 2024-08-25 16:47:11,154 log Internal Server Error: /set-flow
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/set-flow/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-25 16:47:11,154 basehttp "POST /set-flow HTTP/1.1" 500 73514
+WARNING 2024-08-25 16:47:55,774 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-25 16:47:55,775 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-25 16:47:57,578 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+INFO 2024-08-25 16:48:00,559 basehttp "OPTIONS /set-flow/ HTTP/1.1" 200 0
+WARNING 2024-08-25 16:48:00,564 log Bad Request: /set-flow/
+WARNING 2024-08-25 16:48:00,564 basehttp "POST /set-flow/ HTTP/1.1" 400 20
+WARNING 2024-08-25 16:48:04,656 log Bad Request: /set-flow/
+WARNING 2024-08-25 16:48:04,657 basehttp "POST /set-flow/ HTTP/1.1" 400 20
+INFO 2024-08-25 16:48:55,095 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-25 16:48:57,341 autoreload Watching for file changes with StatReloader
+WARNING 2024-08-25 16:49:19,758 log Bad Request: /set-flow/
+WARNING 2024-08-25 16:49:19,759 basehttp "POST /set-flow/ HTTP/1.1" 400 20
+INFO 2024-08-25 16:49:29,398 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-25 16:49:31,071 autoreload Watching for file changes with StatReloader
+WARNING 2024-08-25 16:49:53,811 log Bad Request: /set-flow/
+WARNING 2024-08-25 16:49:53,811 basehttp "POST /set-flow/ HTTP/1.1" 400 20
+WARNING 2024-08-25 16:50:38,226 log Bad Request: /set-flow/
+WARNING 2024-08-25 16:50:38,227 basehttp "POST /set-flow/ HTTP/1.1" 400 20
+WARNING 2024-08-25 16:50:44,305 log Bad Request: /set-flow/
+WARNING 2024-08-25 16:50:44,306 basehttp "POST /set-flow/ HTTP/1.1" 400 20
+WARNING 2024-08-25 16:50:50,838 log Bad Request: /set-flow/
+WARNING 2024-08-25 16:50:50,839 basehttp "POST /set-flow/ HTTP/1.1" 400 20
+INFO 2024-08-25 16:52:40,672 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-25 16:52:40,703 basehttp "GET /node-templates/ HTTP/1.1" 200 16620
+INFO 2024-08-25 16:52:42,348 basehttp "GET /node-templates/ HTTP/1.1" 200 16620
+INFO 2024-08-25 16:52:56,304 basehttp "GET /node-templates/56/ HTTP/1.1" 200 3282
+INFO 2024-08-25 16:53:04,525 basehttp "OPTIONS /node-templates/22/ HTTP/1.1" 200 0
+INFO 2024-08-25 16:53:06,183 basehttp "GET /node-templates/22/ HTTP/1.1" 200 711
+INFO 2024-08-25 16:53:07,925 basehttp "OPTIONS /node-templates/32/ HTTP/1.1" 200 0
+INFO 2024-08-25 16:53:09,606 basehttp "GET /node-templates/32/ HTTP/1.1" 200 704
+INFO 2024-08-25 16:53:15,056 basehttp "OPTIONS /node-templates/30/ HTTP/1.1" 200 0
+INFO 2024-08-25 16:53:16,910 basehttp "GET /node-templates/30/ HTTP/1.1" 200 744
+WARNING 2024-08-25 16:53:46,359 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-25 16:53:46,359 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-25 16:53:48,107 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-25 16:53:48,200 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-25 17:25:08,215 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-25 17:25:08,223 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-25 17:25:09,983 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-25 17:25:10,060 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-25 17:28:53,473 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-25 17:28:53,473 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-25 17:28:55,323 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-25 17:29:09,458 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-25 17:29:09,458 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-25 17:29:11,135 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+INFO 2024-08-25 17:29:11,220 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-25 17:33:28,736 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-25 17:33:28,736 basehttp "OPTIONS /return-documents/10/undefined HTTP/1.1" 200 0
+WARNING 2024-08-25 17:33:28,749 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-25 17:33:28,749 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-25 17:33:30,546 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-25 17:38:11,446 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-25 17:38:11,446 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-25 17:38:13,315 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-25 17:38:52,742 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-25 17:38:52,742 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-25 17:38:54,477 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+ERROR 2024-08-25 17:39:09,550 log Internal Server Error: /set-flow
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/set-flow/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-25 17:39:09,550 basehttp "POST /set-flow HTTP/1.1" 500 73505
+ERROR 2024-08-25 17:39:12,463 log Internal Server Error: /set-flow
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/set-flow/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-25 17:39:12,463 basehttp "POST /set-flow HTTP/1.1" 500 73505
+ERROR 2024-08-25 17:39:13,723 log Internal Server Error: /set-flow
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/set-flow/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-25 17:39:13,724 basehttp "POST /set-flow HTTP/1.1" 500 73505
+ERROR 2024-08-25 17:39:13,919 log Internal Server Error: /set-flow
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/set-flow/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-25 17:39:13,920 basehttp "POST /set-flow HTTP/1.1" 500 73505
+ERROR 2024-08-25 17:39:14,115 log Internal Server Error: /set-flow
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/set-flow/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-25 17:39:14,116 basehttp "POST /set-flow HTTP/1.1" 500 73505
+ERROR 2024-08-25 17:39:14,298 log Internal Server Error: /set-flow
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/set-flow/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-25 17:39:14,299 basehttp "POST /set-flow HTTP/1.1" 500 73505
+ERROR 2024-08-25 17:39:14,492 log Internal Server Error: /set-flow
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/set-flow/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-25 17:39:14,493 basehttp "POST /set-flow HTTP/1.1" 500 73505
+ERROR 2024-08-25 17:39:14,695 log Internal Server Error: /set-flow
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/set-flow/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-25 17:39:14,696 basehttp "POST /set-flow HTTP/1.1" 500 73505
+ERROR 2024-08-25 17:39:14,885 log Internal Server Error: /set-flow
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/set-flow/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-25 17:39:14,886 basehttp "POST /set-flow HTTP/1.1" 500 73505
+ERROR 2024-08-25 17:39:15,092 log Internal Server Error: /set-flow
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/set-flow/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-25 17:39:15,092 basehttp "POST /set-flow HTTP/1.1" 500 73505
+WARNING 2024-08-25 17:39:54,910 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-25 17:39:54,910 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+WARNING 2024-08-25 17:39:56,560 log Bad Request: /set-flow/
+WARNING 2024-08-25 17:39:56,561 basehttp "POST /set-flow/ HTTP/1.1" 400 17
+INFO 2024-08-25 17:39:56,661 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-25 17:40:05,673 log Bad Request: /set-flow/
+WARNING 2024-08-25 17:40:05,673 basehttp "POST /set-flow/ HTTP/1.1" 400 17
+WARNING 2024-08-25 17:40:06,830 log Bad Request: /set-flow/
+WARNING 2024-08-25 17:40:06,830 basehttp "POST /set-flow/ HTTP/1.1" 400 17
+INFO 2024-08-25 17:40:32,746 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+WARNING 2024-08-25 17:40:32,771 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-25 17:40:32,771 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-25 17:40:34,479 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-25 17:40:34,563 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-25 17:40:40,078 log Bad Request: /set-flow/
+WARNING 2024-08-25 17:40:40,079 basehttp "POST /set-flow/ HTTP/1.1" 400 17
+WARNING 2024-08-25 17:40:46,423 log Bad Request: /set-flow/
+WARNING 2024-08-25 17:40:46,423 basehttp "POST /set-flow/ HTTP/1.1" 400 17
+WARNING 2024-08-25 17:40:51,021 log Bad Request: /set-flow/
+WARNING 2024-08-25 17:40:51,021 basehttp "POST /set-flow/ HTTP/1.1" 400 17
+WARNING 2024-08-25 17:41:39,875 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-25 17:41:39,875 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-25 17:41:41,671 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-25 17:41:41,905 log Bad Request: /set-flow/
+WARNING 2024-08-25 17:41:41,905 basehttp "POST /set-flow/ HTTP/1.1" 400 20
+WARNING 2024-08-25 17:41:44,954 log Bad Request: /set-flow/
+WARNING 2024-08-25 17:41:44,955 basehttp "POST /set-flow/ HTTP/1.1" 400 20
+WARNING 2024-08-25 17:57:53,104 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-25 17:57:53,105 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-25 17:57:54,870 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-25 17:57:54,886 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-25 18:59:40,118 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-25 18:59:40,120 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-25 18:59:41,881 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-25 18:59:41,900 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+INFO 2024-08-25 18:59:47,882 basehttp "OPTIONS /set-flow/ HTTP/1.1" 200 0
+WARNING 2024-08-25 18:59:47,884 log Bad Request: /set-flow/
+WARNING 2024-08-25 18:59:47,885 basehttp "POST /set-flow/ HTTP/1.1" 400 17
+WARNING 2024-08-25 19:00:13,972 log Bad Request: /set-flow/
+WARNING 2024-08-25 19:00:13,972 basehttp "POST /set-flow/ HTTP/1.1" 400 17
+WARNING 2024-08-25 19:00:19,112 log Bad Request: /set-flow/
+WARNING 2024-08-25 19:00:19,112 basehttp "POST /set-flow/ HTTP/1.1" 400 17
+WARNING 2024-08-25 19:00:20,673 log Bad Request: /set-flow/
+WARNING 2024-08-25 19:00:20,674 basehttp "POST /set-flow/ HTTP/1.1" 400 17
+WARNING 2024-08-25 19:29:58,013 log Bad Request: /set-flow/
+WARNING 2024-08-25 19:29:58,014 basehttp "POST /set-flow/ HTTP/1.1" 400 17
+WARNING 2024-08-25 19:30:59,853 log Bad Request: /set-flow/
+WARNING 2024-08-25 19:30:59,853 basehttp "POST /set-flow/ HTTP/1.1" 400 17
+WARNING 2024-08-25 19:35:23,683 log Bad Request: /set-flow/
+WARNING 2024-08-25 19:35:23,684 basehttp "POST /set-flow/ HTTP/1.1" 400 17
+WARNING 2024-08-25 19:35:40,559 log Bad Request: /set-flow/
+WARNING 2024-08-25 19:35:40,559 basehttp "POST /set-flow/ HTTP/1.1" 400 17
+WARNING 2024-08-25 19:37:18,680 log Bad Request: /set-flow/
+WARNING 2024-08-25 19:37:18,681 basehttp "POST /set-flow/ HTTP/1.1" 400 17
+INFO 2024-08-25 19:40:51,981 autoreload Watching for file changes with StatReloader
+INFO 2024-08-25 19:41:29,616 basehttp "OPTIONS /set-flow/ HTTP/1.1" 200 0
+WARNING 2024-08-25 19:41:33,405 log Bad Request: /set-flow/
+WARNING 2024-08-25 19:41:33,406 basehttp "POST /set-flow/ HTTP/1.1" 400 20
+INFO 2024-08-25 19:42:20,330 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-25 19:42:24,067 autoreload Watching for file changes with StatReloader
+INFO 2024-08-25 19:42:54,756 basehttp "OPTIONS /set-flow/ HTTP/1.1" 200 0
+INFO 2024-08-25 19:42:59,046 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-25 19:44:12,740 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-25 19:44:12,745 basehttp "OPTIONS /return-documents/10/undefined HTTP/1.1" 200 0
+WARNING 2024-08-25 19:44:12,792 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-25 19:44:12,793 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-25 19:44:14,620 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+INFO 2024-08-25 19:44:24,561 basehttp "OPTIONS /set-flow/ HTTP/1.1" 200 0
+INFO 2024-08-25 19:44:24,855 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 08:19:21,998 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 08:24:10,160 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-26 08:24:10,166 basehttp "OPTIONS /return-documents/10/undefined HTTP/1.1" 200 0
+INFO 2024-08-26 08:24:10,170 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-08-26 08:24:13,548 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-26 08:24:13,624 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 08:24:13,625 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 08:24:13,632 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+WARNING 2024-08-26 08:25:14,981 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 08:25:14,982 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 08:25:16,737 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+INFO 2024-08-26 08:25:16,815 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+WARNING 2024-08-26 08:27:55,955 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 08:27:55,955 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 08:27:57,734 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-26 08:27:57,781 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+INFO 2024-08-26 08:29:47,409 autoreload Watching for file changes with StatReloader
+WARNING 2024-08-26 08:32:23,318 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 08:32:23,318 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 08:32:23,439 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-26 08:32:26,636 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 08:32:26,636 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 08:32:28,394 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-26 08:32:46,640 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 08:32:46,641 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 08:32:48,453 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-26 08:34:24,602 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 08:34:24,602 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 08:34:26,463 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-26 08:34:44,626 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 08:34:44,627 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 08:34:46,445 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+INFO 2024-08-26 08:34:56,467 basehttp "OPTIONS /set-flow/ HTTP/1.1" 200 0
+INFO 2024-08-26 08:34:56,725 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+WARNING 2024-08-26 09:59:59,125 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 09:59:59,128 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 10:00:00,991 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+INFO 2024-08-26 10:00:00,992 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-26 10:00:16,136 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:00:43,523 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:00:44,975 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+ERROR 2024-08-26 10:00:56,975 log Internal Server Error: /set-flow/
+ERROR 2024-08-26 10:00:56,975 basehttp "POST /set-flow/ HTTP/1.1" 500 332
+INFO 2024-08-26 10:01:01,883 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:03:11,245 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:03:26,511 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+WARNING 2024-08-26 10:05:12,536 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 10:05:12,537 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 10:05:13,386 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:05:14,434 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+INFO 2024-08-26 10:05:14,434 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-26 10:11:04,027 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+ERROR 2024-08-26 10:11:55,115 log Internal Server Error: /set-flow/
+ERROR 2024-08-26 10:11:55,115 basehttp "POST /set-flow/ HTTP/1.1" 500 332
+INFO 2024-08-26 10:12:00,944 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:12:03,744 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:13:06,323 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:14:01,765 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:15:07,596 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:16:03,793 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:20:17,663 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:21:44,894 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:22:28,949 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:22:46,560 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:24:37,853 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:27:31,972 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:28:56,566 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:30:27,838 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:30:39,437 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:32:01,700 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:32:31,776 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:33:47,925 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:34:24,034 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:34:43,607 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:35:40,326 basehttp "OPTIONS /set-flow/ HTTP/1.1" 200 0
+INFO 2024-08-26 10:35:40,371 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:37:36,846 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 10:38:14,870 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 11:26:07,035 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-26 11:26:07,036 basehttp "OPTIONS /return-documents/10/undefined HTTP/1.1" 200 0
+INFO 2024-08-26 11:26:07,037 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-08-26 11:26:08,084 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-08-26 11:26:08,084 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-08-26 11:26:09,880 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-26 11:26:09,989 basehttp "GET /node-templates/ HTTP/1.1" 200 16620
+INFO 2024-08-26 11:26:11,756 basehttp "GET /node-templates/ HTTP/1.1" 200 16620
+INFO 2024-08-26 11:32:50,199 basehttp "GET /node-templates/ HTTP/1.1" 200 16620
+INFO 2024-08-26 11:32:50,219 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-26 11:32:51,928 basehttp "GET /node-templates/ HTTP/1.1" 200 16620
+INFO 2024-08-26 11:48:24,774 basehttp "POST /node-templates/ HTTP/1.1" 201 4768
+WARNING 2024-08-26 11:48:24,795 log Bad Request: /node-templates/
+WARNING 2024-08-26 11:48:24,795 basehttp "POST /node-templates/ HTTP/1.1" 400 41
+INFO 2024-08-26 11:48:26,230 basehttp "POST /node-templates/ HTTP/1.1" 201 4768
+WARNING 2024-08-26 11:48:26,246 log Bad Request: /node-templates/
+WARNING 2024-08-26 11:48:26,246 basehttp "POST /node-templates/ HTTP/1.1" 400 41
+WARNING 2024-08-26 11:48:34,515 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 11:48:34,515 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 11:48:36,162 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+INFO 2024-08-26 11:48:36,186 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-26 11:48:44,536 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 11:50:44,928 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 11:51:19,534 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-26 11:51:19,863 basehttp "GET /node-templates/ HTTP/1.1" 200 26158
+INFO 2024-08-26 11:51:21,838 basehttp "GET /node-templates/ HTTP/1.1" 200 26158
+INFO 2024-08-26 11:51:43,212 basehttp "OPTIONS /node-templates/57/ HTTP/1.1" 200 0
+INFO 2024-08-26 11:51:45,015 basehttp "GET /node-templates/57/ HTTP/1.1" 200 4768
+INFO 2024-08-26 11:52:04,351 basehttp "POST /node-templates/ HTTP/1.1" 201 4768
+INFO 2024-08-26 11:52:06,028 basehttp "POST /node-templates/ HTTP/1.1" 201 4766
+WARNING 2024-08-26 11:52:06,405 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 11:52:06,405 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 11:52:08,026 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+INFO 2024-08-26 11:52:08,040 basehttp "GET /node-templates/ HTTP/1.1" 200 35694
+INFO 2024-08-26 11:52:16,209 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+WARNING 2024-08-26 11:52:18,624 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 11:52:18,625 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 11:52:20,251 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-26 11:52:20,284 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+INFO 2024-08-26 11:52:23,573 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 12:45:22,906 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-26 12:45:26,305 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 12:45:58,756 basehttp "OPTIONS /set-flow/ HTTP/1.1" 200 0
+INFO 2024-08-26 12:46:01,883 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 12:49:00,682 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-26 12:49:02,197 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 12:49:49,361 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 12:51:26,012 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 12:52:00,411 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 13:03:40,138 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 13:08:12,083 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 13:09:40,049 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 13:15:06,315 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-26 13:15:07,665 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 13:15:38,914 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 13:26:19,630 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-26 13:26:21,009 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 13:31:10,434 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-26 13:31:11,883 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 13:31:32,335 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 13:35:40,414 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-26 13:35:41,929 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 13:36:03,448 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 13:37:21,179 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-26 13:37:22,511 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 13:37:43,348 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 13:39:21,547 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-26 13:39:22,849 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 13:39:47,298 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 13:41:21,774 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-08-26 13:41:21,790 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-08-26 13:41:21,790 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-08-26 13:41:23,556 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-26 13:41:23,765 basehttp "GET /node-templates/ HTTP/1.1" 200 35694
+INFO 2024-08-26 13:41:25,722 basehttp "GET /node-templates/ HTTP/1.1" 200 35694
+INFO 2024-08-26 13:41:25,784 basehttp "OPTIONS /node-templates/39/ HTTP/1.1" 200 0
+INFO 2024-08-26 13:41:27,538 basehttp "GET /node-templates/39/ HTTP/1.1" 200 1030
+INFO 2024-08-26 13:41:29,427 basehttp "OPTIONS /node-templates/59/ HTTP/1.1" 200 0
+INFO 2024-08-26 13:41:31,105 basehttp "GET /node-templates/59/ HTTP/1.1" 200 4768
+INFO 2024-08-26 13:45:14,262 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-26 13:45:15,713 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 13:45:42,442 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 13:50:14,362 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-26 13:50:14,751 basehttp "GET /node-templates/ HTTP/1.1" 200 35694
+INFO 2024-08-26 13:50:16,797 basehttp "GET /node-templates/ HTTP/1.1" 200 35694
+INFO 2024-08-26 13:50:19,356 basehttp "GET /node-templates/59/ HTTP/1.1" 200 4768
+INFO 2024-08-26 14:40:42,389 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-26 14:40:42,587 basehttp "GET /node-templates/ HTTP/1.1" 200 35694
+INFO 2024-08-26 14:40:44,691 basehttp "GET /node-templates/ HTTP/1.1" 200 35694
+INFO 2024-08-26 14:40:46,820 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-26 14:40:46,820 basehttp "OPTIONS /return-documents/10/undefined HTTP/1.1" 200 0
+WARNING 2024-08-26 14:40:47,087 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 14:40:47,087 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 14:40:48,746 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+INFO 2024-08-26 14:40:48,746 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+WARNING 2024-08-26 14:45:36,924 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 14:45:36,924 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 14:45:39,043 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-26 14:47:03,982 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 14:47:03,982 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 14:47:06,074 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+INFO 2024-08-26 14:47:06,186 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+WARNING 2024-08-26 14:47:46,028 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 14:47:46,028 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 14:47:48,062 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-26 14:50:48,895 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 14:50:48,895 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 14:50:50,861 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-26 14:51:10,929 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 14:51:10,929 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 14:51:12,792 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-26 14:55:47,879 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 14:55:47,897 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 14:55:49,822 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-26 14:56:08,947 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 14:56:08,947 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 14:56:10,954 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-26 14:56:50,950 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 14:56:50,952 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 14:56:53,135 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-26 14:57:27,486 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 14:57:27,486 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 14:57:29,802 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-26 15:00:06,921 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 15:00:06,921 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 15:00:09,024 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-26 15:09:20,326 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 15:09:20,331 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 15:09:22,521 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+INFO 2024-08-26 15:09:22,521 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+WARNING 2024-08-26 15:09:44,615 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 15:09:44,616 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 15:09:46,595 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-26 15:11:18,601 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 15:11:18,601 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 15:11:20,776 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-26 15:11:37,962 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 15:11:37,973 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 15:11:40,130 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-26 15:12:03,169 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 15:12:03,177 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 15:12:05,455 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-26 15:12:05,455 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-26 15:13:09,931 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 15:13:09,932 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 15:13:11,878 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-26 15:13:16,614 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 15:13:16,616 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 15:13:18,493 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+WARNING 2024-08-26 15:18:50,949 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 15:18:50,958 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 15:18:52,746 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+INFO 2024-08-26 15:19:20,029 basehttp "OPTIONS /set-flow/ HTTP/1.1" 200 0
+INFO 2024-08-26 15:19:20,310 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 15:20:56,552 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-26 15:20:56,733 basehttp "GET /node-templates/ HTTP/1.1" 200 35694
+INFO 2024-08-26 15:20:58,728 basehttp "GET /node-templates/ HTTP/1.1" 200 35694
+INFO 2024-08-26 15:21:00,906 basehttp "GET /node-templates/59/ HTTP/1.1" 200 4768
+INFO 2024-08-26 15:22:54,791 basehttp "POST /node-templates/ HTTP/1.1" 201 53661
+WARNING 2024-08-26 15:22:54,811 log Bad Request: /node-templates/
+WARNING 2024-08-26 15:22:54,812 basehttp "POST /node-templates/ HTTP/1.1" 400 41
+WARNING 2024-08-26 15:23:02,638 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 15:23:02,639 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 15:23:04,000 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-26 15:23:04,010 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+INFO 2024-08-26 15:23:18,064 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 15:24:53,093 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-26 15:24:53,580 basehttp "GET /node-templates/ HTTP/1.1" 200 89356
+INFO 2024-08-26 15:24:55,732 basehttp "GET /node-templates/ HTTP/1.1" 200 89356
+INFO 2024-08-26 15:24:58,215 basehttp "GET /node-templates/59/ HTTP/1.1" 200 4768
+WARNING 2024-08-26 15:27:44,058 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 15:27:44,060 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 16657
+INFO 2024-08-26 15:27:45,809 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+INFO 2024-08-26 15:27:45,824 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-26 16:34:13,783 autoreload D:\Nuren AI\backend_mine1\contacts\models.py changed, reloading.
+INFO 2024-08-26 16:34:16,984 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 16:35:22,981 autoreload D:\Nuren AI\backend_mine1\contacts\models.py changed, reloading.
+INFO 2024-08-26 16:35:23,725 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 16:36:06,826 autoreload D:\Nuren AI\backend_mine1\contacts\models.py changed, reloading.
+INFO 2024-08-26 16:36:07,635 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 17:53:45,025 autoreload Watching for file changes with StatReloader
+WARNING 2024-08-26 17:57:32,629 log Bad Request: /
+WARNING 2024-08-26 17:57:32,639 basehttp "GET / HTTP/1.1" 400 21
+WARNING 2024-08-26 17:57:33,688 log Bad Request: /favicon.ico
+WARNING 2024-08-26 17:57:33,689 basehttp "GET /favicon.ico HTTP/1.1" 400 21
+INFO 2024-08-26 17:57:39,082 basehttp "GET /experience HTTP/1.1" 301 0
+WARNING 2024-08-26 17:57:39,091 log Bad Request: /experience/
+WARNING 2024-08-26 17:57:39,091 basehttp "GET /experience/ HTTP/1.1" 400 21
+WARNING 2024-08-26 17:57:39,277 log Bad Request: /favicon.ico
+WARNING 2024-08-26 17:57:39,277 basehttp "GET /favicon.ico HTTP/1.1" 400 21
+INFO 2024-08-26 17:58:00,118 basehttp "GET /experience/ HTTP/1.1" 200 2
+INFO 2024-08-26 18:00:01,730 basehttp "GET /experience/3 HTTP/1.1" 301 0
+WARNING 2024-08-26 18:00:03,553 log Not Found: /experience/3/
+WARNING 2024-08-26 18:00:03,553 basehttp "GET /experience/3/ HTTP/1.1" 404 51
+INFO 2024-08-26 18:00:06,984 basehttp "GET /experience/1 HTTP/1.1" 301 0
+WARNING 2024-08-26 18:00:08,603 log Not Found: /experience/1/
+WARNING 2024-08-26 18:00:08,603 basehttp "GET /experience/1/ HTTP/1.1" 404 51
+INFO 2024-08-26 18:00:11,838 basehttp "GET /experience/ HTTP/1.1" 200 2
+INFO 2024-08-26 18:00:45,380 basehttp "GET /experience/497 HTTP/1.1" 301 0
+WARNING 2024-08-26 18:00:47,258 log Not Found: /experience/497/
+WARNING 2024-08-26 18:00:47,259 basehttp "GET /experience/497/ HTTP/1.1" 404 51
+INFO 2024-08-26 18:01:13,796 basehttp "GET /experience/ HTTP/1.1" 200 2
+INFO 2024-08-26 18:01:42,564 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-26 18:04:33,731 basehttp "GET /experience/ HTTP/1.1" 200 2
+INFO 2024-08-26 18:05:56,755 basehttp "GET /experience/ HTTP/1.1" 200 2
+INFO 2024-08-26 18:06:04,902 basehttp "GET /experience/497 HTTP/1.1" 301 0
+WARNING 2024-08-26 18:06:06,582 log Not Found: /experience/497/
+WARNING 2024-08-26 18:06:06,583 basehttp "GET /experience/497/ HTTP/1.1" 404 51
+INFO 2024-08-26 18:06:10,102 basehttp "GET /experience/1 HTTP/1.1" 301 0
+WARNING 2024-08-26 18:06:11,875 log Not Found: /experience/1/
+WARNING 2024-08-26 18:06:11,876 basehttp "GET /experience/1/ HTTP/1.1" 404 51
+INFO 2024-08-26 18:06:14,812 basehttp "GET /experience/ HTTP/1.1" 200 2
+INFO 2024-08-26 18:17:49,682 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 18:18:11,692 basehttp "GET /experience/ HTTP/1.1" 200 2
+INFO 2024-08-26 18:19:19,767 autoreload D:\Nuren AI\backend_mine1\product\views.py changed, reloading.
+INFO 2024-08-26 18:19:21,203 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 18:19:47,358 basehttp "GET /experience/ HTTP/1.1" 200 2
+INFO 2024-08-26 18:19:52,111 basehttp "GET /experience/ HTTP/1.1" 200 2
+INFO 2024-08-26 18:20:11,038 autoreload D:\Nuren AI\backend_mine1\product\views.py changed, reloading.
+INFO 2024-08-26 18:20:12,682 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 18:26:18,019 autoreload D:\Nuren AI\backend_mine1\product\views.py changed, reloading.
+INFO 2024-08-26 18:26:19,364 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 18:26:45,675 autoreload D:\Nuren AI\backend_mine1\product\views.py changed, reloading.
+INFO 2024-08-26 18:26:47,115 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 18:27:20,983 basehttp "GET /experience/ HTTP/1.1" 200 2
+INFO 2024-08-26 18:30:39,143 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 18:31:00,755 basehttp "GET /experience/ HTTP/1.1" 200 2
+INFO 2024-08-26 18:31:19,672 autoreload D:\Nuren AI\backend_mine1\product\serializers.py changed, reloading.
+INFO 2024-08-26 18:31:21,160 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 18:32:31,756 basehttp "GET /experience/ HTTP/1.1" 200 2
+INFO 2024-08-26 18:32:57,808 autoreload D:\Nuren AI\backend_mine1\product\views.py changed, reloading.
+INFO 2024-08-26 18:32:59,179 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 18:33:21,405 basehttp "GET /experience/ HTTP/1.1" 200 2
+INFO 2024-08-26 18:33:46,447 autoreload D:\Nuren AI\backend_mine1\product\views.py changed, reloading.
+INFO 2024-08-26 18:33:47,830 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 18:34:16,006 basehttp "GET /experience/ HTTP/1.1" 200 2
+INFO 2024-08-26 18:34:39,828 autoreload D:\Nuren AI\backend_mine1\product\views.py changed, reloading.
+INFO 2024-08-26 18:34:41,296 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 18:35:23,831 basehttp "GET /experience/ HTTP/1.1" 200 2
+INFO 2024-08-26 18:36:00,779 autoreload D:\Nuren AI\backend_mine1\product\views.py changed, reloading.
+INFO 2024-08-26 18:36:02,096 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 18:37:06,345 autoreload D:\Nuren AI\backend_mine1\product\serializers.py changed, reloading.
+INFO 2024-08-26 18:37:07,826 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 18:39:45,751 autoreload D:\Nuren AI\backend_mine1\simplecrm\settings.py changed, reloading.
+INFO 2024-08-26 18:39:47,179 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 18:40:14,205 autoreload D:\Nuren AI\backend_mine1\product\apps.py changed, reloading.
+INFO 2024-08-26 18:40:15,002 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 18:40:51,238 autoreload D:\Nuren AI\backend_mine1\product\apps.py changed, reloading.
+INFO 2024-08-26 18:40:51,862 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 18:40:57,343 autoreload D:\Nuren AI\backend_mine1\product\apps.py changed, reloading.
+INFO 2024-08-26 18:40:57,964 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 18:41:06,497 autoreload D:\Nuren AI\backend_mine1\simplecrm\settings.py changed, reloading.
+INFO 2024-08-26 18:41:07,283 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 18:43:32,619 autoreload D:\Nuren AI\backend_mine1\product\views.py changed, reloading.
+INFO 2024-08-26 18:43:34,357 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 18:44:19,522 autoreload D:\Nuren AI\backend_mine1\simplecrm\urls.py changed, reloading.
+INFO 2024-08-26 18:44:21,039 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 18:44:44,641 basehttp "GET /sev/ HTTP/1.1" 200 15
+INFO 2024-08-26 18:45:26,886 autoreload D:\Nuren AI\backend_mine1\product\views.py changed, reloading.
+INFO 2024-08-26 18:45:28,249 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 18:45:49,757 basehttp "GET /sev/ HTTP/1.1" 200 26
+INFO 2024-08-26 18:46:51,652 autoreload D:\Nuren AI\backend_mine1\product\views.py changed, reloading.
+INFO 2024-08-26 18:46:53,051 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 18:47:33,501 autoreload D:\Nuren AI\backend_mine1\simplecrm\urls.py changed, reloading.
+INFO 2024-08-26 18:47:34,781 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 18:48:01,529 basehttp "GET /sev/ HTTP/1.1" 200 26
+INFO 2024-08-26 18:49:09,974 autoreload D:\Nuren AI\backend_mine1\product\views.py changed, reloading.
+INFO 2024-08-26 18:49:11,307 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 19:13:41,389 autoreload D:\Nuren AI\backend_mine1\product\views.py changed, reloading.
+INFO 2024-08-26 19:13:42,883 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 19:14:23,641 basehttp "GET /sev/ HTTP/1.1" 200 26
+INFO 2024-08-26 19:14:45,241 autoreload D:\Nuren AI\backend_mine1\simplecrm\urls.py changed, reloading.
+INFO 2024-08-26 19:14:46,827 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 19:15:20,403 basehttp "GET /experience/ HTTP/1.1" 200 2
+INFO 2024-08-26 19:15:53,112 basehttp "GET /experience/528 HTTP/1.1" 301 0
+WARNING 2024-08-26 19:15:54,942 log Not Found: /experience/528/
+WARNING 2024-08-26 19:15:54,942 basehttp "GET /experience/528/ HTTP/1.1" 404 51
+INFO 2024-08-26 19:16:04,605 basehttp "GET /experience/2 HTTP/1.1" 301 0
+WARNING 2024-08-26 19:16:06,322 log Not Found: /experience/2/
+WARNING 2024-08-26 19:16:06,322 basehttp "GET /experience/2/ HTTP/1.1" 404 51
+INFO 2024-08-26 19:18:13,660 autoreload D:\Nuren AI\backend_mine1\product\views.py changed, reloading.
+INFO 2024-08-26 19:18:15,159 autoreload Watching for file changes with StatReloader
+WARNING 2024-08-26 19:18:37,840 log Not Found: /sev/
+WARNING 2024-08-26 19:18:37,840 basehttp "GET /sev/ HTTP/1.1" 404 16869
+INFO 2024-08-26 19:18:55,153 autoreload D:\Nuren AI\backend_mine1\simplecrm\urls.py changed, reloading.
+INFO 2024-08-26 19:18:56,465 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 19:19:29,800 basehttp "GET /sev/ HTTP/1.1" 200 26
+INFO 2024-08-26 19:20:52,221 autoreload D:\Nuren AI\backend_mine1\product\views.py changed, reloading.
+INFO 2024-08-26 19:20:53,663 autoreload Watching for file changes with StatReloader
+INFO 2024-08-26 19:21:21,660 basehttp "GET /sev/ HTTP/1.1" 200 26
+WARNING 2024-08-26 19:23:53,673 log Bad Request: /reminders/
+WARNING 2024-08-26 19:23:53,673 basehttp "GET /reminders/ HTTP/1.1" 400 21
+INFO 2024-08-26 19:24:08,528 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-08-26 19:24:08,530 basehttp "OPTIONS /wallet/balance?user_id=3 HTTP/1.1" 200 0
+INFO 2024-08-26 19:24:08,530 basehttp "OPTIONS /report/opportunity_stages/ HTTP/1.1" 200 0
+INFO 2024-08-26 19:24:08,530 basehttp "OPTIONS /interaction HTTP/1.1" 200 0
+INFO 2024-08-26 19:24:08,534 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-08-26 19:24:08,536 basehttp "OPTIONS /report/lead_stages/ HTTP/1.1" 200 0
+INFO 2024-08-26 19:24:08,536 basehttp "OPTIONS /interaction/ HTTP/1.1" 200 0
+INFO 2024-08-26 19:24:08,536 basehttp "OPTIONS /wallet/balance/?user_id=3 HTTP/1.1" 200 0
+WARNING 2024-08-26 19:24:11,951 log Not Found: /wallet/balance/
+WARNING 2024-08-26 19:24:11,952 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-08-26 19:24:11,958 basehttp "GET /generate-report/ HTTP/1.1" 200 112
+INFO 2024-08-26 19:24:11,972 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 140
+INFO 2024-08-26 19:24:12,003 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+INFO 2024-08-26 19:24:12,117 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-08-26 19:24:13,628 basehttp "GET /generate-report/ HTTP/1.1" 200 112
+WARNING 2024-08-26 19:27:45,926 log Not Found: /wallet/balance/
+WARNING 2024-08-26 19:27:45,926 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-08-26 19:27:45,942 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-08-26 19:27:46,872 basehttp "OPTIONS /upload/ HTTP/1.1" 200 0
+INFO 2024-08-26 19:27:58,388 basehttp "POST /upload/ HTTP/1.1" 200 97
+WARNING 2024-08-26 19:33:30,821 log Bad Request: /upload/
+WARNING 2024-08-26 19:33:30,821 basehttp "GET /upload/ HTTP/1.1" 400 21
+INFO 2024-08-26 19:35:09,221 basehttp "OPTIONS /leads/ HTTP/1.1" 200 0
+WARNING 2024-08-26 19:35:11,004 log Not Found: /wallet/balance/
+WARNING 2024-08-26 19:35:11,004 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-08-26 19:35:11,020 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+ERROR 2024-08-26 19:35:13,810 log Internal Server Error: /leads/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column leads_lead.createdBy_id does not exist
+LINE 1: ...account_name", "leads_lead"."opportunity_amount", "leads_lea...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "leads_lead.createdBy".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 713, in to_representation
+    return [
+           ^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 394, in __iter__
+    self._fetch_all()
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column leads_lead.createdBy_id does not exist
+LINE 1: ...account_name", "leads_lead"."opportunity_amount", "leads_lea...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "leads_lead.createdBy".
+
+ERROR 2024-08-26 19:35:13,810 basehttp "GET /leads/ HTTP/1.1" 500 172328
+INFO 2024-08-26 19:35:14,068 basehttp "OPTIONS /lead/stage/ HTTP/1.1" 200 0
+INFO 2024-08-26 19:35:15,949 basehttp "GET /lead/stage/ HTTP/1.1" 200 486
+ERROR 2024-08-26 19:35:19,933 log Internal Server Error: /leads/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column leads_lead.createdBy_id does not exist
+LINE 1: ...account_name", "leads_lead"."opportunity_amount", "leads_lea...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "leads_lead.createdBy".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 713, in to_representation
+    return [
+           ^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 394, in __iter__
+    self._fetch_all()
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column leads_lead.createdBy_id does not exist
+LINE 1: ...account_name", "leads_lead"."opportunity_amount", "leads_lea...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "leads_lead.createdBy".
+
+ERROR 2024-08-26 19:35:19,949 basehttp "GET /leads/ HTTP/1.1" 500 172328
+WARNING 2024-08-26 19:35:21,749 log Not Found: /wallet/balance/
+WARNING 2024-08-26 19:35:21,749 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-08-26 19:35:21,834 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+ERROR 2024-08-26 19:35:24,081 log Internal Server Error: /leads/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column leads_lead.createdBy_id does not exist
+LINE 1: ...account_name", "leads_lead"."opportunity_amount", "leads_lea...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "leads_lead.createdBy".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 713, in to_representation
+    return [
+           ^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 394, in __iter__
+    self._fetch_all()
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column leads_lead.createdBy_id does not exist
+LINE 1: ...account_name", "leads_lead"."opportunity_amount", "leads_lea...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "leads_lead.createdBy".
+
+ERROR 2024-08-26 19:35:24,081 basehttp "GET /leads/ HTTP/1.1" 500 172328
+INFO 2024-08-26 19:35:26,158 basehttp "GET /lead/stage/ HTTP/1.1" 200 486
+ERROR 2024-08-26 19:35:30,144 log Internal Server Error: /leads/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column leads_lead.createdBy_id does not exist
+LINE 1: ...account_name", "leads_lead"."opportunity_amount", "leads_lea...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "leads_lead.createdBy".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 713, in to_representation
+    return [
+           ^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 394, in __iter__
+    self._fetch_all()
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column leads_lead.createdBy_id does not exist
+LINE 1: ...account_name", "leads_lead"."opportunity_amount", "leads_lea...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "leads_lead.createdBy".
+
+ERROR 2024-08-26 19:35:30,144 basehttp "GET /leads/ HTTP/1.1" 500 172328
+ERROR 2024-08-26 19:35:44,107 log Internal Server Error: /upload/
+ERROR 2024-08-26 19:35:44,107 basehttp "POST /upload/ HTTP/1.1" 500 54
+INFO 2024-08-26 19:36:18,108 basehttp "OPTIONS /upload/ HTTP/1.1" 200 0
+ERROR 2024-08-26 19:36:21,482 log Internal Server Error: /upload/
+ERROR 2024-08-26 19:36:21,483 basehttp "POST /upload/ HTTP/1.1" 500 54
+INFO 2024-08-26 19:37:15,277 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 140
+INFO 2024-08-26 19:37:15,294 basehttp "GET /generate-report/ HTTP/1.1" 200 112
+INFO 2024-08-26 19:37:15,321 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+WARNING 2024-08-26 19:37:15,333 log Not Found: /wallet/balance/
+WARNING 2024-08-26 19:37:15,333 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-08-26 19:37:15,342 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-08-26 19:37:16,476 log Bad Request: /favicon.ico
+WARNING 2024-08-26 19:37:16,476 basehttp "GET /favicon.ico HTTP/1.1" 400 21
+INFO 2024-08-26 19:37:16,923 basehttp "GET /generate-report/ HTTP/1.1" 200 112
+WARNING 2024-08-26 19:37:17,409 log Not Found: /wallet/balance/
+WARNING 2024-08-26 19:37:17,409 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-08-26 19:37:17,425 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+ERROR 2024-08-26 19:37:19,945 log Internal Server Error: /leads/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column leads_lead.createdBy_id does not exist
+LINE 1: ...account_name", "leads_lead"."opportunity_amount", "leads_lea...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "leads_lead.createdBy".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 713, in to_representation
+    return [
+           ^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 394, in __iter__
+    self._fetch_all()
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column leads_lead.createdBy_id does not exist
+LINE 1: ...account_name", "leads_lead"."opportunity_amount", "leads_lea...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "leads_lead.createdBy".
+
+ERROR 2024-08-26 19:37:19,945 basehttp "GET /leads/ HTTP/1.1" 500 172328
+INFO 2024-08-26 19:37:22,094 basehttp "GET /lead/stage/ HTTP/1.1" 200 486
+ERROR 2024-08-26 19:37:26,364 log Internal Server Error: /leads/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column leads_lead.createdBy_id does not exist
+LINE 1: ...account_name", "leads_lead"."opportunity_amount", "leads_lea...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "leads_lead.createdBy".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 713, in to_representation
+    return [
+           ^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 394, in __iter__
+    self._fetch_all()
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column leads_lead.createdBy_id does not exist
+LINE 1: ...account_name", "leads_lead"."opportunity_amount", "leads_lea...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "leads_lead.createdBy".
+
+ERROR 2024-08-26 19:37:26,364 basehttp "GET /leads/ HTTP/1.1" 500 172328
+INFO 2024-08-26 19:42:19,919 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-08-26 19:42:23,491 basehttp "GET /reminders/ HTTP/1.1" 200 2
+INFO 2024-08-26 19:42:24,188 basehttp "GET /interaction/ HTTP/1.1" 200 2
+WARNING 2024-08-26 19:42:24,509 log Not Found: /wallet/balance/
+WARNING 2024-08-26 19:42:24,511 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+ERROR 2024-08-26 19:42:25,806 log Internal Server Error: /leads/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column leads_lead.createdBy_id does not exist
+LINE 1: ...account_name", "leads_lead"."opportunity_amount", "leads_lea...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "leads_lead.createdBy".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 713, in to_representation
+    return [
+           ^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 394, in __iter__
+    self._fetch_all()
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column leads_lead.createdBy_id does not exist
+LINE 1: ...account_name", "leads_lead"."opportunity_amount", "leads_lea...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "leads_lead.createdBy".
+
+ERROR 2024-08-26 19:42:25,808 basehttp "GET /leads/ HTTP/1.1" 500 172330
+INFO 2024-08-26 19:42:27,997 basehttp "GET /lead/stage/ HTTP/1.1" 200 147
+ERROR 2024-08-26 19:42:32,162 log Internal Server Error: /leads/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column leads_lead.createdBy_id does not exist
+LINE 1: ...account_name", "leads_lead"."opportunity_amount", "leads_lea...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "leads_lead.createdBy".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 713, in to_representation
+    return [
+           ^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 394, in __iter__
+    self._fetch_all()
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column leads_lead.createdBy_id does not exist
+LINE 1: ...account_name", "leads_lead"."opportunity_amount", "leads_lea...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "leads_lead.createdBy".
+
+INFO 2024-08-26 19:42:32,408 basehttp - Broken pipe from ('127.0.0.1', 53398)
+INFO 2024-08-26 19:42:35,175 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-26 19:42:35,522 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-08-26 19:42:35,757 log Not Found: /wallet/balance/
+WARNING 2024-08-26 19:42:35,758 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+ERROR 2024-08-26 19:42:37,401 log Internal Server Error: /leads/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column leads_lead.createdBy_id does not exist
+LINE 1: ...account_name", "leads_lead"."opportunity_amount", "leads_lea...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "leads_lead.createdBy".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 713, in to_representation
+    return [
+           ^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 394, in __iter__
+    self._fetch_all()
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column leads_lead.createdBy_id does not exist
+LINE 1: ...account_name", "leads_lead"."opportunity_amount", "leads_lea...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "leads_lead.createdBy".
+
+ERROR 2024-08-26 19:42:37,404 basehttp "GET /leads/ HTTP/1.1" 500 172328
+INFO 2024-08-26 19:42:39,538 basehttp "GET /lead/stage/ HTTP/1.1" 200 486
+ERROR 2024-08-26 19:42:43,594 log Internal Server Error: /leads/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column leads_lead.createdBy_id does not exist
+LINE 1: ...account_name", "leads_lead"."opportunity_amount", "leads_lea...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "leads_lead.createdBy".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\rest_framework\serializers.py", line 713, in to_representation
+    return [
+           ^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 394, in __iter__
+    self._fetch_all()
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column leads_lead.createdBy_id does not exist
+LINE 1: ...account_name", "leads_lead"."opportunity_amount", "leads_lea...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "leads_lead.createdBy".
+
+ERROR 2024-08-26 19:42:43,597 basehttp "GET /leads/ HTTP/1.1" 500 172328
+INFO 2024-08-26 19:44:08,714 basehttp "OPTIONS /upload/ HTTP/1.1" 200 0
+INFO 2024-08-26 19:44:12,584 basehttp "OPTIONS /upload/ HTTP/1.1" 200 0
+ERROR 2024-08-26 19:44:16,982 log Internal Server Error: /upload/
+ERROR 2024-08-26 19:44:16,983 basehttp "POST /upload/ HTTP/1.1" 500 248
+ERROR 2024-08-26 19:44:20,324 log Internal Server Error: /upload/
+ERROR 2024-08-26 19:44:20,325 basehttp "POST /upload/ HTTP/1.1" 500 248
+INFO 2024-08-26 19:52:18,870 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-26 19:52:18,873 basehttp "OPTIONS /return-documents/10/undefined HTTP/1.1" 200 0
+WARNING 2024-08-26 19:52:18,892 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 19:52:18,892 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 17048
+INFO 2024-08-26 19:52:20,716 basehttp "GET /contacts/ HTTP/1.1" 200 4546
+INFO 2024-08-26 19:52:25,051 basehttp "OPTIONS /set-flow/ HTTP/1.1" 200 0
+ERROR 2024-08-26 19:52:29,151 log Internal Server Error: /set-flow/
+ERROR 2024-08-26 19:52:29,152 basehttp "POST /set-flow/ HTTP/1.1" 500 332
+INFO 2024-08-26 19:52:59,255 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-26 19:56:02,834 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-08-26 19:56:02,834 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-08-26 19:56:04,705 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-26 19:56:05,173 basehttp "GET /node-templates/ HTTP/1.1" 200 89356
+INFO 2024-08-26 19:56:07,265 basehttp "GET /node-templates/ HTTP/1.1" 200 89356
+INFO 2024-08-26 19:56:08,553 basehttp "OPTIONS /node-templates/59/ HTTP/1.1" 200 0
+INFO 2024-08-26 19:56:10,173 basehttp "GET /node-templates/59/ HTTP/1.1" 200 4768
+WARNING 2024-08-26 20:06:57,424 log Bad Request: /send-message
+WARNING 2024-08-26 20:06:57,424 basehttp "GET /send-message HTTP/1.1" 400 21
+INFO 2024-08-26 23:43:22,007 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-08-26 23:43:22,007 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-08-26 23:43:22,007 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-08-26 23:43:24,094 basehttp - Broken pipe from ('127.0.0.1', 56502)
+INFO 2024-08-26 23:43:24,526 basehttp - Broken pipe from ('127.0.0.1', 56501)
+INFO 2024-08-26 23:43:24,526 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-26 23:43:24,526 basehttp "OPTIONS /return-documents/10/undefined HTTP/1.1" 200 0
+WARNING 2024-08-26 23:43:24,910 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 23:43:24,910 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 17048
+INFO 2024-08-26 23:43:26,176 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-26 23:43:26,176 basehttp "GET /contacts/ HTTP/1.1" 200 4546
+INFO 2024-08-26 23:47:34,144 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-26 23:47:34,148 basehttp "OPTIONS /return-documents/10/undefined HTTP/1.1" 200 0
+WARNING 2024-08-26 23:47:34,173 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-26 23:47:34,174 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 17048
+INFO 2024-08-26 23:47:36,055 basehttp "GET /contacts/ HTTP/1.1" 200 4546
+INFO 2024-08-27 00:25:48,111 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-27 00:25:48,117 basehttp "OPTIONS /return-documents/10/undefined HTTP/1.1" 200 0
+INFO 2024-08-27 00:25:48,138 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+WARNING 2024-08-27 00:25:48,317 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-27 00:25:48,318 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 17048
+INFO 2024-08-27 00:25:49,955 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-27 00:25:50,055 basehttp "GET /contacts/ HTTP/1.1" 200 4546
+INFO 2024-08-27 00:34:31,392 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-27 00:34:31,533 basehttp "OPTIONS /return-documents/10/undefined HTTP/1.1" 200 0
+WARNING 2024-08-27 00:34:31,675 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-27 00:34:31,675 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 17048
+INFO 2024-08-27 00:34:33,325 basehttp "GET /contacts/ HTTP/1.1" 200 4546
+INFO 2024-08-27 00:34:50,729 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-27 00:34:50,745 basehttp "OPTIONS /return-documents/10/undefined HTTP/1.1" 200 0
+INFO 2024-08-27 00:34:50,745 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+WARNING 2024-08-27 00:34:50,767 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-27 00:34:50,767 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 17048
+INFO 2024-08-27 00:34:52,526 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-27 00:34:52,526 basehttp "GET /contacts/ HTTP/1.1" 200 4546
+INFO 2024-08-27 00:38:42,845 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-27 00:38:42,845 basehttp "OPTIONS /return-documents/10/undefined HTTP/1.1" 200 0
+WARNING 2024-08-27 00:38:42,887 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-27 00:38:42,888 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 17048
+INFO 2024-08-27 00:38:44,755 basehttp "GET /contacts/ HTTP/1.1" 200 4546
+INFO 2024-08-27 00:40:29,862 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-27 00:40:29,862 basehttp "OPTIONS /return-documents/10/undefined HTTP/1.1" 200 0
+WARNING 2024-08-27 00:40:29,882 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-27 00:40:29,882 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 17048
+INFO 2024-08-27 00:40:31,777 basehttp "GET /contacts/ HTTP/1.1" 200 4546

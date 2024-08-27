@@ -102,6 +102,8 @@ urlpatterns = [
     path("leads_sum/",get_lead_summation, name="most-active-entites"),
     path('products/', prodview.get_products, name='products-list'),
     path('product/<int:pk>/', prodview.ProductDetailAPIView.as_view(), name='product-detail'),
+    path('experience/', prodview.ExperienceListAPIView.as_view(), name = "experience-list"),
+    path('experience/<int:pk>/', prodview.ExperienceDetailAPIView.as_view(), name = "experience-detail"),
     path('vendors', vendview.VendorsListAPIView.as_view(), name='vendors-list'),
     path('vendor/<int:pk>', vendview.VendorDetailAPIView.as_view(), name='vendor-detail'),
     path('documents/', docview.DocumentListAPIView.as_view(), name='vendors-list'),
@@ -162,5 +164,6 @@ urlpatterns = [
     path('call-campaigns/<int:pk>/', campview.CallCampaignViewSet.as_view({'get': 'retrieve', 'put': 'update', 'patch': 'partial_update', 'delete': 'destroy'}), name='call-campaign-detail'),
     path('emails/', inviews.EmailListAPIView.as_view(), name='email-list'),
     path('emails/<int:pk>/', inviews.EmailDetailAPIView.as_view(), name='email-detail'),
+    path('sev/', prodview.simple_experience_view),
 ]
 

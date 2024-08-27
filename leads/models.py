@@ -48,7 +48,7 @@ class Lead(models.Model):
     isActive = models.BooleanField(default=False)
     enquery_type = models.CharField(max_length=255, blank=True, null=True)
     money = models.DecimalField("Money", decimal_places=2, max_digits=12, blank=True, null=True)
-    tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)
+    tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE, null=True, blank=True)
     priority = models.CharField("Lead Priority", max_length=6, blank= True, null= True, choices=PRIORITY_CHOICES )
     def __str__(self):
         return self.first_name + self.last_name
