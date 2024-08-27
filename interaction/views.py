@@ -4,12 +4,13 @@ from rest_framework import status, generics
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from datetime import datetime
-from .models import Interaction, Calls, Meetings, Conversation,Email
+from .models import Interaction, Calls, Meetings, Conversation,Email,Group
 from tenant.models import Tenant
 from django.contrib.contenttypes.models import ContentType
-from .serializers import InteractionSerializer, callsSerializer, meetingsSerializer,EmailSerializer
+from .serializers import InteractionSerializer, callsSerializer, meetingsSerializer,EmailSerializer,GroupSerializer
 
 from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
+from rest_framework import viewsets
 
 from django.http import JsonResponse
 # from .utils import fetch_entity_details
@@ -244,3 +245,52 @@ class EmailListAPIView(generics.ListCreateAPIView):
 class EmailDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Email.objects.all()
     serializer_class = EmailSerializer
+
+class GroupViewSet(viewsets.ModelViewSet):
+    queryset = Group.objects.all()
+    serializer_class = GroupSerializer
+
+    def list(self, request):
+        """
+        Handle GET requests to retrieve all Group entries.
+        """
+        queryset = self.get_queryset()
+        serializer = self.get_serializer(queryset, many=True)
+        return Response(serializer.data)
+
+    def retrieve(self, request, pk=None):
+        """
+        Handle GET requests to retrieve a single Group entry by ID.
+        """
+        group = self.get_object()
+        serializer = self.get_serializer(group)
+        return Response(serializer.data)
+
+    def create(self, request):
+        """
+        Handle POST requests to create a new Group entry.
+        """
+        serializer = self.get_serializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def update(self, request, pk=None):
+        """
+        Handle PUT requests to update a Group entry by ID.
+        """
+        group = self.get_object()
+        serializer = self.get_serializer(group, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def destroy(self, request, pk=None):
+        """
+        Handle DELETE requests to delete a Group entry by ID.
+        """
+        group = self.get_object()
+        group.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)

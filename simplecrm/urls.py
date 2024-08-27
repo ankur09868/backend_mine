@@ -57,7 +57,14 @@ from .new_database import process_nodes
 from custom_fields.views import export_data_for_custom_field as edfc
 from topicmodelling import views as topicviews
 from whatsapp_chat import views as wa_chat_views
+from rest_framework.routers import DefaultRouter
 from communication import insta_msg as imsg 
+
+router = DefaultRouter()
+router.register(r'groups', inviews.GroupViewSet, basename='group')
+
+urlpatterns = router.urls
+
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
@@ -72,7 +79,7 @@ urlpatterns = [
     path('opportunities/<int:pk>/', oviews.OpportunityDetailAPIView.as_view(), name='opportunity-detail'),
     path('contacts/', cviews.ContactListCreateAPIView.as_view(), name='contact-list-create'),
     path('contacts/<int:pk>/', cviews.ContactDetailAPIView.as_view(), name='contact-detail'),
-    path('contacts/', cviews.ContactDetailAPIView.as_view(), name='contact-detail'),
+
     path('meetings/', inviews.MeetingListCreateAPIView.as_view(), name='meeting-list-create'),
     path('meetings/<int:pk>/', inviews.MeetingDetailAPIView.as_view(), name='meeting-detail'),
     path('calls/', inviews.callsListAPIView.as_view(), name='calls'), 
@@ -102,6 +109,8 @@ urlpatterns = [
     path("leads_sum/",get_lead_summation, name="most-active-entites"),
     path('products/', prodview.get_products, name='products-list'),
     path('product/<int:pk>/', prodview.ProductDetailAPIView.as_view(), name='product-detail'),
+    path('experience/',prodview.ExperienceListAPIView.as_view() , name='experience-list'),
+    path('experience/<int:pk>/', prodview.ExperienceDetailAPIView.as_view(), name='experience-detail'),
     path('vendors', vendview.VendorsListAPIView.as_view(), name='vendors-list'),
     path('vendor/<int:pk>', vendview.VendorDetailAPIView.as_view(), name='vendor-detail'),
     path('documents/', docview.DocumentListAPIView.as_view(), name='vendors-list'),
@@ -170,4 +179,5 @@ urlpatterns = [
     path('fetch-all-emails/', simviews.fetch_all_emails, name='fetch_all_emails'),  # Fetch all emails
 
 ]
+urlpatterns += router.urls
 

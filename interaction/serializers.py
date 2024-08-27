@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Interaction,Calls, Meetings, Conversation,Email
+from .models import Interaction,Calls, Meetings, Conversation,Email, Group
 
 class InteractionSerializer(serializers.ModelSerializer):
     class Meta:
@@ -26,3 +26,8 @@ class EmailSerializer(serializers.ModelSerializer):
     class Meta:
         model = Email
         fields = "__all__"
+
+class GroupSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Group
+        fields = ['id', 'name', 'members', 'date_created', 'tenant']
