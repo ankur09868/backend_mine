@@ -56,3 +56,6 @@ class Experience(models.Model):
     insider_tip = models.TextField(null=True)
     description = models.TextField(null=True)
     tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE, null=True, blank=True)
+
+    def __str__(self):
+        return self.experience_name
