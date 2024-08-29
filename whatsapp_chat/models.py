@@ -1,6 +1,7 @@
 from django.db import models
 from tenant.models import Tenant 
-class Conversation(models.Model):
+
+class WAConversation(models.Model):
     contact_id = models.CharField(max_length=255)
     message_text = models.TextField()
     sender = models.CharField(max_length=50)

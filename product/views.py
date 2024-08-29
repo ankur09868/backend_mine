@@ -20,13 +20,11 @@ class ProductDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
 
 class ExperienceListAPIView(generics.ListCreateAPIView):
     queryset = Experience.objects.all()
-    print("QUERYSET: ", queryset)
     serializer_class = ExperienceSerializer
     
 
 class ExperienceDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Experience.objects.all()
-    print("QUERYSET: ", queryset)
     serializer_class = ExperienceSerializer
 
 logger = logging.getLogger(__name__)

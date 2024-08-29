@@ -58,6 +58,7 @@ from custom_fields.views import export_data_for_custom_field as edfc
 from topicmodelling import views as topicviews
 from whatsapp_chat import views as wa_chat_views
 from communication import insta_msg as imsg 
+from whatsapp_chat.views import get_whatsapp_tenant_data, create_whatsapp_tenant_table, insert_whatsapp_tenant_data, update_message_status, get_status
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
@@ -159,18 +160,23 @@ urlpatterns = [
     path('instagram-campaigns/<int:pk>/', campview.InstagramCampaignViewSet.as_view({'get': 'retrieve', 'put': 'update', 'patch': 'partial_update', 'delete': 'destroy'}), name='instagram-campaign-detail'),
     path('whatsapp-campaigns/', campview.WhatsAppCampaignViewSet.as_view({'get': 'list', 'post': 'create'}), name='whatsapp-campaign-list'),
     path('whatsapp-campaigns/<int:pk>/', campview.WhatsAppCampaignViewSet.as_view({'get': 'retrieve', 'put': 'update', 'patch': 'partial_update', 'delete': 'destroy'}), name='whatsapp-campaign-detail'),
-    path('set-flow/', wa_chat_views.setFlow, name = "set whatsapp flow"),
+    path('save-flow/', wa_chat_views.saveFlow, name = "set whatsapp flow"),
     path('call-campaigns/', campview.CallCampaignViewSet.as_view({'get': 'list', 'post': 'create'}), name='call-campaign-list'),
     path('call-campaigns/<int:pk>/', campview.CallCampaignViewSet.as_view({'get': 'retrieve', 'put': 'update', 'patch': 'partial_update', 'delete': 'destroy'}), name='call-campaign-detail'),
     path('emails/', inviews.EmailListAPIView.as_view(), name='email-list'),
     path('emails/<int:pk>/', inviews.EmailDetailAPIView.as_view(), name='email-detail'),
     path('sev/', prodview.simple_experience_view),
-
-    # Message Saving
+    path('get-flow/', wa_chat_views.get_flow),
+    path('set-flow/', wa_chat_views.set_flow),
     path('save-messages/', imsg.save_messages, name='save-messages'),  # Save messages
     path('save-email-messages/', imsg.save_email_messages, name='save-email-messages'),  # Save email messages
     path('store-selected-emails/', simviews.store_selected_emails, name='store_selected_emails'),  # Store selected emails
     path('fetch-all-emails/', simviews.fetch_all_emails, name='fetch_all_emails'),  # Fetch all emails
-
+    path('whatsapp_tenant/', get_whatsapp_tenant_data, name='get_whatsapp_tenant_data'),
+    path('create_table/', create_whatsapp_tenant_table, name='create_whatsapp_tenant_table'),
+    path('insert_data/', insert_whatsapp_tenant_data, name='insert_whatsapp_tenant_data'),
+    path('set-status/', update_message_status, name = "update message status"),
+    path('get-status/', get_status, name="get+message_status"),
+    
 ]
 

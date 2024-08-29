@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 from accounts.models import Account
 from django.conf import settings
 from tenant.models import Tenant 
-from node_temps.models import NodeTemplate as flow
 
 class Contact(models.Model):
     name = models.CharField("name", max_length=255, null=True, blank=True)
@@ -16,7 +15,6 @@ class Contact(models.Model):
     createdOn = models.DateTimeField("Created on", auto_now_add=True, null=True, blank=True)
     isActive = models.BooleanField(default=False, null=True, blank=True)
     tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE, null=True, blank=True)
-    flow = models.ForeignKey(flow, on_delete=models.CASCADE, null=True, blank=True)
-
+    
     def __str__(self):
         return self.first_name or ''

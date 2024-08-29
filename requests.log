@@ -3592,3 +3592,1790 @@ INFO 2024-08-26 00:00:18,242 basehttp - Broken pipe from ('127.0.0.1', 51852)
 INFO 2024-08-26 00:00:18,243 basehttp - Broken pipe from ('127.0.0.1', 51876)
 INFO 2024-08-26 00:00:18,243 basehttp - Broken pipe from ('127.0.0.1', 51847)
 INFO 2024-08-26 09:50:19,752 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 12:05:51,788 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 13:08:51,815 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 14:38:44,609 basehttp "OPTIONS /return-documents/10/undefined HTTP/1.1" 200 0
+INFO 2024-08-27 14:38:44,609 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-27 14:38:44,624 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-08-27 14:38:48,271 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+INFO 2024-08-27 14:38:48,271 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+WARNING 2024-08-27 14:38:48,427 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-27 14:38:48,428 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 17626
+INFO 2024-08-27 14:38:49,321 basehttp "OPTIONS /set-flow/ HTTP/1.1" 200 0
+ERROR 2024-08-27 14:38:53,405 log Internal Server Error: /set-flow/
+ERROR 2024-08-27 14:38:53,405 basehttp "POST /set-flow/ HTTP/1.1" 500 332
+ERROR 2024-08-27 14:39:02,102 log Internal Server Error: /set-flow/
+ERROR 2024-08-27 14:39:02,102 basehttp "POST /set-flow/ HTTP/1.1" 500 332
+INFO 2024-08-27 14:39:27,179 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 14:39:29,860 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 14:40:12,258 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-27 14:48:01,039 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-27 15:15:43,183 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+INFO 2024-08-27 15:20:02,794 basehttp "POST /set-flow/ HTTP/1.1" 200 51
+WARNING 2024-08-27 15:39:25,950 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-27 15:39:25,950 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 17626
+INFO 2024-08-27 15:39:27,847 basehttp "GET /contacts/ HTTP/1.1" 200 4318
+INFO 2024-08-27 15:39:27,847 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-27 15:46:49,424 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 15:46:52,361 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 15:48:00,508 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 15:48:01,813 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 15:52:14,994 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 15:52:16,483 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 16:14:35,206 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 16:16:00,459 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 16:16:02,039 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 16:16:33,714 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 16:16:35,032 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 16:17:51,955 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 16:17:53,413 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 16:18:49,201 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 16:18:50,652 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 16:19:24,948 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 16:19:26,294 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 16:20:04,769 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 16:20:06,089 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-27 16:20:36,448 log Internal Server Error: /set-flow/
+ERROR 2024-08-27 16:20:36,448 basehttp "POST /set-flow/ HTTP/1.1" 500 58
+INFO 2024-08-27 16:23:08,687 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 16:23:10,281 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-27 16:23:50,766 log Internal Server Error: /set-flow/
+ERROR 2024-08-27 16:23:50,766 basehttp "POST /set-flow/ HTTP/1.1" 500 58
+ERROR 2024-08-27 16:26:51,385 log Internal Server Error: /set-flow/
+ERROR 2024-08-27 16:26:51,385 basehttp "POST /set-flow/ HTTP/1.1" 500 58
+INFO 2024-08-27 16:27:34,121 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-27 16:28:16,788 log Internal Server Error: /set-flow/
+ERROR 2024-08-27 16:28:16,788 basehttp "POST /set-flow/ HTTP/1.1" 500 58
+INFO 2024-08-27 16:31:18,898 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 16:31:21,219 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 16:33:15,261 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 16:33:16,867 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-27 16:33:55,919 log Internal Server Error: /set-flow/
+ERROR 2024-08-27 16:33:55,920 basehttp "POST /set-flow/ HTTP/1.1" 500 58
+INFO 2024-08-27 16:35:29,347 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 16:35:30,936 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 16:35:59,422 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 16:36:00,926 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 16:38:27,575 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 16:38:29,129 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 16:40:22,312 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 16:40:23,712 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 16:42:20,424 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 16:42:21,698 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 16:42:57,384 basehttp "OPTIONS /set-flow/ HTTP/1.1" 200 0
+ERROR 2024-08-27 16:43:01,560 log Internal Server Error: /set-flow/
+ERROR 2024-08-27 16:43:01,560 basehttp "POST /set-flow/ HTTP/1.1" 500 59
+INFO 2024-08-27 16:45:46,145 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 16:45:47,595 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 16:47:50,358 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 16:47:51,960 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-27 16:48:44,530 log Internal Server Error: /set-flow/
+ERROR 2024-08-27 16:48:44,530 basehttp "POST /set-flow/ HTTP/1.1" 500 293
+INFO 2024-08-27 16:50:19,960 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 16:50:21,538 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-27 16:51:16,213 log Internal Server Error: /set-flow/
+ERROR 2024-08-27 16:51:16,213 basehttp "POST /set-flow/ HTTP/1.1" 500 293
+INFO 2024-08-27 16:53:07,413 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 16:53:08,772 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-27 16:53:43,824 log Internal Server Error: /set-flow/
+ERROR 2024-08-27 16:53:43,824 basehttp "POST /set-flow/ HTTP/1.1" 500 164
+INFO 2024-08-27 16:56:38,991 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 16:56:40,357 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 16:58:17,574 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 16:58:18,876 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 16:59:47,118 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 16:59:48,605 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-27 17:00:26,576 log Internal Server Error: /set-flow/
+ERROR 2024-08-27 17:00:26,576 basehttp "POST /set-flow/ HTTP/1.1" 500 36
+INFO 2024-08-27 17:02:07,314 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 17:02:08,769 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-27 17:02:55,477 log Internal Server Error: /set-flow/
+ERROR 2024-08-27 17:02:55,477 basehttp "POST /set-flow/ HTTP/1.1" 500 220
+INFO 2024-08-27 17:04:13,787 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 17:04:15,273 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-27 17:04:50,539 log Internal Server Error: /set-flow/
+ERROR 2024-08-27 17:04:50,539 basehttp "POST /set-flow/ HTTP/1.1" 500 220
+INFO 2024-08-27 17:05:18,253 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 17:05:19,720 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 17:08:14,664 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 17:09:00,765 basehttp "POST /set-flow/ HTTP/1.1" 200 38
+INFO 2024-08-27 17:49:14,674 autoreload D:\Nuren AI\backend_mine1\simplecrm\urls.py changed, reloading.
+INFO 2024-08-27 17:49:21,159 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 17:50:27,950 autoreload D:\Nuren AI\backend_mine1\simplecrm\urls.py changed, reloading.
+INFO 2024-08-27 17:50:30,546 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 17:52:40,781 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 17:52:43,899 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 17:58:08,891 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 17:58:12,794 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 17:59:01,643 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 17:59:05,729 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 18:00:25,891 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 18:00:29,994 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 18:01:21,734 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 18:01:25,060 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 18:05:45,560 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 18:05:48,429 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 18:06:33,851 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 18:06:36,948 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-27 18:07:34,867 log Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\custom_fields\views.py", line 211, in export_data_for_custom_field
+    if cursor:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'cursor' where it is not associated with a value
+ERROR 2024-08-27 18:07:34,867 basehttp "POST /test/ HTTP/1.1" 500 71671
+ERROR 2024-08-27 18:07:41,513 log Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\custom_fields\views.py", line 211, in export_data_for_custom_field
+    if cursor:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'cursor' where it is not associated with a value
+ERROR 2024-08-27 18:07:41,513 basehttp "POST /test/ HTTP/1.1" 500 71671
+ERROR 2024-08-27 18:07:56,519 log Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\custom_fields\views.py", line 211, in export_data_for_custom_field
+    if cursor:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'cursor' where it is not associated with a value
+ERROR 2024-08-27 18:07:56,519 basehttp "POST /test/ HTTP/1.1" 500 71671
+ERROR 2024-08-27 18:08:01,993 log Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\custom_fields\views.py", line 211, in export_data_for_custom_field
+    if cursor:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'cursor' where it is not associated with a value
+ERROR 2024-08-27 18:08:02,002 basehttp "POST /test/ HTTP/1.1" 500 71671
+INFO 2024-08-27 18:08:28,032 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 18:08:31,415 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-27 18:09:24,809 log Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\custom_fields\views.py", line 211, in export_data_for_custom_field
+    if cursor:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'cursor' where it is not associated with a value
+ERROR 2024-08-27 18:09:24,819 basehttp "POST /test/ HTTP/1.1" 500 71671
+ERROR 2024-08-27 19:41:15,828 log Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\custom_fields\views.py", line 211, in export_data_for_custom_field
+    if cursor:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'cursor' where it is not associated with a value
+ERROR 2024-08-27 19:41:15,828 basehttp "POST /test/ HTTP/1.1" 500 71671
+INFO 2024-08-27 19:41:57,315 autoreload D:\Nuren AI\backend_mine1\simplecrm\urls.py changed, reloading.
+INFO 2024-08-27 19:41:59,129 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 19:42:37,426 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 19:43:54,225 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 19:44:32,104 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 19:44:43,001 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 19:48:17,756 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 22:02:45,623 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-27 22:03:30,949 log Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\custom_fields\views.py", line 211, in export_data_for_custom_field
+    if cursor:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'cursor' where it is not associated with a value
+ERROR 2024-08-27 22:03:30,951 basehttp "POST /test/ HTTP/1.1" 500 71671
+INFO 2024-08-27 22:05:01,690 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-27 22:05:01,690 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-08-27 22:05:01,690 basehttp "OPTIONS /return-documents/10/undefined HTTP/1.1" 200 0
+WARNING 2024-08-27 22:05:04,997 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-27 22:05:04,997 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 17731
+INFO 2024-08-27 22:05:05,122 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-27 22:05:05,169 basehttp "GET /contacts/ HTTP/1.1" 200 4323
+INFO 2024-08-27 22:05:07,601 basehttp "OPTIONS /set-flow/ HTTP/1.1" 200 0
+ERROR 2024-08-27 22:05:07,604 log Internal Server Error: /set-flow/
+ERROR 2024-08-27 22:05:07,604 basehttp "POST /set-flow/ HTTP/1.1" 500 25
+ERROR 2024-08-27 22:05:31,561 log Internal Server Error: /set-flow/
+ERROR 2024-08-27 22:05:31,561 basehttp "POST /set-flow/ HTTP/1.1" 500 25
+INFO 2024-08-27 22:05:38,104 basehttp "POST /set-flow/ HTTP/1.1" 200 38
+ERROR 2024-08-27 22:05:55,862 log Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\custom_fields\views.py", line 211, in export_data_for_custom_field
+    if cursor:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'cursor' where it is not associated with a value
+ERROR 2024-08-27 22:05:55,863 basehttp "POST /test/ HTTP/1.1" 500 71671
+ERROR 2024-08-27 22:07:59,407 log Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\custom_fields\views.py", line 211, in export_data_for_custom_field
+    if cursor:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'cursor' where it is not associated with a value
+ERROR 2024-08-27 22:07:59,409 basehttp "POST /test/ HTTP/1.1" 500 71671
+INFO 2024-08-27 22:09:09,510 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 22:09:11,219 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-27 22:09:33,954 log Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\custom_fields\views.py", line 211, in export_data_for_custom_field
+    if cursor:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'cursor' where it is not associated with a value
+ERROR 2024-08-27 22:09:33,956 basehttp "POST /test/ HTTP/1.1" 500 71671
+INFO 2024-08-27 22:09:58,560 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 22:09:59,894 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 22:11:11,180 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 22:11:12,804 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-27 22:11:33,092 log Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\custom_fields\views.py", line 211, in export_data_for_custom_field
+    if cursor:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'cursor' where it is not associated with a value
+ERROR 2024-08-27 22:11:33,094 basehttp "POST /test/ HTTP/1.1" 500 71671
+ERROR 2024-08-27 22:11:55,586 log Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\custom_fields\views.py", line 211, in export_data_for_custom_field
+    if cursor:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'cursor' where it is not associated with a value
+ERROR 2024-08-27 22:11:55,587 basehttp "POST /test/ HTTP/1.1" 500 73088
+ERROR 2024-08-27 22:12:46,957 log Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\custom_fields\views.py", line 211, in export_data_for_custom_field
+    if cursor:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'cursor' where it is not associated with a value
+ERROR 2024-08-27 22:12:46,958 basehttp "POST /test/ HTTP/1.1" 500 73086
+INFO 2024-08-27 22:13:26,976 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 22:13:28,508 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-27 22:13:55,002 log Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\custom_fields\views.py", line 211, in export_data_for_custom_field
+    if cursor:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'cursor' where it is not associated with a value
+ERROR 2024-08-27 22:13:55,006 basehttp "POST /test/ HTTP/1.1" 500 73086
+INFO 2024-08-27 22:27:51,145 autoreload D:\Nuren AI\backend_mine1\product\views.py changed, reloading.
+INFO 2024-08-27 22:27:52,674 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-27 22:28:16,342 log Internal Server Error: /sev/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\product\views.py", line 51, in simple_experience_view
+    cursor.execute("""
+psycopg2.errors.UndefinedTable: relation "nodes_temp_flow" does not exist
+LINE 3:         FROM nodes_temp_flow ntf
+                     ^
+
+ERROR 2024-08-27 22:28:16,342 basehttp "POST /sev/ HTTP/1.1" 500 73156
+INFO 2024-08-27 22:30:32,596 autoreload D:\Nuren AI\backend_mine1\product\views.py changed, reloading.
+INFO 2024-08-27 22:30:34,407 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-27 22:30:58,217 log Internal Server Error: /sev/
+ERROR 2024-08-27 22:30:58,217 basehttp "POST /sev/ HTTP/1.1" 500 41
+INFO 2024-08-27 22:31:29,679 autoreload D:\Nuren AI\backend_mine1\product\views.py changed, reloading.
+INFO 2024-08-27 22:31:31,190 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-27 22:31:53,150 log Internal Server Error: /sev/
+ERROR 2024-08-27 22:31:53,150 basehttp "POST /sev/ HTTP/1.1" 500 41
+INFO 2024-08-27 22:32:26,812 autoreload D:\Nuren AI\backend_mine1\product\views.py changed, reloading.
+INFO 2024-08-27 22:32:28,514 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-27 22:32:52,862 log Internal Server Error: /sev/
+ERROR 2024-08-27 22:32:52,862 basehttp "POST /sev/ HTTP/1.1" 500 41
+INFO 2024-08-27 22:33:05,146 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-27 22:33:38,839 log Internal Server Error: /sev/
+ERROR 2024-08-27 22:33:38,839 basehttp "POST /sev/ HTTP/1.1" 500 41
+INFO 2024-08-27 22:34:27,001 autoreload D:\Nuren AI\backend_mine1\product\views.py changed, reloading.
+INFO 2024-08-27 22:34:28,377 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 22:34:50,114 basehttp "POST /sev/ HTTP/1.1" 200 1275
+INFO 2024-08-27 22:34:59,508 basehttp "POST /sev/ HTTP/1.1" 200 1275
+INFO 2024-08-27 22:36:26,075 autoreload D:\Nuren AI\backend_mine1\product\views.py changed, reloading.
+INFO 2024-08-27 22:36:27,683 autoreload Watching for file changes with StatReloader
+INFO 2024-08-27 22:36:58,944 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-27 22:37:00,815 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 08:14:51,423 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-28 08:14:53,150 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 08:17:18,369 basehttp "POST /sev/ HTTP/1.1" 200 26
+ERROR 2024-08-28 08:17:27,620 log Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\custom_fields\views.py", line 211, in export_data_for_custom_field
+    if cursor:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'cursor' where it is not associated with a value
+ERROR 2024-08-28 08:17:27,622 basehttp "POST /test/ HTTP/1.1" 500 73088
+ERROR 2024-08-28 08:17:38,701 log Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\custom_fields\views.py", line 211, in export_data_for_custom_field
+    if cursor:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'cursor' where it is not associated with a value
+ERROR 2024-08-28 08:17:38,702 basehttp "POST /test/ HTTP/1.1" 500 73088
+ERROR 2024-08-28 08:17:51,103 log Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\custom_fields\views.py", line 211, in export_data_for_custom_field
+    if cursor:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'cursor' where it is not associated with a value
+ERROR 2024-08-28 08:17:51,104 basehttp "POST /test/ HTTP/1.1" 500 73088
+ERROR 2024-08-28 08:17:57,253 log Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\custom_fields\views.py", line 211, in export_data_for_custom_field
+    if cursor:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'cursor' where it is not associated with a value
+ERROR 2024-08-28 08:17:57,254 basehttp "POST /test/ HTTP/1.1" 500 73086
+INFO 2024-08-28 08:18:18,106 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-28 08:18:19,708 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-28 08:18:41,678 log Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\custom_fields\views.py", line 211, in export_data_for_custom_field
+    if cursor:
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'cursor' where it is not associated with a value
+ERROR 2024-08-28 08:18:41,680 basehttp "POST /test/ HTTP/1.1" 500 73088
+INFO 2024-08-28 08:20:19,723 autoreload D:\Nuren AI\backend_mine1\custom_fields\views.py changed, reloading.
+INFO 2024-08-28 08:20:21,122 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-28 08:20:42,448 log Internal Server Error: /test/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\custom_fields\views.py", line 211, in export_data_for_custom_field
+    cursor.close()
+    ^^^^^^
+UnboundLocalError: cannot access local variable 'cursor' where it is not associated with a value
+ERROR 2024-08-28 08:20:42,450 basehttp "POST /test/ HTTP/1.1" 500 72820
+INFO 2024-08-28 08:22:10,533 autoreload D:\Nuren AI\backend_mine1\custom_fields\views.py changed, reloading.
+INFO 2024-08-28 08:22:12,017 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 08:22:36,608 basehttp "POST /test/ HTTP/1.1" 200 62
+INFO 2024-08-28 08:23:56,035 autoreload D:\Nuren AI\backend_mine1\simplecrm\urls.py changed, reloading.
+INFO 2024-08-28 08:23:57,409 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 08:24:20,281 basehttp "POST /testy/ HTTP/1.1" 200 1275
+WARNING 2024-08-28 08:26:44,419 log Bad Request: /testy/
+WARNING 2024-08-28 08:26:44,419 basehttp "POST /testy/ HTTP/1.1" 400 21
+WARNING 2024-08-28 08:26:45,389 log Bad Request: /testy/
+WARNING 2024-08-28 08:26:45,389 basehttp "POST /testy/ HTTP/1.1" 400 21
+WARNING 2024-08-28 08:26:46,399 log Bad Request: /testy/
+WARNING 2024-08-28 08:26:46,399 basehttp "POST /testy/ HTTP/1.1" 400 21
+WARNING 2024-08-28 08:26:48,967 log Bad Request: /testy/
+WARNING 2024-08-28 08:26:48,967 basehttp "POST /testy/ HTTP/1.1" 400 21
+WARNING 2024-08-28 08:27:12,855 log Bad Request: /testy/
+WARNING 2024-08-28 08:27:12,855 basehttp "POST /testy/ HTTP/1.1" 400 21
+WARNING 2024-08-28 08:28:10,551 log Not Found: /testy/
+WARNING 2024-08-28 08:28:10,551 basehttp "POST /testy/ HTTP/1.1" 404 53
+WARNING 2024-08-28 08:28:13,467 log Not Found: /testy/
+WARNING 2024-08-28 08:28:13,467 basehttp "POST /testy/ HTTP/1.1" 404 53
+WARNING 2024-08-28 08:28:16,461 log Not Found: /testy/
+WARNING 2024-08-28 08:28:16,461 basehttp "POST /testy/ HTTP/1.1" 404 53
+WARNING 2024-08-28 08:28:21,008 log Not Found: /testy/
+WARNING 2024-08-28 08:28:21,008 basehttp "POST /testy/ HTTP/1.1" 404 53
+WARNING 2024-08-28 08:28:47,927 log Not Found: /testy/
+WARNING 2024-08-28 08:28:47,927 basehttp "POST /testy/ HTTP/1.1" 404 53
+INFO 2024-08-28 08:29:20,476 basehttp "POST /testy/ HTTP/1.1" 200 1275
+INFO 2024-08-28 08:30:32,541 basehttp "POST /testy/ HTTP/1.1" 200 1275
+INFO 2024-08-28 08:33:51,394 basehttp "POST /testy/ HTTP/1.1" 200 1275
+INFO 2024-08-28 08:34:09,031 basehttp "POST /testy/ HTTP/1.1" 200 1275
+INFO 2024-08-28 08:34:09,073 basehttp - Broken pipe from ('127.0.0.1', 57486)
+INFO 2024-08-28 08:34:35,586 basehttp "POST /testy/ HTTP/1.1" 200 1275
+INFO 2024-08-28 08:34:35,614 basehttp - Broken pipe from ('127.0.0.1', 57500)
+INFO 2024-08-28 08:36:27,353 basehttp "POST /testy/ HTTP/1.1" 200 1275
+INFO 2024-08-28 08:36:27,377 basehttp - Broken pipe from ('127.0.0.1', 57514)
+INFO 2024-08-28 08:37:54,227 basehttp "POST /testy/ HTTP/1.1" 200 1275
+INFO 2024-08-28 08:37:57,627 basehttp "POST /testy/ HTTP/1.1" 200 1275
+INFO 2024-08-28 08:38:01,142 basehttp "POST /testy/ HTTP/1.1" 200 1275
+INFO 2024-08-28 08:38:05,923 basehttp "POST /testy/ HTTP/1.1" 200 1275
+INFO 2024-08-28 08:38:27,389 basehttp "POST /testy/ HTTP/1.1" 200 1275
+INFO 2024-08-28 08:38:34,848 basehttp "POST /testy/ HTTP/1.1" 200 1275
+INFO 2024-08-28 08:38:34,866 basehttp - Broken pipe from ('127.0.0.1', 57549)
+INFO 2024-08-28 08:41:10,870 basehttp "POST /testy/ HTTP/1.1" 200 1275
+INFO 2024-08-28 08:41:20,715 basehttp "POST /testy/ HTTP/1.1" 200 1275
+INFO 2024-08-28 08:41:29,306 basehttp "POST /testy/ HTTP/1.1" 200 1275
+INFO 2024-08-28 08:52:03,828 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-28 08:52:06,094 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 08:53:35,649 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-28 08:53:37,050 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 09:04:17,991 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-28 09:04:19,992 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 09:06:48,965 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-28 09:06:50,345 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 09:10:14,179 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+ERROR 2024-08-28 09:10:17,030 log Internal Server Error: /set-flow/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view whatsapp_chat.views.set_flow didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-08-28 09:10:17,030 basehttp "POST /set-flow/ HTTP/1.1" 500 68110
+INFO 2024-08-28 09:10:20,088 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+ERROR 2024-08-28 09:10:22,706 log Internal Server Error: /set-flow/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view whatsapp_chat.views.set_flow didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-08-28 09:10:22,706 basehttp "POST /set-flow/ HTTP/1.1" 500 68110
+INFO 2024-08-28 09:10:25,686 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+ERROR 2024-08-28 09:10:28,068 log Internal Server Error: /set-flow/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view whatsapp_chat.views.set_flow didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-08-28 09:10:28,068 basehttp "POST /set-flow/ HTTP/1.1" 500 68110
+INFO 2024-08-28 09:10:32,756 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+ERROR 2024-08-28 09:10:35,114 log Internal Server Error: /set-flow/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view whatsapp_chat.views.set_flow didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-08-28 09:10:35,114 basehttp "POST /set-flow/ HTTP/1.1" 500 68110
+INFO 2024-08-28 09:10:37,629 basehttp - Broken pipe from ('127.0.0.1', 57890)
+INFO 2024-08-28 09:12:02,461 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+ERROR 2024-08-28 09:12:04,968 log Internal Server Error: /set-flow/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view whatsapp_chat.views.set_flow didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-08-28 09:12:04,968 basehttp "POST /set-flow/ HTTP/1.1" 500 68110
+INFO 2024-08-28 09:12:07,964 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+ERROR 2024-08-28 09:12:10,445 log Internal Server Error: /set-flow/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view whatsapp_chat.views.set_flow didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-08-28 09:12:10,445 basehttp "POST /set-flow/ HTTP/1.1" 500 68110
+INFO 2024-08-28 09:12:13,434 basehttp - Broken pipe from ('127.0.0.1', 57936)
+INFO 2024-08-28 09:13:57,906 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+ERROR 2024-08-28 09:14:00,413 log Internal Server Error: /set-flow/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view whatsapp_chat.views.set_flow didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-08-28 09:14:00,413 basehttp "POST /set-flow/ HTTP/1.1" 500 68110
+INFO 2024-08-28 09:14:03,548 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+ERROR 2024-08-28 09:14:05,904 log Internal Server Error: /set-flow/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view whatsapp_chat.views.set_flow didn't return an HttpResponse object. It returned None instead.
+INFO 2024-08-28 09:14:05,905 basehttp - Broken pipe from ('127.0.0.1', 58005)
+INFO 2024-08-28 09:21:07,621 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-28 09:21:09,386 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 09:22:22,536 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-28 09:22:23,938 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 09:25:05,950 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-28 09:25:07,531 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 09:28:24,594 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:28:28,027 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:28:31,222 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:28:36,037 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:28:37,638 basehttp - Broken pipe from ('127.0.0.1', 59017)
+INFO 2024-08-28 09:31:35,595 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:31:38,838 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:31:41,739 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:31:46,330 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:32:13,138 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:35:38,772 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:38:10,395 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:39:12,462 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:39:15,958 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:39:18,940 basehttp - Broken pipe from ('127.0.0.1', 59121)
+INFO 2024-08-28 09:40:15,590 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:40:26,207 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:40:33,131 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:40:50,937 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+ERROR 2024-08-28 09:40:53,127 log Internal Server Error: /set-flow/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\whatsapp_chat\views.py", line 293, in set_flow
+    print("Data Updated Succesfully", cursor.fetchone()[0])
+                                      ^^^^^^^^^^^^^^^^^
+psycopg2.ProgrammingError: no results to fetch
+ERROR 2024-08-28 09:40:53,137 basehttp "POST /set-flow/ HTTP/1.1" 500 79957
+INFO 2024-08-28 09:40:53,236 basehttp - Broken pipe from ('127.0.0.1', 59214)
+INFO 2024-08-28 09:44:47,643 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+ERROR 2024-08-28 09:44:49,854 log Internal Server Error: /set-flow/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\whatsapp_chat\views.py", line 293, in set_flow
+    print("Data Updated Succesfully", cursor.fetchone()[0])
+                                      ^^^^^^^^^^^^^^^^^
+psycopg2.ProgrammingError: no results to fetch
+ERROR 2024-08-28 09:44:49,855 basehttp "POST /set-flow/ HTTP/1.1" 500 79957
+INFO 2024-08-28 09:44:49,947 basehttp - Broken pipe from ('127.0.0.1', 59263)
+INFO 2024-08-28 09:45:32,112 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:45:43,312 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:46:01,554 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:46:27,276 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:46:50,908 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:47:04,225 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:50:47,821 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:51:04,311 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:51:11,270 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:52:28,082 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-28 09:52:30,152 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 09:53:06,306 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+ERROR 2024-08-28 09:53:08,747 log Internal Server Error: /set-flow/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\whatsapp_chat\views.py", line 293, in set_flow
+    print("Data Updated Succesfully", cursor.fetchone()[0])
+                                      ^^^^^^^^^^^^^^^^^
+psycopg2.ProgrammingError: no results to fetch
+ERROR 2024-08-28 09:53:08,748 basehttp "POST /set-flow/ HTTP/1.1" 500 79897
+INFO 2024-08-28 09:53:08,845 basehttp - Broken pipe from ('127.0.0.1', 59436)
+INFO 2024-08-28 09:53:56,412 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+ERROR 2024-08-28 09:53:58,580 log Internal Server Error: /set-flow/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\whatsapp_chat\views.py", line 293, in set_flow
+    print("Data Updated Succesfully", cursor.fetchone()[0])
+                                      ^^^^^^^^^^^^^^^^^
+psycopg2.ProgrammingError: no results to fetch
+ERROR 2024-08-28 09:53:58,581 basehttp "POST /set-flow/ HTTP/1.1" 500 79897
+INFO 2024-08-28 09:53:58,667 basehttp - Broken pipe from ('127.0.0.1', 59462)
+INFO 2024-08-28 09:54:41,874 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:54:50,242 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:55:05,953 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:56:39,913 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-28 09:56:41,501 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 09:57:45,626 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+ERROR 2024-08-28 09:57:47,897 log Internal Server Error: /set-flow/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view whatsapp_chat.views.set_flow didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-08-28 09:57:47,898 basehttp "POST /set-flow/ HTTP/1.1" 500 68110
+INFO 2024-08-28 09:57:47,987 basehttp - Broken pipe from ('127.0.0.1', 59557)
+INFO 2024-08-28 09:58:00,092 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-28 09:58:01,642 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 09:58:26,010 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+ERROR 2024-08-28 09:58:28,483 log Internal Server Error: /set-flow/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view whatsapp_chat.views.set_flow didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-08-28 09:58:28,486 basehttp "POST /set-flow/ HTTP/1.1" 500 68110
+INFO 2024-08-28 09:58:28,579 basehttp - Broken pipe from ('127.0.0.1', 59599)
+INFO 2024-08-28 09:58:55,955 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 09:58:55,985 basehttp - Broken pipe from ('127.0.0.1', 59620)
+INFO 2024-08-28 09:59:09,089 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+ERROR 2024-08-28 09:59:11,617 log Internal Server Error: /set-flow/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view whatsapp_chat.views.set_flow didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-08-28 09:59:11,618 basehttp "POST /set-flow/ HTTP/1.1" 500 68110
+INFO 2024-08-28 09:59:11,702 basehttp - Broken pipe from ('127.0.0.1', 59627)
+INFO 2024-08-28 09:59:26,172 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+ERROR 2024-08-28 09:59:28,730 log Internal Server Error: /set-flow/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view whatsapp_chat.views.set_flow didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-08-28 09:59:28,731 basehttp "POST /set-flow/ HTTP/1.1" 500 68110
+INFO 2024-08-28 09:59:28,863 basehttp - Broken pipe from ('127.0.0.1', 59639)
+INFO 2024-08-28 10:06:12,618 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+ERROR 2024-08-28 10:06:15,006 log Internal Server Error: /set-flow/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view whatsapp_chat.views.set_flow didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-08-28 10:06:15,006 basehttp "POST /set-flow/ HTTP/1.1" 500 68110
+INFO 2024-08-28 10:06:15,082 basehttp - Broken pipe from ('127.0.0.1', 59724)
+INFO 2024-08-28 10:07:16,420 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+ERROR 2024-08-28 10:07:18,966 log Internal Server Error: /set-flow/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view whatsapp_chat.views.set_flow didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-08-28 10:07:18,966 basehttp "POST /set-flow/ HTTP/1.1" 500 68110
+INFO 2024-08-28 10:07:19,062 basehttp - Broken pipe from ('127.0.0.1', 59759)
+INFO 2024-08-28 10:07:48,412 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+ERROR 2024-08-28 10:07:50,938 log Internal Server Error: /set-flow/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view whatsapp_chat.views.set_flow didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-08-28 10:07:50,938 basehttp "POST /set-flow/ HTTP/1.1" 500 68110
+INFO 2024-08-28 10:07:51,030 basehttp - Broken pipe from ('127.0.0.1', 59776)
+INFO 2024-08-28 10:09:13,696 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+ERROR 2024-08-28 10:09:16,185 log Internal Server Error: /set-flow/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view whatsapp_chat.views.set_flow didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-08-28 10:09:16,185 basehttp "POST /set-flow/ HTTP/1.1" 500 68110
+INFO 2024-08-28 10:09:16,270 basehttp - Broken pipe from ('127.0.0.1', 59804)
+INFO 2024-08-28 10:09:49,280 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+ERROR 2024-08-28 10:09:51,695 log Internal Server Error: /set-flow/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view whatsapp_chat.views.set_flow didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-08-28 10:09:51,695 basehttp "POST /set-flow/ HTTP/1.1" 500 68110
+INFO 2024-08-28 10:09:51,778 basehttp - Broken pipe from ('127.0.0.1', 59824)
+INFO 2024-08-28 10:14:18,931 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-28 10:14:20,310 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 10:15:00,527 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 10:15:03,083 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 10:15:10,703 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 10:15:13,198 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 10:15:18,931 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 10:15:21,269 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 10:23:39,632 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 10:23:43,630 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 10:24:26,247 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 10:24:29,577 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 10:24:29,619 basehttp - Broken pipe from ('127.0.0.1', 60048)
+INFO 2024-08-28 10:24:30,439 basehttp - Broken pipe from ('127.0.0.1', 60041)
+INFO 2024-08-28 10:29:42,130 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 10:29:44,622 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 10:29:52,628 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 10:29:54,982 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 10:30:01,565 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 10:30:04,057 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 10:31:22,857 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 10:31:25,162 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 10:49:48,953 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 10:49:49,106 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 10:49:51,371 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 10:49:51,633 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 10:50:02,982 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 10:50:05,326 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 10:51:41,650 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-28 10:51:43,748 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 10:55:50,487 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 10:55:52,799 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 10:57:57,607 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 10:58:00,127 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 10:58:56,178 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 10:58:58,585 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 11:00:40,026 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+ERROR 2024-08-28 11:00:42,191 log Internal Server Error: /set-flow/
+ERROR 2024-08-28 11:00:42,193 basehttp "POST /set-flow/ HTTP/1.1" 500 287
+INFO 2024-08-28 11:00:42,274 basehttp - Broken pipe from ('127.0.0.1', 61506)
+INFO 2024-08-28 11:28:34,571 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:28:37,768 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:28:41,034 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:28:45,711 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:28:48,494 basehttp - Broken pipe from ('127.0.0.1', 63822)
+INFO 2024-08-28 11:29:06,936 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:29:11,073 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:29:12,375 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:29:16,325 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:29:28,105 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:29:35,906 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:29:42,565 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:29:49,009 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:31:41,904 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-28 11:31:43,908 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 11:32:13,275 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:32:13,368 basehttp - Broken pipe from ('127.0.0.1', 63950)
+INFO 2024-08-28 11:33:28,479 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:33:30,972 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 11:33:33,998 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:33:36,444 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 11:33:40,205 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:33:42,573 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 11:33:46,162 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:33:48,467 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 11:33:51,899 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:33:54,358 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 11:33:57,027 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:33:59,470 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 11:33:59,699 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 11:34:11,492 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:34:13,861 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 11:34:17,388 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:34:19,722 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 11:34:22,734 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:34:25,147 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 11:34:28,281 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:34:30,726 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 11:34:30,970 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 11:35:50,232 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:35:52,589 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 11:37:21,847 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:37:24,201 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 11:41:38,388 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:41:41,444 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 11:42:18,013 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:42:21,002 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 11:42:52,969 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 11:42:55,930 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 13:33:08,011 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:33:11,343 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:33:14,832 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:33:19,583 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:33:47,097 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:33:50,535 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 13:34:26,680 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:34:29,591 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 13:34:40,592 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:34:43,442 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 13:34:52,168 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:34:55,443 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 13:35:36,669 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:35:39,674 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 13:35:55,443 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:35:57,730 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 13:35:58,404 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 13:40:09,560 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:40:12,639 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 13:40:17,367 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:40:20,188 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 13:40:22,551 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:40:25,467 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 13:40:27,854 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:40:30,835 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 13:40:33,486 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:40:36,318 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 13:40:39,204 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+ERROR 2024-08-28 13:40:41,856 log Internal Server Error: /set-flow/
+ERROR 2024-08-28 13:40:41,857 basehttp "POST /set-flow/ HTTP/1.1" 500 302
+INFO 2024-08-28 13:40:41,946 basehttp - Broken pipe from ('127.0.0.1', 50999)
+INFO 2024-08-28 13:41:53,466 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:41:56,662 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:42:00,123 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:42:03,116 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 13:42:06,809 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:42:09,790 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 13:42:14,156 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:42:17,142 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 13:42:21,981 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:42:25,167 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 13:42:27,974 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:42:30,994 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 13:42:36,227 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:42:39,215 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 13:42:49,983 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:42:52,992 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 13:42:55,454 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:42:58,355 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 13:42:58,368 basehttp - Broken pipe from ('127.0.0.1', 51659)
+INFO 2024-08-28 13:53:26,114 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:53:29,082 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 13:53:32,116 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:53:52,830 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:54:21,035 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:54:24,129 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 13:54:27,232 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 13:54:30,074 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 14:33:05,122 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 14:33:08,359 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 14:34:47,701 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 14:41:44,872 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-28 14:41:48,521 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 14:44:19,088 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 14:46:51,774 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-28 14:46:53,273 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 14:48:01,325 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 14:48:04,525 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 14:48:08,175 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 14:48:11,045 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 14:50:48,389 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 14:50:51,480 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 14:50:54,504 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 14:50:57,911 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 14:51:09,426 basehttp "POST /get-flow/ HTTP/1.1" 200 1276
+INFO 2024-08-28 14:51:12,279 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 14:51:17,185 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 14:51:20,670 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 14:51:23,925 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 14:51:26,987 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 14:51:29,256 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 14:51:32,138 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 14:51:34,461 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 14:51:35,462 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 14:51:38,346 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 14:51:42,378 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 14:51:45,197 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 14:51:47,250 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 14:51:50,386 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 14:51:56,544 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 14:51:59,507 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 14:52:01,781 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 14:52:02,002 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 14:52:05,123 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 14:52:07,644 basehttp "POST /get-flow/ HTTP/1.1" 200 1276
+INFO 2024-08-28 14:52:10,537 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 14:52:12,333 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 14:52:32,865 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 14:58:15,166 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 14:58:18,410 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 14:58:44,589 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 14:58:48,056 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 14:59:08,007 basehttp "POST /get-flow/ HTTP/1.1" 200 1276
+INFO 2024-08-28 14:59:10,954 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 14:59:20,255 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 14:59:23,271 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 14:59:32,993 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 14:59:33,913 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 14:59:36,898 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 14:59:48,460 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 14:59:51,439 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:01:15,870 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-08-28 15:01:15,873 basehttp "OPTIONS /return-documents/10/undefined HTTP/1.1" 200 0
+INFO 2024-08-28 15:01:15,875 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+WARNING 2024-08-28 15:01:21,222 log Not Found: /return-documents/10/undefined
+WARNING 2024-08-28 15:01:21,222 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 17845
+INFO 2024-08-28 15:01:21,375 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-28 15:01:21,401 basehttp "GET /contacts/ HTTP/1.1" 200 4323
+INFO 2024-08-28 15:01:36,249 basehttp "OPTIONS /save-flow/ HTTP/1.1" 200 0
+INFO 2024-08-28 15:01:38,657 basehttp "POST /save-flow/ HTTP/1.1" 200 38
+INFO 2024-08-28 15:03:28,525 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-28 15:03:30,862 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 15:03:57,034 basehttp "POST /save-flow/ HTTP/1.1" 200 38
+INFO 2024-08-28 15:05:54,444 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-28 15:05:56,065 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 15:06:19,133 basehttp "POST /save-flow/ HTTP/1.1" 200 38
+WARNING 2024-08-28 15:07:06,048 log Not Found: /get-flow/
+WARNING 2024-08-28 15:07:06,048 basehttp "POST /get-flow/ HTTP/1.1" 404 53
+WARNING 2024-08-28 15:07:09,058 log Not Found: /get-flow/
+WARNING 2024-08-28 15:07:09,058 basehttp "POST /get-flow/ HTTP/1.1" 404 53
+WARNING 2024-08-28 15:07:12,442 log Not Found: /get-flow/
+WARNING 2024-08-28 15:07:12,443 basehttp "POST /get-flow/ HTTP/1.1" 404 53
+WARNING 2024-08-28 15:07:14,935 log Not Found: /get-flow/
+WARNING 2024-08-28 15:07:14,935 basehttp "POST /get-flow/ HTTP/1.1" 404 53
+WARNING 2024-08-28 15:07:17,219 log Not Found: /get-flow/
+WARNING 2024-08-28 15:07:17,220 basehttp "POST /get-flow/ HTTP/1.1" 404 53
+WARNING 2024-08-28 15:07:17,954 log Not Found: /get-flow/
+WARNING 2024-08-28 15:07:17,954 basehttp "POST /get-flow/ HTTP/1.1" 404 53
+INFO 2024-08-28 15:07:20,342 basehttp - Broken pipe from ('127.0.0.1', 58656)
+WARNING 2024-08-28 15:07:21,096 log Not Found: /get-flow/
+INFO 2024-08-28 15:07:21,097 basehttp - Broken pipe from ('127.0.0.1', 58675)
+INFO 2024-08-28 15:10:12,375 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:11:02,610 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+WARNING 2024-08-28 15:11:05,283 log Not Found: /set-flow/
+WARNING 2024-08-28 15:11:05,283 basehttp "POST /set-flow/ HTTP/1.1" 404 29
+INFO 2024-08-28 15:11:08,626 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:11:09,386 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+WARNING 2024-08-28 15:11:11,538 log Not Found: /set-flow/
+WARNING 2024-08-28 15:11:11,539 basehttp "POST /set-flow/ HTTP/1.1" 404 29
+INFO 2024-08-28 15:11:13,022 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:11:17,436 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+WARNING 2024-08-28 15:11:19,856 log Not Found: /set-flow/
+WARNING 2024-08-28 15:11:19,857 basehttp "POST /set-flow/ HTTP/1.1" 404 29
+INFO 2024-08-28 15:11:42,670 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:11:44,889 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+WARNING 2024-08-28 15:11:45,208 log Not Found: /set-flow/
+WARNING 2024-08-28 15:11:45,208 basehttp "POST /set-flow/ HTTP/1.1" 404 29
+INFO 2024-08-28 15:11:48,033 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:11:48,138 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+WARNING 2024-08-28 15:11:51,067 log Not Found: /set-flow/
+WARNING 2024-08-28 15:11:51,067 basehttp "POST /set-flow/ HTTP/1.1" 404 29
+WARNING 2024-08-28 15:11:51,175 log Not Found: /set-flow/
+WARNING 2024-08-28 15:11:51,176 basehttp "POST /set-flow/ HTTP/1.1" 404 29
+INFO 2024-08-28 15:11:54,012 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+WARNING 2024-08-28 15:11:56,373 log Not Found: /set-flow/
+WARNING 2024-08-28 15:11:56,374 basehttp "POST /set-flow/ HTTP/1.1" 404 29
+INFO 2024-08-28 15:12:01,696 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+WARNING 2024-08-28 15:12:04,083 log Not Found: /set-flow/
+WARNING 2024-08-28 15:12:04,083 basehttp "POST /set-flow/ HTTP/1.1" 404 29
+INFO 2024-08-28 15:12:32,234 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+WARNING 2024-08-28 15:12:34,648 log Not Found: /set-flow/
+WARNING 2024-08-28 15:12:34,648 basehttp "POST /set-flow/ HTTP/1.1" 404 29
+INFO 2024-08-28 15:14:21,160 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+WARNING 2024-08-28 15:14:23,652 log Not Found: /set-flow/
+WARNING 2024-08-28 15:14:23,652 basehttp "POST /set-flow/ HTTP/1.1" 404 29
+INFO 2024-08-28 15:14:48,989 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+WARNING 2024-08-28 15:14:51,534 log Not Found: /set-flow/
+WARNING 2024-08-28 15:14:51,534 basehttp "POST /set-flow/ HTTP/1.1" 404 29
+INFO 2024-08-28 15:15:05,740 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-28 15:15:07,151 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 15:15:29,697 basehttp "POST /save-flow/ HTTP/1.1" 200 38
+INFO 2024-08-28 15:15:31,754 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+WARNING 2024-08-28 15:15:34,191 log Not Found: /set-flow/
+WARNING 2024-08-28 15:15:34,191 basehttp "POST /set-flow/ HTTP/1.1" 404 29
+INFO 2024-08-28 15:15:38,930 basehttp - Broken pipe from ('127.0.0.1', 59547)
+INFO 2024-08-28 15:17:15,045 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+WARNING 2024-08-28 15:17:17,740 log Not Found: /set-flow/
+WARNING 2024-08-28 15:17:17,740 basehttp "POST /set-flow/ HTTP/1.1" 404 29
+INFO 2024-08-28 15:17:21,081 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+WARNING 2024-08-28 15:17:23,481 log Not Found: /set-flow/
+WARNING 2024-08-28 15:17:23,482 basehttp "POST /set-flow/ HTTP/1.1" 404 29
+INFO 2024-08-28 15:17:26,410 basehttp - Broken pipe from ('127.0.0.1', 59671)
+INFO 2024-08-28 15:17:53,488 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+WARNING 2024-08-28 15:17:55,986 log Not Found: /set-flow/
+WARNING 2024-08-28 15:17:55,986 basehttp "POST /set-flow/ HTTP/1.1" 404 29
+INFO 2024-08-28 15:18:00,548 basehttp - Broken pipe from ('127.0.0.1', 59694)
+INFO 2024-08-28 15:19:28,186 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:19:30,787 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:19:31,257 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:19:37,637 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:19:41,042 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:19:49,819 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:19:52,857 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:19:55,680 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:19:58,736 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:20:01,700 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:20:04,694 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:20:07,843 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:20:10,503 basehttp "POST /get-flow/ HTTP/1.1" 200 1276
+INFO 2024-08-28 15:20:10,838 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:20:20,870 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:20:41,013 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:20:44,070 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:20:49,713 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:20:52,881 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:20:57,018 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:20:59,849 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:21:00,065 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:21:01,690 basehttp "POST /get-flow/ HTTP/1.1" 200 1276
+INFO 2024-08-28 15:21:02,865 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:21:04,040 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:21:14,731 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:21:28,744 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:22:08,373 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:22:11,321 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:22:22,091 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:22:25,020 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:22:26,007 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:22:27,904 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:22:30,318 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:22:32,746 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:22:33,908 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:22:43,635 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:22:46,579 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:23:20,171 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:23:23,110 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:23:26,532 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:23:29,548 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:23:37,741 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:23:40,608 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:23:43,627 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:24:03,327 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:25:30,830 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:25:34,139 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:25:38,629 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:25:41,974 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:25:51,371 basehttp "POST /get-flow/ HTTP/1.1" 200 1276
+INFO 2024-08-28 15:25:54,260 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:25:58,690 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:26:02,180 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:26:08,818 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:26:11,144 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:26:16,556 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:28:33,893 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:28:34,982 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:30:20,289 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:30:23,243 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:30:31,388 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:30:34,392 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:30:39,114 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:30:41,954 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:30:59,771 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:31:19,280 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:31:22,470 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:31:30,011 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:31:32,885 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:31:36,086 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:31:38,989 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:31:43,257 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:31:46,170 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:31:49,427 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:31:52,717 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:31:55,885 basehttp "POST /get-flow/ HTTP/1.1" 200 1276
+INFO 2024-08-28 15:31:58,899 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:32:01,363 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:32:03,664 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:32:06,680 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:32:13,215 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:32:16,388 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:32:20,522 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:32:21,018 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:32:23,472 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:32:23,805 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:32:25,980 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:33:15,601 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:33:17,953 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:33:37,795 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:33:40,787 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:33:48,081 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:33:50,988 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:33:56,748 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:33:59,667 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:34:30,655 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:34:33,851 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:34:38,427 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:34:41,472 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:34:45,674 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:34:48,515 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:34:57,234 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:35:04,017 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:36:06,685 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:36:09,649 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:36:16,968 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:36:20,035 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:36:34,780 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:36:37,716 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:36:42,342 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:36:45,194 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:36:45,910 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:37:00,019 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:37:02,819 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-28 15:37:05,797 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:37:07,814 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-28 15:37:09,517 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+WARNING 2024-08-28 15:50:21,680 log Not Found: /get-flow/
+WARNING 2024-08-28 15:50:21,680 basehttp "POST /get-flow/ HTTP/1.1" 404 53
+WARNING 2024-08-28 15:50:24,707 log Not Found: /get-flow/
+WARNING 2024-08-28 15:50:24,708 basehttp "POST /get-flow/ HTTP/1.1" 404 53
+WARNING 2024-08-28 15:50:29,316 log Not Found: /get-flow/
+WARNING 2024-08-28 15:50:29,317 basehttp "POST /get-flow/ HTTP/1.1" 404 53
+WARNING 2024-08-28 15:50:59,333 log Not Found: /get-flow/
+WARNING 2024-08-28 15:50:59,333 basehttp "POST /get-flow/ HTTP/1.1" 404 53
+INFO 2024-08-29 06:54:26,192 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 06:54:30,165 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 06:54:58,469 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 06:55:02,722 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 06:55:10,869 basehttp "POST /get-flow/ HTTP/1.1" 200 1276
+INFO 2024-08-29 06:55:14,407 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 06:55:20,274 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 06:55:23,720 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 06:55:27,297 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 06:55:31,065 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 06:55:34,779 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 06:55:35,782 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 06:55:38,357 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 06:55:42,044 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 06:55:45,835 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 06:55:49,013 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 06:55:52,594 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 06:55:55,673 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 06:56:00,118 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 06:56:02,745 basehttp "POST /get-flow/ HTTP/1.1" 200 1276
+INFO 2024-08-29 06:56:03,226 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 06:56:06,123 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 06:56:06,852 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 06:56:10,316 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 06:56:13,798 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 06:56:16,584 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 06:56:20,046 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 06:56:21,257 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 06:56:28,647 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 06:56:29,666 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 06:56:33,490 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 06:56:41,947 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 06:56:45,561 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 06:57:06,632 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 06:57:07,146 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 06:57:09,947 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 06:57:10,447 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 06:57:21,245 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 06:57:24,481 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 06:57:34,082 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 06:57:35,167 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 06:57:37,665 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 06:57:38,788 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 06:58:24,447 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 06:58:29,374 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 07:04:32,379 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 07:04:34,010 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 07:04:35,761 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 07:04:36,390 basehttp - Broken pipe from ('127.0.0.1', 49727)
+INFO 2024-08-29 07:04:36,390 basehttp - Broken pipe from ('127.0.0.1', 49732)
+INFO 2024-08-29 07:08:09,988 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 07:08:13,594 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 07:08:14,699 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 07:08:15,867 basehttp - Broken pipe from ('127.0.0.1', 49761)
+INFO 2024-08-29 07:08:15,867 basehttp - Broken pipe from ('127.0.0.1', 49753)
+INFO 2024-08-29 07:09:18,991 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 07:09:23,102 basehttp - Broken pipe from ('127.0.0.1', 49772)
+INFO 2024-08-29 07:11:02,218 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 07:11:06,544 basehttp - Broken pipe from ('127.0.0.1', 49790)
+INFO 2024-08-29 07:11:44,919 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 07:11:48,707 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 07:12:05,092 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 07:12:08,361 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 07:12:37,439 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 07:12:41,229 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 07:13:56,080 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 07:14:00,191 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 07:14:58,968 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 07:15:02,448 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 07:17:35,433 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 07:17:38,917 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 07:35:48,466 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 07:38:52,178 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 07:38:55,767 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 07:39:03,032 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 07:39:06,615 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 07:48:03,504 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 07:48:06,689 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 07:53:48,867 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 07:53:52,536 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 07:54:28,157 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 07:54:31,355 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 07:55:36,376 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 07:59:57,722 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 08:00:26,983 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 08:00:30,965 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 08:00:38,864 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 08:05:51,698 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 08:05:55,382 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 08:06:03,266 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 08:06:06,848 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 08:06:10,000 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 08:06:13,808 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 08:06:16,981 basehttp "POST /get-flow/ HTTP/1.1" 200 1276
+INFO 2024-08-29 08:06:20,154 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 08:06:23,436 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 08:06:25,521 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 08:06:27,032 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 08:06:37,880 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 08:06:55,416 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 08:06:58,772 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 08:07:04,403 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 08:07:08,703 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 08:07:14,233 basehttp "POST /get-flow/ HTTP/1.1" 200 1276
+INFO 2024-08-29 08:07:17,918 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 08:07:25,279 basehttp "POST /get-flow/ HTTP/1.1" 200 1276
+INFO 2024-08-29 08:07:28,352 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 08:07:41,569 basehttp "POST /get-flow/ HTTP/1.1" 200 1276
+INFO 2024-08-29 08:07:44,227 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 08:07:56,672 basehttp "POST /get-flow/ HTTP/1.1" 200 1276
+INFO 2024-08-29 08:07:59,800 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 08:35:19,735 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 08:35:22,715 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 08:35:29,262 basehttp "POST /get-flow/ HTTP/1.1" 200 1276
+INFO 2024-08-29 08:35:53,676 basehttp "POST /get-flow/ HTTP/1.1" 200 1276
+INFO 2024-08-29 08:35:56,074 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 08:37:06,039 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 08:37:06,039 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 08:37:08,866 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 08:37:09,093 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 08:37:40,407 basehttp "POST /get-flow/ HTTP/1.1" 200 1276
+INFO 2024-08-29 08:41:16,309 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 08:41:19,338 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 08:42:51,479 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 08:42:54,477 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 08:43:05,855 basehttp "POST /get-flow/ HTTP/1.1" 200 1276
+INFO 2024-08-29 08:43:43,726 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 08:43:46,579 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 08:45:18,381 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 08:45:21,437 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 08:45:28,032 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 08:45:31,377 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 08:45:38,254 basehttp "POST /get-flow/ HTTP/1.1" 200 1276
+INFO 2024-08-29 08:45:41,205 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 08:45:46,244 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 08:45:55,588 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 08:49:37,064 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 08:49:38,354 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 08:49:40,171 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 08:49:41,184 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+WARNING 2024-08-29 12:03:20,822 log Not Found: /get-flow/
+WARNING 2024-08-29 12:03:20,823 basehttp "POST /get-flow/ HTTP/1.1" 404 53
+INFO 2024-08-29 12:09:15,303 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 12:09:18,609 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 12:09:39,669 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 12:09:42,723 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 12:10:23,659 basehttp "POST /get-flow/ HTTP/1.1" 200 1275
+INFO 2024-08-29 12:10:27,216 basehttp "POST /set-flow/ HTTP/1.1" 200 40
+INFO 2024-08-29 14:30:48,009 autoreload D:\Nuren AI\backend_mine1\simplecrm\urls.py changed, reloading.
+INFO 2024-08-29 14:30:51,609 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 14:34:51,247 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-29 14:34:52,659 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 14:35:51,561 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-29 14:35:53,017 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 14:38:33,313 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-29 14:38:34,660 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 14:40:52,631 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-29 14:40:54,051 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 14:41:38,876 autoreload D:\Nuren AI\backend_mine1\simplecrm\urls.py changed, reloading.
+INFO 2024-08-29 14:41:40,134 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 14:56:35,422 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-29 14:56:37,283 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 15:09:43,792 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-29 15:09:45,902 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 15:13:02,382 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-29 15:13:03,862 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 15:14:07,431 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-29 15:14:09,100 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 15:16:47,440 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-29 15:16:48,816 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 15:17:09,468 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-29 15:17:11,252 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 15:17:30,374 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-29 15:17:32,067 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 15:18:55,308 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-29 15:18:56,764 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 15:20:45,639 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-29 15:20:47,073 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 15:21:45,750 autoreload D:\Nuren AI\backend_mine1\simplecrm\urls.py changed, reloading.
+INFO 2024-08-29 15:21:47,450 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 15:29:52,178 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-29 15:29:53,678 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 15:30:44,475 autoreload D:\Nuren AI\backend_mine1\simplecrm\urls.py changed, reloading.
+INFO 2024-08-29 15:30:45,890 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 15:33:41,128 autoreload D:\Nuren AI\backend_mine1\simplecrm\urls.py changed, reloading.
+INFO 2024-08-29 15:33:42,461 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 15:59:06,395 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-29 15:59:08,779 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 15:59:35,949 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-29 15:59:37,297 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 16:01:25,204 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-29 16:01:26,742 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-29 16:22:21,968 log Internal Server Error: /get-flow/
+ERROR 2024-08-29 16:22:21,969 basehttp "POST /get-flow/ HTTP/1.1" 500 41
+ERROR 2024-08-29 16:22:23,623 log Internal Server Error: /get-flow/
+ERROR 2024-08-29 16:22:23,623 basehttp "POST /get-flow/ HTTP/1.1" 500 41
+ERROR 2024-08-29 16:24:09,126 log Internal Server Error: /get-flow/
+ERROR 2024-08-29 16:24:09,126 basehttp "POST /get-flow/ HTTP/1.1" 500 41
+ERROR 2024-08-29 16:24:27,669 log Internal Server Error: /get-flow/
+ERROR 2024-08-29 16:24:27,669 basehttp "POST /get-flow/ HTTP/1.1" 500 41
+ERROR 2024-08-29 16:24:45,654 log Internal Server Error: /get-flow/
+ERROR 2024-08-29 16:24:45,654 basehttp "POST /get-flow/ HTTP/1.1" 500 41
+INFO 2024-08-29 17:25:02,162 autoreload D:\Nuren AI\backend_mine1\simplecrm\urls.py changed, reloading.
+INFO 2024-08-29 17:25:05,789 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 17:25:43,683 autoreload D:\Nuren AI\backend_mine1\simplecrm\urls.py changed, reloading.
+INFO 2024-08-29 17:25:45,295 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 17:27:31,766 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-29 17:27:33,269 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 17:28:27,056 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-29 17:28:28,693 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 17:29:06,240 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-29 17:29:07,725 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 17:30:10,032 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-08-29 17:30:11,674 autoreload Watching for file changes with StatReloader
+WARNING 2024-08-29 17:37:42,251 log Bad Request: /set-status/
+WARNING 2024-08-29 17:37:42,253 basehttp "POST /set-status/ HTTP/1.1" 400 21
+ERROR 2024-08-29 17:37:45,840 log Internal Server Error: /get-flow/
+ERROR 2024-08-29 17:37:45,842 basehttp "POST /get-flow/ HTTP/1.1" 500 41
+WARNING 2024-08-29 18:12:52,677 log Bad Request: /set-status/
+WARNING 2024-08-29 18:12:52,678 basehttp "POST /set-status/ HTTP/1.1" 400 21
+ERROR 2024-08-29 18:12:54,644 log Internal Server Error: /get-flow/
+ERROR 2024-08-29 18:12:54,644 basehttp "POST /get-flow/ HTTP/1.1" 500 41
+ERROR 2024-08-29 18:15:07,329 log Internal Server Error: /set-status/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 87, in _execute
+    return self.cursor.execute(sql)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.SyntaxError: syntax error at or near "sent"
+LINE 7:     sent = EXCLUDED.sent,
+            ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\whatsapp_chat\views.py", line 385, in update_message_status
+    cursor.execute(query)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 87, in _execute
+    return self.cursor.execute(sql)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: syntax error at or near "sent"
+LINE 7:     sent = EXCLUDED.sent,
+            ^
+
+ERROR 2024-08-29 18:15:07,363 basehttp "POST /set-status/ HTTP/1.1" 500 108000
+ERROR 2024-08-29 18:15:11,003 log Internal Server Error: /get-flow/
+ERROR 2024-08-29 18:15:11,003 basehttp "POST /get-flow/ HTTP/1.1" 500 41
+ERROR 2024-08-29 18:16:32,158 log Internal Server Error: /set-status/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 87, in _execute
+    return self.cursor.execute(sql)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.SyntaxError: syntax error at or near "sent"
+LINE 7:     sent = EXCLUDED.sent,
+            ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\whatsapp_chat\views.py", line 385, in update_message_status
+    cursor.execute(query)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 87, in _execute
+    return self.cursor.execute(sql)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: syntax error at or near "sent"
+LINE 7:     sent = EXCLUDED.sent,
+            ^
+
+ERROR 2024-08-29 18:16:32,158 basehttp "POST /set-status/ HTTP/1.1" 500 108000
+ERROR 2024-08-29 18:16:33,572 log Internal Server Error: /set-status/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 87, in _execute
+    return self.cursor.execute(sql)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.SyntaxError: syntax error at or near "sent"
+LINE 7:     sent = EXCLUDED.sent,
+            ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\whatsapp_chat\views.py", line 385, in update_message_status
+    cursor.execute(query)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 87, in _execute
+    return self.cursor.execute(sql)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: syntax error at or near "sent"
+LINE 7:     sent = EXCLUDED.sent,
+            ^
+
+ERROR 2024-08-29 18:16:33,572 basehttp "POST /set-status/ HTTP/1.1" 500 108000
+ERROR 2024-08-29 18:16:35,681 log Internal Server Error: /get-flow/
+ERROR 2024-08-29 18:16:35,681 basehttp "POST /get-flow/ HTTP/1.1" 500 41
+ERROR 2024-08-29 18:16:37,150 log Internal Server Error: /get-flow/
+ERROR 2024-08-29 18:16:37,150 basehttp "POST /get-flow/ HTTP/1.1" 500 41
+ERROR 2024-08-29 18:19:15,751 log Internal Server Error: /set-status/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 87, in _execute
+    return self.cursor.execute(sql)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.SyntaxError: syntax error at or near "sent"
+LINE 7:     sent = EXCLUDED.sent,
+            ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\whatsapp_chat\views.py", line 385, in update_message_status
+    cursor.execute(query)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 87, in _execute
+    return self.cursor.execute(sql)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: syntax error at or near "sent"
+LINE 7:     sent = EXCLUDED.sent,
+            ^
+
+ERROR 2024-08-29 18:19:15,753 basehttp "POST /set-status/ HTTP/1.1" 500 108000
+ERROR 2024-08-29 18:19:19,406 log Internal Server Error: /get-flow/
+ERROR 2024-08-29 18:19:19,406 basehttp "POST /get-flow/ HTTP/1.1" 500 41
+ERROR 2024-08-29 18:20:57,796 log Internal Server Error: /set-status/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 87, in _execute
+    return self.cursor.execute(sql)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.SyntaxError: syntax error at or near "sent"
+LINE 7:     sent = EXCLUDED.sent,
+            ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\whatsapp_chat\views.py", line 385, in update_message_status
+    cursor.execute(query)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\db\backends\utils.py", line 87, in _execute
+    return self.cursor.execute(sql)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: syntax error at or near "sent"
+LINE 7:     sent = EXCLUDED.sent,
+            ^
+
+ERROR 2024-08-29 18:20:57,796 basehttp "POST /set-status/ HTTP/1.1" 500 108000
+ERROR 2024-08-29 18:21:01,441 log Internal Server Error: /get-flow/
+ERROR 2024-08-29 18:21:01,442 basehttp "POST /get-flow/ HTTP/1.1" 500 41
+ERROR 2024-08-29 18:22:06,027 log Internal Server Error: /get-flow/
+ERROR 2024-08-29 18:22:06,027 basehttp "POST /get-flow/ HTTP/1.1" 500 41
+ERROR 2024-08-29 18:39:16,188 log Internal Server Error: /get-flow/
+ERROR 2024-08-29 18:39:16,188 basehttp "POST /get-flow/ HTTP/1.1" 500 41
+ERROR 2024-08-29 18:42:50,102 log Internal Server Error: /get-flow/
+ERROR 2024-08-29 18:42:50,102 basehttp "POST /get-flow/ HTTP/1.1" 500 41
+INFO 2024-08-29 19:27:10,998 autoreload Watching for file changes with StatReloader
+INFO 2024-08-29 19:29:19,365 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\models.py changed, reloading.
+INFO 2024-08-29 19:29:21,395 autoreload Watching for file changes with StatReloader

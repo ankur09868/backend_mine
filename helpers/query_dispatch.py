@@ -10,7 +10,7 @@ from .vectors_views import HandleQueryView
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-graph_path = r"simplecrm/Neo4j-a71a08f7-Created-2024-07-25.txt"
+graph_path = ""
 graph_schema = get_graph_schema(graph=graph_path)
 
 table_schema = get_tables_schema()
