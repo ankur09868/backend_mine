@@ -21,7 +21,6 @@ class ProductDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
 class ExperienceListAPIView(generics.ListCreateAPIView):
     queryset = Experience.objects.all()
     serializer_class = ExperienceSerializer
-    
 
 class ExperienceDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Experience.objects.all()
