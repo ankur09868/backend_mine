@@ -195,6 +195,8 @@ urlpatterns = [
     path('behavioral-metrics/', commviews.BehavioralMetricsListCreateView.as_view(), name='behavioral-metrics-list-create'),
     path('behavioral-metrics/<int:pk>/', commviews.BehavioralMetricsDetailView.as_view(), name='behavioral-metrics-detail'),
 
+    path('analyze-sentiment/', commviews.SentimentAnalysisView.as_view(), name='analyze_sentiment'),
+
 
 
 

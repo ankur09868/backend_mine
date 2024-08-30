@@ -2031,3 +2031,353 @@ WARNING 2024-08-29 20:20:40,196 basehttp "GET /execute-query/ HTTP/1.1" 405 40
 INFO 2024-08-29 20:20:49,308 basehttp "POST /execute-query/ HTTP/1.1" 200 1083
 INFO 2024-08-29 20:21:16,344 basehttp "POST /execute-query/ HTTP/1.1" 200 1776
 INFO 2024-08-29 20:21:46,961 basehttp "POST /execute-query/ HTTP/1.1" 200 37
+INFO 2024-08-29 20:45:23,629 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-08-29 20:45:23,663 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-08-29 20:45:25,143 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-29 20:45:25,346 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 156
+INFO 2024-08-29 20:45:25,367 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+WARNING 2024-08-29 20:45:25,950 log Not Found: /wallet/balance/
+WARNING 2024-08-29 20:45:25,951 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-08-29 20:45:25,962 basehttp "GET /generate-report/ HTTP/1.1" 200 109
+INFO 2024-08-29 20:45:25,960 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-08-29 20:45:28,935 basehttp "GET /generate-report/ HTTP/1.1" 200 109
+INFO 2024-08-29 22:29:19,443 basehttp "OPTIONS /execute-query/ HTTP/1.1" 200 0
+ERROR 2024-08-29 22:29:25,541 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-08-29 22:29:25,543 basehttp "POST /execute-query/ HTTP/1.1" 500 135387
+INFO 2024-08-29 22:29:50,531 autoreload Watching for file changes with StatReloader
+INFO 2024-08-30 08:57:16,915 autoreload Watching for file changes with StatReloader
+INFO 2024-08-30 09:04:01,591 autoreload Watching for file changes with StatReloader
+WARNING 2024-08-30 09:05:06,495 log Not Found: /analyze-sentiment/
+WARNING 2024-08-30 09:05:06,496 basehttp "POST /analyze-sentiment/ HTTP/1.1" 404 35
+ERROR 2024-08-30 09:07:17,516 log Internal Server Error: /analyze-sentiment/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 187, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\fields\mixins.py", line 15, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\new_nurenai\backend_mine\communication\views.py", line 88, in post
+    user = conversation.user
+           ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 205, in __get__
+    rel_obj = self.get_object(instance)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 168, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+simplecrm.models.CustomUser.DoesNotExist: CustomUser matching query does not exist.
+ERROR 2024-08-30 09:07:17,519 basehttp "POST /analyze-sentiment/ HTTP/1.1" 500 126100
+INFO 2024-08-30 09:49:15,045 basehttp "GET /leads/ HTTP/1.1" 200 4224
+INFO 2024-08-30 09:54:06,139 basehttp "OPTIONS /experience/ HTTP/1.1" 200 0
+INFO 2024-08-30 09:54:36,643 basehttp "GET /experience/ HTTP/1.1" 200 608258
+INFO 2024-08-30 09:54:37,700 basehttp "OPTIONS /experience/527 HTTP/1.1" 200 0
+INFO 2024-08-30 09:55:43,455 basehttp "GET /experience/ HTTP/1.1" 200 608258
+INFO 2024-08-30 09:56:27,213 basehttp "GET /experience/ HTTP/1.1" 200 608258
+INFO 2024-08-30 09:56:48,732 basehttp "GET /experience/527 HTTP/1.1" 301 0
+INFO 2024-08-30 09:56:50,280 basehttp "GET /experience/527/ HTTP/1.1" 200 2505
+WARNING 2024-08-30 09:58:41,189 log Method Not Allowed: /analyze-sentiment/
+WARNING 2024-08-30 09:58:41,189 basehttp "GET /analyze-sentiment/ HTTP/1.1" 405 40
+ERROR 2024-08-30 09:58:48,360 log Internal Server Error: /analyze-sentiment/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 187, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\fields\mixins.py", line 15, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\new_nurenai\backend_mine\communication\views.py", line 88, in post
+    user = conversation.user
+           ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 205, in __get__
+    rel_obj = self.get_object(instance)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 168, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+simplecrm.models.CustomUser.DoesNotExist: CustomUser matching query does not exist.
+ERROR 2024-08-30 09:58:48,363 basehttp "POST /analyze-sentiment/ HTTP/1.1" 500 126100
+INFO 2024-08-30 10:00:23,078 autoreload D:\new_nurenai\backend_mine\simplecrm\settings.py changed, reloading.
+INFO 2024-08-30 13:36:19,162 autoreload Watching for file changes with StatReloader
+INFO 2024-08-30 13:37:21,809 autoreload D:\new_nurenai\backend_mine\communication\views.py changed, reloading.
+INFO 2024-08-30 13:37:23,453 autoreload Watching for file changes with StatReloader
+WARNING 2024-08-30 13:38:54,546 log Method Not Allowed: /analyze-sentiment/
+WARNING 2024-08-30 13:38:54,547 basehttp "GET /analyze-sentiment/ HTTP/1.1" 405 40
+ERROR 2024-08-30 13:39:04,956 log Internal Server Error: /analyze-sentiment/
+ERROR 2024-08-30 13:39:04,956 basehttp "POST /analyze-sentiment/ HTTP/1.1" 500 41
+INFO 2024-08-30 13:40:17,761 autoreload D:\new_nurenai\backend_mine\communication\views.py changed, reloading.
+INFO 2024-08-30 13:40:19,579 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-30 13:41:14,577 log Internal Server Error: /analyze-sentiment/
+ERROR 2024-08-30 13:41:14,578 basehttp "POST /analyze-sentiment/ HTTP/1.1" 500 41
+INFO 2024-08-30 13:54:03,845 autoreload Watching for file changes with StatReloader
+INFO 2024-08-30 13:55:02,767 autoreload D:\new_nurenai\backend_mine\communication\views.py changed, reloading.
+INFO 2024-08-30 13:55:04,378 autoreload Watching for file changes with StatReloader
+INFO 2024-08-30 13:55:53,583 basehttp "POST /analyze-sentiment/ HTTP/1.1" 201 52
+WARNING 2024-08-30 13:56:48,295 log Method Not Allowed: /
+WARNING 2024-08-30 13:56:48,295 basehttp "POST / HTTP/1.1" 405 41
+INFO 2024-08-30 13:56:53,908 basehttp "GET /calls HTTP/1.1" 301 0
+INFO 2024-08-30 13:56:56,379 basehttp "GET /calls/ HTTP/1.1" 200 275
+INFO 2024-08-30 13:57:48,957 autoreload D:\new_nurenai\backend_mine\communication\views.py changed, reloading.
+INFO 2024-08-30 13:57:50,548 autoreload Watching for file changes with StatReloader
+INFO 2024-08-30 13:58:40,657 basehttp "POST /analyze-sentiment/ HTTP/1.1" 201 52
+INFO 2024-08-30 14:01:45,871 autoreload D:\new_nurenai\backend_mine\communication\views.py changed, reloading.
+INFO 2024-08-30 14:01:47,464 autoreload Watching for file changes with StatReloader
+INFO 2024-08-30 14:02:45,359 basehttp "POST /analyze-sentiment/ HTTP/1.1" 201 52
+INFO 2024-08-30 14:07:45,480 basehttp "GET /conversations/ HTTP/1.1" 200 18116
+INFO 2024-08-30 15:22:56,016 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-08-30 15:22:56,020 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-08-30 15:22:56,021 basehttp "OPTIONS /interaction HTTP/1.1" 200 0
+INFO 2024-08-30 15:22:56,024 basehttp "OPTIONS /report/lead_stages/ HTTP/1.1" 200 0
+INFO 2024-08-30 15:22:56,051 basehttp "OPTIONS /report/opportunity_stages/ HTTP/1.1" 200 0
+INFO 2024-08-30 15:22:56,070 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-08-30 15:22:56,082 basehttp "OPTIONS /wallet/balance?user_id=3 HTTP/1.1" 200 0
+INFO 2024-08-30 15:22:56,146 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-08-30 15:22:56,258 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-08-30 15:22:56,433 basehttp "OPTIONS /wallet/balance/?user_id=3 HTTP/1.1" 200 0
+INFO 2024-08-30 15:22:56,461 basehttp "OPTIONS /interaction/ HTTP/1.1" 200 0
+INFO 2024-08-30 15:22:57,840 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+INFO 2024-08-30 15:22:57,881 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 137
+INFO 2024-08-30 15:22:57,881 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-08-30 15:22:57,882 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+WARNING 2024-08-30 15:22:58,174 log Not Found: /wallet/balance/
+WARNING 2024-08-30 15:22:58,175 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-08-30 15:22:58,333 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-08-30 15:22:59,760 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-08-30 16:27:08,566 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-08-30 16:27:08,602 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-08-30 16:27:09,991 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-08-30 16:27:10,108 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+INFO 2024-08-30 16:27:10,133 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-30 16:27:10,202 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 137
+INFO 2024-08-30 16:27:10,346 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-08-30 16:27:10,349 log Not Found: /wallet/balance/
+WARNING 2024-08-30 16:27:10,349 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-08-30 16:27:11,762 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-08-30 16:33:13,813 basehttp "OPTIONS /experience/ HTTP/1.1" 200 0
+INFO 2024-08-30 16:33:16,663 basehttp "GET /experience/ HTTP/1.1" 200 608258
+INFO 2024-08-30 16:33:18,711 basehttp "OPTIONS /experience/527 HTTP/1.1" 200 0
+INFO 2024-08-30 16:33:22,487 basehttp "OPTIONS /experience/527 HTTP/1.1" 200 0
+INFO 2024-08-30 16:33:41,734 basehttp "OPTIONS /experience/527 HTTP/1.1" 200 0
+INFO 2024-08-30 16:33:53,077 basehttp "GET /experience/527 HTTP/1.1" 301 0
+INFO 2024-08-30 16:33:56,511 basehttp "GET /experience/527/ HTTP/1.1" 200 2505
+INFO 2024-08-30 16:34:16,729 basehttp "OPTIONS /experience/527 HTTP/1.1" 200 0
+INFO 2024-08-30 16:34:33,122 basehttp "OPTIONS /experience/527 HTTP/1.1" 200 0
+INFO 2024-08-30 16:35:36,083 basehttp "OPTIONS /experience/527 HTTP/1.1" 200 0
+INFO 2024-08-30 16:43:24,212 basehttp "OPTIONS /experience/527 HTTP/1.1" 200 0
+INFO 2024-08-30 16:56:13,461 basehttp "OPTIONS /report/opportunity_stages/ HTTP/1.1" 200 0
+INFO 2024-08-30 16:56:13,566 basehttp "OPTIONS /interaction HTTP/1.1" 200 0
+INFO 2024-08-30 16:56:13,567 basehttp "OPTIONS /report/lead_stages/ HTTP/1.1" 200 0
+INFO 2024-08-30 16:56:14,771 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-08-30 16:56:15,010 basehttp "OPTIONS /interaction/ HTTP/1.1" 200 0
+INFO 2024-08-30 16:56:18,117 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 137
+INFO 2024-08-30 16:56:18,424 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+INFO 2024-08-30 16:56:18,868 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-08-30 17:01:30,130 log Bad Request: /reminders/
+WARNING 2024-08-30 17:01:30,130 basehttp "GET /reminders/ HTTP/1.1" 400 21
+WARNING 2024-08-30 17:01:32,426 log Not Found: /experience/
+WARNING 2024-08-30 17:01:32,427 basehttp "GET /experience/ HTTP/1.1" 404 21
+INFO 2024-08-30 17:01:36,916 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-08-30 17:01:36,952 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-08-30 17:01:37,191 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-08-30 17:01:37,251 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-08-30 17:01:37,558 basehttp "OPTIONS /wallet/balance?user_id=3 HTTP/1.1" 200 0
+INFO 2024-08-30 17:01:37,764 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-08-30 17:01:37,945 basehttp "OPTIONS /wallet/balance/?user_id=3 HTTP/1.1" 200 0
+INFO 2024-08-30 17:01:38,699 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-30 17:01:38,823 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 137
+INFO 2024-08-30 17:01:38,931 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-08-30 17:01:38,932 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+INFO 2024-08-30 17:01:39,025 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-08-30 17:01:39,831 log Not Found: /wallet/balance/
+WARNING 2024-08-30 17:01:39,831 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-08-30 17:01:40,645 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-08-30 17:01:45,570 basehttp "OPTIONS /execute-query/ HTTP/1.1" 200 0
+ERROR 2024-08-30 17:01:50,693 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-08-30 17:01:50,699 basehttp "POST /execute-query/ HTTP/1.1" 500 135975
+ERROR 2024-08-30 17:02:03,281 log Internal Server Error: /execute-query/
+ERROR 2024-08-30 17:02:03,281 basehttp "POST /execute-query/ HTTP/1.1" 500 272
+ERROR 2024-08-30 17:02:16,269 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-08-30 17:02:16,270 basehttp "POST /execute-query/ HTTP/1.1" 500 135975
+INFO 2024-08-30 17:02:33,289 basehttp "POST /execute-query/ HTTP/1.1" 200 2351
+INFO 2024-08-30 17:02:49,557 basehttp "POST /execute-query/ HTTP/1.1" 200 282
+INFO 2024-08-30 17:03:04,328 basehttp "POST /execute-query/ HTTP/1.1" 200 22202
+WARNING 2024-08-30 17:29:49,070 log Not Found: /experience/
+WARNING 2024-08-30 17:29:49,071 basehttp "GET /experience/ HTTP/1.1" 404 21
+INFO 2024-08-30 17:30:02,981 basehttp "OPTIONS /experience/527 HTTP/1.1" 200 0
+INFO 2024-08-30 17:30:09,334 basehttp "OPTIONS /experience/527 HTTP/1.1" 200 0
+INFO 2024-08-30 17:35:27,255 basehttp "OPTIONS /experience/ HTTP/1.1" 200 0
+WARNING 2024-08-30 17:35:29,498 log Not Found: /experience/
+WARNING 2024-08-30 17:35:29,498 basehttp "GET /experience/ HTTP/1.1" 404 21
+INFO 2024-08-30 17:35:40,313 basehttp "OPTIONS /experience/527 HTTP/1.1" 200 0
+WARNING 2024-08-30 17:45:56,822 log Not Found: /experience/
+WARNING 2024-08-30 17:45:56,823 basehttp "GET /experience/ HTTP/1.1" 404 21
+INFO 2024-08-30 17:46:43,369 autoreload D:\new_nurenai\backend_mine\communication\views.py changed, reloading.
+INFO 2024-08-30 17:46:46,521 autoreload Watching for file changes with StatReloader
+INFO 2024-08-30 18:17:44,252 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-08-30 18:17:44,277 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-08-30 18:17:47,759 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+INFO 2024-08-30 18:17:47,786 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-08-30 18:17:47,786 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 137
+INFO 2024-08-30 18:17:47,792 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-08-30 18:17:47,807 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-08-30 18:17:47,807 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+WARNING 2024-08-30 18:17:47,992 log Not Found: /wallet/balance/
+WARNING 2024-08-30 18:17:47,992 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-08-30 19:20:31,900 autoreload D:\new_nurenai\backend_mine\helpers\graph.py changed, reloading.
