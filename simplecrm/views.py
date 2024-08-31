@@ -10,12 +10,12 @@ from rest_framework import status
 
 @api_view(['POST'])
 def deduplicate_view(request):
-    app_name = request.data.get('app_name')
+    app_name = request.data.get('app-name')
     model_name = request.data.get('model')
     unique_field = request.data.get('field')
     
     if not app_name or not model_name or not unique_field :
-        return JsonResponse({'status': 'error', 'message': 'App-Name,Model name and field name are required.'}, status=400)
+        return JsonResponse({'status': 'error', 'message': 'app-name,model and field name are required.'}, status=400)
     
     try:
         model_class = apps.get_model(app_name, model_name)

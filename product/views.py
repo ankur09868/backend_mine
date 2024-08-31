@@ -18,13 +18,6 @@ class ProductDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = ProductSerializer
     # permission_classes = (IsAdminUser,)
 
-class ExperienceListAPIView(generics.ListCreateAPIView):
-    queryset = Experience.objects.all()
-    serializer_class = ExperienceSerializer
-
-class ExperienceDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Experience.objects.all()
-    serializer_class = ExperienceSerializer
 
 logger = logging.getLogger(__name__)
 
@@ -106,3 +99,32 @@ def get_products(request):
             # Close the cursor and connection
             cursor.close()
             connection.close()
+class ExperienceListAPIView(generics.ListCreateAPIView):
+    queryset = Experience.objects.all()
+    serializer_class = ExperienceSerializer
+    # permission_classes = (IsAdminUser,)
+
+
+# from rest_framework.exceptions import NotFound
+
+
+# class ExperienceListAPIView(generics.ListCreateAPIView):
+#     serializer_class = ExperienceSerializer
+
+#     def get_queryset(self):
+#         # Extract tenant ID from headers
+#         tenant_id = self.request.headers.get('X-Tenant-ID')
+        
+#         # Check if tenant_id is provided
+#         if not tenant_id:
+#             raise NotFound("Tenant ID not provided in the headers.")
+
+#         # Filter queryset by tenant
+#         qs = Experience.objects.filter(tenant__id=tenant_id)
+#         print(f"Filtered QuerySet for Tenant {tenant_id}: {qs}")  # Debugging output
+#         return qs
+
+class ExperienceDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Experience.objects.all()
+    serializer_class = ExperienceSerializer
+    # permission_classes = (IsAdminUser,)

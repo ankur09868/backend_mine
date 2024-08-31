@@ -59,6 +59,7 @@ from topicmodelling import views as topicviews
 from whatsapp_chat import views as wa_chat_views
 from rest_framework.routers import DefaultRouter
 from communication import insta_msg as imsg 
+from communication import views as commviews
 
 router = DefaultRouter()
 router.register(r'groups', inviews.GroupViewSet, basename='group')
@@ -177,6 +178,27 @@ urlpatterns = [
     path('save-email-messages/', imsg.save_email_messages, name='save-email-messages'),  # Save email messages
     path('store-selected-emails/', simviews.store_selected_emails, name='store_selected_emails'),  # Store selected emails
     path('fetch-all-emails/', simviews.fetch_all_emails, name='fetch_all_emails'),  # Fetch all emails
+
+    path('group-messages/', commviews.GroupMessagesView.as_view(), name='group_messages'),
+
+    path('conversations/', commviews.ConversationListCreateView.as_view(), name='conversation-list-create'),
+    path('conversations/<int:pk>/', commviews.ConversationDetailView.as_view(), name='conversation-detail'),
+
+    path('messages/', commviews.MessageListCreateView.as_view(), name='message-list-create'),
+    path('messages/<int:pk>/', commviews.MessageDetailView.as_view(), name='message-detail'),
+
+     # Sentiment Analysis URLs
+    path('sentiment-analyses/', commviews.SentimentAnalysisListCreateView.as_view(), name='sentiment-analysis-list-create'),
+    path('sentiment-analyses/<int:pk>/', commviews.SentimentAnalysisDetailView.as_view(), name='sentiment-analysis-detail'),
+
+    # Behavioral Metrics URLs
+    path('behavioral-metrics/', commviews.BehavioralMetricsListCreateView.as_view(), name='behavioral-metrics-list-create'),
+    path('behavioral-metrics/<int:pk>/', commviews.BehavioralMetricsDetailView.as_view(), name='behavioral-metrics-detail'),
+
+    path('analyze-sentiment/', commviews.SentimentAnalysisView.as_view(), name='analyze_sentiment'),
+
+
+
 
 ]
 urlpatterns += router.urls
