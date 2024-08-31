@@ -5,9 +5,7 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('leads', '0002_remove_lead_assigned_to_lead_assigned_to'),
-    ]
+   
 
     operations = [
         migrations.AlterField(

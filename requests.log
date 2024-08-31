@@ -8,3 +8,2110 @@ INFO 2024-08-27 12:28:39,926 autoreload Watching for file changes with StatReloa
 INFO 2024-08-27 12:29:46,678 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\leads\migrations\0003_lead_tenant.py changed, reloading.
 INFO 2024-08-27 12:29:47,844 autoreload Watching for file changes with StatReloader
 INFO 2024-08-27 12:30:29,574 basehttp "GET /groups/ HTTP/1.1" 200 2
+INFO 2024-08-27 12:31:01,877 basehttp "GET /groups/ HTTP/1.1" 200 2
+INFO 2024-08-27 17:14:33,000 basehttp "OPTIONS /set-flow/ HTTP/1.1" 200 0
+WARNING 2024-08-27 17:14:36,393 log Bad Request: /set-flow/
+WARNING 2024-08-27 17:14:36,394 basehttp "POST /set-flow/ HTTP/1.1" 400 20
+INFO 2024-08-28 18:31:46,653 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\urls.py changed, reloading.
+INFO 2024-08-28 18:31:51,183 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 18:33:38,673 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\urls.py changed, reloading.
+INFO 2024-08-28 18:33:39,668 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 18:33:52,231 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\urls.py changed, reloading.
+INFO 2024-08-28 18:33:53,142 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 18:36:19,399 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 18:36:28,640 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\urls.py changed, reloading.
+INFO 2024-08-28 18:36:29,449 autoreload Watching for file changes with StatReloader
+WARNING 2024-08-28 18:48:43,440 log Bad Request: /create_table/
+WARNING 2024-08-28 18:48:43,440 basehttp "POST /create_table/ HTTP/1.1" 400 21
+WARNING 2024-08-28 18:48:59,835 log Forbidden (CSRF cookie not set.): /create_table/
+WARNING 2024-08-28 18:48:59,835 basehttp "POST /create_table/ HTTP/1.1" 403 2870
+INFO 2024-08-28 18:49:50,597 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py changed, reloading.
+INFO 2024-08-28 18:49:52,256 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 18:50:19,561 basehttp "POST /create_table/ HTTP/1.1" 200 41
+WARNING 2024-08-28 18:51:13,729 log Bad Request: /insert_data/
+WARNING 2024-08-28 18:51:13,730 basehttp "GET /insert_data/ HTTP/1.1" 400 21
+INFO 2024-08-28 19:01:11,189 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py changed, reloading.
+INFO 2024-08-28 19:01:13,714 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 19:02:03,739 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py changed, reloading.
+INFO 2024-08-28 19:02:05,038 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 19:04:00,822 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py changed, reloading.
+INFO 2024-08-28 19:04:02,371 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 19:04:28,398 basehttp "POST /create_table/ HTTP/1.1" 200 41
+WARNING 2024-08-28 19:05:24,982 log Bad Request: /insert_data/
+WARNING 2024-08-28 19:05:24,983 basehttp "POST /insert_data/ HTTP/1.1" 400 36
+WARNING 2024-08-28 19:07:01,509 log Bad Request: /insert_data/
+WARNING 2024-08-28 19:07:01,509 basehttp "POST /insert_data/ HTTP/1.1" 400 36
+WARNING 2024-08-28 19:12:08,914 log Bad Request: /insert_data/
+WARNING 2024-08-28 19:12:08,914 basehttp "POST /insert_data/ HTTP/1.1" 400 36
+WARNING 2024-08-28 19:12:09,755 log Bad Request: /insert_data/
+WARNING 2024-08-28 19:12:09,756 basehttp "POST /insert_data/ HTTP/1.1" 400 36
+WARNING 2024-08-28 19:12:09,999 log Bad Request: /insert_data/
+WARNING 2024-08-28 19:12:10,000 basehttp "POST /insert_data/ HTTP/1.1" 400 36
+WARNING 2024-08-28 19:12:11,063 log Bad Request: /insert_data/
+WARNING 2024-08-28 19:12:11,063 basehttp "POST /insert_data/ HTTP/1.1" 400 36
+WARNING 2024-08-28 19:16:07,290 log Bad Request: /create_table/
+WARNING 2024-08-28 19:16:07,290 basehttp "POST /create_table/ HTTP/1.1" 400 21
+INFO 2024-08-28 19:16:29,963 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\middleware.py changed, reloading.
+INFO 2024-08-28 19:16:32,360 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 19:17:10,504 basehttp "POST /create_table/ HTTP/1.1" 200 41
+WARNING 2024-08-28 19:17:21,668 log Bad Request: /insert_data/
+WARNING 2024-08-28 19:17:21,668 basehttp "POST /insert_data/ HTTP/1.1" 400 36
+WARNING 2024-08-28 19:17:39,184 log Bad Request: /insert_data/
+WARNING 2024-08-28 19:17:39,184 basehttp "POST /insert_data/ HTTP/1.1" 400 36
+WARNING 2024-08-28 19:20:06,885 log Bad Request: /insert_data/
+WARNING 2024-08-28 19:20:06,885 basehttp "POST /insert_data/ HTTP/1.1" 400 36
+INFO 2024-08-28 19:21:32,014 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py changed, reloading.
+INFO 2024-08-28 19:21:33,765 autoreload Watching for file changes with StatReloader
+WARNING 2024-08-28 19:22:04,700 log Bad Request: /insert_data/
+WARNING 2024-08-28 19:22:04,700 basehttp "POST /insert_data/ HTTP/1.1" 400 25
+INFO 2024-08-28 19:22:47,674 basehttp "POST /insert_data/ HTTP/1.1" 200 41
+INFO 2024-08-28 19:26:22,361 autoreload Watching for file changes with StatReloader
+INFO 2024-08-28 19:29:04,861 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:29:06,575 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:29:07,915 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:29:09,452 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:29:10,487 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:29:12,078 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:29:14,726 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:29:16,297 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:29:40,892 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:29:42,524 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:31:51,764 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:31:53,417 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:31:54,875 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:31:56,421 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:31:57,819 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:31:59,371 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:32:02,027 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:32:04,159 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:32:28,093 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:32:29,752 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:32:51,065 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:32:52,621 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:32:53,926 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:32:55,513 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:32:56,511 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:32:58,044 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:33:00,394 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:33:02,062 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:33:03,880 basehttp - Broken pipe from ('127.0.0.1', 58791)
+INFO 2024-08-28 19:33:08,856 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:33:10,424 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:33:22,503 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:33:24,083 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:33:29,062 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:33:30,614 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:34:31,920 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:34:33,616 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:35:41,638 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:35:43,365 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:36:49,163 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:36:51,076 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:38:32,882 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:38:34,523 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:39:13,096 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:39:14,745 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:40:20,094 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:40:21,775 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:43:05,115 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:43:06,771 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:44:20,436 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:44:22,068 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:44:55,554 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:44:57,217 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:44:58,753 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:45:00,509 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:45:01,596 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:45:03,118 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:45:06,040 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:45:08,336 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:45:33,766 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:45:35,435 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:46:56,988 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:46:58,615 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:47:00,668 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:47:02,199 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:47:04,636 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:47:06,481 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:47:09,866 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:47:11,416 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:47:40,227 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:47:41,883 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:52:37,898 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:52:39,576 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:54:17,539 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:54:19,194 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:54:52,409 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:54:54,056 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:56:29,403 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:56:31,034 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:56:33,340 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:56:34,877 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:56:37,063 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:56:38,590 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:56:42,783 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:56:44,329 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:57:10,586 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:57:12,234 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:15,808 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:17,475 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:19,688 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:19,825 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:19,893 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:20,530 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:20,576 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:20,724 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:20,921 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:21,258 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:21,360 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:21,439 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:22,068 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:22,109 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:22,291 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:22,457 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:23,669 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:24,279 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:24,304 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:24,506 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:24,984 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:25,048 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:25,222 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:25,304 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:25,799 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:25,825 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:26,054 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:26,504 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:26,600 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:26,845 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:28,294 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:28,745 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:28,995 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:29,144 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:29,432 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:29,760 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:29,845 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:30,288 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:30,524 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:30,694 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:30,928 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:30,970 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:31,295 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:32,457 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:33,944 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:34,223 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:35,480 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:35,615 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:35,763 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:36,014 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:36,282 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:36,632 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 19:59:37,167 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:37,561 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:37,814 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 19:59:38,163 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:00:01,188 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:00:02,804 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:00:04,599 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:00:04,908 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:00:05,289 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:00:05,639 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:00:05,752 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:00:06,066 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:00:06,376 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:00:06,604 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:00:07,038 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:00:07,270 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:00:07,270 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:00:07,593 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:03:08,237 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:03:09,880 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:03:12,139 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:03:12,148 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:03:12,444 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:03:12,795 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:03:12,823 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:03:12,976 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:03:13,702 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:03:13,729 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:03:13,999 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:03:14,364 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:03:14,381 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:03:14,526 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:06:39,223 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:06:40,871 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:06:43,159 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:06:43,212 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:06:43,821 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:06:44,352 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:06:44,539 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:06:44,576 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:06:44,693 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:06:44,744 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:06:45,357 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:06:45,875 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:06:46,056 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:06:46,109 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:13:09,507 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:13:11,146 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:16:05,874 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:16:05,884 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:16:05,902 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:16:05,931 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:16:05,960 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:16:06,024 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:16:07,552 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:16:08,083 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:16:08,114 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:16:08,116 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:16:08,117 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:16:08,238 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:15,772 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:17,516 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:19,757 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:19,976 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:20,251 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:20,620 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:21,295 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:21,343 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:21,365 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:21,432 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:21,524 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:21,789 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:22,142 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:22,877 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:22,877 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:22,951 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:24,447 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:24,995 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:25,017 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:25,314 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:25,573 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:25,677 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:25,971 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:25,991 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:26,530 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:26,543 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:26,848 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:27,098 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:27,211 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:27,510 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:28,731 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:29,074 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:29,624 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:29,818 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:29,852 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:30,141 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:30,262 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:30,627 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:31,161 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:31,313 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:31,353 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:31,392 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:31,678 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:32,839 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:34,423 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:34,736 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:34,912 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:35,853 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:35,964 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:36,284 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:36,373 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:36,483 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:36,516 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:19:37,389 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:37,907 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:19:38,064 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:20:01,738 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:20:03,355 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:20:05,241 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:20:05,491 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:20:05,531 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:20:05,942 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:20:06,107 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:20:06,479 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:20:06,793 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:20:07,036 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:20:07,081 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:20:07,492 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:20:07,646 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:20:08,032 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:22:35,057 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:22:36,712 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:22:46,996 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:22:48,554 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:25:59,799 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:26:01,477 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:26:19,887 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:26:21,435 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:28:00,079 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:28:01,723 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:44:54,723 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:44:56,390 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 20:45:22,314 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 20:45:23,892 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 21:06:54,429 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 21:06:56,086 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 21:07:01,086 basehttp - Broken pipe from ('127.0.0.1', 60637)
+INFO 2024-08-28 21:08:00,537 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 21:08:02,174 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 21:10:25,033 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 21:10:26,680 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 21:13:27,620 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 21:13:29,300 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 21:16:26,621 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 21:16:28,253 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 21:17:40,759 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 21:17:42,377 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 21:18:39,649 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 21:18:41,315 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 21:24:02,171 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 21:24:03,824 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 21:24:31,855 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 21:24:33,394 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 21:25:53,154 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 21:25:54,781 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 21:29:09,109 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-28 21:29:10,778 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-28 21:29:10,823 basehttp - Broken pipe from ('127.0.0.1', 61001)
+INFO 2024-08-29 12:27:18,190 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 12:27:19,927 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 12:27:19,974 basehttp - Broken pipe from ('127.0.0.1', 63417)
+INFO 2024-08-29 12:27:34,724 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 12:27:36,321 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 12:28:45,149 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 12:28:46,795 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 12:33:59,905 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 12:34:01,581 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 12:38:29,407 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 12:38:29,730 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 12:38:31,090 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 12:38:31,336 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 12:39:42,507 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 12:39:42,831 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 12:39:44,215 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 12:39:44,416 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 14:19:37,757 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 14:19:39,498 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 14:19:39,548 basehttp - Broken pipe from ('127.0.0.1', 64753)
+INFO 2024-08-29 14:23:48,875 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 14:23:50,563 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 14:23:50,587 basehttp - Broken pipe from ('127.0.0.1', 64783)
+INFO 2024-08-29 14:24:35,424 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 14:24:37,117 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 14:24:38,265 basehttp - Broken pipe from ('127.0.0.1', 64796)
+INFO 2024-08-29 14:33:40,960 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 14:33:42,969 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 14:51:25,471 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 14:51:27,394 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 14:51:29,414 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 14:51:31,288 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 14:51:32,690 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 14:51:34,432 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 14:51:38,297 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 14:51:40,161 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 14:52:05,644 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 14:52:07,940 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 14:55:05,228 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 14:55:09,916 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 14:55:11,475 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 14:55:13,336 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 14:55:14,492 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 14:55:16,228 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 14:55:18,711 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 14:55:20,654 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 14:55:45,952 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 14:55:48,766 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 14:56:16,174 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 14:56:18,056 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 14:56:59,624 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 14:57:01,511 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 14:57:23,252 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 14:57:25,678 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 14:57:54,344 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 14:57:56,266 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 15:01:12,041 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 15:01:15,317 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 15:03:36,486 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 15:03:38,981 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 15:03:39,296 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 15:03:40,630 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 15:54:41,850 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 15:54:43,577 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 15:57:14,607 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 15:57:16,355 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 15:57:43,237 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 15:57:44,867 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 15:58:25,807 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 15:58:27,498 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 15:58:29,224 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 15:58:29,998 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 15:58:30,784 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 15:58:31,607 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 16:00:53,931 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 16:00:55,637 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 16:08:46,480 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 16:08:48,147 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 16:09:06,363 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 16:09:07,947 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 16:09:09,188 basehttp - Broken pipe from ('127.0.0.1', 49701)
+INFO 2024-08-29 16:09:52,360 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 16:09:54,488 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 16:24:03,637 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 16:24:06,794 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 16:24:07,357 basehttp - Broken pipe from ('127.0.0.1', 50134)
+INFO 2024-08-29 16:47:44,757 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 16:47:47,185 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 16:47:48,625 basehttp - Broken pipe from ('127.0.0.1', 50304)
+INFO 2024-08-29 16:52:31,250 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 16:52:33,709 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 16:52:33,751 basehttp - Broken pipe from ('127.0.0.1', 50347)
+INFO 2024-08-29 16:52:55,292 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 16:52:57,528 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 16:52:59,168 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 16:53:01,495 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 16:53:03,952 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 16:53:05,623 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 16:53:33,011 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 16:53:34,566 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 16:53:38,150 basehttp - Broken pipe from ('127.0.0.1', 50367)
+INFO 2024-08-29 16:53:45,037 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 16:53:46,989 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 16:53:47,017 basehttp - Broken pipe from ('127.0.0.1', 50374)
+INFO 2024-08-29 16:54:44,253 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 16:54:45,909 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 16:54:47,051 basehttp - Broken pipe from ('127.0.0.1', 50391)
+INFO 2024-08-29 16:59:19,744 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 16:59:21,442 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 16:59:22,530 basehttp - Broken pipe from ('127.0.0.1', 50449)
+INFO 2024-08-29 17:02:12,071 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:02:13,725 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:02:14,793 basehttp - Broken pipe from ('127.0.0.1', 50483)
+INFO 2024-08-29 17:04:39,060 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:04:41,033 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:05:35,349 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:05:37,005 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:06:36,331 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:06:38,315 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:08:40,381 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:08:42,114 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:08:43,152 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:08:44,712 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:08:45,711 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:08:47,327 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:08:50,077 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:08:51,658 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:09:11,917 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:09:13,579 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:09:14,690 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:09:14,812 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:09:16,243 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:09:16,400 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:09:17,466 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:09:19,028 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:09:21,644 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:09:23,238 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:09:51,180 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:09:52,892 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:11:47,751 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:11:49,663 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:12:31,013 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:12:32,667 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:13:02,149 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:13:04,627 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:13:05,635 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:13:07,471 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:14:00,216 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:14:01,879 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:14:04,513 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:14:06,118 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:14:07,336 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:14:08,913 basehttp - Broken pipe from ('127.0.0.1', 50683)
+INFO 2024-08-29 17:14:46,654 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:14:48,341 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:14:49,338 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:14:50,950 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:14:52,037 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:14:53,593 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:14:56,418 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:14:57,990 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:15:05,888 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:15:07,466 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:15:23,174 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:15:24,966 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:15:25,658 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:15:27,631 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:16:27,225 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:16:30,668 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:21:27,927 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:21:29,976 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:24:26,134 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:24:27,779 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:24:27,815 basehttp - Broken pipe from ('127.0.0.1', 50775)
+INFO 2024-08-29 17:27:00,797 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:27:02,488 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:28:06,106 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:28:07,794 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 17:28:07,822 basehttp - Broken pipe from ('127.0.0.1', 50812)
+INFO 2024-08-29 17:30:25,710 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 17:30:28,756 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 18:46:50,667 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 18:46:52,351 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 18:49:26,810 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 18:49:28,490 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 18:52:01,529 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 18:52:03,234 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 18:53:52,892 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 18:53:55,029 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:00:24,207 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:00:25,965 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:07:26,362 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:07:28,040 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:07:39,113 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:07:40,755 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:12:59,594 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:13:01,267 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:13:01,327 basehttp - Broken pipe from ('127.0.0.1', 51665)
+INFO 2024-08-29 19:13:13,283 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:13:14,859 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:13:14,897 basehttp - Broken pipe from ('127.0.0.1', 51670)
+INFO 2024-08-29 19:14:20,497 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:14:22,125 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:14:22,161 basehttp - Broken pipe from ('127.0.0.1', 51684)
+INFO 2024-08-29 19:15:07,197 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:15:08,909 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:15:08,939 basehttp - Broken pipe from ('127.0.0.1', 51707)
+INFO 2024-08-29 19:16:05,358 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:16:06,996 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:16:07,044 basehttp - Broken pipe from ('127.0.0.1', 51722)
+INFO 2024-08-29 19:17:06,124 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:17:07,466 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:17:07,764 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:17:09,035 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:17:09,662 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:17:10,107 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:17:10,661 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:17:11,022 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:17:11,234 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:17:11,732 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:17:12,271 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:17:12,730 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:23:22,054 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:23:23,761 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:23:25,542 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:23:25,958 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:23:27,091 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:23:27,510 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:26:27,114 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:26:28,749 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:26:31,036 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:26:31,052 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:26:32,574 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:26:32,593 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:27:06,963 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:27:08,638 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:27:54,051 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:27:55,708 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:32:33,136 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:32:34,811 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:40:22,273 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:40:23,971 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:43:05,727 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:43:07,392 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:44:27,543 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:44:29,183 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:48:35,039 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:48:36,718 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:49:34,742 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:49:36,420 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:50:43,592 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:50:45,284 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:50:45,997 basehttp - Broken pipe from ('127.0.0.1', 52237)
+INFO 2024-08-29 19:59:39,479 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 19:59:41,132 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 19:59:41,886 basehttp - Broken pipe from ('127.0.0.1', 52289)
+INFO 2024-08-29 20:00:16,991 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 20:00:18,646 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 20:00:38,575 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 20:00:40,245 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 20:10:34,600 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 20:10:36,228 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 20:11:03,145 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 20:11:04,689 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 20:12:40,763 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 20:12:42,422 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 20:13:07,235 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 20:13:08,764 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 20:14:10,975 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 20:14:12,591 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 20:14:13,321 basehttp - Broken pipe from ('127.0.0.1', 52526)
+INFO 2024-08-29 20:15:24,575 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 20:15:26,240 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 20:33:19,472 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 20:33:21,154 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 2805
+INFO 2024-08-29 20:33:28,056 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 20:33:29,591 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 2805
+INFO 2024-08-29 20:34:12,843 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 20:34:14,516 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 2805
+INFO 2024-08-29 20:34:23,634 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 20:34:25,184 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 2805
+INFO 2024-08-29 20:37:42,343 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 20:37:43,971 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 2665
+INFO 2024-08-29 20:39:35,749 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 20:39:37,400 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 2665
+INFO 2024-08-29 20:39:39,542 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 20:39:41,105 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 2665
+INFO 2024-08-29 20:40:11,268 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 20:40:12,922 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 2665
+INFO 2024-08-29 20:41:55,637 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 20:41:57,256 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 2665
+INFO 2024-08-29 20:42:32,688 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 20:42:34,334 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 2665
+INFO 2024-08-29 20:44:47,080 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 20:44:48,792 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 20:45:38,208 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 20:45:39,858 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 20:45:44,638 basehttp - Broken pipe from ('127.0.0.1', 52984)
+INFO 2024-08-29 20:45:52,444 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 20:45:54,000 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 20:45:55,017 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 20:45:56,607 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 20:48:08,428 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 20:48:10,050 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 21:05:55,240 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 21:05:56,884 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 21:07:34,634 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 21:07:36,367 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 21:20:37,956 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 21:20:39,679 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 21:22:16,188 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 21:22:17,872 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 21:22:18,503 basehttp - Broken pipe from ('127.0.0.1', 53299)
+INFO 2024-08-29 21:25:17,199 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 21:25:18,884 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+INFO 2024-08-29 21:25:19,499 basehttp - Broken pipe from ('127.0.0.1', 53323)
+INFO 2024-08-29 21:25:39,661 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-29 21:25:41,238 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 1678
+WARNING 2024-08-30 09:49:27,722 log Bad Request: /get-all-user/
+WARNING 2024-08-30 09:49:27,722 basehttp "POST /get-all-user/ HTTP/1.1" 400 21
+WARNING 2024-08-30 09:49:32,042 log Bad Request: /get-all-user/
+WARNING 2024-08-30 09:49:32,042 basehttp "POST /get-all-user/ HTTP/1.1" 400 21
+WARNING 2024-08-30 09:49:34,386 log Bad Request: /get-all-user/
+WARNING 2024-08-30 09:49:34,386 basehttp "POST /get-all-user/ HTTP/1.1" 400 21
+WARNING 2024-08-30 09:49:37,844 log Bad Request: /get-all-user/
+WARNING 2024-08-30 09:49:37,844 basehttp "GET /get-all-user/ HTTP/1.1" 400 21
+WARNING 2024-08-30 09:49:39,033 log Bad Request: /get-all-user/
+WARNING 2024-08-30 09:49:39,033 basehttp "GET /get-all-user/ HTTP/1.1" 400 21
+INFO 2024-08-30 09:49:48,024 basehttp "GET /get-all-user/ HTTP/1.1" 200 919
+INFO 2024-08-30 14:36:59,034 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+ERROR 2024-08-30 14:37:01,644 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-30 14:37:01,692 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 500 108883
+INFO 2024-08-30 14:37:03,164 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+ERROR 2024-08-30 14:37:04,870 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-30 14:37:04,872 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 500 108883
+INFO 2024-08-30 14:37:05,973 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+ERROR 2024-08-30 14:37:08,330 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-30 14:37:08,330 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 500 108883
+INFO 2024-08-30 14:37:11,248 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+ERROR 2024-08-30 14:37:12,915 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-30 14:37:12,917 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 500 108883
+INFO 2024-08-30 14:37:24,821 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+ERROR 2024-08-30 14:37:28,800 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-30 14:37:28,802 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 500 108883
+INFO 2024-08-30 14:37:30,237 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+ERROR 2024-08-30 14:37:33,014 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-30 14:37:33,015 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 500 108883
+INFO 2024-08-30 14:37:34,163 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+ERROR 2024-08-30 14:37:35,786 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-30 14:37:35,788 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 500 108883
+INFO 2024-08-30 14:37:36,684 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+ERROR 2024-08-30 14:37:38,343 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-30 14:37:38,345 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 500 108883
+INFO 2024-08-30 14:37:38,737 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+ERROR 2024-08-30 14:37:40,350 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-30 14:37:40,350 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 500 108883
+INFO 2024-08-30 14:37:42,994 basehttp - Broken pipe from ('127.0.0.1', 56677)
+INFO 2024-08-30 14:37:57,768 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+ERROR 2024-08-30 14:37:59,429 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-30 14:37:59,430 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 500 108883
+INFO 2024-08-30 14:38:00,678 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+ERROR 2024-08-30 14:38:02,978 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-30 14:38:02,988 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 500 108883
+INFO 2024-08-30 14:38:04,089 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+ERROR 2024-08-30 14:38:07,709 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-30 14:38:07,710 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 500 108883
+INFO 2024-08-30 14:38:08,484 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-30 14:38:10,110 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+ERROR 2024-08-30 14:38:10,148 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-30 14:38:10,150 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 500 108883
+INFO 2024-08-30 14:38:12,357 basehttp - Broken pipe from ('127.0.0.1', 56694)
+ERROR 2024-08-30 14:38:12,753 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+INFO 2024-08-30 14:38:12,973 basehttp - Broken pipe from ('127.0.0.1', 56699)
+INFO 2024-08-30 14:38:58,658 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+ERROR 2024-08-30 14:39:00,360 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-30 14:39:00,361 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 500 108883
+INFO 2024-08-30 14:39:25,907 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+ERROR 2024-08-30 14:39:27,508 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-30 14:39:27,509 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 500 108755
+INFO 2024-08-30 14:39:28,711 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+ERROR 2024-08-30 14:39:30,410 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-30 14:39:30,410 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 500 108755
+INFO 2024-08-30 14:39:32,379 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+ERROR 2024-08-30 14:39:33,971 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-30 14:39:33,971 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 500 108755
+INFO 2024-08-30 14:39:34,648 basehttp - Broken pipe from ('127.0.0.1', 56723)
+INFO 2024-08-30 15:37:03,157 basehttp "GET /whatsapp_tenant?business_phone_id=397261306804870 HTTP/1.1" 301 0
+ERROR 2024-08-30 15:37:05,089 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-30 15:37:05,089 basehttp "GET /whatsapp_tenant/?business_phone_id=397261306804870 HTTP/1.1" 500 108883
+INFO 2024-08-30 15:37:06,440 basehttp "GET /whatsapp_tenant?business_phone_id=397261306804870 HTTP/1.1" 301 0
+ERROR 2024-08-30 15:37:08,067 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-30 15:37:08,067 basehttp "GET /whatsapp_tenant/?business_phone_id=397261306804870 HTTP/1.1" 500 108883
+INFO 2024-08-30 15:37:09,703 basehttp "GET /whatsapp_tenant?business_phone_id=397261306804870 HTTP/1.1" 301 0
+ERROR 2024-08-30 15:37:11,318 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-30 15:37:11,320 basehttp "GET /whatsapp_tenant/?business_phone_id=397261306804870 HTTP/1.1" 500 108883
+INFO 2024-08-30 15:37:13,838 basehttp "GET /whatsapp_tenant?business_phone_id=397261306804870 HTTP/1.1" 301 0
+ERROR 2024-08-30 15:37:15,471 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-30 15:37:15,471 basehttp "GET /whatsapp_tenant/?business_phone_id=397261306804870 HTTP/1.1" 500 108883
+INFO 2024-08-30 15:37:35,257 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+ERROR 2024-08-30 15:37:37,297 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-30 15:37:37,297 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 500 108883
+INFO 2024-08-30 15:37:38,943 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-30 15:37:39,751 basehttp "GET /whatsapp_tenant?business_phone_id=397261306804870 HTTP/1.1" 301 0
+ERROR 2024-08-30 15:37:40,711 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-30 15:37:40,711 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 500 108883
+ERROR 2024-08-30 15:37:41,459 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-30 15:37:41,475 basehttp "GET /whatsapp_tenant/?business_phone_id=397261306804870 HTTP/1.1" 500 108883
+INFO 2024-08-30 15:37:42,188 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+ERROR 2024-08-30 15:37:44,435 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+INFO 2024-08-30 15:37:44,655 basehttp - Broken pipe from ('127.0.0.1', 57318)
+WARNING 2024-08-31 09:33:04,609 log Bad Request: /
+WARNING 2024-08-31 09:33:04,617 basehttp "GET / HTTP/1.1" 400 21
+INFO 2024-08-31 09:33:24,971 basehttp "OPTIONS //whatsapp_tenant/ HTTP/1.1" 200 0
+WARNING 2024-08-31 09:33:25,524 log Bad Request: /whatsapp_tenant/
+WARNING 2024-08-31 09:33:25,524 basehttp "GET //whatsapp_tenant/ HTTP/1.1" 400 58
+INFO 2024-08-31 09:33:26,695 basehttp "OPTIONS /whatsapp_tenant/ HTTP/1.1" 200 0
+WARNING 2024-08-31 09:33:27,240 log Bad Request: /whatsapp_tenant/
+WARNING 2024-08-31 09:33:27,241 basehttp "GET /whatsapp_tenant/ HTTP/1.1" 400 58
+INFO 2024-08-31 09:34:19,442 basehttp "OPTIONS /whatsapp_tenant/ HTTP/1.1" 200 0
+WARNING 2024-08-31 09:34:19,602 log Bad Request: /whatsapp_tenant/
+WARNING 2024-08-31 09:34:19,603 basehttp "GET /whatsapp_tenant/ HTTP/1.1" 400 58
+INFO 2024-08-31 09:34:24,236 basehttp "OPTIONS /whatsapp_tenant/ HTTP/1.1" 200 0
+WARNING 2024-08-31 09:34:24,434 log Bad Request: /whatsapp_tenant/
+WARNING 2024-08-31 09:34:24,436 basehttp "GET /whatsapp_tenant/ HTTP/1.1" 400 58
+INFO 2024-08-31 09:36:00,640 basehttp "OPTIONS /whatsapp_tenant/?business_phone_id=$%7Bbusiness_phone_number_id%7D HTTP/1.1" 200 0
+ERROR 2024-08-31 09:36:03,756 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-31 09:36:03,763 basehttp "GET /whatsapp_tenant/?business_phone_id=$%7Bbusiness_phone_number_id%7D HTTP/1.1" 500 112458
+WARNING 2024-08-31 09:36:30,260 log Bad Request: /favicon.ico
+WARNING 2024-08-31 09:36:30,261 basehttp "GET /favicon.ico HTTP/1.1" 400 21
+INFO 2024-08-31 09:38:57,704 basehttp "OPTIONS /whatsapp_tenant/?business_phone_id=undefined HTTP/1.1" 200 0
+ERROR 2024-08-31 09:39:00,178 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-31 09:39:00,179 basehttp "GET /whatsapp_tenant/?business_phone_id=undefined HTTP/1.1" 500 112140
+INFO 2024-08-31 09:39:14,317 basehttp "OPTIONS /whatsapp_tenant/?business_phone_id=undefined HTTP/1.1" 200 0
+ERROR 2024-08-31 09:39:16,490 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-31 09:39:16,493 basehttp "GET /whatsapp_tenant/?business_phone_id=undefined HTTP/1.1" 500 112140
+INFO 2024-08-31 09:39:23,313 basehttp "OPTIONS /whatsapp_tenant/?business_phone_id=undefined HTTP/1.1" 200 0
+ERROR 2024-08-31 09:39:25,233 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-31 09:39:25,236 basehttp "GET /whatsapp_tenant/?business_phone_id=undefined HTTP/1.1" 500 112140
+INFO 2024-08-31 09:39:57,874 basehttp "OPTIONS /whatsapp_tenant/?business_phone_id=undefined HTTP/1.1" 200 0
+ERROR 2024-08-31 09:39:59,730 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-31 09:39:59,732 basehttp "GET /whatsapp_tenant/?business_phone_id=undefined HTTP/1.1" 500 112142
+INFO 2024-08-31 09:41:44,655 basehttp "OPTIONS /whatsapp_tenant/?business_phone_id=YOUR_BUSINESS_PHONE_NUMBER_ID HTTP/1.1" 200 0
+ERROR 2024-08-31 09:41:46,554 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-31 09:41:46,555 basehttp "GET /whatsapp_tenant/?business_phone_id=YOUR_BUSINESS_PHONE_NUMBER_ID HTTP/1.1" 500 112458
+INFO 2024-08-31 09:41:56,306 basehttp "OPTIONS /whatsapp_tenant/?business_phone_id=YOUR_BUSINESS_PHONE_NUMBER_ID HTTP/1.1" 200 0
+ERROR 2024-08-31 09:41:58,201 log Internal Server Error: /whatsapp_tenant/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InsufficientPrivilege: permission denied for table whatsapp_tenant_data
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\whatsapp_tenant.py", line 70, in get_whatsapp_tenant_data
+    cursor.execute(query, [business_phone_number_id])
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: permission denied for table whatsapp_tenant_data
+
+ERROR 2024-08-31 09:41:58,203 basehttp "GET /whatsapp_tenant/?business_phone_id=YOUR_BUSINESS_PHONE_NUMBER_ID HTTP/1.1" 500 112460
+INFO 2024-08-31 09:56:00,849 basehttp "GET /whatsapp_tenant?business_phone_id=$%7B397261306804870%7D HTTP/1.1" 301 0
+WARNING 2024-08-31 09:56:02,566 log Not Found: /whatsapp_tenant/
+WARNING 2024-08-31 09:56:02,566 basehttp "GET /whatsapp_tenant/?business_phone_id=$%7B397261306804870%7D HTTP/1.1" 404 65
+INFO 2024-08-31 09:56:12,200 basehttp "GET /whatsapp_tenant?business_phone_id=397261306804870 HTTP/1.1" 301 0
+WARNING 2024-08-31 09:56:13,880 log Not Found: /whatsapp_tenant/
+WARNING 2024-08-31 09:56:13,880 basehttp "GET /whatsapp_tenant/?business_phone_id=397261306804870 HTTP/1.1" 404 65
+INFO 2024-08-31 09:57:32,462 basehttp "GET /whatsapp_tenant?business_phone_id=241683569037594 HTTP/1.1" 301 0
+INFO 2024-08-31 09:57:34,178 basehttp "GET /whatsapp_tenant/?business_phone_id=241683569037594 HTTP/1.1" 200 2803

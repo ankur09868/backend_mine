@@ -7,6 +7,6 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
     dependencies = [
         ("tenant", "0002_wa"),
-        ("leads", "0002_remove_report_tenant"),
+       
     ]
 

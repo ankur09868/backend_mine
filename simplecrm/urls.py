@@ -59,7 +59,9 @@ from topicmodelling import views as topicviews
 from whatsapp_chat import views as wa_chat_views
 from rest_framework.routers import DefaultRouter
 from communication import insta_msg as imsg 
-
+from simplecrm.whatsapp_tenant import get_whatsapp_tenant_data
+from simplecrm.whatsapp_tenant import create_whatsapp_tenant_table
+from simplecrm.whatsapp_tenant import insert_whatsapp_tenant_data
 router = DefaultRouter()
 router.register(r'groups', inviews.GroupViewSet, basename='group')
 
@@ -177,7 +179,9 @@ urlpatterns = [
     path('save-email-messages/', imsg.save_email_messages, name='save-email-messages'),  # Save email messages
     path('store-selected-emails/', simviews.store_selected_emails, name='store_selected_emails'),  # Store selected emails
     path('fetch-all-emails/', simviews.fetch_all_emails, name='fetch_all_emails'),  # Fetch all emails
-
+    path('whatsapp_tenant/', get_whatsapp_tenant_data, name='get_whatsapp_tenant_data'),
+    path('create_table/', create_whatsapp_tenant_table, name='create_whatsapp_tenant_table'),
+    path('insert_data/', insert_whatsapp_tenant_data, name='insert_whatsapp_tenant_data'),
 ]
 urlpatterns += router.urls
 
