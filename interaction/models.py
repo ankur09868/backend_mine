@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes.fields import GenericForeignKey
 from tenant.models import Tenant 
+from django.utils import timezone
 
 class Interaction(models.Model):
     INTERACTION_TYPES = (
@@ -101,6 +102,26 @@ class Email(models.Model):
     email_id = models.EmailField(max_length=255) #store the email ID
     links = models.JSONField(default=list) 
     email_html = models.TextField(blank=True, null=True)
+    
+    open_count = models.IntegerField(default=0)  # Track how many times the email was opened
+    total_time_spent = models.DurationField(default=timezone.timedelta(0))  # Total time spent on the email
+    attachments = models.JSONField(default=list) # Field to store an array of attachments
+    last_open_time = models.DateTimeField(null=True,blank=True)
+
+    def update_time_spent(self, current_time):
+        """Update the total time spent on the email."""
+        if self.time_open:
+            # Calculate the time spent in the current session
+            time_spent = current_time - self.time_open
+            
+            # Update the total time spent on the email
+            self.total_time_spent += time_spent
+            
+            # Reset time_open to None to avoid double-counting for future sessions
+            self.time_open = None
+            
+            # Save the updated instance
+            self.save()
 
     def __str__(self):
         return self.subject

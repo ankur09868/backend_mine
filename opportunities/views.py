@@ -18,6 +18,7 @@ from vendors.models import Vendors
 from django.views.decorators.http import require_http_methods
 from leads.models import Stage  # Import your Stage model here
 import json
+from django.utils import timezone
 
 # Create your views here.
 
@@ -146,7 +147,7 @@ def get_total_leads():
         'assigned_to',
         'account__Name',  
         'opportunity_amount',
-        'createdBy__username', 
+        'createdBy', 
         'createdOn',
         'isActive',
         'enquery_type',
@@ -155,13 +156,20 @@ def get_total_leads():
         'priority'))}
 
 def get_new_leads_this_month():
-    today = datetime.today()
-    start_date = today.replace(day=1) 
-    end_date = today.replace(day=1) + timedelta(days=32) 
+     # Get the current date and time with timezone information
+    today = timezone.now()
 
+    # Replace to get the start of the month, ensuring it's timezone-aware
+    start_date = today.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
+
+    # Calculate the start of the next month and ensure it's timezone-aware
+    next_month = start_date + timedelta(days=32)
+    end_date = next_month.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
+
+    # Filter leads created within this month
     new_leads_count = Lead.objects.filter(createdOn__gte=start_date, createdOn__lt=end_date).count()
 
-    return{'new_leads_count': new_leads_count}
+    return {'new_leads_count': new_leads_count}
 
 def get_converted_leads():
     converted_leads = Lead.objects.filter(stage__status='converted')
@@ -211,7 +219,7 @@ def get_top_users():
 
 def get_contact_address():
     contacts = Contact.objects.all()
-    return {'total contacts': contacts.count(), 'Contacts': list(contacts.values('id','first_name','last_name', 'address'))}
+    return {'total contacts': contacts.count(), 'Contacts': list(contacts.values('id','name', 'address'))}
 
 
 def get_calls_emails():

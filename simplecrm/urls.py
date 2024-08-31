@@ -59,6 +59,7 @@ from topicmodelling import views as topicviews
 from whatsapp_chat import views as wa_chat_views
 from rest_framework.routers import DefaultRouter
 from communication import insta_msg as imsg 
+from communication import views as commviews
 from simplecrm.whatsapp_tenant import get_whatsapp_tenant_data
 from simplecrm.whatsapp_tenant import create_whatsapp_tenant_table
 from simplecrm.whatsapp_tenant import insert_whatsapp_tenant_data
@@ -182,6 +183,28 @@ urlpatterns = [
     path('whatsapp_tenant/', get_whatsapp_tenant_data, name='get_whatsapp_tenant_data'),
     path('create_table/', create_whatsapp_tenant_table, name='create_whatsapp_tenant_table'),
     path('insert_data/', insert_whatsapp_tenant_data, name='insert_whatsapp_tenant_data'),
+
+    path('group-messages/', commviews.GroupMessagesView.as_view(), name='group_messages'),
+
+    path('conversations/', commviews.ConversationListCreateView.as_view(), name='conversation-list-create'),
+    path('conversations/<int:pk>/', commviews.ConversationDetailView.as_view(), name='conversation-detail'),
+
+    path('messages/', commviews.MessageListCreateView.as_view(), name='message-list-create'),
+    path('messages/<int:pk>/', commviews.MessageDetailView.as_view(), name='message-detail'),
+
+     # Sentiment Analysis URLs
+    path('sentiment-analyses/', commviews.SentimentAnalysisListCreateView.as_view(), name='sentiment-analysis-list-create'),
+    path('sentiment-analyses/<int:pk>/', commviews.SentimentAnalysisDetailView.as_view(), name='sentiment-analysis-detail'),
+
+    # Behavioral Metrics URLs
+    path('behavioral-metrics/', commviews.BehavioralMetricsListCreateView.as_view(), name='behavioral-metrics-list-create'),
+    path('behavioral-metrics/<int:pk>/', commviews.BehavioralMetricsDetailView.as_view(), name='behavioral-metrics-detail'),
+
+    path('analyze-sentiment/', commviews.SentimentAnalysisView.as_view(), name='analyze_sentiment'),
+
+
+
+
 ]
 urlpatterns += router.urls
 
