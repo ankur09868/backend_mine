@@ -10,6 +10,7 @@ from django.contrib.auth.models import User
 from django.conf import settings
 from django.contrib.auth import get_user_model
 import sys
+from django.core.exceptions import ObjectDoesNotExist
 import re
 
 User =  get_user_model()
@@ -108,19 +109,18 @@ class CreateDynamicModelView(APIView):
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
     
-
-
 class DynamicModelListView(APIView):
+    def sanitize_model_name(self, model_name):
+        """Sanitize model name to ensure it's a valid SQL identifier."""
+        return re.sub(r'\W|^(?=\d)', '_', model_name.lower())
+
     def get(self, request, *args, **kwargs):
         dynamic_models = DynamicModel.objects.all()
         response_data = []
 
         for dynamic_model in dynamic_models:
             try:
-              
-                # Sanitize the model name to ensure it's a valid SQL identifier
-                model_name = dynamic_model.model_name.lower()
-                sanitized_model_name = re.sub(r'\W|^(?=\d)', '_', model_name)
+                sanitized_model_name = self.sanitize_model_name(dynamic_model.model_name)
                 table_name = f"dynamic_entities_{sanitized_model_name}"
 
                 # Check if the table exists
@@ -129,25 +129,30 @@ class DynamicModelListView(APIView):
                     if cursor.fetchone()[0] is None:
                         raise ValueError(f"Table for model {dynamic_model.model_name} does not exist.")
 
+                # Retrieve associated fields
                 fields = DynamicField.objects.filter(dynamic_model=dynamic_model)
                 fields_data = [{'field_name': field.field_name, 'field_type': field.field_type} for field in fields]
 
+                # Safely retrieve the created_by username or handle missing user
+                try:
+                    created_by_username = dynamic_model.created_by.username
+                except ObjectDoesNotExist:
+                    created_by_username = 'Unknown User'
+
+                # Prepare model data for response
                 model_data = {
                     'model_name': dynamic_model.model_name,
-                    'created_by': dynamic_model.created_by.username,
-                    'tenant': dynamic_model.tenant.name if dynamic_model.tenant else None,
+                    'created_by': created_by_username,
                     'fields': fields_data
                 }
                 response_data.append(model_data)
-            except ValueError:
-                dynamic_model.delete()
-                DynamicField.objects.filter(dynamic_model=dynamic_model).delete()
 
+            except ValueError:
+                # Log deletion for future audit or monitoring
+                # print(f"Deleting model: {dynamic_model.model_name} due to missing table.")
+                dynamic_model.delete()
 
         return Response(response_data, status=status.HTTP_200_OK)
-
-
-
 class DynamicModelDataView(APIView):
     def get(self, request, model_name, *args, **kwargs):
         try:
