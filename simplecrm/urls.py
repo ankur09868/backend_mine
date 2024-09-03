@@ -61,6 +61,7 @@ from rest_framework.routers import DefaultRouter
 from communication import insta_msg as imsg 
 from whatsapp_chat.views import get_whatsapp_tenant_data, create_whatsapp_tenant_table, insert_whatsapp_tenant_data, update_message_status, get_status
 
+from communication import views as commviews
 router = DefaultRouter()
 router.register(r'groups', inviews.GroupViewSet, basename='group')
 
@@ -185,5 +186,27 @@ urlpatterns = [
     path('set-status/', update_message_status, name = "update message status"),
     path('get-status/', get_status, name="get_message_status"),
     
+
+    path('group-messages/', commviews.GroupMessagesView.as_view(), name='group_messages'),
+
+    path('conversations/', commviews.ConversationListCreateView.as_view(), name='conversation-list-create'),
+    path('conversations/<int:pk>/', commviews.ConversationDetailView.as_view(), name='conversation-detail'),
+
+    path('messages/', commviews.MessageListCreateView.as_view(), name='message-list-create'),
+    path('messages/<int:pk>/', commviews.MessageDetailView.as_view(), name='message-detail'),
+
+     # Sentiment Analysis URLs
+    path('sentiment-analyses/', commviews.SentimentAnalysisListCreateView.as_view(), name='sentiment-analysis-list-create'),
+    path('sentiment-analyses/<int:pk>/', commviews.SentimentAnalysisDetailView.as_view(), name='sentiment-analysis-detail'),
+
+    # Behavioral Metrics URLs
+    path('behavioral-metrics/', commviews.BehavioralMetricsListCreateView.as_view(), name='behavioral-metrics-list-create'),
+    path('behavioral-metrics/<int:pk>/', commviews.BehavioralMetricsDetailView.as_view(), name='behavioral-metrics-detail'),
+
+    path('analyze-sentiment/', commviews.SentimentAnalysisView.as_view(), name='analyze_sentiment'),
+
+
+
+
 ]
 urlpatterns += router.urls

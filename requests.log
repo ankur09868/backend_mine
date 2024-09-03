@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INFO 2024-08-23 13:24:26,994 autoreload Watching for file changes with StatReloader
 WARNING 2024-08-23 13:25:21,996 log Bad Request: /generate-report/
 WARNING 2024-08-23 13:25:21,998 basehttp "GET /generate-report/ HTTP/1.1" 400 21
@@ -14,6 +15,58 @@ LINE 1: ..._report"."revenue", "leads_report"."total_leads", "leads_rep...
 
 
 The above exception was the direct cause of the following exception:
+=======
+INFO 2024-08-31 16:46:26,014 autoreload Watching for file changes with StatReloader
+INFO 2024-08-31 16:48:20,111 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\simplecrm\urls.py changed, reloading.
+INFO 2024-08-31 16:48:23,848 autoreload Watching for file changes with StatReloader
+INFO 2024-08-31 17:28:12,942 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\communication\views.py changed, reloading.
+INFO 2024-08-31 17:28:21,969 autoreload Watching for file changes with StatReloader
+INFO 2024-08-31 19:44:54,092 autoreload Watching for file changes with StatReloader
+INFO 2024-08-31 19:57:14,315 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\dynamic_entities\views.py changed, reloading.
+INFO 2024-08-31 19:57:20,492 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-31 19:58:19,722 log Internal Server Error: /dynamic-models/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\dynamic_entities\views.py", line 117, in get
+    dynamic_models = simpmod.DynamicModel.objects.all()
+                     ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'simplecrm.models' has no attribute 'DynamicModel'
+ERROR 2024-08-31 19:58:19,739 basehttp "GET /dynamic-models/ HTTP/1.1" 500 97447
+INFO 2024-08-31 19:59:14,375 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\dynamic_entities\views.py changed, reloading.
+INFO 2024-08-31 19:59:16,360 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-02 13:29:42,805 log Internal Server Error: /dynamic-models/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 187, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\mixins.py", line 15, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'created_by'
+
+During handling of the above exception, another exception occurred:
+>>>>>>> ad1da1cdca1c8ccc18ee33877c1227834c8d96aa
 
 Traceback (most recent call last):
   File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
@@ -22,6 +75,7 @@ Traceback (most recent call last):
   File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<<<<<<< HEAD
   File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\leads\views.py", line 121, in generate_and_get_report_view
     report = generate_or_get_report()
              ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -8993,3 +9047,173 @@ WARNING 2024-09-03 17:05:41,607 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.
 INFO 2024-09-03 17:05:41,697 basehttp "GET /interaction/ HTTP/1.1" 200 21614
 INFO 2024-09-03 17:09:03,055 autoreload D:\Nuren AI\backend_mine1\dynamic_entities\views.py changed, reloading.
 INFO 2024-09-03 17:09:08,363 autoreload Watching for file changes with StatReloader
+=======
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\dynamic_entities\views.py", line 137, in get
+    'created_by': dynamic_model.created_by.username,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 205, in __get__
+    rel_obj = self.get_object(instance)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 168, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+simplecrm.models.CustomUser.DoesNotExist: CustomUser matching query does not exist.
+ERROR 2024-09-02 13:29:42,821 basehttp "GET /dynamic-models/ HTTP/1.1" 500 122996
+INFO 2024-09-02 13:54:29,051 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\dynamic_entities\views.py changed, reloading.
+INFO 2024-09-02 13:54:38,017 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-02 13:55:28,890 log Internal Server Error: /dynamic-models/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 187, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\mixins.py", line 15, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'created_by'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\dynamic_entities\views.py", line 137, in get
+    created_by_username = getattr(dynamic_model.created_by, 'username', 'Unknown User')
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 205, in __get__
+    rel_obj = self.get_object(instance)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 168, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+simplecrm.models.CustomUser.DoesNotExist: CustomUser matching query does not exist.
+ERROR 2024-09-02 13:55:28,907 basehttp "GET /dynamic-models/ HTTP/1.1" 500 122937
+ERROR 2024-09-02 13:55:36,793 log Internal Server Error: /dynamic-models/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 187, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\mixins.py", line 15, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'created_by'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\dynamic_entities\views.py", line 137, in get
+    created_by_username = getattr(dynamic_model.created_by, 'username', 'Unknown User')
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 205, in __get__
+    rel_obj = self.get_object(instance)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 168, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+simplecrm.models.CustomUser.DoesNotExist: CustomUser matching query does not exist.
+ERROR 2024-09-02 13:55:36,793 basehttp "GET /dynamic-models/ HTTP/1.1" 500 122937
+INFO 2024-09-02 14:06:38,406 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\dynamic_entities\views.py changed, reloading.
+INFO 2024-09-02 14:06:44,755 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-02 14:07:17,842 log Internal Server Error: /dynamic-models/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\dynamic_entities\views.py", line 146, in get
+    'tenant': dynamic_model.tenant.name if dynamic_model.tenant else None,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Tenant' object has no attribute 'name'
+ERROR 2024-09-02 14:07:17,842 basehttp "GET /dynamic-models/ HTTP/1.1" 500 99974
+INFO 2024-09-02 14:08:38,956 autoreload C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\dynamic_entities\views.py changed, reloading.
+INFO 2024-09-02 14:08:41,343 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 14:08:51,042 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 14:09:35,370 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1574
+WARNING 2024-09-02 14:09:45,820 log Not Found: /dynamic-models/1/
+WARNING 2024-09-02 14:09:45,820 basehttp "GET /dynamic-models/1/ HTTP/1.1" 404 20210
+INFO 2024-09-02 14:09:57,904 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1574
+WARNING 2024-09-02 14:10:16,314 log Not Found: /dynamic-models/BRAND/
+WARNING 2024-09-02 14:10:16,314 basehttp "GET /dynamic-models/BRAND/ HTTP/1.1" 404 20222
+INFO 2024-09-02 14:10:38,458 basehttp "GET /dynamic-model-data/BRAND/ HTTP/1.1" 200 65
+>>>>>>> ad1da1cdca1c8ccc18ee33877c1227834c8d96aa

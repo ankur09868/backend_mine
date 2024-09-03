@@ -47,21 +47,35 @@ class TrackLinkView(View):
 class TrackOpenView(View):
     def get(self, request, tracking_id, *args, **kwargs):
         try:
+            # Retrieve the email instance by its tracking ID
             email = Email.objects.get(tracking_id=tracking_id)
 
+            # If the email is already open, update time spent first
+            if email.is_open and email.last_open_time:
+                email.update_time_spent(timezone.now())
+
+            # Update the 'last_open_time' to the current time
+            email.last_open_time = timezone.now()
+
+            # Increment the 'open_count'
+            email.open_count += 1
+
+            # Mark the email as open
             email.is_open = True
-            email.time_open = timezone.now()
+
+            # Set the initial open time if not set
+            if not email.time_open:
+                email.time_open = timezone.now()
+
+            # Save the changes
             email.save()
-            logger.debug(f"Tracking {tracking_id} marked as opened.")
+
+            logger.info(f"Email {tracking_id} marked as opened.")
+
         except Email.DoesNotExist:
-            logger.error(f"Tracking does not exist for ID: {tracking_id}")
+            logger.error(f"Email does not exist for trackingId: {tracking_id}")
             return HttpResponse('Email does not exist', status=404)
 
-        # Return a 1x1 transparent pixel
+        # Return a 1x1 transparent GIF pixel for tracking purposes
         pixel_data = b'\x47\x49\x46\x38\x39\x61\x01\x00\x01\x00\x80\x00\x00\x00\x00\x00\xff\xff\xff\x21\xf9\x04\x01\x00\x00\x00\x00\x2c\x00\x00\x00\x00\x01\x00\x01\x00\x00\x02\x02\x44\x01\x00\x3b'
         return HttpResponse(pixel_data, content_type='image/gif')
-
-    @classmethod
-    def get_count(cls):
-        global count
-        return count
