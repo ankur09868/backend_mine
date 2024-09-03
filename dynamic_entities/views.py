@@ -33,6 +33,8 @@ def get_dynamic_model_class(model_name):
             attrs[field.field_name] = models.BooleanField()
         elif field_type == 'date':
             attrs[field.field_name] = models.DateField()
+        elif field_type == 'bigint':
+            attrs[field.field_name] = models.BigIntegerField()
         else:
             raise ValueError(f'Unknown field type: {field_type}')
     return type(model_name, (models.Model,), attrs)
@@ -68,15 +70,17 @@ class CreateDynamicModelView(APIView):
                     field_name = field['field_name']
                     field_type = field['field_type']
                     if field_type == 'string':
-                        field_definitions[field_name] = models.CharField(max_length=255)
+                        field_definitions[field_name] = models.CharField(max_length=255, null=True, blank=True)
                     elif field_type == 'integer':
-                        field_definitions[field_name] = models.IntegerField()
+                        field_definitions[field_name] = models.IntegerField(null=True, blank=True)
                     elif field_type == 'text':
-                        field_definitions[field_name] = models.TextField()
+                        field_definitions[field_name] = models.TextField(null=True, blank=True)
                     elif field_type == 'boolean':
-                        field_definitions[field_name] = models.BooleanField()
+                        field_definitions[field_name] = models.BooleanField(null=True, blank=True)
                     elif field_type == 'date':
-                        field_definitions[field_name] = models.DateField()
+                        field_definitions[field_name] = models.DateField(null=True, blank=True)
+                    elif field_type == 'bigint':
+                        field_definitions[field_name] = models.BigIntegerField(null=True, blank=True)
                     else:
                         return Response({'success': False, 'message': f'Unknown field type: {field_type}'}, status=status.HTTP_400_BAD_REQUEST)
 
@@ -147,6 +151,10 @@ class DynamicModelListView(APIView):
         return Response(response_data, status=status.HTTP_200_OK)
 
 
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
+from django.core.exceptions import ObjectDoesNotExist, ValidationError
 
 class DynamicModelDataView(APIView):
     def get(self, request, model_name, *args, **kwargs):
@@ -154,28 +162,66 @@ class DynamicModelDataView(APIView):
             model_class = get_dynamic_model_class(model_name)
             data = model_class.objects.all().values()
             return Response(list(data), status=status.HTTP_200_OK)
+        except ObjectDoesNotExist as e:
+            print(f"Error: Model not found - {e}")
+            return Response({'success': False, 'message': 'Model not found'}, status=status.HTTP_404_NOT_FOUND)
         except Exception as e:
+            print(f"General Exception in GET: {e}")
             return Response({'success': False, 'message': str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
     def post(self, request, model_name, *args, **kwargs):
         try:
             model_class = get_dynamic_model_class(model_name)
             data = request.data
-            instance = model_class.objects.create(**data)
-            return Response({'success': True, 'message': 'Data added successfully', 'data': instance.id}, status=status.HTTP_201_CREATED)
-        except Exception as e:
+            phone_no = data.get('phone_no', None)
+
+            if not phone_no:
+                return Response({'success': False, 'message': 'phone_no is required'}, status=status.HTTP_400_BAD_REQUEST)
+            
+            # Check if the instance with the given phone_no exists
+            instance = model_class.objects.filter(phone_no=phone_no).first()
+            
+            if instance:
+                for attr, value in data.items():
+                    setattr(instance, attr, value)
+                instance.save()
+                message = 'Data updated successfully'
+                status_code = status.HTTP_200_OK
+            else:
+                instance = model_class.objects.create(**data)
+                message = 'Data added successfully'
+                status_code = status.HTTP_201_CREATED
+
+            return Response({'success': True, 'message': message, 'data': instance.id}, status=status_code)
+        except ValidationError as e:
+            print(f"Validation Error in POST: {e}")
             return Response({'success': False, 'message': str(e)}, status=status.HTTP_400_BAD_REQUEST)
-    
+        except Exception as e:
+            print(f"General Exception in POST: {e}")
+            return Response({'success': False, 'message': str(e)}, status=status.HTTP_400_BAD_REQUEST)
     def put(self, request, model_name, *args, **kwargs):
+        phone_no = request.data.get('phone_no', None)
+        if not phone_no:
+            return Response({'success': False, 'message': 'phone_no is required for updating data'}, status=status.HTTP_400_BAD_REQUEST)
+
         try:
             model_class = get_dynamic_model_class(model_name)
             data = request.data
-            instance_id = data.pop('id', None)
-            if not instance_id:
-                return Response({'success': False, 'message': 'ID is required for updating data'}, status=status.HTTP_400_BAD_REQUEST)
-            instance = model_class.objects.filter(id=instance_id).update(**data)
+            data.pop('phone_no')
+            instance = model_class.objects.filter(phone_no=phone_no).first()
+            if not instance:
+                return Response({'success': False, 'message': 'Instance not found for the given phone_no'}, status=status.HTTP_404_NOT_FOUND)
+
+            for attr, value in data.items():
+                setattr(instance, attr, value)
+            instance.save()
+
             return Response({'success': True, 'message': 'Data updated successfully'}, status=status.HTTP_200_OK)
+        except ValidationError as e:
+            print(f"Validation Error in PUT: {e}")
+            return Response({'success': False, 'message': str(e)}, status=status.HTTP_400_BAD_REQUEST)
         except Exception as e:
+            print(f"General Exception in PUT: {e}")
             return Response({'success': False, 'message': str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
         

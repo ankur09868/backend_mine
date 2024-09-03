@@ -183,8 +183,7 @@ urlpatterns = [
     path('create_table/', create_whatsapp_tenant_table, name='create_whatsapp_tenant_table'),
     path('insert_data/', insert_whatsapp_tenant_data, name='insert_whatsapp_tenant_data'),
     path('set-status/', update_message_status, name = "update message status"),
-    path('get-status/', get_status, name="get+message_status"),
+    path('get-status/', get_status, name="get_message_status"),
     
 ]
 urlpatterns += router.urls
-
