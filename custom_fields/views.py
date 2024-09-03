@@ -203,13 +203,11 @@ def export_data_for_custom_field(request):
                 
             except Exception as error:
                 return HttpResponse(f"Error processing column '{column}': {error}")
+        
+        cursor.close()
+        conn.close()
         return JsonResponse({"message": "data successfully uploaded"}, status = 200)
     except Exception as e:
         return HttpResponse(f"Unexpected error: {e}")
     
-    finally:
-        if cursor:
-            cursor.close()
-        if conn:
-            conn.close()
 

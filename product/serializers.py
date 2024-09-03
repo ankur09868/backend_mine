@@ -36,8 +36,9 @@ class ProductSerializer(serializers.ModelSerializer):
             })
 
         return custom_fields_data
-    
+
+
 class ExperienceSerializer(serializers.ModelSerializer):
     class Meta:
         model = Experience
-        fields = "__all__"
+        fields = "__all__" 

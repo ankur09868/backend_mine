@@ -5,7 +5,7 @@ from .serializers import ProductSerializer, ExperienceSerializer
 from rest_framework.permissions import IsAdminUser
 from helpers.tables import get_db_connection
 from django.views.decorators.csrf import csrf_exempt
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 import logging
 
 class ProductListAPIView(generics.ListCreateAPIView):
@@ -20,6 +20,14 @@ class ProductDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
 
 
 logger = logging.getLogger(__name__)
+
+@csrf_exempt
+def simple_experience_view(request):
+    experiences = Experience.objects.all()
+    print(experiences)
+    serializer = ExperienceSerializer(experiences, many=True)
+    print(serializer.data)
+    return HttpResponse(f"Experiences: {experiences}")
 
 @csrf_exempt
 def get_products(request):

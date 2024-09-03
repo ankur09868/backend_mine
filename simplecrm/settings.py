@@ -64,6 +64,7 @@ INSTALLED_APPS = [
     'communication',
     'stage',
     'topicmodelling',
+    'whatsapp_chat',
     
     
 ]
