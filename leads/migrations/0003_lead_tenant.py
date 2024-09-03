@@ -7,9 +7,5 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
     dependencies = [
         ("tenant", "0002_wa"),
-<<<<<<< HEAD
-=======
-       
->>>>>>> ad1da1cdca1c8ccc18ee33877c1227834c8d96aa
     ]
 
