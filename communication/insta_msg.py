@@ -5,6 +5,12 @@ from .models import Conversation, CustomUser, Message
 from .serializers import MessageSerializer
 import requests
 from datetime import datetime
+from datetime import timedelta
+from django.utils import timezone
+from simplecrm.utils import clean_text
+from django.core.exceptions import ObjectDoesNotExist
+from contacts.models import Contact
+from .utils import extract_email
 
 @api_view(['POST'])
 def save_messages(request):
@@ -43,6 +49,9 @@ def save_messages(request):
 
 @api_view(['POST'])
 def save_email_messages(request):
+    #   # Debug: print the incoming request data
+    # print("Incoming request data:", request.data)
+    
     # Get the email data from the request
     emails = request.data.get('emails', [])
     
@@ -53,13 +62,18 @@ def save_email_messages(request):
         # Extract relevant fields from the email data
         sender = email.get('sender', 'unknown@example.com')  # Provide a default sender if needed
         content = email.get('content', '')
-        sent_at = email.get('sent_at', datetime.now())
+        sent_at = email.get('sent_at')
+        if not sent_at:
+            sent_at = timezone.now().isoformat()
         platform='email'
+
+         # Clean the content
+        cleaned_content = clean_text(content)
 
         # Create message data for the serializer
         message_data = {
             'sender': 3,  # Adjust as necessary for your model
-            'content': content,
+            'content': cleaned_content,
             'sent_at': sent_at,
             'platform':platform,
             'userid':sender
@@ -83,9 +97,6 @@ def fetch_all_email_ids(request):
 
     return Response(email_id_list, status=status.HTTP_200_OK)
 
-from datetime import timedelta
-from .models import Message, Conversation
-from django.utils import timezone
 def group_messages_into_conversations():
     # Fetch only messages that haven't been mapped, ordered by sent_at
     messages = Message.objects.filter(mapped=False).order_by('sent_at')
@@ -126,10 +137,27 @@ def group_messages_into_conversations():
             msg.mapped = True
             msg.save() 
 
-
 def save_conversation(message_group, userid, platform):
-    # Create a conversation from the grouped messages
-    contact_id = message_group[0].userid  # Assuming contact_id is the same as userid for grouping
+    contact_id = None
+    try:
+         # Extract email if userid contains angle brackets
+        email = extract_email(userid)
+        
+        # Try to find the contact by email first
+        contacts = Contact.objects.filter(email=email)
+        if contacts.exists():
+            contact_id = contacts.first().id
+        else:
+            # If not found by email, try to find by phone number
+            contacts = Contact.objects.filter(phone=userid)
+            if contacts.exists():
+                contact_id = contacts.first().id
+            else:
+                print("not added")
+                return 
+    
+    except ObjectDoesNotExist:
+        return
 
     # Combine messages into a single string
     combined_messages = "\n".join([f"{message.sent_at}: {message.content}" for message in message_group])
@@ -143,4 +171,5 @@ def save_conversation(message_group, userid, platform):
         conversation_id=conversation_id,
         messages=combined_messages,  # Store the combined messages
         platform=platform,
+        contact_id_id=contact_id  # Set the contact_id
     )
