@@ -3,7 +3,7 @@ from django.views.decorators.csrf import csrf_exempt
 import requests, json, psycopg2
 from node_temps.models import Flow
 from contacts.models import Contact
-from django.db import connection, DatabaseError
+from django.db import DatabaseError
 from helpers.tables import get_db_connection
 
 
@@ -262,7 +262,7 @@ def get_flow(request):
 
         if not phoneNumber:
             return JsonResponse({'error': 'phone_number is required'}, status=400)
-        
+        connection = get_db_connection()
         with connection.cursor() as cursor:
             cursor.execute("""
                 SELECT ntf.nodes, ntf.adj_list, ntf.curr_node, ntf.ai_mode
@@ -299,7 +299,7 @@ def set_flow(request):
         phoneNumber = str(data.get('phone_number'))
         curr_node = data.get('curr_node')
         ai_mode = data.get('ai_mode')
-
+        connection = get_db_connection()
         with connection.cursor() as cursor:
             cursor.execute("""
             SELECT id FROM contacts_contact WHERE phone = %s;
@@ -346,7 +346,7 @@ def create_whatsapp_tenant_table(request):
         created_at TIMESTAMPTZ DEFAULT NOW()
     )
     '''
-    
+    connection = get_db_connection()
     with connection.cursor() as cursor:
         cursor.execute(query)
     
@@ -357,44 +357,91 @@ def insert_whatsapp_tenant_data(request):
     try:
         # Parse JSON data from the request body
         data = json.loads(request.body.decode('utf-8'))
-        
-        # Extract fields from the parsed data
+        # print("Received data at insert data: ", data)
+        tenant_id = request.headers.get('X-Tenant-Id')
         business_phone_number_id = data.get('business_phone_number_id')
         access_token = data.get('access_token')
         account_id = data.get('accountID')
-        firstInsertFlag = data.get('firstInsert', False) #flag to mark the insert of bpid, access token, account id
-
-        node_data = data.get('node-data', None)
+        firstInsertFlag = data.get('firstInsert', False)  # flag to mark the insert of bpid, access token, account id
+        node_data = data.get('node_data', None)
+        flow_name = data.get('flow_name')
+        print("Node Data: ", node_data)
         connection = get_db_connection()
         if firstInsertFlag:
-            if not all([business_phone_number_id, access_token, account_id]):
-                return JsonResponse({'status': 'error', 'message': 'Missing required fields'}, status=400)
-            query='''
-            INSERT INTO whatsapp_tenant_data (business_phone_number_id, access_token, account_id)
-            VALUES (%s, %s, %s)
-            '''
-            cursor = connection.cursor()
-            cursor.execute(query, [business_phone_number_id, access_token, account_id])
-        else:
-            if node_data == None:
-                adj_list, flow_data, start = convert_flow(node_data)
-                
+            try:
+                print("First insert")
+                if not all([business_phone_number_id, access_token, account_id]):
+                    return JsonResponse({'status': 'error', 'message': 'Missing required fields'}, status=400)
+
                 query = '''
-                INSERT INTO whatsapp_tenant_data (flow_data, adj_list, start)
+                INSERT INTO whatsapp_tenant_data (business_phone_number_id, access_token, account_id)
                 VALUES (%s, %s, %s)
-                WHERE business_phone_number_id = %s
                 '''
-            
-                with connection.cursor() as cursor:
-                    cursor.execute(query, [json.dumps(flow_data), json.dumps(adj_list), start, business_phone_number_id])
-            
+                
+                cursor = connection.cursor()
+                print("Executing query:", query, business_phone_number_id, access_token, account_id)
+                cursor.execute(query, [business_phone_number_id, access_token, account_id])
+                connection.commit()  # Commit the transaction
+                print("Query executed successfully")
                 return JsonResponse({'message': 'Data inserted successfully'})
+                
+            except Exception as e:
+                print(f"An error occurred during first insert: {e}")
+                return JsonResponse({'status': 'error', 'message': str(e)}, status=500)
+
+        else:
+            if node_data is not None:
+                try:
+                    adj_list, flow_data, start, dynamicModelFields = convert_flow(node_data)
+
+
+                    #creating dynamic model for variables
+                    dynamicModelFields.append({
+                                    'field_name': 'phone_no',
+                                    'field_type': 'bigint'
+                                })
+                    dynamicModelPayload = {
+                        'model_name': f'{tenant_id}_{flow_name}',
+                        'fields': dynamicModelFields
+                    }
+                    url = 'http://localhost:8000/create-dynamic-model/'
+                    headers = {
+                        'Content-Type': 'application/json',
+                        'X-Tenant-Id': 'll'
+                    }
+                    response = requests.post(url, json=dynamicModelPayload, headers=headers)
+                    if response.status_code == 201:
+                        print("dynamic model created succesfully")
+                    else:
+                        print("Error occurred while creating the dynamic model")
+                        print(f"Status Code: {response.status_code}")
+                        print(f"Response: {response.json()}")
+                    
+
+                    #updating whatsapp_tenant_flow with flow_data and adj_lis
+                    query = '''
+                    UPDATE whatsapp_tenant_data
+                    SET flow_data = %s, adj_list = %s, start = %s
+                    WHERE business_phone_number_id = %s
+                    '''
+                    print("adj listt: ", adj_list, flow_data, start)
+                    with connection.cursor() as cursor:
+                        print("Executing query:", query, json.dumps(flow_data), json.dumps(adj_list), start, business_phone_number_id)
+                        cursor.execute(query, [json.dumps(flow_data), json.dumps(adj_list), start, business_phone_number_id])
+                        connection.commit()  # Commit the transaction
+                    print("Query executed successfully")
+                    return JsonResponse({'message': 'Data updated successfully'})
+                except Exception as e:
+                    print(f"An error occurred during update: {e}")
+                    return JsonResponse({'status': 'error', 'message': str(e)}, status=500)
             else:
-                return JsonResponse({'message': 'No Node Data Present'})
+                return JsonResponse({'message': 'No Node Data Present'}, status=400)
         
     except json.JSONDecodeError:
-        return JsonResponse({'error': 'Invalid JSON'}, status=400)
-    
+        return JsonResponse({'status': 'error', 'message': 'Invalid JSON'}, status=400)
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+        return JsonResponse({'status': 'error', 'message': str(e)}, status=500)    
 @csrf_exempt
 def get_whatsapp_tenant_data(request):
     try:
@@ -404,7 +451,7 @@ def get_whatsapp_tenant_data(request):
             return JsonResponse({'error': 'business_phone_id query parameter is required'}, status=400)
 
         query = '''
-        SELECT business_phone_number_id, flow_data, adj_list, access_token
+        SELECT business_phone_number_id, flow_data, adj_list, access_token, account_id, start, tenant_id
         FROM whatsapp_tenant_data
         WHERE business_phone_number_id = %s
         '''
@@ -415,12 +462,14 @@ def get_whatsapp_tenant_data(request):
         print("TEST", row)
         if not row:
             return JsonResponse({'error': 'No data found for the given business_phone_number_id'}, status=404)
-        print("TEST2")
         data = {
             'business_phone_number_id': row[0],
             'flow_data': row[1],
             'adj_list': row[2],
-            'access_token': row[3]
+            'access_token': row[3],
+            'account_id' : row[4],
+            'start' : row[5],
+            'tenant_id' : row[6]
         }
         return JsonResponse(data)
 

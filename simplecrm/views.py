@@ -6,6 +6,10 @@ from .utils import deduplicate_model
 from django.db import connection
 from rest_framework.response import Response
 from rest_framework import status
+from contacts.models import Contact
+from .utils import clean_text
+from django.db import connection, IntegrityError
+import re
 
 
 @api_view(['POST'])
@@ -28,6 +32,7 @@ def deduplicate_view(request):
     except Exception as e:
         return JsonResponse({'status': 'error', 'message': str(e)}, status=500)
     
+# storing selected emails
 @api_view(['POST'])
 def store_selected_emails(request):
     selected_emails = request.data  # Expecting a list of emails
@@ -39,15 +44,50 @@ def store_selected_emails(request):
             subject = email_data.get('subject')
             text = email_data.get('text')
 
-            # Insert email into the selected_emails table
-            cursor.execute("""
-                INSERT INTO selected_emails (email_id, from_address, subject, text)
-                VALUES (%s, %s, %s, %s)
-                ON CONFLICT (email_id) DO NOTHING;
-            """, [email_id, from_address, subject, text])
+            # Clean the text to make it readable
+            cleaned_text = clean_text(text)
+
+            # Check if cleaned text field is empty or not provided
+            if not cleaned_text:
+                return Response(
+                    {"error": f"Text field is missing or unreadable for email_id: {email_id}"},
+                    status=status.HTTP_400_BAD_REQUEST
+                )
+
+            # Extract the email address from the "from" field
+            email_match = re.search(r'<(.+?)>', from_address)
+            extracted_email = email_match.group(1) if email_match else from_address.strip()
+
+            # Find the contact_id based on the extracted email address
+            contact_id = None
+            try:
+                contact = Contact.objects.get(email=extracted_email)
+                contact_id = contact.id
+            except Contact.DoesNotExist:
+                return Response(
+                    {"error": f"No contact found for email: {extracted_email}"},
+                    status=status.HTTP_400_BAD_REQUEST
+                )
+
+            # Insert email into the selected_emails table with contact_id
+            try:
+                cursor.execute("""
+                    INSERT INTO selected_emails (email_id, from_address, subject, text, contact_id)
+                    VALUES (%s, %s, %s, %s, %s)
+                    ON CONFLICT (email_id) DO NOTHING;
+                """, [email_id, from_address, subject, cleaned_text, contact_id])
+            except IntegrityError as e:
+                return Response(
+                    {"error": f"Database integrity error: {str(e)}"},
+                    status=status.HTTP_500_INTERNAL_SERVER_ERROR
+                )
+            except Exception as e:
+                return Response(
+                    {"error": f"Unexpected error: {str(e)}"},
+                    status=status.HTTP_500_INTERNAL_SERVER_ERROR
+                )
 
     return Response({"message": "Emails stored successfully"}, status=status.HTTP_201_CREATED)
-
 
 @api_view(['GET'])
 def fetch_all_emails(request):
