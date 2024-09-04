@@ -12709,4 +12709,208 @@ WARNING 2024-09-02 14:10:16,314 log Not Found: /dynamic-models/BRAND/
 WARNING 2024-09-02 14:10:16,314 basehttp "GET /dynamic-models/BRAND/ HTTP/1.1" 404 20222
 INFO 2024-09-02 14:10:38,458 basehttp "GET /dynamic-model-data/BRAND/ HTTP/1.1" 200 65
 >>>>>>> ad1da1cdca1c8ccc18ee33877c1227834c8d96aa
+<<<<<<< HEAD
+INFO 2024-09-04 09:02:39,618 autoreload Watching for file changes with StatReloader
+INFO 2024-09-04 09:07:17,850 autoreload Watching for file changes with StatReloader
+INFO 2024-09-04 09:12:49,818 autoreload Watching for file changes with StatReloader
+INFO 2024-09-04 09:13:18,858 autoreload D:\Nuren AI\backend_mine1\leads\migrations\0003_lead_tenant.py changed, reloading.
+INFO 2024-09-04 09:13:20,174 autoreload Watching for file changes with StatReloader
+INFO 2024-09-04 09:28:32,884 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-04 09:29:05,493 log Internal Server Error: /insert_data/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view whatsapp_chat.views.insert_whatsapp_tenant_data didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-09-04 09:29:05,493 basehttp "POST /insert_data/ HTTP/1.1" 500 67939
+INFO 2024-09-04 09:29:05,607 basehttp - Broken pipe from ('127.0.0.1', 64835)
+INFO 2024-09-04 09:31:28,140 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-09-04 09:31:29,455 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-04 09:36:43,593 log Internal Server Error: /insert_data
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/insert_data/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-09-04 09:36:43,594 basehttp "POST /insert_data HTTP/1.1" 500 72173
+ERROR 2024-09-04 09:36:57,388 log Internal Server Error: /insert_data/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view whatsapp_chat.views.insert_whatsapp_tenant_data didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-09-04 09:36:57,388 basehttp "POST /insert_data/ HTTP/1.1" 500 68057
+INFO 2024-09-04 09:39:25,776 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-09-04 09:39:27,788 autoreload Watching for file changes with StatReloader
+INFO 2024-09-04 09:43:30,391 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-09-04 09:43:31,945 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-04 10:13:42,660 log Internal Server Error: /insert_data/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view whatsapp_chat.views.insert_whatsapp_tenant_data didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-09-04 10:13:42,660 basehttp "POST /insert_data/ HTTP/1.1" 500 67939
+INFO 2024-09-04 10:13:42,835 basehttp - Broken pipe from ('127.0.0.1', 49712)
+INFO 2024-09-04 10:18:13,975 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-09-04 10:18:16,605 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-04 10:18:58,276 log Internal Server Error: /insert_data/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view whatsapp_chat.views.insert_whatsapp_tenant_data didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-09-04 10:18:58,276 basehttp "POST /insert_data/ HTTP/1.1" 500 67939
+INFO 2024-09-04 10:18:58,374 basehttp - Broken pipe from ('127.0.0.1', 50701)
+INFO 2024-09-04 10:20:15,896 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-09-04 10:20:17,495 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-04 10:20:59,701 log Internal Server Error: /insert_data/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view whatsapp_chat.views.insert_whatsapp_tenant_data didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-09-04 10:20:59,701 basehttp "POST /insert_data/ HTTP/1.1" 500 67939
+INFO 2024-09-04 10:20:59,870 basehttp - Broken pipe from ('127.0.0.1', 50910)
+INFO 2024-09-04 10:24:54,229 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-09-04 10:24:56,030 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-04 10:25:27,341 log Internal Server Error: /insert_data/
+Traceback (most recent call last):
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Nuren AI\backend_mine1\myenv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view whatsapp_chat.views.insert_whatsapp_tenant_data didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-09-04 10:25:27,343 basehttp "POST /insert_data/ HTTP/1.1" 500 67939
+INFO 2024-09-04 10:25:27,459 basehttp - Broken pipe from ('127.0.0.1', 51751)
+INFO 2024-09-04 10:26:25,314 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-09-04 10:26:27,090 autoreload Watching for file changes with StatReloader
+INFO 2024-09-04 10:27:22,419 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-09-04 10:27:23,959 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-04 10:27:53,658 log Internal Server Error: /insert_data/
+ERROR 2024-09-04 10:27:53,659 basehttp "POST /insert_data/ HTTP/1.1" 500 187
+INFO 2024-09-04 10:27:53,777 basehttp - Broken pipe from ('127.0.0.1', 51908)
+INFO 2024-09-04 10:29:19,656 basehttp "POST /insert_data/ HTTP/1.1" 200 41
+INFO 2024-09-04 15:09:29,237 basehttp "OPTIONS /return-documents/10/undefined HTTP/1.1" 200 0
+INFO 2024-09-04 15:09:29,245 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-09-04 15:09:29,246 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-04 15:09:33,400 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-04 15:09:33,400 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+WARNING 2024-09-04 15:09:34,711 log Not Found: /return-documents/10/undefined
+WARNING 2024-09-04 15:09:34,712 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 20845
+INFO 2024-09-04 15:13:34,735 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-09-04 15:13:34,751 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-09-04 15:13:36,570 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-04 15:13:38,036 basehttp "GET /node-templates/ HTTP/1.1" 200 1556421
+INFO 2024-09-04 15:13:41,113 basehttp "GET /node-templates/ HTTP/1.1" 200 1556421
+INFO 2024-09-04 16:16:00,453 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-04 16:18:47,111 basehttp "GET /contacts/ HTTP/1.1" 200 28391
+INFO 2024-09-04 16:44:49,132 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-09-04 16:44:54,717 autoreload Watching for file changes with StatReloader
+INFO 2024-09-04 16:46:07,670 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-09-04 16:46:09,898 autoreload Watching for file changes with StatReloader
+INFO 2024-09-04 16:50:24,295 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-04 16:55:37,545 autoreload D:\Nuren AI\backend_mine1\contacts\views.py changed, reloading.
+INFO 2024-09-04 16:55:39,584 autoreload Watching for file changes with StatReloader
+INFO 2024-09-04 16:57:45,294 autoreload D:\Nuren AI\backend_mine1\simplecrm\urls.py changed, reloading.
+INFO 2024-09-04 16:57:46,713 autoreload Watching for file changes with StatReloader
+WARNING 2024-09-04 17:00:00,542 log Not Found: /contacts/919548265904/
+WARNING 2024-09-04 17:00:00,542 basehttp "GET /contacts/919548265904/ HTTP/1.1" 404 48
+WARNING 2024-09-04 17:00:09,306 log Not Found: /contacts/9548265904/
+WARNING 2024-09-04 17:00:09,306 basehttp "GET /contacts/9548265904/ HTTP/1.1" 404 48
+INFO 2024-09-04 17:00:32,366 basehttp "GET /contacts-by-phone/9548265904/ HTTP/1.1" 200 2
+INFO 2024-09-04 17:00:38,944 basehttp "GET /contacts-by-phone/919548265904/ HTTP/1.1" 200 252
+INFO 2024-09-04 17:02:28,830 basehttp "GET /contacts-by-phone/919548265904 HTTP/1.1" 301 0
+INFO 2024-09-04 17:02:30,617 basehttp "GET /contacts-by-phone/919548265904/ HTTP/1.1" 200 252
+INFO 2024-09-04 17:05:16,201 basehttp "GET /contacts-by-phone/919548265904 HTTP/1.1" 301 0
+INFO 2024-09-04 17:05:17,939 basehttp "GET /contacts-by-phone/919548265904/ HTTP/1.1" 200 252
+INFO 2024-09-04 17:06:11,808 basehttp "GET /contacts-by-phone/919548265904 HTTP/1.1" 301 0
+INFO 2024-09-04 17:06:13,590 basehttp "GET /contacts-by-phone/919548265904/ HTTP/1.1" 200 252
+INFO 2024-09-04 17:13:58,420 basehttp "GET /contacts-by-phone/919548265904 HTTP/1.1" 301 0
+INFO 2024-09-04 17:14:00,202 basehttp "GET /contacts-by-phone/919548265904/ HTTP/1.1" 200 252
+INFO 2024-09-04 17:14:27,471 basehttp "GET /contacts-by-phone/919548265904 HTTP/1.1" 301 0
+INFO 2024-09-04 17:14:29,125 basehttp "GET /contacts-by-phone/919548265904/ HTTP/1.1" 200 252
+INFO 2024-09-04 17:14:55,618 basehttp "GET /contacts-by-phone/919548265904 HTTP/1.1" 301 0
+INFO 2024-09-04 17:14:57,403 basehttp "GET /contacts-by-phone/919548265904/ HTTP/1.1" 200 252
+INFO 2024-09-04 17:16:01,894 basehttp "GET /contacts-by-phone/919548265904 HTTP/1.1" 301 0
+INFO 2024-09-04 17:16:03,684 basehttp "GET /contacts-by-phone/919548265904/ HTTP/1.1" 200 252
+INFO 2024-09-04 17:16:03,699 basehttp "GET /contacts-by-phone/919548265904 HTTP/1.1" 301 0
+INFO 2024-09-04 17:16:05,361 basehttp "GET /contacts-by-phone/919548265904/ HTTP/1.1" 200 252
+INFO 2024-09-04 17:19:55,532 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-09-04 17:19:55,548 basehttp "OPTIONS /return-documents/10/undefined HTTP/1.1" 200 0
+INFO 2024-09-04 17:19:55,548 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+WARNING 2024-09-04 17:19:55,595 log Not Found: /return-documents/10/undefined
+WARNING 2024-09-04 17:19:55,595 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 21007
+INFO 2024-09-04 17:19:57,270 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-04 17:19:57,286 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+WARNING 2024-09-04 17:20:46,738 log Not Found: /return-documents/10/undefined
+WARNING 2024-09-04 17:20:46,738 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 21007
+INFO 2024-09-04 17:20:48,538 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-04 17:22:28,766 basehttp "OPTIONS /insert_data/ HTTP/1.1" 200 0
+WARNING 2024-09-04 17:22:30,355 log Bad Request: /insert_data/
+WARNING 2024-09-04 17:22:30,355 basehttp "POST /insert_data/ HTTP/1.1" 400 35
+INFO 2024-09-04 17:24:16,117 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-09-04 17:24:19,632 autoreload Watching for file changes with StatReloader
+INFO 2024-09-04 17:24:40,968 basehttp "OPTIONS /insert_data/ HTTP/1.1" 200 0
+WARNING 2024-09-04 17:24:42,371 log Bad Request: /insert_data/
+WARNING 2024-09-04 17:24:42,371 basehttp "POST /insert_data/ HTTP/1.1" 400 35
+INFO 2024-09-04 17:26:09,273 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-09-04 17:26:10,620 autoreload Watching for file changes with StatReloader
+INFO 2024-09-04 17:26:31,226 basehttp "OPTIONS /insert_data/ HTTP/1.1" 200 0
+ERROR 2024-09-04 17:26:32,700 log Internal Server Error: /insert_data/
+ERROR 2024-09-04 17:26:32,701 basehttp "POST /insert_data/ HTTP/1.1" 500 72
+INFO 2024-09-04 17:28:00,120 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-09-04 17:28:01,493 autoreload Watching for file changes with StatReloader
+INFO 2024-09-04 17:28:47,516 basehttp "OPTIONS /insert_data/ HTTP/1.1" 200 0
+ERROR 2024-09-04 17:28:49,037 log Internal Server Error: /insert_data/
+ERROR 2024-09-04 17:28:49,037 basehttp "POST /insert_data/ HTTP/1.1" 500 72
+INFO 2024-09-04 17:35:57,807 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-09-04 17:35:59,992 autoreload Watching for file changes with StatReloader
+INFO 2024-09-04 17:39:40,931 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-09-04 17:39:42,693 autoreload Watching for file changes with StatReloader
+INFO 2024-09-04 17:40:02,966 basehttp "OPTIONS /insert_data/ HTTP/1.1" 200 0
+WARNING 2024-09-04 17:40:10,213 log Bad Request: /create-dynamic-model/
+WARNING 2024-09-04 17:40:10,214 basehttp "POST /create-dynamic-model/ HTTP/1.1" 400 86
+INFO 2024-09-04 17:40:10,911 basehttp "POST /insert_data/ HTTP/1.1" 200 40
+INFO 2024-09-04 18:45:01,811 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-09-04 18:45:05,025 autoreload Watching for file changes with StatReloader
+WARNING 2024-09-04 18:51:27,657 log Not Found: /return-documents/10/undefined
+WARNING 2024-09-04 18:51:27,659 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 21007
+INFO 2024-09-04 18:51:27,890 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-04 18:51:27,930 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-04 19:20:03,254 autoreload D:\Nuren AI\backend_mine1\whatsapp_chat\views.py changed, reloading.
+INFO 2024-09-04 19:20:05,763 autoreload Watching for file changes with StatReloader
+=======
 >>>>>>> 08f64fead99a6b715cb7542b795fd3856d443fdf
+>>>>>>> 3d2d557356bca56ec00b3b93469db1e28e49c96e

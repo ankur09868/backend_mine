@@ -23,3 +23,10 @@ class ContactByAccountAPIView(ListCreateAPIView):
     def get_queryset(self):
         account_id = self.kwargs.get('account_id')  # Get account ID from URL parameters
         return Contact.objects.filter(account_id=account_id)  # Filter by 
+    
+class ContactByPhoneAPIView(ListCreateAPIView):
+    serializer_class = ContactSerializer
+
+    def get_queryset(self):
+        phone = self.kwargs.get('phone')
+        return Contact.objects.filter(phone=phone)
