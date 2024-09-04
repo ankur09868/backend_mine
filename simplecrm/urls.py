@@ -152,6 +152,7 @@ urlpatterns = [
     path('drafts/', draftview.DraftListCreateAPIView.as_view()),           # List and create drafts
     path('drafts/<int:id>/', draftview.DraftDetailAPIView.as_view()),
     path('contacts_of_account/<int:account_id>/',cviews.ContactByAccountAPIView.as_view(), name='contacts-by-account'),
+    path('contacts-by-phone/<int:phone>/', cviews.ContactByPhoneAPIView.as_view(), name='contacts-by-phone'),
     path('wallet/recharge/',wallview.recharge_wallet, name='recharge_wallet'),
     path('wallet/deduct/',wallview.deduct_from_wallet, name='deduct_from_wallet'),
     path('wallet/balance/',wallview.get_wallet_balance, name='get_wallet_balance'),

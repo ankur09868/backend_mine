@@ -4,7 +4,6 @@ from .insta_msg import group_messages_into_conversations
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.views import APIView
-from transformers import pipeline
 from django.utils import timezone
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
