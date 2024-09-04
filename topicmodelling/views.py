@@ -9,26 +9,35 @@ from django.shortcuts import HttpResponse
 from topicmodelling.models import TopicModelling, Conversation 
 from simplecrm.models import CustomUser
 from django.db import transaction
+from django.views.decorators.csrf import csrf_exempt
+from rest_framework.decorators import api_view
 
 nltk.download('stopwords')
 nltk.download('punkt')
 stop_words = set(stopwords.words('english'))
 
 def preprocess_text(text):
-   # Remove other unwanted characters and punctuation
-    text = re.sub(r'[^\w\s]', '', text)
-    text = text.lower()  # Convert to lowercase
-    # Remove HTML and CSS tags
-    text = re.sub(r'<[^>]+>', '', text)  # Remove HTML tags
-    text = re.sub(r'@media[^{]*\{[^}]*\}', '', text)  # Remove CSS media queries
-    # Remove date and time patterns (e.g., 2024-08-07 06:36:58.672213+00:00)
+   # Remove HTML tags
+    text = re.sub(r'<[^>]+>', '', text)  
+    # Remove CSS media queries
+    text = re.sub(r'@media[^{]*\{[^}]*\}', '', text)  
+    # Remove date and time patterns
     text = re.sub(r'\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\.\d+\+\d{2}:\d{2}', '', text)
-    text = re.sub(r'[^\w\s]', '', text)  # Remove punctuation
-    tokens = word_tokenize(text)  # Tokenize
+    # Remove numeric sequences and alphanumeric sequences
+    text = re.sub(r'\b\d+\b', '', text)  # Remove standalone numbers
+    text = re.sub(r'\b[A-Za-z0-9]{5,}\b', '', text)  # Remove alphanumeric sequences with 5 or more characters
+    # Remove punctuation and unwanted characters
+    text = re.sub(r'[^\w\s]', '', text)
+    # Convert to lowercase
+    text = text.lower()
+    # Tokenize
+    tokens = word_tokenize(text)
     tokens = [word for word in tokens if word not in stop_words]  # Remove stop words
     print(tokens)
     return ' '.join(tokens)
 
+@csrf_exempt
+@api_view(['POST'])
 def perform_topic_modelling(request):
     try:
         # Fetch data from the Conversation table
@@ -42,15 +51,18 @@ def perform_topic_modelling(request):
         df['processed_message'] = df['messages'].apply(preprocess_text)
 
         # Check if there are any empty processed messages
-        if df['processed_message'].str.strip().eq('').any():
-            return HttpResponse("One or more conversations have no valid text after preprocessing.")
+        df = df[df['processed_message'].str.strip() != '']  # Remove rows with empty processed messages
+
+        if df.empty:
+            return HttpResponse("All conversations were filtered out after preprocessing.")
 
         # Vectorize text
         vectorizer = TfidfVectorizer()
         X = vectorizer.fit_transform(df['processed_message'])
 
         # Apply LDA
-        lda = LatentDirichletAllocation(n_components=9, random_state=42)
+        n_topics = min(11, len(df))  # Ensure at least as many topics as conversations, up to the number of documents
+        lda = LatentDirichletAllocation(n_components=n_topics, random_state=42)
         lda.fit(X)
 
         # Extract topics
@@ -59,9 +71,11 @@ def perform_topic_modelling(request):
             top_words = [vectorizer.get_feature_names_out()[i] for i in topic.argsort()[-10:]]
             topics.append(top_words)  # Top 10 words
 
-        # Debugging output
-        if len(topics) < df.shape[0]:
-            return HttpResponse(f"Number of topics generated ({len(topics)}) is less than the number of conversations ({df.shape[0]}).")
+        # Transform documents to topic space
+        topic_distributions = lda.transform(X)
+
+        # Assign the most probable topic to each conversation
+        df['dominant_topic'] = topic_distributions.argmax(axis=1)
 
         # Save the results to TopicModelling table within a transaction
         with transaction.atomic():
@@ -71,20 +85,21 @@ def perform_topic_modelling(request):
                     conversation = Conversation.objects.get(id=row['id'])
                     
                     # Check if the conversation already has a topic modeling entry
-                    if not TopicModelling.objects.filter(conversation=conversation).exists():
-                        topic_modelling = TopicModelling(
-                            conversation=conversation,
-                            user=conversation.user,  # Set user from Conversation
-                            topics=topics[idx] if idx < len(topics) else ["No topics generated"]
-                        )
-                        topic_modelling.save()
-                    else:
-                        return HttpResponse(f"Topic modeling entry already exists for conversation ID {row['id']}.")
+                    if TopicModelling.objects.filter(conversation=conversation).exists():
+                        print(f"Topic modeling entry already exists for conversation ID {row['id']}. Skipping.")
+                        continue
+
+                    topic_modelling = TopicModelling(
+                        conversation=conversation,
+                        user=conversation.user,  # Set user from Conversation
+                        topics=topics[row['dominant_topic']] if row['dominant_topic'] < len(topics) else ["No topics generated"]
+                    )
+                    topic_modelling.save()
 
                 except Conversation.DoesNotExist:
-                    return HttpResponse(f"Conversation ID {row['id']} does not exist.")
+                    print(f"Conversation ID {row['id']} does not exist.")
                 except IndexError:
-                    return HttpResponse(f"IndexError for conversation ID {row['id']}: list index out of range.")
+                    print(f"IndexError for conversation ID {row['id']}: list index out of range.")
 
         return HttpResponse("Successfully performed topic modeling and saved to TopicModelling table.")
 
