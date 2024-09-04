@@ -63,14 +63,14 @@ jobs:
 
       
       - name: Login to Azure
-        uses: azure/login@v4
+        uses: azure/login@v1
         with:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_0D2E67CF51404804A87CDA4F80661A7D }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_080FE548F6BD466E80EAFDECB3A8CC5A }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_71D251FAB0B642458D4D291C4DBD4082 }}
 
       - name: 'Deploy to Azure Web App'
-        uses: azure/webapps-deploy@v4
+        uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
           app-name: 'webappbaackend'
