@@ -9217,3 +9217,38 @@ WARNING 2024-09-02 14:10:16,314 log Not Found: /dynamic-models/BRAND/
 WARNING 2024-09-02 14:10:16,314 basehttp "GET /dynamic-models/BRAND/ HTTP/1.1" 404 20222
 INFO 2024-09-02 14:10:38,458 basehttp "GET /dynamic-model-data/BRAND/ HTTP/1.1" 200 65
 >>>>>>> ad1da1cdca1c8ccc18ee33877c1227834c8d96aa
+INFO 2024-09-04 17:13:47,885 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-04 17:22:50,730 log Internal Server Error: /insert_data/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\whatsapp_chat\views.py", line 380, in insert_whatsapp_tenant_data
+    adj_list, flow_data, start = convert_flow(node_data)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 3, got 2)
+ERROR 2024-09-04 17:22:50,733 basehttp "GET /insert_data/ HTTP/1.1" 500 80615
+ERROR 2024-09-04 17:22:54,949 log Internal Server Error: /insert_data/
+Traceback (most recent call last):
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adarsh\MyProject\Deployed_Finals\django-crm\django_crm_backend\whatsapp_chat\views.py", line 380, in insert_whatsapp_tenant_data
+    adj_list, flow_data, start = convert_flow(node_data)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 3, got 2)
+ERROR 2024-09-04 17:22:54,949 basehttp "POST /insert_data/ HTTP/1.1" 500 80622
+WARNING 2024-09-04 17:23:26,377 log Bad Request: /insert_data/
+WARNING 2024-09-04 17:23:26,377 basehttp "POST /insert_data/ HTTP/1.1" 400 25
