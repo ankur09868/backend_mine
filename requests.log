@@ -4,3 +4,4 @@ WARNING 2024-09-05 00:15:42,371 basehttp "POST /leads/ HTTP/1.1" 400 21
 WARNING 2024-09-05 00:15:45,837 log Bad Request: /leads/
 WARNING 2024-09-05 00:15:45,842 basehttp "GET /leads/ HTTP/1.1" 400 21
 INFO 2024-09-05 00:16:06,555 basehttp "GET /leads/ HTTP/1.1" 200 7150
+INFO 2024-09-05 09:52:38,933 autoreload Watching for file changes with StatReloader
