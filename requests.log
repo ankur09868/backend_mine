@@ -7,6 +7,7 @@ INFO 2024-09-05 00:16:06,555 basehttp "GET /leads/ HTTP/1.1" 200 7150
 INFO 2024-09-05 09:52:38,933 autoreload Watching for file changes with StatReloader
 INFO 2024-09-05 10:06:35,045 autoreload Watching for file changes with StatReloader
 INFO 2024-09-05 10:06:51,497 autoreload Watching for file changes with StatReloader
+<<<<<<< HEAD
 INFO 2024-09-05 12:57:51,602 autoreload Watching for file changes with StatReloader
 INFO 2024-09-05 12:58:34,551 autoreload Watching for file changes with StatReloader
 INFO 2024-09-05 12:59:33,404 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\prompting.py changed, reloading.
@@ -2397,3 +2398,6 @@ WARNING 2024-09-09 14:50:03,520 basehttp "GET /save_whatsapp_conversations/ HTTP
 WARNING 2024-09-09 14:50:33,423 log Bad Request: /save_whatsapp_conversations/
 WARNING 2024-09-09 14:50:33,424 basehttp "POST /save_whatsapp_conversations/ HTTP/1.1" 400 54
 INFO 2024-09-09 14:52:33,846 basehttp "POST /group-messages/ HTTP/1.1" 200 63
+=======
+INFO 2024-09-05 16:05:04,955 autoreload Watching for file changes with StatReloader
+>>>>>>> ae310294c3dbab6997fda824bce31e58b128d397
