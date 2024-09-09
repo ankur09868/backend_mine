@@ -7,3 +7,2393 @@ INFO 2024-09-05 00:16:06,555 basehttp "GET /leads/ HTTP/1.1" 200 7150
 INFO 2024-09-05 09:52:38,933 autoreload Watching for file changes with StatReloader
 INFO 2024-09-05 10:06:35,045 autoreload Watching for file changes with StatReloader
 INFO 2024-09-05 10:06:51,497 autoreload Watching for file changes with StatReloader
+INFO 2024-09-05 12:57:51,602 autoreload Watching for file changes with StatReloader
+INFO 2024-09-05 12:58:34,551 autoreload Watching for file changes with StatReloader
+INFO 2024-09-05 12:59:33,404 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\prompting.py changed, reloading.
+INFO 2024-09-05 12:59:35,313 autoreload Watching for file changes with StatReloader
+INFO 2024-09-05 13:00:11,403 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\gpt_utils.py changed, reloading.
+INFO 2024-09-05 13:00:13,042 autoreload Watching for file changes with StatReloader
+INFO 2024-09-05 13:20:24,994 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-05 13:20:24,998 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-09-05 13:20:25,213 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-09-05 13:20:29,716 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-05 13:20:31,590 basehttp "GET /node-templates/ HTTP/1.1" 200 1556421
+INFO 2024-09-05 13:20:37,936 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-09-05 13:20:37,939 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-09-05 13:20:39,627 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-05 13:20:41,187 basehttp "GET /node-templates/ HTTP/1.1" 200 1556421
+INFO 2024-09-05 13:29:07,452 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-09-05 13:29:07,554 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-09-05 13:29:10,133 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-05 13:29:37,312 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-09-05 13:29:37,354 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-09-05 13:29:39,419 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-05 13:29:41,572 basehttp "GET /node-templates/ HTTP/1.1" 200 1556421
+INFO 2024-09-05 13:29:56,918 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-09-05 13:30:03,702 basehttp "GET /node-templates/ HTTP/1.1" 200 1556421
+INFO 2024-09-05 13:30:09,921 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-09-05 13:30:09,921 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-09-05 13:30:17,129 basehttp "GET /node-templates/ HTTP/1.1" 200 1556421
+INFO 2024-09-05 13:40:26,943 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-09-05 13:40:27,103 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-05 13:40:27,186 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-09-05 13:40:30,391 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 13:40:30,456 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-05 13:40:41,819 basehttp "GET /node-templates/ HTTP/1.1" 200 1556421
+INFO 2024-09-05 13:42:36,962 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-05 13:42:37,457 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-09-05 13:42:40,371 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 13:42:40,475 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-05 13:56:56,976 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-05 13:56:57,830 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-09-05 13:57:07,310 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-09-05 13:57:29,922 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-05 13:57:37,596 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 13:57:50,096 basehttp "GET /node-templates/ HTTP/1.1" 200 1556421
+INFO 2024-09-05 13:59:01,171 basehttp - Broken pipe from ('127.0.0.1', 52630)
+INFO 2024-09-05 13:59:01,172 basehttp - Broken pipe from ('127.0.0.1', 52664)
+INFO 2024-09-05 13:59:01,172 basehttp - Broken pipe from ('127.0.0.1', 52626)
+INFO 2024-09-05 13:59:01,172 basehttp - Broken pipe from ('127.0.0.1', 52632)
+INFO 2024-09-05 13:59:01,172 basehttp - Broken pipe from ('127.0.0.1', 52662)
+ERROR 2024-09-05 14:19:19,538 log Internal Server Error: /generate-prompt/
+ERROR 2024-09-05 14:19:19,539 basehttp "POST /generate-prompt/ HTTP/1.1" 500 124
+INFO 2024-09-05 14:20:47,794 basehttp "POST /generate-prompt/ HTTP/1.1" 200 330
+ERROR 2024-09-05 14:27:22,533 log Internal Server Error: /perform-topic-modelling
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/perform-topic-modelling/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-09-05 14:27:22,534 basehttp "POST /perform-topic-modelling HTTP/1.1" 500 72209
+INFO 2024-09-05 14:28:15,622 basehttp "POST /perform-topic-modelling/ HTTP/1.1" 200 72
+INFO 2024-09-05 14:29:16,769 basehttp "POST /perform-topic-modelling/ HTTP/1.1" 200 72
+INFO 2024-09-05 14:31:02,566 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-09-05 14:31:07,866 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-09-05 14:31:12,612 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-05 14:31:19,463 basehttp "GET /node-templates/ HTTP/1.1" 200 1556421
+INFO 2024-09-05 14:31:40,950 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-09-05 14:31:44,468 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-09-05 14:31:47,543 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-05 14:31:51,008 basehttp "GET /node-templates/ HTTP/1.1" 200 1556421
+INFO 2024-09-05 14:31:55,898 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-09-05 14:31:56,392 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-09-05 14:32:07,898 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-09-05 14:32:07,899 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-09-05 14:32:11,367 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-05 14:32:11,488 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-05 14:32:29,148 basehttp "GET /node-templates/ HTTP/1.1" 200 1556421
+ERROR 2024-09-05 14:32:33,479 log Internal Server Error: /node-templates/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "E:\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\serializers.py", line 713, in to_representation
+    return [
+           ^
+  File "E:\.venv\Lib\site-packages\django\db\models\query.py", line 394, in __iter__
+    self._fetch_all()
+  File "E:\.venv\Lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\.venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+INFO 2024-09-05 14:32:33,488 basehttp - Broken pipe from ('127.0.0.1', 55731)
+INFO 2024-09-05 14:33:59,305 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-05 14:33:59,927 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 14:34:02,668 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\topicmodelling\views.py changed, reloading.
+INFO 2024-09-05 14:34:04,524 autoreload Watching for file changes with StatReloader
+INFO 2024-09-05 14:34:45,135 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-09-05 14:34:45,136 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-05 14:34:45,290 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-09-05 14:34:50,920 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 14:36:03,413 basehttp "POST /perform-topic-modelling/ HTTP/1.1" 200 72
+INFO 2024-09-05 14:41:25,753 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-05 14:41:25,814 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-09-05 14:41:25,945 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-09-05 14:41:28,973 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-05 14:41:29,029 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 14:41:31,280 basehttp "GET /node-templates/ HTTP/1.1" 200 1556421
+INFO 2024-09-05 14:44:17,221 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-05 14:44:21,871 basehttp "GET /node-templates/ HTTP/1.1" 200 1556421
+INFO 2024-09-05 14:52:49,927 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 14:52:49,927 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-05 14:53:16,835 basehttp "GET /node-templates/ HTTP/1.1" 200 1556421
+INFO 2024-09-05 14:54:16,047 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 14:54:26,723 basehttp "GET /node-templates/ HTTP/1.1" 200 1556421
+INFO 2024-09-05 14:56:15,600 basehttp "GET /node-templates/ HTTP/1.1" 200 1556421
+WARNING 2024-09-05 14:56:51,553 log Bad Request: /
+WARNING 2024-09-05 14:56:51,554 basehttp "GET / HTTP/1.1" 400 21
+INFO 2024-09-05 14:57:34,672 basehttp "OPTIONS /node-templates/59/ HTTP/1.1" 200 0
+INFO 2024-09-05 14:57:38,440 basehttp "GET /node-templates/59/ HTTP/1.1" 200 4768
+INFO 2024-09-05 14:57:49,607 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-05 14:57:55,174 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-05 14:58:34,073 basehttp "OPTIONS /wallet/balance?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-05 14:58:34,075 basehttp "OPTIONS /interaction HTTP/1.1" 200 0
+INFO 2024-09-05 14:58:34,133 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-05 14:58:34,272 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 14:58:34,432 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-05 14:58:34,445 basehttp "OPTIONS /wallet/balance/?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-05 14:58:34,639 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 14:58:34,772 basehttp "OPTIONS /interaction/ HTTP/1.1" 200 0
+INFO 2024-09-05 14:58:36,415 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 14:58:36,628 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-05 14:58:36,709 log Not Found: /wallet/balance/
+WARNING 2024-09-05 14:58:36,710 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 15:01:22,379 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\topicmodelling\views.py changed, reloading.
+INFO 2024-09-05 15:01:23,823 autoreload Watching for file changes with StatReloader
+INFO 2024-09-05 15:02:43,283 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 15:02:56,617 basehttp "GET /node-templates/ HTTP/1.1" 200 1556421
+INFO 2024-09-05 15:03:58,339 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\topicmodelling\views.py changed, reloading.
+INFO 2024-09-05 15:03:59,963 autoreload Watching for file changes with StatReloader
+INFO 2024-09-05 15:07:47,112 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 15:07:47,169 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 15:07:50,435 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 15:07:50,439 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+WARNING 2024-09-05 15:07:50,903 log Not Found: /wallet/balance/
+WARNING 2024-09-05 15:07:50,904 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 15:07:51,159 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 15:07:56,632 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 15:07:56,640 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 15:08:09,148 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\topicmodelling\views.py changed, reloading.
+INFO 2024-09-05 15:08:10,801 autoreload Watching for file changes with StatReloader
+INFO 2024-09-05 15:09:51,312 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 15:09:51,312 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 15:09:57,004 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 15:09:57,005 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 15:09:58,878 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+WARNING 2024-09-05 15:09:59,686 log Not Found: /wallet/balance/
+WARNING 2024-09-05 15:09:59,686 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 15:09:59,791 basehttp - Broken pipe from ('127.0.0.1', 57606)
+INFO 2024-09-05 15:10:02,600 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 15:10:03,487 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 15:10:03,614 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:10:05,574 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+WARNING 2024-09-05 15:10:05,832 log Not Found: /wallet/balance/
+WARNING 2024-09-05 15:10:05,833 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 15:10:06,797 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 15:10:27,772 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:10:27,777 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:10:27,778 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 15:10:27,779 basehttp "GET /interaction HTTP/1.1" 301 0
+WARNING 2024-09-05 15:10:30,963 log Not Found: /wallet/balance/
+WARNING 2024-09-05 15:10:30,963 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 15:10:30,977 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 15:10:31,141 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 15:10:32,078 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 15:10:41,390 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 15:10:41,390 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+WARNING 2024-09-05 15:10:44,153 log Not Found: /wallet/balance/
+WARNING 2024-09-05 15:10:44,153 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 15:10:44,303 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 15:10:44,797 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 15:12:05,831 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 15:12:09,266 basehttp "GET /node-templates/ HTTP/1.1" 200 1556421
+INFO 2024-09-05 15:12:53,826 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 15:13:17,628 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 15:13:17,636 basehttp "OPTIONS /report/lead_stages/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:13:17,644 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:13:17,781 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 15:13:18,076 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:13:18,125 basehttp "OPTIONS /report/opportunity_stages/ HTTP/1.1" 200 0
+WARNING 2024-09-05 15:13:19,586 log Not Found: /wallet/balance/
+WARNING 2024-09-05 15:13:19,586 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 15:13:19,703 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 15:13:19,819 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 157
+INFO 2024-09-05 15:13:20,984 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-05 15:13:21,001 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+INFO 2024-09-05 15:13:24,384 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-05 15:13:28,147 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 15:13:28,205 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:13:28,205 basehttp "OPTIONS /active_contacts/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:13:28,206 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 15:13:28,206 basehttp "OPTIONS /recent_request/contacts/ HTTP/1.1" 200 0
+WARNING 2024-09-05 15:13:30,374 log Not Found: /wallet/balance/
+WARNING 2024-09-05 15:13:30,374 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 15:13:30,419 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 15:13:30,423 basehttp "GET /active_contacts/ HTTP/1.1" 200 5276
+INFO 2024-09-05 15:13:30,605 basehttp "GET /recent_request/contacts/ HTTP/1.1" 200 3983
+INFO 2024-09-05 15:13:30,742 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-05 15:13:40,070 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 15:13:40,071 basehttp "OPTIONS /leads/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:13:40,073 basehttp "GET /interaction HTTP/1.1" 301 0
+WARNING 2024-09-05 15:13:46,846 log Not Found: /wallet/balance/
+WARNING 2024-09-05 15:13:46,847 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 15:13:47,115 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 15:13:51,705 basehttp "GET /leads/ HTTP/1.1" 200 7150
+INFO 2024-09-05 15:13:52,020 basehttp "OPTIONS /lead/stage/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:13:54,422 basehttp "GET /lead/stage/ HTTP/1.1" 200 519
+INFO 2024-09-05 15:14:00,798 basehttp "GET /leads/ HTTP/1.1" 200 7150
+INFO 2024-09-05 15:14:13,686 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:14:14,108 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:14:16,377 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 15:14:44,380 basehttp "GET /node-templates/ HTTP/1.1" 200 1556421
+INFO 2024-09-05 15:15:34,810 basehttp "OPTIONS /lead/stage/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:15:34,953 basehttp "OPTIONS /leads/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:15:37,047 basehttp "GET /lead/stage/ HTTP/1.1" 200 519
+INFO 2024-09-05 15:15:37,272 basehttp "POST /perform-topic-modelling/ HTTP/1.1" 200 72
+INFO 2024-09-05 15:15:40,209 basehttp "GET /leads/ HTTP/1.1" 200 7150
+INFO 2024-09-05 15:15:46,816 basehttp "GET /leads/ HTTP/1.1" 200 7150
+INFO 2024-09-05 15:17:10,491 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 15:17:10,503 basehttp "OPTIONS /opportunities/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:17:10,538 basehttp "GET /interaction HTTP/1.1" 301 0
+WARNING 2024-09-05 15:17:12,981 log Not Found: /wallet/balance/
+WARNING 2024-09-05 15:17:12,982 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 15:17:13,332 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 15:17:16,413 basehttp "GET /opportunities/ HTTP/1.1" 200 5296
+INFO 2024-09-05 15:17:16,666 basehttp "OPTIONS /opportunity/stage/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:17:19,291 basehttp "GET /opportunity/stage/ HTTP/1.1" 200 418
+INFO 2024-09-05 15:17:25,274 basehttp "GET /opportunities/ HTTP/1.1" 200 5296
+INFO 2024-09-05 15:17:43,159 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:17:43,248 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:17:45,739 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 15:17:48,782 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\topicmodelling\views.py changed, reloading.
+INFO 2024-09-05 15:17:50,329 autoreload Watching for file changes with StatReloader
+INFO 2024-09-05 15:18:55,667 basehttp "OPTIONS /opportunities/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:19:03,032 basehttp "GET /opportunities/ HTTP/1.1" 200 5296
+INFO 2024-09-05 15:19:15,857 basehttp "OPTIONS /opportunity/stage/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:19:15,911 basehttp "OPTIONS /opportunities/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:19:18,243 basehttp "GET /opportunity/stage/ HTTP/1.1" 200 418
+INFO 2024-09-05 15:19:19,275 basehttp "OPTIONS /opportunities/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:19:22,815 basehttp "GET /opportunities/ HTTP/1.1" 200 5296
+INFO 2024-09-05 15:19:25,962 basehttp "GET /opportunities/ HTTP/1.1" 200 5296
+INFO 2024-09-05 15:19:29,266 basehttp "POST /perform-topic-modelling/ HTTP/1.1" 200 86
+INFO 2024-09-05 15:19:57,090 basehttp "POST /perform-topic-modelling/ HTTP/1.1" 200 86
+INFO 2024-09-05 15:20:07,873 basehttp "GET /opportunity/stage/ HTTP/1.1" 200 418
+INFO 2024-09-05 15:20:11,733 basehttp "GET /opportunities/ HTTP/1.1" 200 5296
+INFO 2024-09-05 15:20:13,889 basehttp "GET /opportunities/ HTTP/1.1" 200 5296
+INFO 2024-09-05 15:20:50,723 basehttp "GET /opportunity/stage/ HTTP/1.1" 200 418
+INFO 2024-09-05 15:20:54,508 basehttp "GET /opportunities/ HTTP/1.1" 200 5296
+INFO 2024-09-05 15:20:57,008 basehttp "GET /opportunities/ HTTP/1.1" 200 5296
+INFO 2024-09-05 15:20:59,002 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 15:20:59,005 basehttp "OPTIONS /tasks/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:20:59,006 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+WARNING 2024-09-05 15:21:01,551 log Not Found: /wallet/balance/
+WARNING 2024-09-05 15:21:01,553 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 15:21:01,619 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 15:21:02,020 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 15:21:02,518 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 15:21:03,078 basehttp "GET /tasks/ HTTP/1.1" 200 1130
+INFO 2024-09-05 15:21:05,599 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-05 15:21:05,713 log Not Found: /wallet/balance/
+WARNING 2024-09-05 15:21:05,714 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 15:21:10,684 basehttp "OPTIONS /vendors HTTP/1.1" 200 0
+INFO 2024-09-05 15:21:10,685 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 15:21:10,687 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+WARNING 2024-09-05 15:21:12,922 log Not Found: /wallet/balance/
+WARNING 2024-09-05 15:21:12,922 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 15:21:12,958 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 15:21:13,226 basehttp "GET /vendors HTTP/1.1" 200 5342
+INFO 2024-09-05 15:21:17,674 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 15:21:17,675 basehttp "OPTIONS /vendor/1 HTTP/1.1" 200 0
+INFO 2024-09-05 15:21:17,679 basehttp "GET /interaction HTTP/1.1" 301 0
+WARNING 2024-09-05 15:21:19,887 log Not Found: /wallet/balance/
+WARNING 2024-09-05 15:21:19,887 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 15:21:19,913 basehttp "GET /vendor/1 HTTP/1.1" 200 382
+INFO 2024-09-05 15:21:20,613 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 15:21:25,260 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 15:21:25,267 basehttp "GET /interaction HTTP/1.1" 301 0
+WARNING 2024-09-05 15:21:27,671 log Not Found: /wallet/balance/
+WARNING 2024-09-05 15:21:27,671 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 15:21:27,698 basehttp "GET /vendors HTTP/1.1" 200 5342
+INFO 2024-09-05 15:21:27,924 basehttp "OPTIONS /products/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:21:28,298 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 15:21:47,105 basehttp "GET /products/ HTTP/1.1" 200 751231
+INFO 2024-09-05 15:21:58,866 basehttp "OPTIONS /product/167/ HTTP/1.1" 200 0
+WARNING 2024-09-05 15:22:01,168 log Not Found: /product/167/
+WARNING 2024-09-05 15:22:01,169 basehttp "GET /product/167/ HTTP/1.1" 404 48
+INFO 2024-09-05 15:23:51,521 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:23:51,564 basehttp "OPTIONS /product/167/ HTTP/1.1" 200 0
+WARNING 2024-09-05 15:23:53,875 log Not Found: /product/167/
+WARNING 2024-09-05 15:23:53,876 basehttp "GET /product/167/ HTTP/1.1" 404 48
+INFO 2024-09-05 15:23:58,585 basehttp "OPTIONS /products/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:24:08,201 basehttp "OPTIONS /wallet/balance?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-05 15:24:08,354 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 15:24:08,424 basehttp "OPTIONS /report/total_leads/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:24:08,617 basehttp "OPTIONS /wallet/balance/?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-05 15:24:08,990 basehttp "OPTIONS /interaction HTTP/1.1" 200 0
+INFO 2024-09-05 15:24:09,141 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 15:24:09,322 basehttp "OPTIONS /interaction/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:24:10,056 basehttp "OPTIONS /products/ HTTP/1.1" 200 0
+WARNING 2024-09-05 15:24:10,700 log Not Found: /wallet/balance/
+WARNING 2024-09-05 15:24:10,701 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 15:24:10,943 basehttp "GET /report/total_leads/ HTTP/1.1" 200 7546
+INFO 2024-09-05 15:24:11,476 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 15:24:15,752 basehttp "OPTIONS /interaction HTTP/1.1" 200 0
+INFO 2024-09-05 15:24:15,754 basehttp "OPTIONS /campaign/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:24:15,756 basehttp "OPTIONS /campaign/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:24:15,759 basehttp "OPTIONS /campaign/stats/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:24:15,760 basehttp "OPTIONS /wallet/balance?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-05 15:24:15,808 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:24:15,811 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:24:15,847 basehttp "OPTIONS /campaign/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:24:15,898 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 15:24:15,936 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 15:24:16,165 basehttp "OPTIONS /interaction/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:24:16,230 basehttp "OPTIONS /wallet/balance/?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-05 15:24:18,481 basehttp "GET /campaign/ HTTP/1.1" 200 702
+INFO 2024-09-05 15:24:18,484 basehttp "GET /campaign/ HTTP/1.1" 200 702
+INFO 2024-09-05 15:24:18,488 basehttp "GET /campaign/ HTTP/1.1" 200 702
+INFO 2024-09-05 15:24:19,081 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-05 15:24:19,082 log Not Found: /wallet/balance/
+WARNING 2024-09-05 15:24:19,082 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 15:24:19,451 basehttp "GET /campaign/stats/ HTTP/1.1" 200 79
+INFO 2024-09-05 15:24:20,066 basehttp "GET /products/ HTTP/1.1" 200 751231
+INFO 2024-09-05 15:24:21,120 basehttp "OPTIONS /campaign/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:24:21,125 basehttp "OPTIONS /campaign/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:24:26,485 basehttp "OPTIONS /campaign/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:24:26,486 basehttp "OPTIONS /campaign/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:24:29,113 basehttp "OPTIONS /contact/ HTTP/1.1" 200 0
+WARNING 2024-09-05 15:24:30,711 log Not Found: /contact/
+WARNING 2024-09-05 15:24:30,712 basehttp "GET /contact/ HTTP/1.1" 404 20692
+INFO 2024-09-05 15:24:30,889 basehttp "OPTIONS /campaign/11 HTTP/1.1" 200 0
+INFO 2024-09-05 15:24:31,890 basehttp "GET /campaign/11 HTTP/1.1" 301 0
+INFO 2024-09-05 15:24:32,178 basehttp "OPTIONS /campaign/11/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:24:32,627 basehttp "GET /campaign/ HTTP/1.1" 200 702
+INFO 2024-09-05 15:24:33,422 basehttp "GET /campaign/ HTTP/1.1" 200 702
+INFO 2024-09-05 15:24:34,465 basehttp "GET /campaign/ HTTP/1.1" 200 702
+INFO 2024-09-05 15:24:34,499 basehttp "GET /campaign/ HTTP/1.1" 200 702
+INFO 2024-09-05 15:24:35,860 basehttp "GET /campaign/11/ HTTP/1.1" 200 410
+INFO 2024-09-05 15:24:41,095 basehttp "GET /node-templates/ HTTP/1.1" 200 1556421
+INFO 2024-09-05 15:24:46,546 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 15:24:46,560 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 15:24:58,141 basehttp "GET /products/ HTTP/1.1" 200 751231
+INFO 2024-09-05 15:25:05,640 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 15:25:05,685 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 15:25:05,937 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 15:25:07,708 basehttp "GET /campaign/ HTTP/1.1" 200 702
+INFO 2024-09-05 15:25:07,735 basehttp "GET /campaign/ HTTP/1.1" 200 702
+INFO 2024-09-05 15:25:08,204 basehttp "OPTIONS /tickets/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:25:08,381 basehttp "GET /campaign/ HTTP/1.1" 200 702
+INFO 2024-09-05 15:25:11,469 basehttp "GET /campaign/stats/ HTTP/1.1" 200 79
+INFO 2024-09-05 15:25:11,870 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 15:25:12,527 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-05 15:25:12,936 log Not Found: /wallet/balance/
+WARNING 2024-09-05 15:25:12,937 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+WARNING 2024-09-05 15:25:12,985 log Not Found: /wallet/balance/
+WARNING 2024-09-05 15:25:12,985 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 15:25:13,551 basehttp "GET /node-templates/ HTTP/1.1" 200 1556421
+INFO 2024-09-05 15:25:14,000 basehttp "GET /tickets/ HTTP/1.1" 200 2
+INFO 2024-09-05 15:25:32,956 basehttp "GET /node-templates/ HTTP/1.1" 200 1556421
+INFO 2024-09-05 15:25:34,281 basehttp "GET /node-templates/ HTTP/1.1" 200 1556421
+INFO 2024-09-05 15:25:47,688 basehttp "GET /node-templates/ HTTP/1.1" 200 1556421
+INFO 2024-09-05 15:26:33,165 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\topicmodelling\views.py changed, reloading.
+INFO 2024-09-05 15:26:34,558 autoreload Watching for file changes with StatReloader
+INFO 2024-09-05 15:28:29,577 basehttp "POST /perform-topic-modelling/ HTTP/1.1" 200 86
+INFO 2024-09-05 15:29:01,187 basehttp "POST /perform-topic-modelling/ HTTP/1.1" 200 86
+INFO 2024-09-05 15:29:29,890 basehttp "POST /perform-topic-modelling/ HTTP/1.1" 200 86
+INFO 2024-09-05 15:32:47,008 basehttp "POST /perform-topic-modelling/ HTTP/1.1" 200 86
+INFO 2024-09-05 15:43:45,098 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 15:43:45,116 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 15:43:45,117 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 15:43:45,124 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 15:43:45,130 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-05 15:43:46,463 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 15:43:46,512 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 15:43:46,701 basehttp "GET /tickets/ HTTP/1.1" 200 2
+WARNING 2024-09-05 15:43:46,763 log Not Found: /wallet/balance/
+WARNING 2024-09-05 15:43:46,765 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+WARNING 2024-09-05 15:43:46,776 log Not Found: /wallet/balance/
+WARNING 2024-09-05 15:43:46,777 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 15:43:46,995 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 15:43:46,996 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 15:43:48,222 basehttp "GET /tickets/ HTTP/1.1" 200 2
+INFO 2024-09-05 15:43:48,228 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-05 15:43:48,771 log Not Found: /wallet/balance/
+WARNING 2024-09-05 15:43:48,772 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 15:43:56,666 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 15:43:56,672 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 15:43:58,221 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 15:43:58,310 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-05 15:43:58,343 log Not Found: /wallet/balance/
+WARNING 2024-09-05 15:43:58,344 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 15:44:02,100 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 15:44:02,101 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 15:44:03,646 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 15:44:03,807 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-05 15:44:03,808 log Not Found: /wallet/balance/
+WARNING 2024-09-05 15:44:03,808 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 15:44:04,926 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 15:44:04,927 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 15:44:06,471 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+INFO 2024-09-05 15:44:06,500 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 157
+INFO 2024-09-05 15:44:06,502 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-05 15:44:06,504 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+WARNING 2024-09-05 15:44:06,622 log Not Found: /wallet/balance/
+INFO 2024-09-05 15:44:06,622 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-05 15:44:06,623 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 15:44:11,852 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 15:44:11,854 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 15:44:13,508 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-05 15:44:13,515 log Not Found: /wallet/balance/
+WARNING 2024-09-05 15:44:13,515 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 15:44:16,657 basehttp "GET /leads/ HTTP/1.1" 200 7150
+INFO 2024-09-05 15:44:18,643 basehttp "GET /lead/stage/ HTTP/1.1" 200 519
+INFO 2024-09-05 15:44:23,500 basehttp "GET /leads/ HTTP/1.1" 200 7150
+INFO 2024-09-05 15:53:05,475 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\prompting.py changed, reloading.
+INFO 2024-09-05 15:53:07,409 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-05 15:54:49,078 log Internal Server Error: /generate-prompt/
+ERROR 2024-09-05 15:54:49,078 basehttp "POST /generate-prompt/ HTTP/1.1" 500 71
+INFO 2024-09-05 15:58:04,394 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\prompting.py changed, reloading.
+INFO 2024-09-05 15:58:05,874 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-05 15:59:53,874 log Internal Server Error: /generate-prompt/
+ERROR 2024-09-05 15:59:53,875 basehttp "POST /generate-prompt/ HTTP/1.1" 500 71
+ERROR 2024-09-05 16:01:35,639 log Internal Server Error: /generate-prompt/
+ERROR 2024-09-05 16:01:35,640 basehttp "POST /generate-prompt/ HTTP/1.1" 500 89
+INFO 2024-09-05 16:03:06,701 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\prompting.py changed, reloading.
+INFO 2024-09-05 16:03:08,033 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-05 16:03:33,452 log Internal Server Error: /generate-prompt/
+ERROR 2024-09-05 16:03:33,453 basehttp "POST /generate-prompt/ HTTP/1.1" 500 72
+INFO 2024-09-05 16:06:33,835 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\prompting.py changed, reloading.
+INFO 2024-09-05 16:06:35,515 autoreload Watching for file changes with StatReloader
+INFO 2024-09-05 16:07:31,607 basehttp "POST /generate-prompt/ HTTP/1.1" 200 440
+ERROR 2024-09-05 16:07:37,109 log Internal Server Error: /generate-prompt/
+ERROR 2024-09-05 16:07:37,109 basehttp "POST /generate-prompt/ HTTP/1.1" 500 71
+INFO 2024-09-05 16:09:39,286 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\prompting.py changed, reloading.
+INFO 2024-09-05 16:09:40,715 autoreload Watching for file changes with StatReloader
+INFO 2024-09-05 16:11:32,294 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\prompting.py changed, reloading.
+INFO 2024-09-05 16:11:33,587 autoreload Watching for file changes with StatReloader
+INFO 2024-09-05 16:13:44,089 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\prompting.py changed, reloading.
+INFO 2024-09-05 16:13:45,547 autoreload Watching for file changes with StatReloader
+INFO 2024-09-05 16:14:16,192 basehttp "POST /generate-prompt/ HTTP/1.1" 200 379
+INFO 2024-09-05 16:29:16,980 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 16:29:17,011 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-05 16:29:17,012 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 16:29:20,106 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-05 16:29:21,405 log Not Found: /wallet/balance/
+INFO 2024-09-05 16:29:21,407 basehttp - Broken pipe from ('127.0.0.1', 60381)
+INFO 2024-09-05 16:29:22,043 basehttp - Broken pipe from ('127.0.0.1', 60374)
+INFO 2024-09-05 16:29:33,312 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 16:29:33,313 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 16:29:33,669 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+WARNING 2024-09-05 16:29:35,086 log Not Found: /wallet/balance/
+WARNING 2024-09-05 16:29:35,086 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 16:29:35,336 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 16:29:38,593 basehttp "GET /leads/ HTTP/1.1" 200 7150
+INFO 2024-09-05 16:29:40,653 basehttp "GET /lead/stage/ HTTP/1.1" 200 519
+INFO 2024-09-05 16:29:45,685 basehttp "GET /leads/ HTTP/1.1" 200 7150
+WARNING 2024-09-05 16:33:01,184 log Bad Request: /reminders/
+WARNING 2024-09-05 16:33:01,184 basehttp "GET /reminders/ HTTP/1.1" 400 21
+INFO 2024-09-05 16:33:19,110 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-05 16:33:19,268 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-05 16:33:19,278 basehttp "OPTIONS /interaction HTTP/1.1" 200 0
+INFO 2024-09-05 16:33:19,360 basehttp "OPTIONS /wallet/balance?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-05 16:33:19,360 basehttp "OPTIONS /report/opportunity_stages/ HTTP/1.1" 200 0
+INFO 2024-09-05 16:33:19,392 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-05 16:33:19,393 basehttp "OPTIONS /report/lead_stages/ HTTP/1.1" 200 0
+INFO 2024-09-05 16:33:19,427 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 16:33:19,465 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 16:33:19,552 basehttp "OPTIONS /interaction/ HTTP/1.1" 200 0
+INFO 2024-09-05 16:33:19,696 basehttp "OPTIONS /wallet/balance/?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-05 16:33:20,847 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-05 16:33:21,053 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 16:33:21,053 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 157
+INFO 2024-09-05 16:33:21,079 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+INFO 2024-09-05 16:33:21,234 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-05 16:33:21,411 log Not Found: /wallet/balance/
+WARNING 2024-09-05 16:33:21,412 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 16:33:22,534 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-05 16:35:28,344 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 16:35:28,810 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 16:35:30,148 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-05 16:35:30,552 log Not Found: /wallet/balance/
+WARNING 2024-09-05 16:35:30,553 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 16:35:33,463 basehttp "OPTIONS /execute-query/ HTTP/1.1" 200 0
+ERROR 2024-09-05 16:35:37,752 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-09-05 16:35:37,754 basehttp "POST /execute-query/ HTTP/1.1" 500 136151
+INFO 2024-09-05 16:35:45,820 basehttp "POST /execute-query/ HTTP/1.1" 200 519
+INFO 2024-09-05 16:36:07,650 basehttp "POST /execute-query/ HTTP/1.1" 200 22202
+INFO 2024-09-05 16:36:28,086 basehttp "POST /execute-query/ HTTP/1.1" 200 2351
+INFO 2024-09-05 16:36:37,779 basehttp "POST /generate-prompt/ HTTP/1.1" 200 375
+INFO 2024-09-05 16:44:39,469 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\views.py changed, reloading.
+INFO 2024-09-05 16:44:40,961 autoreload Watching for file changes with StatReloader
+INFO 2024-09-05 16:45:07,405 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\views.py changed, reloading.
+INFO 2024-09-05 16:45:08,322 autoreload Watching for file changes with StatReloader
+WARNING 2024-09-05 16:47:15,169 log Method Not Allowed: /generate-reply/ankur Kumar <ankury639@gmail.com>_email_1725397295.262937/
+WARNING 2024-09-05 16:47:15,170 basehttp "POST /generate-reply/ankur%20Kumar%20%3Cankury639@gmail.com%3E_email_1725397295.262937/ HTTP/1.1" 405 41
+INFO 2024-09-05 16:51:21,877 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\views.py changed, reloading.
+INFO 2024-09-05 16:51:23,123 autoreload Watching for file changes with StatReloader
+INFO 2024-09-05 16:52:05,747 basehttp "GET /generate-reply/ankur%20Kumar%20%3Cankury639@gmail.com%3E_email_1725397295.262937/ HTTP/1.1" 200 820
+INFO 2024-09-05 16:52:11,152 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 16:52:11,364 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-05 16:52:11,381 basehttp "GET /interaction HTTP/1.1" 301 0
+WARNING 2024-09-05 16:52:13,070 log Not Found: /wallet/balance/
+WARNING 2024-09-05 16:52:13,071 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 16:52:13,119 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 16:52:16,140 basehttp "GET /leads/ HTTP/1.1" 200 7150
+INFO 2024-09-05 16:52:18,622 basehttp "GET /lead/stage/ HTTP/1.1" 200 519
+WARNING 2024-09-05 16:52:22,426 log Bad Request: /generate-reply/"919643393874_whatsapp_1725396569.063082"/
+WARNING 2024-09-05 16:52:22,426 basehttp "GET /generate-reply/%22919643393874_whatsapp_1725396569.063082%22/ HTTP/1.1" 400 71
+INFO 2024-09-05 16:52:23,793 basehttp "GET /leads/ HTTP/1.1" 200 7150
+WARNING 2024-09-05 16:52:25,357 log Bad Request: /generate-reply/"919643393874_whatsapp_1725396569.063082/
+WARNING 2024-09-05 16:52:25,358 basehttp "GET /generate-reply/%22919643393874_whatsapp_1725396569.063082/ HTTP/1.1" 400 71
+INFO 2024-09-05 16:52:29,572 basehttp "GET /generate-reply/919643393874_whatsapp_1725396569.063082/ HTTP/1.1" 200 85
+INFO 2024-09-05 17:03:12,428 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\gpt_utils.py changed, reloading.
+INFO 2024-09-05 17:03:13,768 autoreload Watching for file changes with StatReloader
+WARNING 2024-09-05 17:03:46,671 log Bad Request: /generate-reply/919643393874_whatsapp_1725396569.063082/
+WARNING 2024-09-05 17:03:46,672 basehttp "GET /generate-reply/919643393874_whatsapp_1725396569.063082/ HTTP/1.1" 400 71
+INFO 2024-09-05 17:04:26,327 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\gpt_utils.py changed, reloading.
+INFO 2024-09-05 17:04:27,622 autoreload Watching for file changes with StatReloader
+WARNING 2024-09-05 17:04:58,971 log Bad Request: /generate-reply/919643393874_whatsapp_1725396569.063082/
+WARNING 2024-09-05 17:04:58,972 basehttp "GET /generate-reply/919643393874_whatsapp_1725396569.063082/ HTTP/1.1" 400 66
+INFO 2024-09-05 17:07:11,218 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\gpt_utils.py changed, reloading.
+INFO 2024-09-05 17:07:12,630 autoreload Watching for file changes with StatReloader
+WARNING 2024-09-05 17:07:35,260 log Bad Request: /generate-reply/919643393874_whatsapp_1725396569.063082/
+WARNING 2024-09-05 17:07:35,261 basehttp "GET /generate-reply/919643393874_whatsapp_1725396569.063082/ HTTP/1.1" 400 77
+INFO 2024-09-05 17:08:06,158 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\gpt_utils.py changed, reloading.
+INFO 2024-09-05 17:08:07,479 autoreload Watching for file changes with StatReloader
+WARNING 2024-09-05 17:08:40,665 log Bad Request: /generate-reply/919643393874_whatsapp_1725396569.063082/
+WARNING 2024-09-05 17:08:40,665 basehttp "GET /generate-reply/919643393874_whatsapp_1725396569.063082/ HTTP/1.1" 400 159
+INFO 2024-09-05 17:09:27,929 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+WARNING 2024-09-05 17:09:29,912 log Not Found: /reminders/
+WARNING 2024-09-05 17:09:29,913 basehttp "GET /reminders/ HTTP/1.1" 404 21
+WARNING 2024-09-05 17:09:34,186 log Not Found: /reminders/
+WARNING 2024-09-05 17:09:34,187 basehttp "GET /reminders/ HTTP/1.1" 404 21
+INFO 2024-09-05 17:09:39,371 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-05 17:09:39,448 basehttp "OPTIONS /report/lead_stages/ HTTP/1.1" 200 0
+INFO 2024-09-05 17:09:39,451 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-05 17:09:39,478 basehttp "OPTIONS /wallet/balance?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-05 17:09:39,779 basehttp "OPTIONS /report/opportunity_stages/ HTTP/1.1" 200 0
+INFO 2024-09-05 17:09:39,781 basehttp "OPTIONS /interaction HTTP/1.1" 200 0
+INFO 2024-09-05 17:09:39,781 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 17:09:39,923 basehttp "OPTIONS /wallet/balance/?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-05 17:09:39,954 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 17:09:40,130 basehttp "OPTIONS /interaction/ HTTP/1.1" 200 0
+INFO 2024-09-05 17:09:41,022 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 17:09:41,087 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 157
+INFO 2024-09-05 17:09:41,313 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-05 17:09:41,425 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+INFO 2024-09-05 17:09:41,577 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 17:09:41,581 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 17:09:41,582 basehttp "OPTIONS /leads/ HTTP/1.1" 200 0
+WARNING 2024-09-05 17:09:41,620 log Not Found: /wallet/balance/
+WARNING 2024-09-05 17:09:41,620 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 17:09:42,039 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 17:09:42,991 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+WARNING 2024-09-05 17:09:43,289 log Not Found: /wallet/balance/
+WARNING 2024-09-05 17:09:43,290 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 17:09:43,682 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 17:09:46,462 basehttp "GET /leads/ HTTP/1.1" 200 7150
+INFO 2024-09-05 17:09:46,597 basehttp "OPTIONS /lead/stage/ HTTP/1.1" 200 0
+INFO 2024-09-05 17:09:48,427 basehttp "GET /lead/stage/ HTTP/1.1" 200 519
+INFO 2024-09-05 17:09:48,572 basehttp "OPTIONS /leads/ HTTP/1.1" 200 0
+INFO 2024-09-05 17:09:53,388 basehttp "GET /leads/ HTTP/1.1" 200 7150
+INFO 2024-09-05 17:09:58,605 basehttp "OPTIONS /return-documents/10/undefined HTTP/1.1" 200 0
+INFO 2024-09-05 17:09:58,611 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+WARNING 2024-09-05 17:09:58,733 log Not Found: /return-documents/10/undefined
+WARNING 2024-09-05 17:09:58,733 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 20755
+INFO 2024-09-05 17:10:00,363 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-05 17:11:45,135 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\gpt_utils.py changed, reloading.
+INFO 2024-09-05 17:11:46,512 autoreload Watching for file changes with StatReloader
+INFO 2024-09-05 17:12:21,821 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\gpt_utils.py changed, reloading.
+INFO 2024-09-05 17:12:23,101 autoreload Watching for file changes with StatReloader
+INFO 2024-09-05 17:13:39,651 basehttp "GET /generate-reply/919643393874_whatsapp_1725396569.063082/ HTTP/1.1" 200 71
+INFO 2024-09-05 17:14:23,079 basehttp "GET /generate-reply/919643393874_whatsapp_1725346820.390148/ HTTP/1.1" 200 92
+INFO 2024-09-05 17:15:00,934 basehttp "GET /generate-reply/Ayushi%20Sharma%20%3Cayushi.sh.1412@gmail.com%3E_email_1725397296.354586/ HTTP/1.1" 200 855
+INFO 2024-09-05 17:15:27,976 basehttp "GET /generate-reply/3789012_whatsapp_1725346818.859267 HTTP/1.1" 301 0
+INFO 2024-09-05 17:15:30,687 basehttp "GET /generate-reply/3789012_whatsapp_1725346818.859267/ HTTP/1.1" 200 27
+INFO 2024-09-05 17:15:35,682 basehttp "GET /generate-reply/3789012_whatsapp_1725346818.859267/ HTTP/1.1" 200 27
+INFO 2024-09-05 17:16:14,051 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\gpt_utils.py changed, reloading.
+INFO 2024-09-05 17:16:15,407 autoreload Watching for file changes with StatReloader
+INFO 2024-09-05 17:17:09,029 basehttp "POST /generate-prompt/ HTTP/1.1" 200 302
+INFO 2024-09-05 17:17:44,661 basehttp "POST /generate-prompt/ HTTP/1.1" 200 751
+INFO 2024-09-05 17:25:10,492 basehttp "OPTIONS /wallet/balance?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-05 17:25:10,643 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-05 17:25:10,644 basehttp "OPTIONS /interaction HTTP/1.1" 200 0
+INFO 2024-09-05 17:25:10,645 basehttp "OPTIONS /leads/ HTTP/1.1" 200 0
+INFO 2024-09-05 17:25:10,797 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 17:25:10,952 basehttp "OPTIONS /wallet/balance/?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-05 17:25:11,085 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 17:25:11,209 basehttp "OPTIONS /interaction/ HTTP/1.1" 200 0
+WARNING 2024-09-05 17:25:12,679 log Not Found: /wallet/balance/
+WARNING 2024-09-05 17:25:12,680 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 17:25:12,974 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 17:25:15,979 basehttp "GET /leads/ HTTP/1.1" 200 7150
+INFO 2024-09-05 17:25:16,349 basehttp "OPTIONS /lead/stage/ HTTP/1.1" 200 0
+INFO 2024-09-05 17:25:18,323 basehttp "GET /lead/stage/ HTTP/1.1" 200 519
+INFO 2024-09-05 17:25:23,594 basehttp "GET /leads/ HTTP/1.1" 200 7150
+INFO 2024-09-05 17:30:59,209 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\gpt_utils.py changed, reloading.
+INFO 2024-09-05 17:31:01,103 autoreload Watching for file changes with StatReloader
+WARNING 2024-09-05 17:31:34,641 log Bad Request: /generate-reply/3789012_whatsapp_1725346818.859267/
+WARNING 2024-09-05 17:31:34,642 basehttp "GET /generate-reply/3789012_whatsapp_1725346818.859267/ HTTP/1.1" 400 82
+INFO 2024-09-05 17:31:48,619 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\gpt_utils.py changed, reloading.
+INFO 2024-09-05 17:31:50,166 autoreload Watching for file changes with StatReloader
+WARNING 2024-09-05 17:33:18,668 log Not Found: /return-documents/10/undefined
+WARNING 2024-09-05 17:33:18,669 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 20755
+INFO 2024-09-05 17:33:18,824 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 17:33:18,826 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-05 17:33:26,383 basehttp "GET /generate-reply/3789012_whatsapp_1725346818.859267/ HTTP/1.1" 200 102
+INFO 2024-09-05 17:35:29,947 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\gpt_utils.py changed, reloading.
+INFO 2024-09-05 17:35:31,771 autoreload Watching for file changes with StatReloader
+INFO 2024-09-05 17:36:07,237 basehttp "GET /generate-reply/3789012_whatsapp_1725346818.859267/ HTTP/1.1" 200 32
+WARNING 2024-09-05 17:36:55,262 log Not Found: /""WhatsApp Business Team"" <notification@facebookmail.com>_email_1725397291.565557/
+WARNING 2024-09-05 17:36:55,263 basehttp "GET /%22%22WhatsApp%20Business%20Team%22%22%20%3Cnotification@facebookmail.com%3E_email_1725397291.565557/ HTTP/1.1" 404 20987
+WARNING 2024-09-05 17:37:04,086 log Not Found: /"WhatsApp Business Team"" <notification@facebookmail.com>_email_1725397291.565557/
+WARNING 2024-09-05 17:37:04,090 basehttp "GET /%22WhatsApp%20Business%20Team%22%22%20%3Cnotification@facebookmail.com%3E_email_1725397291.565557/ HTTP/1.1" 404 20972
+WARNING 2024-09-05 17:37:27,439 log Not Found: /"""Facebook"" <notification@facebookmail.com>_email_1725397294.178328"/
+WARNING 2024-09-05 17:37:27,439 basehttp "GET /%22%22%22Facebook%22%22%20%3Cnotification@facebookmail.com%3E_email_1725397294.178328%22/ HTTP/1.1" 404 20971
+WARNING 2024-09-05 17:37:31,330 log Not Found: /""Facebook"" <notification@facebookmail.com>_email_1725397294.178328/
+WARNING 2024-09-05 17:37:31,330 basehttp "GET /%22%22Facebook%22%22%20%3Cnotification@facebookmail.com%3E_email_1725397294.178328/ HTTP/1.1" 404 20941
+WARNING 2024-09-05 17:37:33,713 log Not Found: /"Facebook"" <notification@facebookmail.com>_email_1725397294.178328/
+WARNING 2024-09-05 17:37:33,714 basehttp "GET /%22Facebook%22%22%20%3Cnotification@facebookmail.com%3E_email_1725397294.178328/ HTTP/1.1" 404 20926
+WARNING 2024-09-05 17:37:35,647 log Not Found: /Facebook"" <notification@facebookmail.com>_email_1725397294.178328/
+WARNING 2024-09-05 17:37:35,648 basehttp "GET /Facebook%22%22%20%3Cnotification@facebookmail.com%3E_email_1725397294.178328/ HTTP/1.1" 404 20911
+WARNING 2024-09-05 17:37:37,082 log Not Found: /Facebook"" <notification@facebookmail.com>_email_1725397294.178328/
+WARNING 2024-09-05 17:37:37,082 basehttp "GET /Facebook%22%22%20%3Cnotification@facebookmail.com%3E_email_1725397294.178328/ HTTP/1.1" 404 20911
+INFO 2024-09-05 17:38:01,485 basehttp "GET /generate-reply/%22%22Facebook%22%22%20%3Cnotification@facebookmail.com%3E_email_1725397294.178328 HTTP/1.1" 301 0
+WARNING 2024-09-05 17:38:04,163 log Bad Request: /generate-reply/""Facebook"" <notification@facebookmail.com>_email_1725397294.178328/
+WARNING 2024-09-05 17:38:04,164 basehttp "GET /generate-reply/%22%22Facebook%22%22%20%3Cnotification@facebookmail.com%3E_email_1725397294.178328/ HTTP/1.1" 400 71
+INFO 2024-09-05 17:38:06,895 basehttp "GET /generate-reply/%22Facebook%22%22%20%3Cnotification@facebookmail.com%3E_email_1725397294.178328 HTTP/1.1" 301 0
+WARNING 2024-09-05 17:38:08,523 log Bad Request: /generate-reply/"Facebook"" <notification@facebookmail.com>_email_1725397294.178328/
+WARNING 2024-09-05 17:38:08,523 basehttp "GET /generate-reply/%22Facebook%22%22%20%3Cnotification@facebookmail.com%3E_email_1725397294.178328/ HTTP/1.1" 400 71
+WARNING 2024-09-05 17:38:12,398 log Bad Request: /generate-reply/"Facebook"" <notification@facebookmail.com>_email_1725397294.178328/
+WARNING 2024-09-05 17:38:12,398 basehttp "GET /generate-reply/%22Facebook%22%22%20%3Cnotification@facebookmail.com%3E_email_1725397294.178328/ HTTP/1.1" 400 71
+INFO 2024-09-05 17:38:40,403 basehttp "GET /generate-reply/Ayushi%20Sharma%20%3Cayushi.sh.1412@gmail.com%3E_email_1725397296.354586/ HTTP/1.1" 200 807
+INFO 2024-09-05 17:39:53,086 basehttp "GET /generate-reply/919643393874_whatsapp_1725396569.063082/ HTTP/1.1" 200 218
+WARNING 2024-09-05 17:41:22,021 log Bad Request: /reminders/
+WARNING 2024-09-05 17:41:22,022 basehttp "GET /reminders/ HTTP/1.1" 400 21
+WARNING 2024-09-05 17:41:29,845 log Not Found: /reminders/
+WARNING 2024-09-05 17:41:29,846 basehttp "GET /reminders/ HTTP/1.1" 404 21
+INFO 2024-09-05 17:41:31,900 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 17:41:32,286 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 17:41:33,595 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 157
+INFO 2024-09-05 17:41:33,833 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+WARNING 2024-09-05 17:41:33,973 log Not Found: /wallet/balance/
+INFO 2024-09-05 17:41:33,973 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+INFO 2024-09-05 17:41:33,974 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+WARNING 2024-09-05 17:41:33,974 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 17:41:33,974 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-05 17:41:35,177 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-05 17:41:35,887 log Not Found: /return-documents/10/undefined
+WARNING 2024-09-05 17:41:35,888 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 20755
+INFO 2024-09-05 17:41:37,604 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-05 17:42:10,305 basehttp "GET /generate-reply/Adarsh%20Sharma%20%3Cadarsh1885@gmail.com%3E_email_1725397297.439233/ HTTP/1.1" 200 314
+WARNING 2024-09-05 17:43:01,624 log Not Found: /return-documents/10/undefined
+WARNING 2024-09-05 17:43:01,625 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 20755
+INFO 2024-09-05 17:43:01,642 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-09-05 17:43:01,642 basehttp "OPTIONS /whatsapp_convo_get/919643393874/?source=whatsapp HTTP/1.1" 200 0
+INFO 2024-09-05 17:43:01,643 basehttp "OPTIONS /return-documents/10/undefined HTTP/1.1" 200 0
+WARNING 2024-09-05 17:43:01,808 log Not Found: /return-documents/10/undefined
+WARNING 2024-09-05 17:43:01,808 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 20755
+INFO 2024-09-05 17:43:02,665 basehttp "OPTIONS /whatsapp_convo_get/919643393874/?source=whatsapp HTTP/1.1" 200 0
+INFO 2024-09-05 17:43:02,838 basehttp "OPTIONS /whatsapp_convo_get/919643393874/?source=whatsapp HTTP/1.1" 200 0
+INFO 2024-09-05 17:43:03,324 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-05 17:43:03,439 basehttp "GET /whatsapp_convo_get/919643393874/?source=whatsapp HTTP/1.1" 200 8507
+INFO 2024-09-05 17:43:03,558 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-05 17:43:04,509 basehttp "GET /whatsapp_convo_get/919643393874/?source=whatsapp HTTP/1.1" 200 8507
+INFO 2024-09-05 17:43:04,894 basehttp "GET /whatsapp_convo_get/919643393874/?source=whatsapp HTTP/1.1" 200 8507
+INFO 2024-09-05 17:43:45,905 basehttp "OPTIONS /whatsapp_convo_get/11089562360/?source=whatsapp HTTP/1.1" 200 0
+INFO 2024-09-05 17:43:45,922 basehttp "OPTIONS /whatsapp_convo_get/11089562360/?source=whatsapp HTTP/1.1" 200 0
+INFO 2024-09-05 17:43:47,693 basehttp "GET /whatsapp_convo_get/11089562360/?source=whatsapp HTTP/1.1" 200 2
+INFO 2024-09-05 17:43:50,096 basehttp "GET /whatsapp_convo_get/11089562360/?source=whatsapp HTTP/1.1" 200 2
+INFO 2024-09-05 17:43:52,685 basehttp "GET /whatsapp_convo_get/919643393874/?source=whatsapp HTTP/1.1" 200 8507
+INFO 2024-09-05 17:44:33,238 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 17:44:33,283 basehttp "GET /interaction HTTP/1.1" 301 0
+WARNING 2024-09-05 17:44:35,252 log Not Found: /wallet/balance/
+WARNING 2024-09-05 17:44:35,253 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 17:44:37,152 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-05 17:44:57,835 log Bad Request: /save_whatsapp_conversations/
+WARNING 2024-09-05 17:44:57,835 basehttp "POST /save_whatsapp_conversations/ HTTP/1.1" 400 54
+INFO 2024-09-05 17:45:01,290 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 17:45:01,291 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+WARNING 2024-09-05 17:45:03,224 log Not Found: /wallet/balance/
+WARNING 2024-09-05 17:45:03,225 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 17:45:03,234 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 17:45:06,515 basehttp "GET /leads/ HTTP/1.1" 200 7150
+INFO 2024-09-05 17:45:08,527 basehttp "GET /lead/stage/ HTTP/1.1" 200 519
+INFO 2024-09-05 17:45:13,862 basehttp "GET /leads/ HTTP/1.1" 200 7150
+INFO 2024-09-05 17:47:23,078 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 17:47:23,079 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+WARNING 2024-09-05 17:47:24,828 log Not Found: /wallet/balance/
+WARNING 2024-09-05 17:47:24,829 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 17:47:24,833 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+INFO 2024-09-05 17:47:25,086 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 157
+INFO 2024-09-05 17:47:25,086 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 17:47:25,163 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 17:47:25,164 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-05 17:47:25,164 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-05 17:47:31,615 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 17:47:31,616 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 17:47:32,871 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-05 17:47:33,107 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 157
+INFO 2024-09-05 17:47:33,108 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 17:47:33,119 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+INFO 2024-09-05 17:47:33,233 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+WARNING 2024-09-05 17:47:33,396 log Not Found: /wallet/balance/
+WARNING 2024-09-05 17:47:33,397 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 17:47:33,623 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-05 17:47:34,571 log Not Found: /return-documents/10/undefined
+WARNING 2024-09-05 17:47:34,571 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 20755
+INFO 2024-09-05 17:47:36,149 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-05 17:47:43,854 basehttp "GET /whatsapp_convo_get/919643393874/?source=whatsapp HTTP/1.1" 200 8507
+INFO 2024-09-05 17:47:43,856 basehttp "GET /whatsapp_convo_get/919643393874/?source=whatsapp HTTP/1.1" 200 8507
+INFO 2024-09-05 17:49:39,292 basehttp "GET /generate-reply/Adarsh%20Sharma%20%3Cadarsh1885@gmail.com%3E_email_1725397297.439233/ HTTP/1.1" 200 355
+INFO 2024-09-05 17:50:05,122 basehttp "GET /generate-reply/9528227181_whatsapp_1725346825.920227/ HTTP/1.1" 200 79
+INFO 2024-09-05 17:59:28,649 basehttp "GET /generate-reply/9528227181_whatsapp_1725346825.920227/ HTTP/1.1" 200 98
+WARNING 2024-09-05 18:00:01,791 log Bad Request: /generate-reply/"Adarsh Sharma <adarsh1885@gmail.com>_email_1725397297.439233"/
+WARNING 2024-09-05 18:00:01,792 basehttp "GET /generate-reply/%22Adarsh%20Sharma%20%3Cadarsh1885@gmail.com%3E_email_1725397297.439233%22/ HTTP/1.1" 400 71
+INFO 2024-09-05 18:00:09,460 basehttp "GET /generate-reply/Adarsh%20Sharma%20%3Cadarsh1885@gmail.com%3E_email_1725397297.439233/ HTTP/1.1" 200 302
+WARNING 2024-09-05 18:01:35,673 log Not Found: /group-messages//
+WARNING 2024-09-05 18:01:35,673 basehttp "POST /group-messages// HTTP/1.1" 404 20717
+INFO 2024-09-05 18:02:02,278 basehttp "POST /group-messages/ HTTP/1.1" 200 63
+INFO 2024-09-05 18:09:16,537 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 18:09:16,820 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 18:09:18,258 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+WARNING 2024-09-05 18:09:18,270 log Not Found: /wallet/balance/
+WARNING 2024-09-05 18:09:18,271 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 18:09:18,272 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 18:09:18,325 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-05 18:09:18,490 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-05 18:09:18,495 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 157
+INFO 2024-09-05 18:09:18,942 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 18:09:21,269 basehttp "OPTIONS /fetch-all-emails HTTP/1.1" 200 0
+INFO 2024-09-05 18:09:21,271 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 18:09:21,272 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 18:09:21,370 basehttp "GET /fetch-all-emails HTTP/1.1" 301 0
+INFO 2024-09-05 18:09:21,536 basehttp "OPTIONS /fetch-all-emails/ HTTP/1.1" 200 0
+INFO 2024-09-05 18:09:23,008 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-05 18:09:23,077 log Not Found: /wallet/balance/
+WARNING 2024-09-05 18:09:23,078 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 18:09:23,524 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 39514
+INFO 2024-09-05 18:09:23,844 basehttp "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2024-09-05 18:09:25,617 basehttp "GET /emails/ HTTP/1.1" 200 16175
+INFO 2024-09-05 18:15:03,051 basehttp "GET /fetch-all-emails HTTP/1.1" 301 0
+INFO 2024-09-05 18:15:06,365 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 39514
+INFO 2024-09-05 18:15:07,045 basehttp "GET /emails/ HTTP/1.1" 200 16175
+INFO 2024-09-05 18:15:14,988 basehttp "GET /fetch-all-emails HTTP/1.1" 301 0
+INFO 2024-09-05 18:15:17,517 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 39514
+INFO 2024-09-05 18:15:18,402 basehttp "GET /emails/ HTTP/1.1" 200 16175
+INFO 2024-09-05 18:16:11,689 basehttp "GET /fetch-all-emails HTTP/1.1" 301 0
+INFO 2024-09-05 18:16:13,730 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 39514
+INFO 2024-09-05 18:16:15,286 basehttp "GET /emails/ HTTP/1.1" 200 16175
+INFO 2024-09-05 18:17:09,572 basehttp "OPTIONS /fetch-all-emails HTTP/1.1" 200 0
+INFO 2024-09-05 18:17:10,086 basehttp "GET /fetch-all-emails HTTP/1.1" 301 0
+INFO 2024-09-05 18:17:10,226 basehttp "OPTIONS /fetch-all-emails/ HTTP/1.1" 200 0
+INFO 2024-09-05 18:17:11,676 basehttp "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2024-09-05 18:17:12,375 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 39514
+INFO 2024-09-05 18:17:13,757 basehttp "GET /emails/ HTTP/1.1" 200 16175
+INFO 2024-09-05 18:21:55,094 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 18:21:55,159 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-05 18:21:55,199 basehttp "GET /interaction HTTP/1.1" 301 0
+WARNING 2024-09-05 18:21:57,476 log Not Found: /wallet/balance/
+WARNING 2024-09-05 18:21:57,476 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 18:21:57,481 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 18:22:00,380 basehttp "GET /leads/ HTTP/1.1" 200 7150
+INFO 2024-09-05 18:22:02,493 basehttp "GET /lead/stage/ HTTP/1.1" 200 519
+INFO 2024-09-05 18:22:08,137 basehttp "GET /leads/ HTTP/1.1" 200 7150
+WARNING 2024-09-05 23:56:28,474 log Bad Request: /reminders/
+WARNING 2024-09-05 23:56:28,476 basehttp "GET /reminders/ HTTP/1.1" 400 21
+INFO 2024-09-05 23:56:30,443 basehttp "OPTIONS /wallet/balance?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-05 23:56:30,524 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-05 23:56:30,525 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-05 23:56:30,703 basehttp "OPTIONS /interaction HTTP/1.1" 200 0
+INFO 2024-09-05 23:56:30,726 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 23:56:30,727 basehttp "OPTIONS /report/opportunity_stages/ HTTP/1.1" 200 0
+INFO 2024-09-05 23:56:30,771 basehttp "OPTIONS /report/lead_stages/ HTTP/1.1" 200 0
+INFO 2024-09-05 23:56:30,882 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 23:56:30,887 basehttp "OPTIONS /wallet/balance/?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-05 23:56:30,924 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-05 23:56:31,006 basehttp "OPTIONS /interaction/ HTTP/1.1" 200 0
+INFO 2024-09-05 23:56:32,541 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 23:56:32,739 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 157
+INFO 2024-09-05 23:56:32,741 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-05 23:56:32,777 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+WARNING 2024-09-05 23:56:32,960 log Not Found: /wallet/balance/
+WARNING 2024-09-05 23:56:32,960 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 23:56:32,989 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 23:56:34,542 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-05 23:57:59,460 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 23:57:59,503 basehttp "OPTIONS /dynamic-models/ HTTP/1.1" 200 0
+INFO 2024-09-05 23:57:59,614 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 23:58:01,405 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+WARNING 2024-09-05 23:58:01,635 log Not Found: /wallet/balance/
+WARNING 2024-09-05 23:58:01,636 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 23:58:01,643 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 23:58:13,396 basehttp "OPTIONS /execute-query/ HTTP/1.1" 200 0
+INFO 2024-09-05 23:58:13,507 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+ERROR 2024-09-05 23:58:18,893 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-09-05 23:58:18,906 basehttp "POST /execute-query/ HTTP/1.1" 500 136153
+ERROR 2024-09-05 23:58:30,469 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-09-05 23:58:30,472 basehttp "POST /execute-query/ HTTP/1.1" 500 136158
+INFO 2024-09-05 23:58:51,684 basehttp "POST /execute-query/ HTTP/1.1" 200 2351
+INFO 2024-09-05 23:58:58,448 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 23:58:58,451 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 23:58:58,581 basehttp "OPTIONS /fetch-all-emails HTTP/1.1" 200 0
+INFO 2024-09-05 23:58:58,916 basehttp "GET /fetch-all-emails HTTP/1.1" 301 0
+INFO 2024-09-05 23:58:59,265 basehttp "OPTIONS /fetch-all-emails/ HTTP/1.1" 200 0
+WARNING 2024-09-05 23:59:00,605 log Not Found: /wallet/balance/
+WARNING 2024-09-05 23:59:00,606 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 23:59:00,607 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 23:59:01,106 basehttp "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2024-09-05 23:59:02,236 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 81880
+INFO 2024-09-05 23:59:03,180 basehttp "GET /emails/ HTTP/1.1" 200 16175
+INFO 2024-09-05 23:59:10,527 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-05 23:59:12,686 basehttp "OPTIONS /store-selected-emails/ HTTP/1.1" 200 0
+WARNING 2024-09-05 23:59:15,339 log Bad Request: /store-selected-emails/
+WARNING 2024-09-05 23:59:15,339 basehttp "POST /store-selected-emails/ HTTP/1.1" 400 65
+INFO 2024-09-05 23:59:23,382 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 23:59:23,393 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 23:59:23,394 basehttp "GET /fetch-all-emails HTTP/1.1" 301 0
+INFO 2024-09-05 23:59:25,376 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-05 23:59:25,399 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-05 23:59:25,642 log Not Found: /wallet/balance/
+WARNING 2024-09-05 23:59:25,643 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 23:59:26,208 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 81880
+INFO 2024-09-05 23:59:27,457 basehttp "GET /emails/ HTTP/1.1" 200 16175
+INFO 2024-09-05 23:59:35,310 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-05 23:59:49,994 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 23:59:49,997 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 23:59:51,792 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-05 23:59:51,796 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+INFO 2024-09-05 23:59:51,797 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 157
+WARNING 2024-09-05 23:59:52,015 log Not Found: /wallet/balance/
+WARNING 2024-09-05 23:59:52,016 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-05 23:59:52,034 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 23:59:53,685 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-09-05 23:59:53,686 basehttp "OPTIONS /active_contacts/ HTTP/1.1" 200 0
+INFO 2024-09-05 23:59:53,686 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-05 23:59:53,686 basehttp "OPTIONS /recent_request/contacts/ HTTP/1.1" 200 0
+INFO 2024-09-05 23:59:53,726 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-05 23:59:53,907 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-05 23:59:55,799 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-05 23:59:55,799 basehttp "GET /recent_request/contacts/ HTTP/1.1" 200 3983
+INFO 2024-09-05 23:59:55,801 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-05 23:59:56,016 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-05 23:59:56,021 basehttp "GET /active_contacts/ HTTP/1.1" 200 5276
+WARNING 2024-09-05 23:59:56,033 log Not Found: /wallet/balance/
+WARNING 2024-09-05 23:59:56,034 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-06 00:00:00,540 basehttp "OPTIONS /get-all-user/ HTTP/1.1" 200 0
+INFO 2024-09-06 00:00:00,540 basehttp "OPTIONS /accounts/ HTTP/1.1" 200 0
+INFO 2024-09-06 00:00:01,199 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-06 00:00:02,562 basehttp "GET /get-all-user/ HTTP/1.1" 200 919
+INFO 2024-09-06 00:00:02,562 basehttp "GET /accounts/ HTTP/1.1" 200 15689
+INFO 2024-09-06 00:00:12,724 basehttp - Broken pipe from ('127.0.0.1', 56379)
+INFO 2024-09-06 00:00:14,228 basehttp "GET /get-all-user/ HTTP/1.1" 200 919
+INFO 2024-09-06 00:00:14,228 basehttp "GET /accounts/ HTTP/1.1" 200 15689
+INFO 2024-09-06 00:00:14,771 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-06 00:00:17,722 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-06 00:00:17,723 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-06 00:00:19,665 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-06 00:00:19,666 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-06 00:00:19,667 basehttp "GET /recent_request/contacts/ HTTP/1.1" 200 3983
+INFO 2024-09-06 00:00:19,669 basehttp "GET /active_contacts/ HTTP/1.1" 200 5276
+WARNING 2024-09-06 00:00:19,948 log Not Found: /wallet/balance/
+WARNING 2024-09-06 00:00:19,959 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-06 00:00:19,959 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-06 00:00:30,502 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-06 00:00:42,996 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+WARNING 2024-09-06 00:00:46,255 log Bad Request: /store-selected-emails/
+WARNING 2024-09-06 00:00:46,256 basehttp "GET /store-selected-emails/ HTTP/1.1" 400 21
+WARNING 2024-09-06 00:00:47,095 log Bad Request: /store-selected-emails/
+WARNING 2024-09-06 00:00:47,096 basehttp "GET /store-selected-emails/ HTTP/1.1" 400 21
+INFO 2024-09-06 00:00:51,871 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-06 00:00:51,876 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-06 00:00:53,753 basehttp "GET /active_contacts/ HTTP/1.1" 200 5276
+INFO 2024-09-06 00:00:53,756 basehttp "GET /recent_request/contacts/ HTTP/1.1" 200 3983
+INFO 2024-09-06 00:00:53,756 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+WARNING 2024-09-06 00:00:54,055 log Not Found: /wallet/balance/
+WARNING 2024-09-06 00:00:54,056 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-06 00:00:54,068 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-06 00:01:04,059 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-06 00:01:16,174 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-06 01:00:26,832 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-06 01:00:27,329 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-06 01:00:27,334 basehttp "GET /fetch-all-emails HTTP/1.1" 301 0
+INFO 2024-09-06 01:00:29,259 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-06 01:00:29,459 log Not Found: /wallet/balance/
+WARNING 2024-09-06 01:00:29,461 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-06 01:00:30,365 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 81880
+INFO 2024-09-06 01:00:30,857 basehttp "GET /emails/ HTTP/1.1" 200 16175
+INFO 2024-09-06 01:00:40,772 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+WARNING 2024-09-06 01:01:36,515 log Bad Request: /store-selected-emails/
+WARNING 2024-09-06 01:01:36,516 basehttp "POST /store-selected-emails/ HTTP/1.1" 400 65
+INFO 2024-09-06 01:02:20,101 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-06 01:02:20,106 basehttp "GET /fetch-all-emails HTTP/1.1" 301 0
+INFO 2024-09-06 01:02:20,106 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-06 01:02:21,858 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+WARNING 2024-09-06 01:02:22,077 log Not Found: /wallet/balance/
+WARNING 2024-09-06 01:02:22,077 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-06 01:02:22,107 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-06 01:02:22,277 basehttp "GET /fetch-all-emails/ HTTP/1.1" 200 81880
+INFO 2024-09-06 01:02:22,946 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-06 01:02:22,946 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-06 01:02:23,907 basehttp "GET /emails/ HTTP/1.1" 200 16175
+INFO 2024-09-06 01:02:24,540 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-06 01:02:24,540 basehttp "GET /active_contacts/ HTTP/1.1" 200 5276
+INFO 2024-09-06 01:02:24,573 basehttp "GET /recent_request/contacts/ HTTP/1.1" 200 3983
+WARNING 2024-09-06 01:02:24,646 log Not Found: /wallet/balance/
+WARNING 2024-09-06 01:02:24,647 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-06 01:02:24,713 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-06 01:02:28,459 basehttp "GET /get-all-user/ HTTP/1.1" 200 919
+INFO 2024-09-06 01:02:28,486 basehttp "GET /accounts/ HTTP/1.1" 200 15689
+INFO 2024-09-06 01:02:30,075 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-06 01:02:39,027 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-06 01:02:39,027 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-06 01:02:40,842 basehttp "GET /recent_request/contacts/ HTTP/1.1" 200 3983
+INFO 2024-09-06 01:02:40,852 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-06 01:02:40,853 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-06 01:02:40,854 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-06 01:02:41,066 log Not Found: /wallet/balance/
+WARNING 2024-09-06 01:02:41,066 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-06 01:02:41,311 basehttp "GET /active_contacts/ HTTP/1.1" 200 5276
+INFO 2024-09-06 01:02:42,466 basehttp - Broken pipe from ('127.0.0.1', 61282)
+INFO 2024-09-06 01:02:49,442 basehttp "GET /accounts/ HTTP/1.1" 200 15689
+INFO 2024-09-06 01:02:49,444 basehttp "GET /get-all-user/ HTTP/1.1" 200 919
+INFO 2024-09-06 01:02:51,167 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-06 01:03:02,329 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-06 11:38:38,646 autoreload Watching for file changes with StatReloader
+INFO 2024-09-06 11:39:15,429 basehttp "GET /generate-reply/Adarsh%20Sharma%20%3Cadarsh1885@gmail.com%3E_email_1725397297.439233/ HTTP/1.1" 200 397
+INFO 2024-09-06 11:39:33,163 basehttp "POST /generate-prompt/ HTTP/1.1" 200 770
+INFO 2024-09-06 11:39:46,949 basehttp "POST /generate-prompt/ HTTP/1.1" 200 788
+INFO 2024-09-06 11:40:35,399 basehttp "OPTIONS /accounts/ HTTP/1.1" 200 0
+INFO 2024-09-06 11:40:35,467 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-06 11:40:35,499 basehttp "OPTIONS /get-all-user/ HTTP/1.1" 200 0
+INFO 2024-09-06 11:40:40,374 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-06 11:40:40,450 basehttp "GET /get-all-user/ HTTP/1.1" 200 919
+INFO 2024-09-06 11:40:40,569 basehttp "GET /accounts/ HTTP/1.1" 200 15689
+INFO 2024-09-06 11:40:54,649 basehttp "OPTIONS /dynamic-models/ HTTP/1.1" 200 0
+INFO 2024-09-06 11:40:54,649 basehttp "OPTIONS /active_contacts/ HTTP/1.1" 200 0
+INFO 2024-09-06 11:40:54,649 basehttp "OPTIONS /wallet/balance?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-06 11:40:54,649 basehttp "OPTIONS /interaction HTTP/1.1" 200 0
+INFO 2024-09-06 11:40:54,673 basehttp "OPTIONS /recent_request/contacts/ HTTP/1.1" 200 0
+INFO 2024-09-06 11:40:54,780 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-06 11:40:54,885 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-06 11:40:54,886 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-09-06 11:40:55,045 basehttp "OPTIONS /wallet/balance/?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-06 11:40:55,045 basehttp "OPTIONS /interaction/ HTTP/1.1" 200 0
+INFO 2024-09-06 11:40:56,250 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-06 11:40:56,485 basehttp "GET /recent_request/contacts/ HTTP/1.1" 200 3983
+INFO 2024-09-06 11:40:56,489 basehttp "GET /active_contacts/ HTTP/1.1" 200 5276
+INFO 2024-09-06 11:40:56,700 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+WARNING 2024-09-06 11:40:56,857 log Not Found: /wallet/balance/
+WARNING 2024-09-06 11:40:56,857 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-06 11:40:56,916 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-06 11:41:04,686 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-06 11:41:06,941 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-06 11:41:06,944 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-06 11:41:06,945 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-06 11:41:06,947 basehttp "OPTIONS /report/opportunity_stages/ HTTP/1.1" 200 0
+INFO 2024-09-06 11:41:06,955 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-06 11:41:06,978 basehttp "OPTIONS /report/lead_stages/ HTTP/1.1" 200 0
+INFO 2024-09-06 11:41:06,989 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-06 11:41:08,688 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+INFO 2024-09-06 11:41:08,688 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-06 11:41:08,688 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-06 11:41:08,699 log Not Found: /wallet/balance/
+INFO 2024-09-06 11:41:08,701 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 157
+WARNING 2024-09-06 11:41:08,701 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-06 11:41:10,383 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-06 11:41:12,002 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-06 11:41:14,460 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-06 11:41:22,843 basehttp "OPTIONS /leads/ HTTP/1.1" 200 0
+INFO 2024-09-06 11:41:22,846 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-06 11:41:22,846 basehttp "GET /interaction HTTP/1.1" 301 0
+WARNING 2024-09-06 11:41:24,745 log Not Found: /wallet/balance/
+WARNING 2024-09-06 11:41:24,746 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-06 11:41:24,753 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-06 11:41:24,874 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-06 11:41:28,242 basehttp "GET /leads/ HTTP/1.1" 200 7150
+INFO 2024-09-06 11:41:28,411 basehttp "OPTIONS /lead/stage/ HTTP/1.1" 200 0
+INFO 2024-09-06 11:41:30,302 basehttp "GET /lead/stage/ HTTP/1.1" 200 519
+INFO 2024-09-06 11:41:35,224 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-06 11:41:35,896 basehttp "GET /leads/ HTTP/1.1" 200 7150
+INFO 2024-09-06 11:42:08,266 basehttp "OPTIONS /leads/14/ HTTP/1.1" 200 0
+INFO 2024-09-06 11:42:10,925 basehttp "PUT /leads/14/ HTTP/1.1" 200 516
+INFO 2024-09-06 11:42:16,171 basehttp "OPTIONS /leads/1046/ HTTP/1.1" 200 0
+INFO 2024-09-06 11:42:18,665 basehttp "PUT /leads/1046/ HTTP/1.1" 200 453
+INFO 2024-09-06 11:42:30,297 basehttp "OPTIONS /leads/5/ HTTP/1.1" 200 0
+INFO 2024-09-06 11:42:32,753 basehttp "PUT /leads/5/ HTTP/1.1" 200 461
+INFO 2024-09-06 11:47:10,580 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\topicmodelling\views.py changed, reloading.
+INFO 2024-09-06 11:47:12,244 autoreload Watching for file changes with StatReloader
+WARNING 2024-09-06 11:49:27,376 log Bad Request: /perform-topic-modelling/
+WARNING 2024-09-06 11:49:27,376 basehttp "POST /perform-topic-modelling/ HTTP/1.1" 400 21
+WARNING 2024-09-06 11:49:39,462 log Bad Request: /perform-topic-modelling/
+WARNING 2024-09-06 11:49:39,462 basehttp "POST /perform-topic-modelling/ HTTP/1.1" 400 41
+WARNING 2024-09-06 11:49:51,523 log Bad Request: /perform-topic-modelling/
+WARNING 2024-09-06 11:49:51,524 basehttp "POST /perform-topic-modelling/ HTTP/1.1" 400 41
+WARNING 2024-09-06 11:49:56,141 log Bad Request: /perform-topic-modelling/
+WARNING 2024-09-06 11:49:56,141 basehttp "POST /perform-topic-modelling/ HTTP/1.1" 400 41
+WARNING 2024-09-06 11:49:58,474 log Bad Request: /perform-topic-modelling/
+WARNING 2024-09-06 11:49:58,475 basehttp "POST /perform-topic-modelling/ HTTP/1.1" 400 41
+INFO 2024-09-06 11:50:31,206 basehttp "POST /perform-topic-modelling/ HTTP/1.1" 200 86
+INFO 2024-09-06 11:51:16,654 basehttp "POST /perform-topic-modelling/ HTTP/1.1" 200 86
+INFO 2024-09-06 11:52:16,227 basehttp "OPTIONS /leads/1041/ HTTP/1.1" 200 0
+INFO 2024-09-06 11:52:19,713 basehttp "PUT /leads/1041/ HTTP/1.1" 200 459
+INFO 2024-09-06 11:52:43,801 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-06 11:52:43,832 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-06 11:52:45,439 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-06 11:52:45,583 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-06 11:52:45,755 log Not Found: /wallet/balance/
+WARNING 2024-09-06 11:52:45,756 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-06 11:52:48,511 basehttp "GET /leads/ HTTP/1.1" 200 7147
+INFO 2024-09-06 11:52:50,746 basehttp "GET /lead/stage/ HTTP/1.1" 200 519
+INFO 2024-09-06 11:52:53,910 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-06 11:52:56,572 basehttp "GET /leads/ HTTP/1.1" 200 7147
+INFO 2024-09-06 12:03:20,297 basehttp "POST /perform-topic-modelling/ HTTP/1.1" 200 86
+INFO 2024-09-06 12:04:50,253 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\topicmodelling\views.py changed, reloading.
+INFO 2024-09-06 12:04:51,818 autoreload Watching for file changes with StatReloader
+INFO 2024-09-06 12:06:26,211 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\topicmodelling\views.py changed, reloading.
+INFO 2024-09-06 12:06:27,597 autoreload Watching for file changes with StatReloader
+INFO 2024-09-06 12:44:25,483 basehttp "GET /generate-reply/Adarsh%20Sharma%20%3Cadarsh1885@gmail.com%3E_email_1725397297.439233/ HTTP/1.1" 200 316
+INFO 2024-09-06 12:50:19,308 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\prompting.py changed, reloading.
+INFO 2024-09-06 12:50:21,521 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-06 12:51:20,403 log Internal Server Error: /generate-prompt/
+ERROR 2024-09-06 12:51:20,403 basehttp "POST /generate-prompt/ HTTP/1.1" 500 78
+INFO 2024-09-06 12:54:10,345 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\gpt_utils.py changed, reloading.
+INFO 2024-09-06 12:54:11,670 autoreload Watching for file changes with StatReloader
+INFO 2024-09-06 12:54:51,079 basehttp "POST /generate-prompt/ HTTP/1.1" 200 375
+INFO 2024-09-06 12:55:08,347 basehttp "POST /generate-prompt/ HTTP/1.1" 200 767
+INFO 2024-09-06 12:57:49,562 basehttp "POST /generate-prompt/ HTTP/1.1" 200 302
+WARNING 2024-09-06 14:30:57,291 log Bad Request: /
+WARNING 2024-09-06 14:30:57,293 basehttp "GET / HTTP/1.1" 400 21
+WARNING 2024-09-06 14:30:57,306 log Bad Request: /
+WARNING 2024-09-06 14:30:57,307 basehttp "GET / HTTP/1.1" 400 21
+INFO 2024-09-06 14:31:41,446 basehttp "POST /generate-prompt/ HTTP/1.1" 200 357
+INFO 2024-09-06 14:37:31,787 basehttp "POST /generate-prompt/ HTTP/1.1" 200 756
+INFO 2024-09-06 14:39:07,093 basehttp "POST /generate-prompt/ HTTP/1.1" 200 731
+INFO 2024-09-06 14:55:09,017 basehttp "OPTIONS /leads/ HTTP/1.1" 200 0
+INFO 2024-09-06 14:55:09,076 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-06 14:55:09,081 basehttp "OPTIONS /dynamic-models/ HTTP/1.1" 200 0
+INFO 2024-09-06 14:55:09,108 basehttp "OPTIONS /wallet/balance?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-06 14:55:09,110 basehttp "OPTIONS /interaction HTTP/1.1" 200 0
+INFO 2024-09-06 14:55:09,217 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-06 14:55:09,237 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-06 14:55:09,397 basehttp "OPTIONS /interaction/ HTTP/1.1" 200 0
+INFO 2024-09-06 14:55:09,464 basehttp "OPTIONS /wallet/balance/?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-06 14:55:10,958 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-06 14:55:11,210 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-06 14:55:11,226 log Not Found: /wallet/balance/
+WARNING 2024-09-06 14:55:11,226 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-06 14:55:14,637 basehttp "GET /leads/ HTTP/1.1" 200 7147
+INFO 2024-09-06 14:55:14,856 basehttp "OPTIONS /lead/stage/ HTTP/1.1" 200 0
+INFO 2024-09-06 14:55:17,973 basehttp "GET /lead/stage/ HTTP/1.1" 200 519
+INFO 2024-09-06 14:55:20,488 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-06 14:55:23,360 basehttp "GET /leads/ HTTP/1.1" 200 7147
+WARNING 2024-09-06 16:38:34,435 log Bad Request: /
+WARNING 2024-09-06 16:38:34,437 basehttp "GET / HTTP/1.1" 400 21
+WARNING 2024-09-06 16:38:34,482 log Bad Request: /favicon.ico
+WARNING 2024-09-06 16:38:34,482 basehttp "GET /favicon.ico HTTP/1.1" 400 21
+INFO 2024-09-07 15:58:09,659 autoreload Watching for file changes with StatReloader
+WARNING 2024-09-07 15:59:20,980 log Bad Request: /reminders/
+WARNING 2024-09-07 15:59:20,981 basehttp "GET /reminders/ HTTP/1.1" 400 21
+INFO 2024-09-07 15:59:21,090 basehttp "GET /createTenant HTTP/1.1" 301 0
+INFO 2024-09-07 15:59:24,015 basehttp "GET /createTenant/ HTTP/1.1" 200 1349
+INFO 2024-09-07 15:59:24,718 basehttp "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2024-09-07 15:59:27,701 basehttp "POST /login/ HTTP/1.1" 200 82
+INFO 2024-09-07 15:59:30,572 basehttp "OPTIONS /dynamic-models/ HTTP/1.1" 200 0
+INFO 2024-09-07 15:59:30,574 basehttp "OPTIONS /report/opportunity_stages/ HTTP/1.1" 200 0
+INFO 2024-09-07 15:59:30,575 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-07 15:59:30,578 basehttp "OPTIONS /interaction HTTP/1.1" 200 0
+INFO 2024-09-07 15:59:30,614 basehttp "OPTIONS /report/lead_stages/ HTTP/1.1" 200 0
+INFO 2024-09-07 15:59:30,716 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-07 15:59:30,882 basehttp "OPTIONS /interaction/ HTTP/1.1" 200 0
+INFO 2024-09-07 15:59:30,901 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-07 15:59:31,354 basehttp "OPTIONS /wallet/balance?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-07 15:59:31,354 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-07 15:59:31,524 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-07 15:59:32,037 basehttp "OPTIONS /wallet/balance/?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-07 15:59:35,022 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 153
+INFO 2024-09-07 15:59:35,063 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-07 15:59:35,292 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-07 15:59:35,584 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+WARNING 2024-09-07 15:59:36,236 log Not Found: /wallet/balance/
+WARNING 2024-09-07 15:59:36,238 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-07 15:59:36,888 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-07 15:59:38,684 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-07 15:59:44,501 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-07 15:59:59,442 basehttp "OPTIONS /execute-query/ HTTP/1.1" 200 0
+ERROR 2024-09-07 16:00:04,665 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 16:00:04,665 basehttp "POST /execute-query/ HTTP/1.1" 500 208
+ERROR 2024-09-07 16:00:57,091 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 16:00:57,092 basehttp "POST /execute-query/ HTTP/1.1" 500 196
+INFO 2024-09-07 16:18:15,203 autoreload Watching for file changes with StatReloader
+INFO 2024-09-07 16:18:50,888 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+ERROR 2024-09-07 16:19:22,428 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 16:19:22,429 basehttp "POST /execute-query/ HTTP/1.1" 500 186
+INFO 2024-09-07 16:23:53,226 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 16:23:54,888 autoreload Watching for file changes with StatReloader
+INFO 2024-09-07 16:24:37,036 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-07 16:25:32,512 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-07 16:25:45,617 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-07 16:26:08,659 basehttp "POST /execute-query/ HTTP/1.1" 200 13
+WARNING 2024-09-07 16:26:25,966 log Bad Request: /execute-query/
+WARNING 2024-09-07 16:26:25,967 basehttp "POST /execute-query/ HTTP/1.1" 400 56
+ERROR 2024-09-07 16:26:42,845 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-09-07 16:26:42,846 basehttp "POST /execute-query/ HTTP/1.1" 500 135978
+INFO 2024-09-07 16:26:57,403 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+ERROR 2024-09-07 16:27:14,147 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-09-07 16:27:14,150 basehttp "POST /execute-query/ HTTP/1.1" 500 135963
+INFO 2024-09-07 16:28:32,878 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 16:28:34,470 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-07 16:29:07,317 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-09-07 16:29:07,337 basehttp "POST /execute-query/ HTTP/1.1" 500 135983
+INFO 2024-09-07 16:32:00,494 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 16:32:02,171 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-07 16:32:40,181 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-09-07 16:32:40,183 basehttp "POST /execute-query/ HTTP/1.1" 500 135976
+ERROR 2024-09-07 16:34:07,799 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 16:34:07,800 basehttp "POST /execute-query/ HTTP/1.1" 500 190
+INFO 2024-09-07 16:35:23,373 basehttp "POST /execute-query/ HTTP/1.1" 200 37
+INFO 2024-09-07 16:37:17,858 basehttp "POST /execute-query/ HTTP/1.1" 200 37
+INFO 2024-09-07 16:37:47,556 basehttp "POST /execute-query/ HTTP/1.1" 200 37
+ERROR 2024-09-07 16:38:08,699 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-09-07 16:38:08,706 basehttp "POST /execute-query/ HTTP/1.1" 500 135903
+INFO 2024-09-07 16:39:03,572 basehttp "OPTIONS /leads/ HTTP/1.1" 200 0
+INFO 2024-09-07 16:39:03,605 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-07 16:39:03,906 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+WARNING 2024-09-07 16:39:06,208 log Not Found: /wallet/balance/
+WARNING 2024-09-07 16:39:06,209 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-07 16:39:06,221 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-07 16:39:09,479 basehttp "GET /leads/ HTTP/1.1" 200 5748
+INFO 2024-09-07 16:39:09,698 basehttp "OPTIONS /lead/stage/ HTTP/1.1" 200 0
+INFO 2024-09-07 16:39:12,142 basehttp "GET /lead/stage/ HTTP/1.1" 200 519
+INFO 2024-09-07 16:39:16,650 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-07 16:39:18,080 basehttp "GET /leads/ HTTP/1.1" 200 5748
+INFO 2024-09-07 16:40:13,952 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-07 16:40:15,719 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-07 16:40:27,099 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+WARNING 2024-09-07 16:40:31,199 log Bad Request: /reminders/
+WARNING 2024-09-07 16:40:31,199 basehttp "GET /reminders/ HTTP/1.1" 400 21
+INFO 2024-09-07 16:40:31,272 basehttp "GET /createTenant HTTP/1.1" 301 0
+INFO 2024-09-07 16:40:33,757 basehttp "GET /createTenant/ HTTP/1.1" 200 1349
+INFO 2024-09-07 16:40:36,110 basehttp "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2024-09-07 16:40:38,262 basehttp "POST /login/ HTTP/1.1" 200 82
+INFO 2024-09-07 16:40:39,348 basehttp "OPTIONS /interaction HTTP/1.1" 200 0
+INFO 2024-09-07 16:40:39,351 basehttp "OPTIONS /wallet/balance?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-07 16:40:39,352 basehttp "OPTIONS /dynamic-models/ HTTP/1.1" 200 0
+INFO 2024-09-07 16:40:39,360 basehttp "OPTIONS /report/opportunity_stages/ HTTP/1.1" 200 0
+INFO 2024-09-07 16:40:39,361 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-07 16:40:39,382 basehttp "OPTIONS /report/lead_stages/ HTTP/1.1" 200 0
+INFO 2024-09-07 16:40:39,383 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-07 16:40:39,403 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-07 16:40:39,449 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-07 16:40:39,459 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-07 16:40:39,593 basehttp "OPTIONS /interaction/ HTTP/1.1" 200 0
+INFO 2024-09-07 16:40:39,594 basehttp "OPTIONS /wallet/balance/?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-07 16:40:41,128 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-07 16:40:41,128 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+INFO 2024-09-07 16:40:41,128 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 153
+WARNING 2024-09-07 16:40:41,592 log Not Found: /wallet/balance/
+WARNING 2024-09-07 16:40:41,592 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-07 16:40:41,598 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-07 16:40:42,761 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-07 16:40:44,499 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-07 16:40:44,929 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-07 16:40:44,933 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-07 16:40:45,020 basehttp "OPTIONS /leads/ HTTP/1.1" 200 0
+WARNING 2024-09-07 16:40:47,072 log Not Found: /wallet/balance/
+WARNING 2024-09-07 16:40:47,074 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-07 16:40:47,074 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-07 16:40:50,308 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-07 16:40:50,549 basehttp "GET /leads/ HTTP/1.1" 200 5748
+INFO 2024-09-07 16:40:50,754 basehttp "OPTIONS /lead/stage/ HTTP/1.1" 200 0
+INFO 2024-09-07 16:40:53,417 basehttp "GET /lead/stage/ HTTP/1.1" 200 519
+INFO 2024-09-07 16:40:58,744 basehttp "GET /leads/ HTTP/1.1" 200 5748
+INFO 2024-09-07 16:41:02,327 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-07 16:41:23,850 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-07 16:41:23,852 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-07 16:41:23,979 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-07 16:41:24,017 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-07 16:41:25,426 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+INFO 2024-09-07 16:41:25,435 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 153
+INFO 2024-09-07 16:41:25,441 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+WARNING 2024-09-07 16:41:25,484 log Not Found: /wallet/balance/
+WARNING 2024-09-07 16:41:25,484 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-07 16:41:25,497 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-07 16:41:26,448 basehttp "OPTIONS /execute-query/ HTTP/1.1" 200 0
+INFO 2024-09-07 16:41:27,047 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+WARNING 2024-09-07 16:41:27,086 log Not Found: /wallet/balance/
+WARNING 2024-09-07 16:41:27,086 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-07 16:41:27,132 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-07 16:41:28,014 basehttp "GET /leads/ HTTP/1.1" 200 5748
+INFO 2024-09-07 16:41:28,680 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-07 16:41:29,861 basehttp "GET /lead/stage/ HTTP/1.1" 200 519
+ERROR 2024-09-07 16:41:31,409 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-09-07 16:41:31,411 basehttp "POST /execute-query/ HTTP/1.1" 500 135903
+INFO 2024-09-07 16:41:33,123 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-07 16:41:34,072 basehttp "GET /leads/ HTTP/1.1" 200 5748
+INFO 2024-09-07 16:41:42,416 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-07 16:43:22,083 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 16:43:23,451 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-07 16:44:20,047 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-09-07 16:44:20,053 basehttp "POST /execute-query/ HTTP/1.1" 500 135966
+ERROR 2024-09-07 16:44:21,141 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-09-07 16:44:21,143 basehttp "POST /execute-query/ HTTP/1.1" 500 135966
+ERROR 2024-09-07 16:45:46,508 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-09-07 16:45:46,509 basehttp "POST /execute-query/ HTTP/1.1" 500 135981
+INFO 2024-09-07 16:45:58,177 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 16:45:59,478 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-07 16:46:25,868 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-09-07 16:46:25,872 basehttp "POST /execute-query/ HTTP/1.1" 500 135966
+ERROR 2024-09-07 16:49:26,880 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 16:49:26,880 basehttp "POST /execute-query/ HTTP/1.1" 500 146
+INFO 2024-09-07 16:50:28,872 basehttp "POST /execute-query/ HTTP/1.1" 200 2351
+ERROR 2024-09-07 16:50:49,144 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-09-07 16:50:49,150 basehttp "POST /execute-query/ HTTP/1.1" 500 135776
+INFO 2024-09-07 16:53:19,052 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 16:53:20,319 autoreload Watching for file changes with StatReloader
+INFO 2024-09-07 16:54:02,532 basehttp "POST /execute-query/ HTTP/1.1" 200 519
+INFO 2024-09-07 16:54:16,423 basehttp "POST /execute-query/ HTTP/1.1" 200 22202
+INFO 2024-09-07 16:54:39,271 basehttp "POST /execute-query/ HTTP/1.1" 200 2351
+INFO 2024-09-07 16:55:38,093 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 16:55:39,242 autoreload Watching for file changes with StatReloader
+INFO 2024-09-07 16:56:12,945 basehttp "POST /execute-query/ HTTP/1.1" 200 2351
+INFO 2024-09-07 16:56:37,235 basehttp "POST /execute-query/ HTTP/1.1" 200 519
+INFO 2024-09-07 16:56:53,678 basehttp "POST /execute-query/ HTTP/1.1" 200 22202
+INFO 2024-09-07 16:57:57,626 basehttp "POST /execute-query/ HTTP/1.1" 200 37
+INFO 2024-09-07 16:57:58,048 basehttp "POST /execute-query/ HTTP/1.1" 200 37
+INFO 2024-09-07 16:58:14,235 basehttp "POST /execute-query/ HTTP/1.1" 200 519
+INFO 2024-09-07 16:58:32,042 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-07 16:58:43,062 basehttp "POST /execute-query/ HTTP/1.1" 200 238
+INFO 2024-09-07 16:59:05,083 basehttp "POST /execute-query/ HTTP/1.1" 200 970
+INFO 2024-09-07 16:59:20,931 basehttp "POST /execute-query/ HTTP/1.1" 200 1016
+ERROR 2024-09-07 17:00:03,673 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 17:00:03,673 basehttp "POST /execute-query/ HTTP/1.1" 500 60
+ERROR 2024-09-07 17:00:31,034 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 17:00:31,034 basehttp "POST /execute-query/ HTTP/1.1" 500 182
+INFO 2024-09-07 17:02:52,844 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 17:02:54,055 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-07 17:03:25,660 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 17:03:25,660 basehttp "POST /execute-query/ HTTP/1.1" 500 102
+INFO 2024-09-07 17:04:47,760 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 17:04:48,928 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-07 17:05:57,413 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 17:05:57,414 basehttp "POST /execute-query/ HTTP/1.1" 500 182
+INFO 2024-09-07 17:08:40,254 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 17:08:41,432 autoreload Watching for file changes with StatReloader
+INFO 2024-09-07 17:09:09,058 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+ERROR 2024-09-07 17:09:29,873 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-09-07 17:09:29,879 basehttp "POST /execute-query/ HTTP/1.1" 500 135576
+INFO 2024-09-07 17:10:06,184 basehttp "POST /execute-query/ HTTP/1.1" 200 2351
+INFO 2024-09-07 17:10:34,422 basehttp "POST /execute-query/ HTTP/1.1" 200 519
+INFO 2024-09-07 17:10:51,169 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+WARNING 2024-09-07 17:10:58,780 log Bad Request: /execute-query/
+WARNING 2024-09-07 17:10:58,781 basehttp "POST /execute-query/ HTTP/1.1" 400 56
+INFO 2024-09-07 17:11:09,968 basehttp "POST /execute-query/ HTTP/1.1" 200 14
+INFO 2024-09-07 17:12:06,515 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-07 17:12:23,661 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-07 17:12:46,287 basehttp "OPTIONS /query/ HTTP/1.1" 200 0
+INFO 2024-09-07 17:13:02,148 basehttp "POST /query/ HTTP/1.1" 200 297
+INFO 2024-09-07 17:13:37,989 basehttp "OPTIONS /opportunities/ HTTP/1.1" 200 0
+INFO 2024-09-07 17:13:37,999 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-07 17:13:38,247 basehttp "GET /interaction HTTP/1.1" 301 0
+WARNING 2024-09-07 17:13:39,911 log Not Found: /wallet/balance/
+WARNING 2024-09-07 17:13:39,911 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-07 17:13:39,927 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-07 17:13:42,854 basehttp "GET /opportunities/ HTTP/1.1" 200 5296
+INFO 2024-09-07 17:13:42,967 basehttp "OPTIONS /opportunity/stage/ HTTP/1.1" 200 0
+INFO 2024-09-07 17:13:44,862 basehttp "GET /opportunity/stage/ HTTP/1.1" 200 418
+INFO 2024-09-07 17:13:47,350 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-07 17:13:49,750 basehttp "GET /opportunities/ HTTP/1.1" 200 5296
+INFO 2024-09-07 17:14:15,389 basehttp "POST /query/ HTTP/1.1" 200 1419
+INFO 2024-09-07 17:15:52,418 basehttp "POST /query/ HTTP/1.1" 200 459
+INFO 2024-09-07 17:17:03,196 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-07 17:17:03,200 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-07 17:17:04,503 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+INFO 2024-09-07 17:17:04,710 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-07 17:17:04,764 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 153
+WARNING 2024-09-07 17:17:04,843 log Not Found: /wallet/balance/
+WARNING 2024-09-07 17:17:04,843 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-07 17:17:04,851 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-07 17:17:06,327 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-07 17:17:07,960 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-07 17:17:08,146 basehttp "POST /query/ HTTP/1.1" 200 505
+INFO 2024-09-07 17:17:12,181 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-07 17:17:12,533 basehttp "POST /query/ HTTP/1.1" 200 1388
+INFO 2024-09-07 17:17:14,439 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+ERROR 2024-09-07 17:17:49,990 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 17:17:49,991 basehttp "POST /execute-query/ HTTP/1.1" 500 99
+INFO 2024-09-07 17:24:41,710 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\middle.py changed, reloading.
+INFO 2024-09-07 17:24:42,914 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-07 17:25:29,695 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 17:25:29,696 basehttp "POST /execute-query/ HTTP/1.1" 500 99
+INFO 2024-09-07 17:29:27,811 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 17:29:28,999 autoreload Watching for file changes with StatReloader
+WARNING 2024-09-07 17:29:56,677 log Bad Request: /execute-query/
+WARNING 2024-09-07 17:29:56,677 basehttp "POST /execute-query/ HTTP/1.1" 400 56
+WARNING 2024-09-07 17:30:53,339 log Bad Request: /execute-query/
+WARNING 2024-09-07 17:30:53,340 basehttp "POST /execute-query/ HTTP/1.1" 400 56
+WARNING 2024-09-07 17:31:55,301 log Bad Request: /execute-query/
+WARNING 2024-09-07 17:31:55,302 basehttp "POST /execute-query/ HTTP/1.1" 400 56
+ERROR 2024-09-07 17:32:08,509 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 17:32:08,509 basehttp "POST /execute-query/ HTTP/1.1" 500 118
+ERROR 2024-09-07 17:33:02,810 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 17:33:02,811 basehttp "POST /execute-query/ HTTP/1.1" 500 171
+INFO 2024-09-07 17:33:17,975 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 17:33:19,344 autoreload Watching for file changes with StatReloader
+INFO 2024-09-07 17:33:45,277 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-07 17:34:02,482 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-07 17:34:18,484 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+WARNING 2024-09-07 17:34:44,085 log Bad Request: /execute-query/
+WARNING 2024-09-07 17:34:44,085 basehttp "POST /execute-query/ HTTP/1.1" 400 56
+INFO 2024-09-07 17:36:21,933 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 17:36:23,533 autoreload Watching for file changes with StatReloader
+WARNING 2024-09-07 17:36:49,828 log Bad Request: /execute-query/
+WARNING 2024-09-07 17:36:49,829 basehttp "POST /execute-query/ HTTP/1.1" 400 56
+WARNING 2024-09-07 17:43:00,686 log Bad Request: /execute-query/
+WARNING 2024-09-07 17:43:00,686 basehttp "POST /execute-query/ HTTP/1.1" 400 56
+INFO 2024-09-07 17:53:55,634 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 17:53:56,956 autoreload Watching for file changes with StatReloader
+INFO 2024-09-07 17:57:57,052 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 17:57:58,276 autoreload Watching for file changes with StatReloader
+WARNING 2024-09-07 17:58:31,052 log Bad Request: /execute-query/
+WARNING 2024-09-07 17:58:31,052 basehttp "POST /execute-query/ HTTP/1.1" 400 56
+INFO 2024-09-07 17:59:22,332 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\middle.py changed, reloading.
+INFO 2024-09-07 17:59:23,576 autoreload Watching for file changes with StatReloader
+WARNING 2024-09-07 17:59:49,641 log Bad Request: /execute-query/
+WARNING 2024-09-07 17:59:49,642 basehttp "POST /execute-query/ HTTP/1.1" 400 56
+ERROR 2024-09-07 18:00:04,379 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 18:00:04,380 basehttp "POST /execute-query/ HTTP/1.1" 500 149
+WARNING 2024-09-07 18:00:21,764 log Bad Request: /execute-query/
+WARNING 2024-09-07 18:00:21,764 basehttp "POST /execute-query/ HTTP/1.1" 400 56
+INFO 2024-09-07 18:01:11,386 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 18:01:12,754 autoreload Watching for file changes with StatReloader
+INFO 2024-09-07 18:01:33,714 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\middle.py changed, reloading.
+INFO 2024-09-07 18:01:35,040 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-07 18:02:00,990 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 18:02:00,991 basehttp "POST /execute-query/ HTTP/1.1" 500 150
+WARNING 2024-09-07 18:02:42,939 log Bad Request: /execute-query/
+WARNING 2024-09-07 18:02:42,940 basehttp "POST /execute-query/ HTTP/1.1" 400 56
+INFO 2024-09-07 18:02:57,158 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 18:02:58,454 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-07 18:03:24,260 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 18:03:24,261 basehttp "POST /execute-query/ HTTP/1.1" 500 175
+ERROR 2024-09-07 18:03:26,543 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 18:03:26,544 basehttp "POST /execute-query/ HTTP/1.1" 500 198
+INFO 2024-09-07 18:05:52,913 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 18:05:54,193 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-07 18:06:19,714 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 18:06:19,715 basehttp "POST /execute-query/ HTTP/1.1" 500 130
+INFO 2024-09-07 18:06:59,396 basehttp "POST /execute-query/ HTTP/1.1" 200 82502
+INFO 2024-09-07 18:07:11,379 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-07 18:07:11,411 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-07 18:07:12,665 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-07 18:07:12,724 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+WARNING 2024-09-07 18:07:13,096 log Not Found: /wallet/balance/
+WARNING 2024-09-07 18:07:13,097 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-07 18:07:13,342 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-07 18:07:14,325 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 153
+INFO 2024-09-07 18:07:14,326 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-07 18:07:14,331 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+WARNING 2024-09-07 18:07:14,727 log Not Found: /wallet/balance/
+WARNING 2024-09-07 18:07:14,727 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-07 18:07:15,009 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-07 18:07:15,933 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-07 18:07:16,251 basehttp "GET /opportunities/ HTTP/1.1" 200 5296
+INFO 2024-09-07 18:07:17,574 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-07 18:07:20,316 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-07 18:07:26,698 basehttp "POST /execute-query/ HTTP/1.1" 200 82502
+INFO 2024-09-07 18:07:29,649 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-07 18:07:30,822 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-07 18:07:30,822 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-07 18:07:31,668 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-07 18:07:31,670 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+WARNING 2024-09-07 18:07:32,457 log Not Found: /wallet/balance/
+WARNING 2024-09-07 18:07:32,458 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-07 18:07:32,469 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-07 18:07:33,185 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-07 18:07:33,185 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+INFO 2024-09-07 18:07:33,231 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 153
+WARNING 2024-09-07 18:07:34,078 log Not Found: /wallet/balance/
+WARNING 2024-09-07 18:07:34,079 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-07 18:07:34,126 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-07 18:07:34,806 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-07 18:07:35,609 basehttp "GET /opportunities/ HTTP/1.1" 200 5296
+INFO 2024-09-07 18:07:36,461 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-07 18:07:40,090 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-07 18:07:40,817 basehttp "POST /execute-query/ HTTP/1.1" 200 82502
+INFO 2024-09-07 18:07:49,416 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-07 18:08:08,957 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-07 18:08:20,092 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-07 18:13:23,739 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 18:13:24,962 autoreload Watching for file changes with StatReloader
+INFO 2024-09-07 18:13:53,659 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-07 18:14:05,585 basehttp "POST /execute-query/ HTTP/1.1" 200 519
+INFO 2024-09-07 18:14:30,480 basehttp "POST /execute-query/ HTTP/1.1" 200 5096
+INFO 2024-09-07 18:15:32,680 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 18:15:33,953 autoreload Watching for file changes with StatReloader
+INFO 2024-09-07 18:16:00,982 basehttp "POST /execute-query/ HTTP/1.1" 200 5096
+INFO 2024-09-07 18:16:33,121 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 18:16:34,376 autoreload Watching for file changes with StatReloader
+INFO 2024-09-07 18:17:06,257 basehttp "POST /execute-query/ HTTP/1.1" 200 5096
+INFO 2024-09-07 18:19:31,410 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 18:19:33,025 autoreload Watching for file changes with StatReloader
+INFO 2024-09-07 18:20:04,976 basehttp "POST /execute-query/ HTTP/1.1" 200 5096
+INFO 2024-09-07 18:20:26,553 basehttp "POST /execute-query/ HTTP/1.1" 200 5096
+INFO 2024-09-07 18:22:07,655 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 18:22:09,321 autoreload Watching for file changes with StatReloader
+INFO 2024-09-07 18:22:32,757 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 18:22:34,366 autoreload Watching for file changes with StatReloader
+INFO 2024-09-07 18:23:05,144 basehttp "POST /execute-query/ HTTP/1.1" 200 5096
+INFO 2024-09-07 18:23:05,276 basehttp "POST /execute-query/ HTTP/1.1" 200 5096
+INFO 2024-09-07 18:23:05,318 basehttp "POST /execute-query/ HTTP/1.1" 200 5096
+ERROR 2024-09-07 18:23:05,324 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 18:23:05,325 basehttp "POST /execute-query/ HTTP/1.1" 500 180
+INFO 2024-09-07 18:23:05,336 basehttp "POST /execute-query/ HTTP/1.1" 200 5096
+INFO 2024-09-07 18:23:05,336 basehttp "POST /execute-query/ HTTP/1.1" 200 5096
+INFO 2024-09-07 18:23:05,355 basehttp "POST /execute-query/ HTTP/1.1" 200 5096
+INFO 2024-09-07 18:23:05,368 basehttp "POST /execute-query/ HTTP/1.1" 200 5096
+ERROR 2024-09-07 18:23:05,372 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 18:23:05,373 basehttp "POST /execute-query/ HTTP/1.1" 500 176
+INFO 2024-09-07 18:23:05,379 basehttp "POST /execute-query/ HTTP/1.1" 200 5096
+INFO 2024-09-07 18:23:05,429 basehttp "POST /execute-query/ HTTP/1.1" 200 5096
+INFO 2024-09-07 18:23:05,436 basehttp "POST /execute-query/ HTTP/1.1" 200 5096
+INFO 2024-09-07 18:23:05,575 basehttp "POST /execute-query/ HTTP/1.1" 200 5096
+INFO 2024-09-07 18:23:05,719 basehttp "POST /execute-query/ HTTP/1.1" 200 5096
+ERROR 2024-09-07 18:23:05,768 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 18:23:05,768 basehttp "POST /execute-query/ HTTP/1.1" 500 176
+ERROR 2024-09-07 18:23:05,792 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 18:23:05,793 basehttp "POST /execute-query/ HTTP/1.1" 500 176
+INFO 2024-09-07 18:23:05,811 basehttp "POST /execute-query/ HTTP/1.1" 200 5096
+INFO 2024-09-07 18:23:05,868 basehttp "POST /execute-query/ HTTP/1.1" 200 5096
+INFO 2024-09-07 18:23:21,768 basehttp "POST /execute-query/ HTTP/1.1" 200 5096
+INFO 2024-09-07 18:26:09,286 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 18:26:11,031 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-07 18:27:16,055 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 18:27:16,055 basehttp "POST /execute-query/ HTTP/1.1" 500 176
+INFO 2024-09-07 18:28:09,294 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 18:28:11,159 autoreload Watching for file changes with StatReloader
+INFO 2024-09-07 18:28:50,984 basehttp "POST /execute-query/ HTTP/1.1" 200 5096
+ERROR 2024-09-07 18:31:39,543 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 18:31:39,544 basehttp "POST /execute-query/ HTTP/1.1" 500 149
+INFO 2024-09-07 20:10:21,959 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-07 20:10:21,977 basehttp "OPTIONS /dynamic-models/ HTTP/1.1" 200 0
+INFO 2024-09-07 20:10:21,977 basehttp "OPTIONS /report/lead_stages/ HTTP/1.1" 200 0
+INFO 2024-09-07 20:10:22,003 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-07 20:10:22,003 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-07 20:10:22,003 basehttp "OPTIONS /wallet/balance?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-07 20:10:22,004 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-07 20:10:22,004 basehttp "OPTIONS /report/opportunity_stages/ HTTP/1.1" 200 0
+INFO 2024-09-07 20:10:22,004 basehttp "OPTIONS /interaction HTTP/1.1" 200 0
+INFO 2024-09-07 20:10:23,021 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-07 20:10:23,021 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-07 20:10:23,245 basehttp "OPTIONS /wallet/balance/?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-07 20:10:23,247 basehttp "OPTIONS /interaction/ HTTP/1.1" 200 0
+INFO 2024-09-07 20:10:24,860 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-07 20:10:24,862 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 153
+INFO 2024-09-07 20:10:24,862 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+INFO 2024-09-07 20:10:24,862 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+WARNING 2024-09-07 20:10:24,983 log Not Found: /wallet/balance/
+WARNING 2024-09-07 20:10:24,983 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-07 20:10:25,049 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-07 20:10:26,507 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-07 20:10:28,227 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-07 20:10:32,784 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-07 20:50:12,206 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 20:50:15,045 autoreload Watching for file changes with StatReloader
+INFO 2024-09-07 20:55:48,857 basehttp "OPTIONS /execute-query/ HTTP/1.1" 200 0
+ERROR 2024-09-07 20:55:56,846 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 20:55:56,846 basehttp "POST /execute-query/ HTTP/1.1" 500 120
+ERROR 2024-09-07 20:56:16,405 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 20:56:16,405 basehttp "POST /execute-query/ HTTP/1.1" 500 198
+INFO 2024-09-07 20:56:41,705 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 20:56:43,528 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-07 20:57:38,328 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 20:57:38,328 basehttp "POST /execute-query/ HTTP/1.1" 500 128
+INFO 2024-09-07 20:58:07,986 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 20:58:09,961 autoreload Watching for file changes with StatReloader
+INFO 2024-09-07 20:58:51,343 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-07 20:59:05,627 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-07 20:59:22,880 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-07 21:06:45,986 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-07 21:06:45,989 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-07 21:06:47,728 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-07 21:06:47,729 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-07 21:06:47,733 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+WARNING 2024-09-07 21:06:47,739 log Not Found: /wallet/balance/
+WARNING 2024-09-07 21:06:47,740 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-07 21:06:47,754 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 153
+INFO 2024-09-07 21:06:47,754 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-07 21:06:49,862 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-07 21:06:51,673 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-07 21:06:56,723 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+ERROR 2024-09-07 22:02:16,690 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 22:02:16,694 basehttp "POST /execute-query/ HTTP/1.1" 500 149
+INFO 2024-09-07 22:02:37,880 basehttp "POST /execute-query/ HTTP/1.1" 200 519
+ERROR 2024-09-07 22:02:52,297 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 22:02:52,297 basehttp "POST /execute-query/ HTTP/1.1" 500 151
+ERROR 2024-09-07 22:03:38,748 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 22:03:38,748 basehttp "POST /execute-query/ HTTP/1.1" 500 151
+INFO 2024-09-07 22:15:50,545 autoreload Watching for file changes with StatReloader
+INFO 2024-09-07 22:18:22,928 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-07 22:19:14,003 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-07 22:23:31,666 basehttp "POST /execute-query/ HTTP/1.1" 200 519
+INFO 2024-09-07 22:34:06,013 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-07 22:34:06,050 basehttp "OPTIONS /interaction HTTP/1.1" 200 0
+INFO 2024-09-07 22:34:06,050 basehttp "OPTIONS /report/opportunity_stages/ HTTP/1.1" 200 0
+INFO 2024-09-07 22:34:06,050 basehttp "OPTIONS /report/lead_stages/ HTTP/1.1" 200 0
+INFO 2024-09-07 22:34:06,051 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-07 22:34:06,055 basehttp "OPTIONS /wallet/balance?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-07 22:34:06,055 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-07 22:34:06,162 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-07 22:34:06,220 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-07 22:34:06,376 basehttp "OPTIONS /interaction/ HTTP/1.1" 200 0
+INFO 2024-09-07 22:34:06,412 basehttp "OPTIONS /wallet/balance/?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-07 22:34:07,727 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 153
+INFO 2024-09-07 22:34:07,745 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+INFO 2024-09-07 22:34:07,917 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-07 22:34:08,024 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-07 22:34:08,122 log Not Found: /wallet/balance/
+WARNING 2024-09-07 22:34:08,122 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-07 22:34:08,520 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-07 22:34:09,546 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-07 22:38:22,630 basehttp "POST /execute-query/ HTTP/1.1" 200 22202
+INFO 2024-09-07 22:38:36,643 basehttp "POST /execute-query/ HTTP/1.1" 200 22202
+INFO 2024-09-07 22:38:56,329 basehttp "POST /execute-query/ HTTP/1.1" 200 17043
+ERROR 2024-09-07 22:39:18,707 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 22:39:18,708 basehttp "POST /execute-query/ HTTP/1.1" 500 186
+INFO 2024-09-07 22:39:23,227 basehttp "POST /execute-query/ HTTP/1.1" 200 22202
+INFO 2024-09-07 22:40:35,927 basehttp "POST /execute-query/ HTTP/1.1" 200 16732
+ERROR 2024-09-07 22:43:54,523 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 22:43:54,523 basehttp "POST /execute-query/ HTTP/1.1" 500 151
+WARNING 2024-09-07 22:43:58,972 log Bad Request: /execute-query/
+WARNING 2024-09-07 22:43:58,972 basehttp "POST /execute-query/ HTTP/1.1" 400 56
+ERROR 2024-09-07 22:44:58,294 log Internal Server Error: /execute-query/
+ERROR 2024-09-07 22:44:58,295 basehttp "POST /execute-query/ HTTP/1.1" 500 151
+INFO 2024-09-07 22:46:27,602 basehttp "POST /execute-query/ HTTP/1.1" 200 519
+WARNING 2024-09-07 22:46:46,088 log Bad Request: /execute-query/
+WARNING 2024-09-07 22:46:46,088 basehttp "POST /execute-query/ HTTP/1.1" 400 56
+INFO 2024-09-07 22:47:33,625 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 22:47:35,779 autoreload Watching for file changes with StatReloader
+WARNING 2024-09-07 22:48:07,835 log Bad Request: /execute-query/
+WARNING 2024-09-07 22:48:07,835 basehttp "POST /execute-query/ HTTP/1.1" 400 56
+INFO 2024-09-07 22:51:50,054 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-07 22:51:51,640 autoreload Watching for file changes with StatReloader
+INFO 2024-09-08 02:13:41,849 autoreload Watching for file changes with StatReloader
+INFO 2024-09-08 02:14:59,718 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-08 02:14:59,718 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-08 02:14:59,719 basehttp "OPTIONS /dynamic-models/ HTTP/1.1" 200 0
+INFO 2024-09-08 02:14:59,720 basehttp "OPTIONS /report/lead_stages/ HTTP/1.1" 200 0
+INFO 2024-09-08 02:14:59,720 basehttp "OPTIONS /interaction HTTP/1.1" 200 0
+INFO 2024-09-08 02:14:59,721 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-08 02:14:59,747 basehttp "OPTIONS /report/opportunity_stages/ HTTP/1.1" 200 0
+INFO 2024-09-08 02:14:59,751 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-08 02:14:59,751 basehttp "OPTIONS /wallet/balance?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-08 02:14:59,843 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-08 02:14:59,895 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-08 02:15:00,054 basehttp "OPTIONS /interaction/ HTTP/1.1" 200 0
+INFO 2024-09-08 02:15:00,123 basehttp "OPTIONS /wallet/balance/?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-08 02:15:02,390 basehttp "OPTIONS /execute-query/ HTTP/1.1" 200 0
+INFO 2024-09-08 02:15:03,073 basehttp "GET /reminders/ HTTP/1.1" 200 5945
+INFO 2024-09-08 02:15:03,074 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 153
+INFO 2024-09-08 02:15:03,075 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+INFO 2024-09-08 02:15:03,340 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-08 02:15:03,492 log Not Found: /wallet/balance/
+WARNING 2024-09-08 02:15:03,493 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-08 02:15:04,263 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-08 02:15:07,070 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+ERROR 2024-09-08 02:15:08,453 log Internal Server Error: /execute-query/
+ERROR 2024-09-08 02:15:08,453 basehttp "POST /execute-query/ HTTP/1.1" 500 123
+INFO 2024-09-08 02:15:09,991 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-08 02:15:11,534 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+ERROR 2024-09-08 02:15:34,709 log Internal Server Error: /execute-query/
+ERROR 2024-09-08 02:15:34,710 basehttp "POST /execute-query/ HTTP/1.1" 500 124
+INFO 2024-09-08 13:12:52,753 autoreload Watching for file changes with StatReloader
+INFO 2024-09-08 17:54:30,865 autoreload Watching for file changes with StatReloader
+INFO 2024-09-08 17:54:54,186 autoreload Watching for file changes with StatReloader
+INFO 2024-09-08 17:55:19,146 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\helpers\graph.py changed, reloading.
+INFO 2024-09-08 17:55:20,056 autoreload Watching for file changes with StatReloader
+INFO 2024-09-08 17:59:12,250 basehttp "OPTIONS /execute-query/ HTTP/1.1" 200 0
+INFO 2024-09-08 17:59:12,355 basehttp "OPTIONS /report/lead_stages/ HTTP/1.1" 200 0
+INFO 2024-09-08 17:59:12,355 basehttp "OPTIONS /reminders/ HTTP/1.1" 200 0
+INFO 2024-09-08 17:59:12,356 basehttp "OPTIONS /dynamic-models/ HTTP/1.1" 200 0
+INFO 2024-09-08 17:59:12,357 basehttp "OPTIONS /execute-query/ HTTP/1.1" 200 0
+INFO 2024-09-08 17:59:26,509 basehttp "POST /execute-query/ HTTP/1.1" 200 519
+INFO 2024-09-08 17:59:50,408 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-08 18:00:02,443 basehttp "OPTIONS /calls/ HTTP/1.1" 200 0
+INFO 2024-09-08 18:00:02,898 basehttp "OPTIONS /wallet/balance?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-08 18:00:03,039 basehttp "OPTIONS /interaction HTTP/1.1" 200 0
+INFO 2024-09-08 18:00:03,246 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-08 18:00:03,453 basehttp "OPTIONS /wallet/balance/?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-08 18:00:03,454 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-08 18:00:03,654 basehttp "OPTIONS /interaction/ HTTP/1.1" 200 0
+INFO 2024-09-08 18:00:04,389 basehttp "GET /calls/ HTTP/1.1" 200 503
+WARNING 2024-09-08 18:00:05,805 log Not Found: /wallet/balance/
+WARNING 2024-09-08 18:00:05,805 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-08 18:00:06,118 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-08 18:00:14,596 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+WARNING 2024-09-08 18:01:21,480 log Bad Request: /reminders/
+WARNING 2024-09-08 18:01:21,481 basehttp "POST /reminders/ HTTP/1.1" 400 66
+WARNING 2024-09-08 18:01:28,444 log Bad Request: /reminders/
+WARNING 2024-09-08 18:01:28,444 basehttp "POST /reminders/ HTTP/1.1" 400 66
+INFO 2024-09-08 18:01:41,065 basehttp "POST /reminders/ HTTP/1.1" 201 226
+INFO 2024-09-08 18:01:50,409 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-08 18:01:50,518 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-08 18:01:52,266 basehttp "GET /calls/ HTTP/1.1" 200 503
+INFO 2024-09-08 18:01:52,268 basehttp "GET /reminders/ HTTP/1.1" 200 6172
+WARNING 2024-09-08 18:01:52,517 log Not Found: /wallet/balance/
+WARNING 2024-09-08 18:01:52,525 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-08 18:01:52,527 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-08 18:02:02,435 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-08 18:02:08,054 basehttp "OPTIONS /leads/ HTTP/1.1" 200 0
+INFO 2024-09-08 18:02:08,056 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-08 18:02:08,056 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-08 18:02:10,097 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-08 18:02:10,105 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+WARNING 2024-09-08 18:02:10,154 log Not Found: /wallet/balance/
+INFO 2024-09-08 18:02:10,160 basehttp "OPTIONS /report/opportunity_stages/ HTTP/1.1" 200 0
+INFO 2024-09-08 18:02:10,161 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-08 18:02:10,172 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-08 18:02:10,173 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-08 18:02:10,225 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-08 18:02:10,226 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-08 18:02:12,000 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-08 18:02:12,001 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 153
+INFO 2024-09-08 18:02:12,270 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+WARNING 2024-09-08 18:02:12,271 log Not Found: /wallet/balance/
+INFO 2024-09-08 18:02:12,280 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-08 18:02:12,281 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-08 18:02:13,507 basehttp "GET /leads/ HTTP/1.1" 200 5792
+INFO 2024-09-08 18:02:14,421 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-08 18:02:16,676 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+ERROR 2024-09-08 18:02:17,204 log Internal Server Error: /execute-query/
+Traceback (most recent call last):
+  File "E:\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\.venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ankur\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+ValueError: Out of range float values are not JSON compliant
+ERROR 2024-09-08 18:02:17,209 basehttp "POST /execute-query/ HTTP/1.1" 500 135277
+INFO 2024-09-08 18:02:20,054 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-08 18:02:32,240 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-08 18:04:24,268 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+ERROR 2024-09-08 18:04:47,464 log Internal Server Error: /execute-query/
+ERROR 2024-09-08 18:04:47,464 basehttp "POST /execute-query/ HTTP/1.1" 500 206
+INFO 2024-09-08 18:08:06,261 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-08 18:08:08,026 autoreload Watching for file changes with StatReloader
+INFO 2024-09-08 18:08:42,016 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+ERROR 2024-09-08 18:09:04,236 log Internal Server Error: /execute-query/
+ERROR 2024-09-08 18:09:04,237 basehttp "POST /execute-query/ HTTP/1.1" 500 146
+ERROR 2024-09-08 18:09:52,493 log Internal Server Error: /execute-query/
+ERROR 2024-09-08 18:09:52,494 basehttp "POST /execute-query/ HTTP/1.1" 500 146
+INFO 2024-09-08 18:12:21,873 basehttp "POST /execute-query/ HTTP/1.1" 200 37
+INFO 2024-09-08 18:12:35,802 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-08 18:16:43,842 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-08 18:16:45,700 autoreload Watching for file changes with StatReloader
+INFO 2024-09-08 18:17:34,051 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-08 18:17:55,295 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+ERROR 2024-09-08 18:18:57,974 log Internal Server Error: /execute-query/
+ERROR 2024-09-08 18:18:57,975 basehttp "POST /execute-query/ HTTP/1.1" 500 72
+INFO 2024-09-08 18:19:59,899 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-08 18:20:01,552 autoreload Watching for file changes with StatReloader
+INFO 2024-09-08 18:20:32,625 basehttp "POST /execute-query/ HTTP/1.1" 200 22202
+ERROR 2024-09-08 18:21:55,736 log Internal Server Error: /execute-query/
+ERROR 2024-09-08 18:21:55,737 basehttp "POST /execute-query/ HTTP/1.1" 500 279
+INFO 2024-09-08 18:22:53,457 basehttp "POST /execute-query/ HTTP/1.1" 200 2402
+INFO 2024-09-08 18:23:21,076 basehttp "POST /execute-query/ HTTP/1.1" 200 5160
+INFO 2024-09-08 18:24:27,601 basehttp "POST /execute-query/ HTTP/1.1" 200 5160
+ERROR 2024-09-08 18:24:59,756 log Internal Server Error: /execute-query/
+ERROR 2024-09-08 18:24:59,757 basehttp "POST /execute-query/ HTTP/1.1" 500 109
+INFO 2024-09-08 18:26:00,131 basehttp "POST /execute-query/ HTTP/1.1" 200 2799
+INFO 2024-09-08 18:26:21,053 basehttp "POST /execute-query/ HTTP/1.1" 200 2799
+INFO 2024-09-08 18:28:11,183 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-08 18:29:10,790 basehttp "POST /execute-query/ HTTP/1.1" 200 16732
+INFO 2024-09-08 18:29:24,501 basehttp "POST /execute-query/ HTTP/1.1" 200 16732
+INFO 2024-09-08 18:29:43,000 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-08 18:30:13,264 basehttp "POST /execute-query/ HTTP/1.1" 200 16732
+INFO 2024-09-08 18:30:35,170 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-08 18:30:37,244 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-08 18:30:48,170 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-08 18:31:11,842 basehttp "POST /execute-query/ HTTP/1.1" 200 778
+INFO 2024-09-08 18:31:34,194 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-08 18:31:51,354 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-08 18:32:14,053 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-08 18:32:16,296 basehttp "POST /execute-query/ HTTP/1.1" 200 374
+WARNING 2024-09-08 18:32:37,475 log Bad Request: /execute-query/
+WARNING 2024-09-08 18:32:37,477 basehttp "POST /execute-query/ HTTP/1.1" 400 56
+ERROR 2024-09-08 18:32:44,729 log Internal Server Error: /execute-query/
+ERROR 2024-09-08 18:32:44,730 basehttp "POST /execute-query/ HTTP/1.1" 500 151
+ERROR 2024-09-08 18:32:46,056 log Internal Server Error: /execute-query/
+ERROR 2024-09-08 18:32:46,056 basehttp "POST /execute-query/ HTTP/1.1" 500 151
+INFO 2024-09-08 18:32:57,709 basehttp "POST /execute-query/ HTTP/1.1" 200 1776
+INFO 2024-09-08 18:33:19,707 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-08 18:33:21,121 autoreload Watching for file changes with StatReloader
+WARNING 2024-09-08 18:33:54,163 log Bad Request: /execute-query/
+WARNING 2024-09-08 18:33:54,163 basehttp "POST /execute-query/ HTTP/1.1" 400 56
+INFO 2024-09-08 18:34:46,078 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-08 18:34:47,383 autoreload Watching for file changes with StatReloader
+INFO 2024-09-08 18:35:20,399 basehttp "POST /execute-query/ HTTP/1.1" 200 1776
+ERROR 2024-09-08 18:35:50,002 log Internal Server Error: /execute-query/
+ERROR 2024-09-08 18:35:50,002 basehttp "POST /execute-query/ HTTP/1.1" 500 123
+INFO 2024-09-08 18:37:45,202 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\middle.py changed, reloading.
+INFO 2024-09-08 18:37:46,640 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-08 18:38:14,231 log Internal Server Error: /execute-query/
+ERROR 2024-09-08 18:38:14,231 basehttp "POST /execute-query/ HTTP/1.1" 500 103
+INFO 2024-09-08 18:39:44,865 basehttp "POST /execute-query/ HTTP/1.1" 200 519
+INFO 2024-09-08 18:41:47,925 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-08 18:42:03,606 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-08 18:42:16,226 basehttp "POST /execute-query/ HTTP/1.1" 200 2
+INFO 2024-09-08 18:51:06,746 basehttp "POST /execute-query/ HTTP/1.1" 200 37
+INFO 2024-09-08 18:56:09,760 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\analytics\views.py changed, reloading.
+INFO 2024-09-08 18:56:11,198 autoreload Watching for file changes with StatReloader
+INFO 2024-09-08 18:56:43,684 basehttp "POST /execute-query/ HTTP/1.1" 200 38
+INFO 2024-09-08 19:02:27,064 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-08 19:02:27,075 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-08 19:02:28,771 basehttp "GET /reminders/ HTTP/1.1" 200 6172
+INFO 2024-09-08 19:02:28,778 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-08 19:02:28,785 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 153
+INFO 2024-09-08 19:02:28,787 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 141
+INFO 2024-09-08 19:02:28,845 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-08 19:02:28,880 log Not Found: /wallet/balance/
+WARNING 2024-09-08 19:02:28,880 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-08 19:02:30,565 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-08 19:02:32,388 basehttp "GET /generate-report/ HTTP/1.1" 200 113
+INFO 2024-09-08 19:02:37,058 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+ERROR 2024-09-08 19:03:10,099 log Internal Server Error: /execute-query/
+ERROR 2024-09-08 19:03:10,100 basehttp "POST /execute-query/ HTTP/1.1" 500 88
+INFO 2024-09-08 19:03:25,931 basehttp "POST /execute-query/ HTTP/1.1" 200 38
+INFO 2024-09-08 19:03:46,614 basehttp "POST /execute-query/ HTTP/1.1" 200 47
+INFO 2024-09-08 19:05:37,670 basehttp "POST /execute-query/ HTTP/1.1" 200 16732
+INFO 2024-09-08 19:05:53,592 basehttp "POST /execute-query/ HTTP/1.1" 200 5096
+INFO 2024-09-08 19:06:16,521 basehttp "OPTIONS /opportunities/ HTTP/1.1" 200 0
+INFO 2024-09-08 19:06:16,571 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-08 19:06:16,572 basehttp "GET /interaction HTTP/1.1" 301 0
+WARNING 2024-09-08 19:06:18,419 log Not Found: /wallet/balance/
+WARNING 2024-09-08 19:06:18,420 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-08 19:06:18,432 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-08 19:06:21,788 basehttp "GET /opportunities/ HTTP/1.1" 200 5296
+INFO 2024-09-08 19:06:21,941 basehttp "OPTIONS /opportunity/stage/ HTTP/1.1" 200 0
+INFO 2024-09-08 19:06:24,433 basehttp "GET /opportunity/stage/ HTTP/1.1" 200 418
+INFO 2024-09-08 19:06:26,114 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-08 19:06:29,740 basehttp "GET /opportunities/ HTTP/1.1" 200 5296
+INFO 2024-09-08 23:02:07,655 autoreload Watching for file changes with StatReloader
+INFO 2024-09-08 23:09:07,284 autoreload Watching for file changes with StatReloader
+INFO 2024-09-08 23:36:37,519 autoreload Watching for file changes with StatReloader
+ERROR 2024-09-08 23:38:49,948 log Internal Server Error: /upload/
+ERROR 2024-09-08 23:38:49,949 basehttp "POST /upload/ HTTP/1.1" 500 280
+INFO 2024-09-09 09:58:55,332 autoreload Watching for file changes with StatReloader
+INFO 2024-09-09 10:54:45,970 basehttp "GET /createTenant HTTP/1.1" 301 0
+WARNING 2024-09-09 10:54:45,995 log Bad Request: /reminders/
+WARNING 2024-09-09 10:54:45,995 basehttp "GET /reminders/ HTTP/1.1" 400 21
+INFO 2024-09-09 10:54:48,004 basehttp "GET /createTenant/ HTTP/1.1" 200 1349
+INFO 2024-09-09 10:54:51,415 basehttp "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2024-09-09 10:54:53,629 basehttp "POST /login/ HTTP/1.1" 200 82
+INFO 2024-09-09 10:54:54,414 basehttp "OPTIONS /interaction HTTP/1.1" 200 0
+INFO 2024-09-09 10:54:54,418 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-09 10:54:54,425 basehttp "OPTIONS /dynamic-models/ HTTP/1.1" 200 0
+INFO 2024-09-09 10:54:54,450 basehttp "OPTIONS /report/lead_stages/ HTTP/1.1" 200 0
+INFO 2024-09-09 10:54:54,641 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-09 10:54:54,641 basehttp "OPTIONS /wallet/balance?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-09 10:54:54,671 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-09 10:54:54,671 basehttp "OPTIONS /generate-report/ HTTP/1.1" 200 0
+INFO 2024-09-09 10:54:54,675 basehttp "OPTIONS /report/opportunity_stages/ HTTP/1.1" 200 0
+INFO 2024-09-09 10:54:54,746 basehttp "OPTIONS /interaction/ HTTP/1.1" 200 0
+INFO 2024-09-09 10:54:54,770 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-09 10:54:54,924 basehttp "OPTIONS /wallet/balance/?user_id=3 HTTP/1.1" 200 0
+INFO 2024-09-09 10:54:57,645 basehttp "GET /generate-report/ HTTP/1.1" 200 108
+INFO 2024-09-09 10:54:57,792 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 153
+INFO 2024-09-09 10:54:57,873 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 213
+INFO 2024-09-09 10:54:57,977 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-09 10:54:58,264 log Not Found: /wallet/balance/
+WARNING 2024-09-09 10:54:58,265 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-09 10:54:59,389 basehttp "GET /generate-report/ HTTP/1.1" 200 108
+INFO 2024-09-09 10:55:01,431 basehttp "GET /generate-report/ HTTP/1.1" 200 108
+INFO 2024-09-09 10:55:04,232 basehttp "OPTIONS /execute-query/ HTTP/1.1" 200 0
+INFO 2024-09-09 10:55:05,695 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-09 10:55:08,010 basehttp "POST /execute-query/ HTTP/1.1" 200 13
+INFO 2024-09-09 11:21:21,544 basehttp "POST /execute-query/ HTTP/1.1" 200 22202
+ERROR 2024-09-09 11:29:08,025 log Internal Server Error: /execute-query/
+ERROR 2024-09-09 11:29:08,026 basehttp "POST /execute-query/ HTTP/1.1" 500 195
+ERROR 2024-09-09 11:29:17,509 log Internal Server Error: /execute-query/
+ERROR 2024-09-09 11:29:17,509 basehttp "POST /execute-query/ HTTP/1.1" 500 180
+ERROR 2024-09-09 11:29:22,076 log Internal Server Error: /execute-query/
+ERROR 2024-09-09 11:29:22,076 basehttp "POST /execute-query/ HTTP/1.1" 500 180
+INFO 2024-09-09 11:29:52,126 basehttp "POST /execute-query/ HTTP/1.1" 200 1499
+ERROR 2024-09-09 11:30:13,585 log Internal Server Error: /execute-query/
+ERROR 2024-09-09 11:30:13,585 basehttp "POST /execute-query/ HTTP/1.1" 500 126
+ERROR 2024-09-09 11:30:29,108 log Internal Server Error: /execute-query/
+ERROR 2024-09-09 11:30:29,108 basehttp "POST /execute-query/ HTTP/1.1" 500 125
+INFO 2024-09-09 11:30:37,838 basehttp "OPTIONS /return-documents/10/undefined HTTP/1.1" 200 0
+INFO 2024-09-09 11:30:38,111 basehttp "OPTIONS /contacts/ HTTP/1.1" 200 0
+INFO 2024-09-09 11:30:38,142 basehttp "OPTIONS /node-templates/ HTTP/1.1" 200 0
+WARNING 2024-09-09 11:30:38,268 log Not Found: /return-documents/10/undefined
+WARNING 2024-09-09 11:30:38,269 basehttp "GET /return-documents/10/undefined HTTP/1.1" 404 20755
+INFO 2024-09-09 11:30:39,811 basehttp "GET /contacts/ HTTP/1.1" 200 4377
+INFO 2024-09-09 11:30:41,191 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-09 11:30:41,193 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-09 11:30:42,675 basehttp "GET /node-templates/ HTTP/1.1" 200 1624203
+INFO 2024-09-09 11:30:42,744 basehttp "GET /report/opportunity_stages/ HTTP/1.1" 200 213
+INFO 2024-09-09 11:30:42,765 basehttp "GET /generate-report/ HTTP/1.1" 200 108
+INFO 2024-09-09 11:30:42,804 basehttp "GET /report/lead_stages/ HTTP/1.1" 200 153
+WARNING 2024-09-09 11:30:42,822 log Not Found: /wallet/balance/
+WARNING 2024-09-09 11:30:42,823 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-09 11:30:42,909 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+INFO 2024-09-09 11:30:44,565 basehttp "GET /generate-report/ HTTP/1.1" 200 108
+INFO 2024-09-09 11:30:46,299 basehttp "GET /generate-report/ HTTP/1.1" 200 108
+INFO 2024-09-09 11:30:50,508 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+ERROR 2024-09-09 11:31:05,132 log Internal Server Error: /execute-query/
+ERROR 2024-09-09 11:31:05,132 basehttp "POST /execute-query/ HTTP/1.1" 500 105
+INFO 2024-09-09 11:34:00,595 basehttp "GET /wallet/balance?user_id=3 HTTP/1.1" 301 0
+INFO 2024-09-09 11:34:00,622 basehttp "OPTIONS /calls/ HTTP/1.1" 200 0
+INFO 2024-09-09 11:34:00,628 basehttp "GET /interaction HTTP/1.1" 301 0
+INFO 2024-09-09 11:34:02,307 basehttp "GET /interaction/ HTTP/1.1" 200 21614
+WARNING 2024-09-09 11:34:02,568 log Not Found: /wallet/balance/
+WARNING 2024-09-09 11:34:02,568 basehttp "GET /wallet/balance/?user_id=3 HTTP/1.1" 404 47
+INFO 2024-09-09 11:34:02,595 basehttp "GET /calls/ HTTP/1.1" 200 503
+INFO 2024-09-09 11:34:11,281 basehttp "GET /dynamic-models/ HTTP/1.1" 200 1825
+INFO 2024-09-09 12:43:38,859 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\views.py changed, reloading.
+INFO 2024-09-09 12:43:41,284 autoreload Watching for file changes with StatReloader
+INFO 2024-09-09 12:48:32,642 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\views.py changed, reloading.
+INFO 2024-09-09 12:48:34,024 autoreload Watching for file changes with StatReloader
+INFO 2024-09-09 13:02:04,594 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\views.py changed, reloading.
+INFO 2024-09-09 13:02:05,859 autoreload Watching for file changes with StatReloader
+INFO 2024-09-09 13:28:42,428 autoreload Watching for file changes with StatReloader
+WARNING 2024-09-09 13:29:38,226 log Bad Request: /analyze_sentiment/
+WARNING 2024-09-09 13:29:38,226 basehttp "POST /analyze_sentiment/ HTTP/1.1" 400 21
+WARNING 2024-09-09 13:30:00,417 log Not Found: /analyze_sentiment/
+WARNING 2024-09-09 13:30:00,418 basehttp "POST /analyze_sentiment/ HTTP/1.1" 404 20723
+WARNING 2024-09-09 13:30:21,379 log Not Found: /analyze_sentiment/
+WARNING 2024-09-09 13:30:21,379 basehttp "POST /analyze_sentiment/ HTTP/1.1" 404 20723
+INFO 2024-09-09 13:43:07,814 autoreload Watching for file changes with StatReloader
+INFO 2024-09-09 14:34:23,818 autoreload Watching for file changes with StatReloader
+INFO 2024-09-09 14:35:10,986 autoreload D:\new_nurenai\newwwwwwwwwwwwwwwwwwww\backend_mine\communication\views.py changed, reloading.
+INFO 2024-09-09 14:35:12,299 autoreload Watching for file changes with StatReloader
+INFO 2024-09-09 14:38:30,096 autoreload Watching for file changes with StatReloader
+INFO 2024-09-09 14:40:25,105 autoreload Watching for file changes with StatReloader
+INFO 2024-09-09 14:42:36,955 autoreload Watching for file changes with StatReloader
+WARNING 2024-09-09 14:44:37,562 log Bad Request: /leads/
+WARNING 2024-09-09 14:44:37,563 basehttp "GET /leads/ HTTP/1.1" 400 21
+INFO 2024-09-09 14:44:54,904 basehttp "GET /leads/ HTTP/1.1" 200 5791
+INFO 2024-09-09 14:45:34,548 basehttp "POST /analyze-sentiment/ HTTP/1.1" 200 97
+INFO 2024-09-09 14:45:34,561 basehttp "POST /query/ HTTP/1.1" 200 13
+WARNING 2024-09-09 14:50:03,519 log Method Not Allowed: /save_whatsapp_conversations/
+WARNING 2024-09-09 14:50:03,520 basehttp "GET /save_whatsapp_conversations/ HTTP/1.1" 405 40
+WARNING 2024-09-09 14:50:33,423 log Bad Request: /save_whatsapp_conversations/
+WARNING 2024-09-09 14:50:33,424 basehttp "POST /save_whatsapp_conversations/ HTTP/1.1" 400 54
+INFO 2024-09-09 14:52:33,846 basehttp "POST /group-messages/ HTTP/1.1" 200 63

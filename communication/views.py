@@ -12,7 +12,7 @@ from django.utils import timezone
 
 from simplecrm.models import CustomUser
 from .gpt_utils import generate_reply_from_conversation 
-from .sentiment_pipeline import analyze_sentiment
+import requests
 
 from .serializers import (
     SentimentAnalysisSerializer,
@@ -101,25 +101,50 @@ class SentimentAnalysisView(APIView):
         if not CustomUser.objects.filter(id=user.id).exists():
             return {'conversation_id': conversation.conversation_id, 'error': f'CustomUser not found for ID: {user.id}'}
 
-        sentiment_scores = analyze_sentiment(messages)
+        # Call FastAPI for sentiment analysis
+        sentiment_scores = self.call_fastapi_analyze_sentiment(messages)
 
+        # Save the sentiment analysis to the database
         sentiment_analysis = SentimentAnalysis(
             user=user,
             conversation_id=conversation.id,
             joy_score=sentiment_scores.get('joy', 0),
             sadness_score=sentiment_scores.get('sadness', 0),
             anger_score=sentiment_scores.get('anger', 0),
-            trust_score=sentiment_scores.get('love', 0),
+            trust_score=sentiment_scores.get('love', 0),  # Adjust as needed
             timestamp=timezone.now(),
             contact_id=contact
         )
         sentiment_analysis.save()
 
         return {'conversation_id': conversation.conversation_id, 'status': 'Processed successfully'}
+
+    def call_fastapi_analyze_sentiment(self, text):
+        """Calls the FastAPI endpoint to analyze sentiment of the given text."""
+        url = "https://hx587qc4-1234.inc1.devtunnels.ms/analyze_sentiment/"  # Adjust this URL based on your FastAPI setup
+        headers = {"Content-Type": "application/json"}
+        payload = {"text": text}
+
+        try:
+            response = requests.post(url, json=payload, headers=headers)
+            response.raise_for_status()  # Raise an exception for HTTP errors
+            sentiment_scores = response.json().get('sentiment', {})  # Extract sentiment scores from the response
+            return sentiment_scores
+        except requests.exceptions.RequestException as e:
+            print(f"Error calling FastAPI: {e}")
+            return {'error': 'Failed to analyze sentiment via FastAPI'}
     
 class GenerateReplyView(APIView):
     def get(self, request, conversation_id):
         try:
+            # Extract platform from conversation_id
+            # Split conversation_id by "_" and get the platform part
+            parts = conversation_id.split("_")
+            if len(parts) < 3:
+                return Response({"error": "Invalid conversation_id format."}, status=status.HTTP_400_BAD_REQUEST)
+            
+            platform = parts[1]  # Assuming platform is the second part in the split
+            
             # Use the correct field 'conversation_id' to filter the conversation
             conversation = Conversation.objects.filter(conversation_id=conversation_id).first()
 
@@ -127,8 +152,8 @@ class GenerateReplyView(APIView):
             if not conversation:
                 return Response({"error": "Conversation with the given conversation_id does not exist."}, status=status.HTTP_400_BAD_REQUEST)
 
-            # Call the function to generate a reply based on the message from the conversation
-            reply = generate_reply_from_conversation(conversation_id)
+            # Call the function to generate a reply based on the message from the conversation and platform
+            reply = generate_reply_from_conversation(conversation_id, platform)
 
             # If the reply is an error message, return a bad request response
             if "error" in reply.lower() or "does not exist" in reply.lower():

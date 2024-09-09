@@ -16,7 +16,7 @@ def prompt_to_sql(prompt, tenant_id):
     response1 = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
-            {"role": "system", "content": "Extract the table name from the user prompt out of one of the following: 'accounts_account' ,'contacts_contact','interaction_calls','leads_lead','interaction_meetings','opportunities_opportunity','interaction_interaction','tasks_tasks','channels_channel','reminder_reminder','campaign_campaign','node_temps_node_temp','vendors_vendors','product_product','documents_document','dynamic_entities_dynamicmodel','loyalty_loyalty','custom_fields_custom_field','tickets_ticket','stage_stage','lead_report','campaign_campaign','campaign_instagramcampaign','campaign_whatsappcampaign','campaign_emailcampaign'"},
+            {"role": "system", "content": "Extract the table name from the user prompt out of one of the following: 'accounts_account', 'contacts_contact', 'interaction_calls', 'leads_lead', 'interaction_meetings', 'opportunities_opportunity', 'interaction_interaction', 'tasks_tasks', 'channels_channel','reminder_reminder', 'campaign_campaign', 'node_temps_node_temp', 'vendors_vendors','product_product', 'documents_document', 'dynamic_entities_dynamicmodel', 'loyalty_loyalty','custom_fields_custom_field', 'tickets_ticket', 'stage_stage', 'lead_report', 'campaign_instagramcampaign','campaign_whatsappcampaign', 'campaign_emailcampaign', 'select_email'.\nIf the prompt contains specific references to email-related operations or content, prefer 'select_email'." },
             {"role": "user", "content": prompt_with_tenant}
         ],
         max_tokens=50,
@@ -27,6 +27,8 @@ def prompt_to_sql(prompt, tenant_id):
 
     table_name = response1.choices[0].message.content.strip()
     print(table_name)
+    if 'select_email' in table_name.lower():
+        table_name = 'selected_emails'
 
     # Second GPT call to determine if the prompt is asking for the stage with the most leads or opportunities
     response2 = client.chat.completions.create(
@@ -60,7 +62,7 @@ def prompt_to_sql(prompt, tenant_id):
                 f"SELECT stage_stage.status, COUNT(leads_lead.stage_id) as lead_count "
                 f"FROM leads_lead "
                 f"JOIN stage_stage ON leads_lead.stage_id = stage_stage.id "
-                f"WHERE stage_stage.model_name = 'lead' AND stage_stage.tenant_id = %s"
+                f"WHERE stage_stage.model_name = 'lead' AND stage_stage.tenant_id = %s AND stage_stage.status != 'unknown' "
                 f"GROUP BY stage_stage.status "
                 f"ORDER BY lead_count DESC "
                 f"LIMIT 1;"
@@ -108,12 +110,18 @@ def prompt_to_sql(prompt, tenant_id):
                     "role": "system",
                     "content": (
                         f"RESPOND ONLY WITH THE SQL QUERY without padding or anything. "
-                        f"Generate a PostgreSQL query for the '{table_name}' table. The query should join with the 'stage_stage' table "
-                        f"to get the status of {model_name}s. The prompt is: {prompt_with_tenant}\n\n"
-                        f"Only include the following fields: all fields from '{table_name}' "
-                        f"and the 'status' field from 'stage_stage'. Exclude the 'model_name' field in the result.\n\n"
-                        f"Model Structure for {table_name}:\n\n{table_model_structure}\n\n"
-                        f"Model Structure for stage_stage:\n\n{stage_model_structure}"
+                        f"Convert the following natural language request to a PostgreSQL query for the '{table_name}' table. "
+                        f"The query should join with the 'stage_stage' table to get the status of {model_name}s.\n\n"
+                        f"The prompt is: {prompt_with_tenant}\n\n"
+                        f"Your SQL query should:\n"
+                        f"1. Include all fields from the '{table_name}' table.\n"
+                        f"2. Include the 'status' field from the 'stage_stage' table.\n"
+                        f"3. Exclude the 'model_name' field in the result.\n"
+                        f"4. Use double quotes around table and column names to handle case sensitivity (e.g., use \"createdOn\" instead of 'createdOn').\n\n"
+                        f"Model Structure for '{table_name}':\n\n{table_model_structure}\n\n"
+                        f"Model Structure for 'stage_stage':\n\n{stage_model_structure}"
+                        f"Ensure that all case-sensitive identifiers are enclosed in double quotes to match the exact column and table names in the database."
+                        f"ORDER BY ids in ascending order."
                     ),
                 },
                 {"role": "user", "content": prompt_with_tenant}
@@ -121,11 +129,11 @@ def prompt_to_sql(prompt, tenant_id):
             max_tokens=1024,
             n=1,
             stop=None,
-            temperature=0.7,
+            temperature=0.6,
         )
 
         sql_query = response_sql.choices[0].message.content.strip()
-        print(f"Generated SQL query for {table_name}: {sql_query}")
+        print(f"Generated SQL query: {sql_query}")
         return sql_query
 
 
@@ -136,9 +144,18 @@ def prompt_to_sql(prompt, tenant_id):
     response3 = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
-            {"role": "system", "content": f"RESPOND ONLY WITH THE SQL QUERY without padding or anything. Convert the following natural language request to a PostgreSQL query for {table_name}:\n\n{prompt_with_tenant}\n\nModel Structure:\n\n{model_structure}"},
-            {"role": "user", "content": prompt_with_tenant}
-        ],
+        {
+            "role": "system",
+            "content": (
+                f"RESPOND ONLY WITH THE SQL QUERY without padding or anything.Convert the following natural language request to a PostgreSQL query for {table_name}:\n\n{prompt_with_tenant}\n\nModel Structure:\n\n{model_structure}\n\n"
+                f"IMPORTANT: Use double quotes around all table and column names to handle case sensitivity in SQL queries. "
+                # f"For example, if the column name is 'createdOn', the query should use \"createdOn\".\n"
+                f"Ensure that all case-sensitive identifiers are enclosed in double quotes to match the exact column and table names in the database."
+                f"ORDER BY ids in ascending order."
+            )
+        },
+        {"role": "user", "content": prompt_with_tenant}
+    ],
         max_tokens=1024,
         n=1,
         stop=None,
@@ -158,7 +175,7 @@ class ExecuteQueryView(APIView):
         serializer = self.serializer_class(data=request.data)
         if serializer.is_valid():
             prompt = serializer.validated_data.get('prompt')
-
+ 
             try:
                 sql_query = prompt_to_sql(prompt, tenant_id)
 

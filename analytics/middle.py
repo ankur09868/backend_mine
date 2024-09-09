@@ -490,5 +490,13 @@ class opportunities_opportunity(models.Model):
     description = models.TextField(blank=True)
     tenant = models.ForeignKey(Tenant, on_delete=models.CASCADE)"""
     
+    elif'selected_emails' in modelName.lower():
+        return""" email_id = models.CharField(max_length=255)
+    from_address = models.EmailField()
+    subject = models.CharField(max_length=255)
+    text = models.TextField()
+    contact_id = models.ForeignKey(Contact, on_delete=models.CASCADE, related_name='selected_emails')
+    tenant = models.foreignKey(Tenant,on_delete=models.CASCADE)"""
+
     else:
         raise ValueError('Prompt could not be translated to SQL query.')
